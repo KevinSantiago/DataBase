@@ -132,7 +132,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -811,12 +811,12 @@
       <workItem from="1475382984692" duration="7539000" />
       <workItem from="1475421127083" duration="2549000" />
       <workItem from="1475424184115" duration="5000" />
-      <workItem from="1475424862435" duration="4980000" />
+      <workItem from="1475424862435" duration="5578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15073000" />
+    <option name="totallyTimeSpent" value="15671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="61" width="1402" height="1000" extended-state="0" />
