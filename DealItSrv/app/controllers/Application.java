@@ -35,7 +35,7 @@ public class Application extends Controller {
         itemManager.add(testItem4);
         itemManager.add(testItem5);
 
-        return ok();
+        return ok("Successful init\n");
     }
 
     /**
@@ -54,11 +54,11 @@ public class Application extends Controller {
     public Result addItem(){
         JsonNode itemToAdd = request().body().asJson();
         if(itemToAdd.findPath("name").textValue() == null || itemToAdd.findPath("description").textValue() == null)
-            return badRequest("Parameters missing!");
+            return badRequest("Parameters missing!\n");
 
         Item ita = Json.fromJson(itemToAdd, Item.class);
         itemManager.add(ita);
-        return ok("Item added successfully!");
+        return ok("Item added successfully!\n");
     }
 
     /**
@@ -69,13 +69,13 @@ public class Application extends Controller {
     public Result updateItem(){
         JsonNode itemToUpdate = request().body().asJson();
         if(itemToUpdate.findPath("name").textValue() == null || itemToUpdate.findPath("description").textValue() == null)
-            return badRequest("Parameters missing!");
+            return badRequest("Parameters missing!\n");
 
         Item itu = Json.fromJson(itemToUpdate, Item.class);
         int status = itemManager.update(itu);
         if(status < 0)
-            return notFound();
-        return ok("Item updated!");
+            return notFound("Item not found!\n");
+        return ok("Item updated!\n");
     }
 
     /**
@@ -86,7 +86,7 @@ public class Application extends Controller {
     public Result getItemByID(int id){
         Item itr = itemManager.getByID(id);
         if(itr == null)
-            return notFound();
+            return notFound("Invalid ID. Item not found!\n");
 
         return ok(Json.toJson(itr));
 
@@ -100,9 +100,9 @@ public class Application extends Controller {
     public Result deleteItemByID(int id){
         int status = itemManager.remove(id);
         if(status < 0)
-            return notFound();
+            return notFound("Invalid ID. Item not found!\n");
 
-        return ok("Item successfully removed!");
+        return ok("Item successfully removed!\n");
     }
 
     /**
@@ -124,11 +124,11 @@ public class Application extends Controller {
                 || userToAdd.findPath("phoneNumber").textValue() == null
                 || userToAdd.findPath("city").textValue() == null
                 || userToAdd.findPath("email").textValue() == null)
-            return badRequest("Parameters missing!");
+            return badRequest("Parameters missing!\n");
 
         User uta = Json.fromJson(userToAdd, User.class);
         userManager.add(uta);
-        return ok("User added successfully!");
+        return ok("User added successfully!\n");
     }
 
     /**
@@ -142,13 +142,13 @@ public class Application extends Controller {
                 || userToUpdate.findPath("phoneNumber").textValue() == null
                 || userToUpdate.findPath("city").textValue() == null
                 || userToUpdate.findPath("email").textValue() == null)
-            return badRequest("Parameters missing!");
+            return badRequest("Parameters missing!\n");
 
         User utu = Json.fromJson(userToUpdate, User.class);
         int status = userManager.update(utu);
         if(status < 0)
-            return notFound();
-        return ok("User updated!");
+            return notFound("User not found!\n");
+        return ok("User updated!\n");
     }
 
     /**
@@ -159,7 +159,7 @@ public class Application extends Controller {
     public Result getUserByID(int id){
         User utr = userManager.getByID(id);
         if(utr == null)
-            return notFound();
+            return notFound("Invalid ID. User not found!\n");
 
         return ok(Json.toJson(utr));
 
@@ -173,9 +173,9 @@ public class Application extends Controller {
     public Result deleteUserByID(int id){
         int status = userManager.remove(id);
         if(status < 0)
-            return notFound();
+            return notFound("Invalid ID. User not found!\n");
 
-        return ok("User successfully removed!");
+        return ok("User successfully removed!\n");
     }
 
     /**
@@ -183,7 +183,7 @@ public class Application extends Controller {
      * @return Status code depending on request outcome
      */
     public Result login(){
-        return ok("Login Successful!");     //For testing purposes
+        return ok("Login Successful!\n");     //For testing purposes
     }
 
     /**
@@ -191,6 +191,6 @@ public class Application extends Controller {
      * @return Status code depending on request outcome
      */
     public Result logout(){
-        return ok("Logout successful!");    //For testing purposes
+        return ok("Logout successful!\n");    //For testing purposes
     }
 }

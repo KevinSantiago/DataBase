@@ -12,6 +12,11 @@ public class User {
     private String email;
 
     /**
+     * Default Constructor
+     */
+    public User(){}
+
+    /**
      * Constructor. Creates an instance of User.
      * @param id the User id
      * @param name the name of the User
@@ -20,6 +25,7 @@ public class User {
      * @param email the email of the user
      */
     public User(int id, String name, String phoneNumber, String city, String email){
+        this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.city = city;

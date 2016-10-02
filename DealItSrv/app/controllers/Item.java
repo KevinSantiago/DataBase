@@ -17,6 +17,12 @@ public class Item {
 
 
     /**
+     * Default constructor.
+     */
+    public Item(){}
+
+
+    /**
      * Constructor. Creates an instance of Item.
      * @param id the id of the Item
      * @param name the name of the Item
