@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/deadmanpr/DealItSrv/conf/routes
-// @DATE:Sun Oct 02 11:20:29 AST 2016
+// @SOURCE:/home/deadmanpr/Documents/Git/DataBase/DealItSrv/conf/routes
+// @DATE:Sun Oct 02 13:40:27 AST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -42,7 +42,37 @@ package controllers.javascript {
     }
 
   
-    // @LINE:10
+    // @LINE:19
+    def updateUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.updateUser",
+      """
+        function() {
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users"})
+        }
+      """
+    )
+  
+    // @LINE:20
+    def deleteUserByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.deleteUserByID",
+      """
+        function(id0) {
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:18
+    def addUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.addUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users"})
+        }
+      """
+    )
+  
+    // @LINE:23
     def getItems: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getItems",
       """
@@ -52,7 +82,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
+    // @LINE:27
     def deleteItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.deleteItemByID",
       """
@@ -62,7 +92,37 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:16
+    def getUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getUsers",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users"})
+        }
+      """
+    )
+  
+    // @LINE:17
+    def getUserByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getUserByID",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:13
+    def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.logout",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/logout"})
+        }
+      """
+    )
+  
+    // @LINE:24
     def getItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getItemByID",
       """
@@ -72,7 +132,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:26
     def updateItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.updateItem",
       """
@@ -92,12 +152,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:25
     def addItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addItem",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items"})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.login",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/login"})
         }
       """
     )
