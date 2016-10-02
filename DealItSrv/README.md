@@ -1,3 +1,6 @@
+# Requirements
+- Play Framework 2.5.8 needs to be installed on your computer.
+
 # How to use
 - Use your terminal window and locate the DealItSrv folder (cd into it)
 - Type the following command and hit enter:
