@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>DealIT</title>
+
+        <!--Css Dependencies-->
+        <link rel="stylesheet" href="/angular-material.css">
+
+
+
+    </head>
+    <body ng-app='myapp' ng-controller='mainController'>
+
+        <header>
+           <md-content layout="column">
+
+              <!--Contiene lo que esta en el header-->
+               <md-toolbar class="md-hue-2">
+                 <div class="md-toolbar-tools" layout="row">
+                   <span style="font-family: Garamond; color:white; font-size: 2vw;" flex="20">DealIt</span>
+                   <span flex></span>
+                   <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
+                </div>
+               </md-toolbar>
+
+               <!--Contiene lo que se encuentra en el navegation bar-->
+               <md-toolbar md-theme="altTheme" class="md-hue-2" layout="row">
+
+                  <md-button ng-click="navHome()">Home</md-button>
+                  <md-button ng-click="navAbout()">About</md-button>
+                  <md-button>Contact us</md-button>
+
+               </md-toolbar>
+
+           </md-content>
+        </header>
+
+        <main>
+            <div ng-view></div>
+
+        </main>
+
+
+        <footer>
+
+        </footer>
+
+        <!--Javascript Dependencies-->
+        <script src="/angular.js"></script>
+        <script src="/angular-route.js"></script>
+        <script src="/angular-animate.js"></script>
+        <script src="/angular-aria.js"></script>
+        <script src="/angular-messages.js"></script>
+        <script src="/angular-material.js"></script>
+
+        <!--Javascripts-->
+        <script type="text/javascript" src="/main.js"></script>
+
+
+    </body>
+</html>

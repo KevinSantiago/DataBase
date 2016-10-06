@@ -28,14 +28,12 @@ Seq[Any](format.raw/*1.32*/("""
 
 <html>
     <head>
-        <title>"""),_display_(/*7.17*/title),format.raw/*7.22*/("""</title>
-        <link rel="stylesheet" media="screen" href=""""),_display_(/*8.54*/routes/*8.60*/.Assets.at("stylesheets/main.css")),format.raw/*8.94*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*9.59*/routes/*9.65*/.Assets.at("images/favicon.png")),format.raw/*9.97*/("""">
-        <script src=""""),_display_(/*10.23*/routes/*10.29*/.Assets.at("javascripts/jquery-1.9.0.min.js")),format.raw/*10.74*/("""" type="text/javascript"></script>
+        <title></title>
+
     </head>
     <body>
-        """),_display_(/*13.10*/content),format.raw/*13.17*/("""
-    """),format.raw/*14.5*/("""</body>
+
+    </body>
 </html>
 """))
       }
@@ -57,11 +55,11 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Sun Oct 02 13:29:44 AST 2016
-                  SOURCE: /home/deadmanpr/Documents/Git/DataBase/DealItSrv/app/views/main.scala.html
-                  HASH: 3f8c08eaaffee7e90d5b8439bc98eb8a34a0f1cf
-                  MATRIX: 530->1|655->31|683->33|760->84|785->89|873->151|887->157|941->191|1028->252|1042->258|1094->290|1146->315|1161->321|1227->366|1321->433|1349->440|1381->445
-                  LINES: 20->1|25->1|27->3|31->7|31->7|32->8|32->8|32->8|33->9|33->9|33->9|34->10|34->10|34->10|37->13|37->13|38->14
+                  DATE: Tue Oct 04 11:13:01 PDT 2016
+                  SOURCE: /home/jariel/Documents/ProjectDataBase/DataBase-master/DealItSrv/app/views/main.scala.html
+                  HASH: 2f30aeff65793d0e877196dc6156ae5e6d58f00c
+                  MATRIX: 530->1|655->31|683->33
+                  LINES: 20->1|25->1|27->3
                   -- GENERATED --
               */
           
