@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/ProjectDataBase/DataBase-master/DealItSrv/conf/routes
-// @DATE:Wed Oct 05 22:02:25 PDT 2016
+// @DATE:Sat Oct 08 11:22:36 PDT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -30,8 +30,8 @@ package controllers {
           Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
       
         // @LINE:32
-        case (path, file) if path == "/public/html/" && file == "prueba.html" =>
-          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/"), ("file", "prueba.html")))
+        case (path, file) if path == "/public/html/" && file == "index.html" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/"), ("file", "index.html")))
           Call("GET", _prefix)
       
         // @LINE:35
@@ -69,15 +69,25 @@ package controllers {
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-messages"), ("file", "angular-messages.js")))
           Call("GET", _prefix + { _defaultPrefix } + "angular-messages.js")
       
-        // @LINE:44
+        // @LINE:42
+        case (path, file) if path == "/public/javascripts/node_modules/angular-material-icons" && file == "angular-material-icons.js" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-material-icons"), ("file", "angular-material-icons.js")))
+          Call("GET", _prefix + { _defaultPrefix } + "angular-material-icons.js")
+      
+        // @LINE:45
         case (path, file) if path == "/public/javascripts/node_modules/angular-material" && file == "angular-material.css" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-material"), ("file", "angular-material.css")))
           Call("GET", _prefix + { _defaultPrefix } + "angular-material.css")
       
-        // @LINE:49
+        // @LINE:50
         case (path, file) if path == "/public/html/templates" && file == "home.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "home.html")))
           Call("GET", _prefix + { _defaultPrefix } + "home.html")
+      
+        // @LINE:51
+        case (path, file) if path == "/public/html/templates" && file == "about.html" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "about.html")))
+          Call("GET", _prefix + { _defaultPrefix } + "about.html")
       
       }
     

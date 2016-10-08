@@ -9,7 +9,7 @@
 
 
     </head>
-    <body ng-app='myapp' ng-controller='mainController'>
+    <body ng-app='myapp' ng-controller='mainController' background="http://insideradvantage.com/wp-content/uploads/2013/12/120118_marbet-website-background-5.jpg">
 
         <header>
            <md-content layout="column">
@@ -25,18 +25,49 @@
 
                <!--Contiene lo que se encuentra en el navegation bar-->
                <md-toolbar md-theme="altTheme" class="md-hue-2" layout="row">
-
-                  <md-button ng-click="navHome()">Home</md-button>
-                  <md-button ng-click="navAbout()">About</md-button>
-                  <md-button>Contact us</md-button>
+                   <md-button ng-click="toggleLeft()">
+                       <md-tooltip>
+                           Navegation
+                       </md-tooltip>
+                       <ng-md-icon icon="menu" style="fill:orange;"></ng-md-icon>
+                   </md-button>
 
                </md-toolbar>
+
 
            </md-content>
         </header>
 
         <main>
-            <div ng-view></div>
+
+            <section layout="row" flex>
+
+                <md-sidenav class="md-sidenav-left" md-component-id="left"
+                             md-whiteframe="4">
+
+                    <md-toolbar class="md-hue-2">
+                        <h1 class="md-toolbar-tools" style="color:white;">Navegation</h1>
+                    </md-toolbar>
+
+                    <md-content layout-margin layout="column">
+                        <md-button class='md-raised' ng-click="navHome()">Home</md-button>
+                        <md-button class='md-raised' ng-click="navAbout()">About</md-button>
+                        <md-button ng-click="toggleLeft()" class="md-accent">
+                            Close this Sidenav
+                        </md-button>
+                    </md-content>
+
+                </md-sidenav>
+
+                <md-content flex layout-padding>
+
+
+                    <div ng-view></div>
+
+                </md-content>
+
+            </section>
+
 
         </main>
 
@@ -52,6 +83,7 @@
         <script src="/angular-aria.js"></script>
         <script src="/angular-messages.js"></script>
         <script src="/angular-material.js"></script>
+        <script src="/angular-material-icons.js"></script>
 
         <!--Javascripts-->
         <script type="text/javascript" src="/main.js"></script>

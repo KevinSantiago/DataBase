@@ -1,4 +1,4 @@
- var app= angular.module('myapp',["ngRoute","ngMaterial"]);
+ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
 
 
 
@@ -12,7 +12,7 @@
                        controller: "homeController"  //set the controller that is going to be used by that view
                     })
                     .when("/about", {
-                       templateUrl: "home.html",
+                       templateUrl: "about.html",
                        controller: "aboutController"
                     });
 
@@ -23,10 +23,11 @@
       app.config(function($mdThemingProvider) {
             $mdThemingProvider.theme('default')
                    .primaryPalette('amber')
-                   .accentPalette('lime');
+                   .accentPalette('red');
 
             $mdThemingProvider.theme('altTheme')
-                   .primaryPalette('grey');
+                   .primaryPalette('grey')
+                   .accentPalette('amber');
               });
 
 
@@ -35,7 +36,19 @@
 
 
      //Main controller
-        app.controller('mainController',['$scope','$http','$location',function($scope,$http,$location){
+        app.controller('mainController',['$scope','$http','$location','$mdSidenav',function($scope,$http,$location,$mdSidenav){
+
+
+             $scope.toggleLeft = buildToggler('left');
+             $scope.toggleRight = buildToggler('right');
+
+                 function buildToggler(componentId) {
+                   return function() {
+                     $mdSidenav(componentId).toggle();
+                   }
+                 }
+
+
 
              //Navegation configuration (All this functions just change the url in which you are current located)
 
@@ -68,7 +81,14 @@
      //About page controller
 
         app.controller('aboutController',['$scope', function($scope){
-             $scope.message="This is about";
+
+             $scope.aboutUs="We are a group of students looking to contribute with innovating ideas.We live on a society that depends on  science and technology. As technology advance  our goal is making things easier."
+                             +" Things like cars, houses, and clothes advertisement are now performed online.";
+
+             $scope.clients="DealIt is a web application that offers a user friendly interface were can be placed sales/trades and special offers."
+                                                         +" The sales/trade transactions could be anything such as: vehicles, houses, electronics, furniture, and miscellaneous.As mentioned before"
+                                                        +" sales/trades could be anything, so this web application targets everyone willing to"
+                                                         +" sale/buy/trade something that fits in one of the above categories.";
 
 
         }]);

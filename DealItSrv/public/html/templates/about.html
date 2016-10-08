@@ -1,0 +1,45 @@
+
+
+
+
+
+
+<div layout="column">
+    <div style="height:60px"></div>
+    <div layout="row" layout-align="space-around center">
+        <img src="https://static.pexels.com/photos/7103/writing-notes-idea-conference-large.jpg"  height="400" flex="33">
+        <img src="https://static.pexels.com/photos/23179/pexels-photo.jpg"  height="400" flex="33">
+        <img src="https://static.pexels.com/photos/89873/pexels-photo-89873.jpeg"  height="400" flex="33">
+    </div>
+
+
+    <div ng-cloak>
+        <md-content>
+            <md-tabs md-dynamic-height md-border-bottom style="background-color: gray;">
+
+                <md-tab label="About us">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2" style="color: orange">About us</h1>
+                        <div layout="row">
+                            <p flex="50">{{aboutUs}}</p>
+                            <span flex></span>
+                        </div>
+                    </md-content>
+                </md-tab>
+
+                <md-tab label="Clients">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2" style="color: orange">Clients</h1>
+                        <div layout="row">
+                            <p flex="50">{{clients}}</p>
+                            <span flex></span>
+                        </div>
+                    </md-content>
+                </md-tab>
+
+            </md-tabs>
+        </md-content>
+    </div>
+
+
+</div>
