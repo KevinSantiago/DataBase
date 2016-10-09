@@ -1,0 +1,96 @@
+<div layout="column">
+    <div style="height:60px"></div>
+    <div layout="row">
+        <span flex></span>
+        <img src="https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg" height="400" flex="60">
+        <span flex></span>
+    </div>
+
+    <div ng-cloak layout="row">
+        <span flex></span>
+        <md-content flex="60">
+            <md-tabs md-dynamic-height md-border-bottom style="background-color: gray;">
+
+                <md-tab label="Log In">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2" style="color: orange">Log In</h1>
+
+
+                            <div>
+                                <form name="loginForm">
+                                    <md-input-container class="md-block">
+                                        <label>Email</label>
+                                        <input ng-model="email" flex="30">
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>Password</label>
+                                        <input ng-model="password" flex="30" type="password">
+                                    </md-input-container>
+                                    <md-button class="md-raised" ng-click="login()">
+                                        Submit
+                                    </md-button>
+                                </form>
+                            </div>
+
+                    </md-content>
+                </md-tab>
+
+                <md-tab label="Sign Up">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2" style="color: orange">Join Our Community</h1>
+
+                        <div>
+                            <form name="signupForm">
+
+                                <div layout="row">
+                                 <md-input-container class="md-block">
+                                    <label>Name</label>
+                                    <input ng-model="name">
+                                 </md-input-container>
+                                    <span flex="10"></span>
+                                 <md-input-container>
+                                    <label>Birth Day</label>
+                                    <md-datepicker ng-model="submitedDate"></md-datepicker>
+                                 </md-input-container>
+                                </div>
+
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>Email</label>
+                                        <input ng-model="email">
+                                    </md-input-container>
+                                    <span flex="10"></span>
+                                    <md-input-container class="md-block">
+                                        <label>Re-enter email</label>
+                                        <input ng-model="reEmail">
+                                    </md-input-container>
+                                </div>
+
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>Password</label>
+                                        <input ng-model="password" type="password">
+                                    </md-input-container>
+                                    <span flex="10"></span>
+                                    <md-input-container class="md-block">
+                                        <label>Re-enter password</label>
+                                        <input ng-model="rePassword" type="password">
+                                    </md-input-container>
+                                </div>
+                                <md-button class="md-raised" ng-click="signup()">
+                                    Submit
+                                </md-button>
+
+                            </form>
+                        </div>
+
+                    </md-content>
+                </md-tab>
+
+            </md-tabs>
+        </md-content>
+        <span flex></span>
+    </div>
+
+
+</div>

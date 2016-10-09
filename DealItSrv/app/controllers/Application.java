@@ -193,4 +193,13 @@ public class Application extends Controller {
     public Result logout(){
         return ok("Logout successful!\n");    //For testing purposes
     }
+
+    /**
+     * Sign up process.
+     * @return Status code depending on request outcome
+     */
+    public Result signup(){
+        return ok("Sign Up Successful!\n"); //For testing purposes
+      }
+
 }

@@ -11,8 +11,11 @@ GET     /DealItSrv                  controllers.Application.index
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 # Login / Logout
-POST    /DealItSrv/login            controllers.Application.login
+POST    /login/submit               controllers.Application.login
 POST    /DealItSrv/logout           controllers.Application.logout
+
+#Sign Up
+POST    /login/signup               controllers.Application.signup
 
 # Users
 GET     /DealItSrv/users            controllers.Application.getUsers
@@ -49,3 +52,4 @@ GET     /angular-material.css       controllers.Assets.at(path="/public/javascri
 
 GET    /home.html                   controllers.Assets.at(path="/public/html/templates", file="home.html")
 GET    /about.html                  controllers.Assets.at(path="/public/html/templates", file="about.html")
+GET    /login.html                  controllers.Assets.at(path="/public/html/templates", file="login.html")

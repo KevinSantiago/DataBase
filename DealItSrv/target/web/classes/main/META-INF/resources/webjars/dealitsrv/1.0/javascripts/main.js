@@ -14,6 +14,10 @@
                     .when("/about", {
                        templateUrl: "about.html",
                        controller: "aboutController"
+                    })
+                    .when("/login", {
+                       templateUrl: "login.html",
+                       controller: "loginController"
                     });
 
 
@@ -60,6 +64,10 @@
                  $location.path('/about');
              };
 
+             $scope.logNav = function(){
+                 $location.path('/login')
+             }
+
 
         }]);
 
@@ -89,6 +97,43 @@
                                                          +" The sales/trade transactions could be anything such as: vehicles, houses, electronics, furniture, and miscellaneous.As mentioned before"
                                                         +" sales/trades could be anything, so this web application targets everyone willing to"
                                                          +" sale/buy/trade something that fits in one of the above categories.";
+
+
+        }]);
+
+
+     // Login , Sign up controller
+
+        app.controller('loginController',['$scope','$http','$location', function($scope,$http,$location){
+                var currentPath= $location.path();
+                $scope.email="";
+                $scope.password="";
+                $scope.name="";
+                $scope.submitedDate="";
+                $scope.reEmail="";
+                $scope.rePassword="";
+
+
+                //===================== Functions ==============================================
+
+
+                $scope.login = function(){
+                    $http.post(currentPath+"/submit")
+                           .then(function(response){
+                                alert(response.data);
+
+                           });
+                }
+
+                $scope.signup = function(){
+                    $http.post(currentPath+"/signup")
+                           .then(function(response){
+
+                                alert(response.data);
+                           });
+
+
+                }
 
 
         }]);

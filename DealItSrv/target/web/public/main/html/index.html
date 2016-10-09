@@ -24,12 +24,28 @@
                </md-toolbar>
 
                <!--Contiene lo que se encuentra en el navegation bar-->
-               <md-toolbar md-theme="altTheme" class="md-hue-2" layout="row">
+               <md-toolbar md-theme="altTheme" class="md-hue-1" layout="row">
                    <md-button ng-click="toggleLeft()">
                        <md-tooltip>
                            Navegation
                        </md-tooltip>
-                       <ng-md-icon icon="menu" style="fill:orange;"></ng-md-icon>
+                       <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
+                   </md-button>
+
+                   <span flex="85"></span>
+
+                   <md-button ng-click="logNav()">
+                       <md-tooltip>
+                           Login/SignUp
+                       </md-tooltip>
+                       <ng-md-icon icon="login" style="fill:black;"></ng-md-icon>
+                   </md-button>
+
+                   <md-button>
+                       <md-tooltip>
+                           Account
+                       </md-tooltip>
+                       <ng-md-icon icon="account_box" style="fill:black;"></ng-md-icon>
                    </md-button>
 
                </md-toolbar>

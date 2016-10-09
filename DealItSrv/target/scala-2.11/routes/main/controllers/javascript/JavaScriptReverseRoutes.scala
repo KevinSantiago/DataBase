@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/ProjectDataBase/DataBase-master/DealItSrv/conf/routes
-// @DATE:Sat Oct 08 11:22:36 PDT 2016
+// @DATE:Sat Oct 08 16:58:43 PDT 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -80,6 +80,10 @@ package controllers.javascript {
             return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "about.html"})
           }
         
+          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("login.html") + """) {
+            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login.html"})
+          }
+        
         }
       """
     )
@@ -94,7 +98,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:21
+    // @LINE:24
     def updateUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.updateUser",
       """
@@ -104,7 +108,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:22
+    // @LINE:25
     def deleteUserByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.deleteUserByID",
       """
@@ -114,7 +118,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:20
+    // @LINE:23
     def addUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addUser",
       """
@@ -124,7 +128,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:25
+    // @LINE:28
     def getItems: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getItems",
       """
@@ -134,7 +138,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:29
+    // @LINE:32
     def deleteItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.deleteItemByID",
       """
@@ -144,7 +148,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
+    // @LINE:21
     def getUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getUsers",
       """
@@ -154,12 +158,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:19
+    // @LINE:22
     def getUserByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getUserByID",
       """
         function(id0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:18
+    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.signup",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/signup"})
         }
       """
     )
@@ -174,7 +188,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:26
+    // @LINE:29
     def getItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getItemByID",
       """
@@ -184,7 +198,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:28
+    // @LINE:31
     def updateItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.updateItem",
       """
@@ -204,7 +218,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:30
     def addItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addItem",
       """
@@ -219,7 +233,7 @@ package controllers.javascript {
       "controllers.Application.login",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/login"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/submit"})
         }
       """
     )
