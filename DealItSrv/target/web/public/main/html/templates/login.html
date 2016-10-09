@@ -1,14 +1,13 @@
 <div layout="column">
-    <div style="height:60px"></div>
     <div layout="row">
-        <span flex></span>
-        <img src="https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg" height="400" flex="60">
-        <span flex></span>
+
+        <img src="https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg" height="400" flex>
+
     </div>
 
     <div ng-cloak layout="row">
-        <span flex></span>
-        <md-content flex="60">
+
+        <md-content flex>
             <md-tabs md-dynamic-height md-border-bottom style="background-color: gray;">
 
                 <md-tab label="Log In">
@@ -37,12 +36,12 @@
 
                 <md-tab label="Sign Up">
                     <md-content class="md-padding">
-                        <h1 class="md-display-2" style="color: orange">Join Our Community</h1>
+                        <h1 class="md-display-2" style="color: orange; text-align: center;">Join Our Community</h1>
 
                         <div>
-                            <form name="signupForm">
+                            <form name="signupForm" style="text-align: center;">
 
-                                <div layout="row">
+                                <div layout="row" layout-align="center center">
                                  <md-input-container class="md-block">
                                     <label>Name</label>
                                     <input ng-model="name">
@@ -54,7 +53,7 @@
                                  </md-input-container>
                                 </div>
 
-                                <div layout="row">
+                                <div layout="row" layout-align="center center">
                                     <md-input-container class="md-block">
                                         <label>Email</label>
                                         <input ng-model="email">
@@ -66,7 +65,7 @@
                                     </md-input-container>
                                 </div>
 
-                                <div layout="row">
+                                <div layout="row" layout-align="center center">
                                     <md-input-container class="md-block">
                                         <label>Password</label>
                                         <input ng-model="password" type="password">
@@ -89,7 +88,7 @@
 
             </md-tabs>
         </md-content>
-        <span flex></span>
+
     </div>
 
 

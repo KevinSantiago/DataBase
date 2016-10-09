@@ -17,39 +17,33 @@
               <!--Contiene lo que esta en el header-->
                <md-toolbar class="md-hue-2">
                  <div class="md-toolbar-tools" layout="row">
-                   <span style="font-family: Garamond; color:white; font-size: 2vw;" flex="20">DealIt</span>
-                   <span flex></span>
-                   <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
+
+                     <md-button ng-click="toggleLeft()">
+                         <md-tooltip>
+                             Navegation
+                         </md-tooltip>
+                         <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
+                     </md-button>
+
+                     <span style="font-family: Garamond; color:white; font-size: 2vw;" flex="20">DealIt</span>
+                     <span flex></span>
+                     <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
+
+                     <md-button ng-click="logNav()">
+                         <md-tooltip>
+                             Login/SignUp
+                         </md-tooltip>
+                         <ng-md-icon icon="login" style="fill:black;"></ng-md-icon>
+                     </md-button>
+
+                     <md-button>
+                         <md-tooltip>
+                             Account
+                         </md-tooltip>
+                         <ng-md-icon icon="account_box" style="fill:black;"></ng-md-icon>
+                     </md-button>
                 </div>
                </md-toolbar>
-
-               <!--Contiene lo que se encuentra en el navegation bar-->
-               <md-toolbar md-theme="altTheme" class="md-hue-1" layout="row">
-                   <md-button ng-click="toggleLeft()">
-                       <md-tooltip>
-                           Navegation
-                       </md-tooltip>
-                       <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
-                   </md-button>
-
-                   <span flex="85"></span>
-
-                   <md-button ng-click="logNav()">
-                       <md-tooltip>
-                           Login/SignUp
-                       </md-tooltip>
-                       <ng-md-icon icon="login" style="fill:black;"></ng-md-icon>
-                   </md-button>
-
-                   <md-button>
-                       <md-tooltip>
-                           Account
-                       </md-tooltip>
-                       <ng-md-icon icon="account_box" style="fill:black;"></ng-md-icon>
-                   </md-button>
-
-               </md-toolbar>
-
 
            </md-content>
         </header>
