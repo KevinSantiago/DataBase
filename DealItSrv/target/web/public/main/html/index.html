@@ -62,6 +62,13 @@
                     <md-content layout-margin layout="column">
                         <md-button class='md-raised' ng-click="navHome()">Home</md-button>
                         <md-button class='md-raised' ng-click="navAbout()">About</md-button>
+                        <md-button class="md-accent" ng-disabled="true">
+                            Categories
+                        </md-button>
+                        <md-button class="md-raised">Cars</md-button>
+                        <md-button class="md-raised">Houses</md-button>
+                        <md-button class="md-raised">Technology</md-button>
+                        <md-button class="md-raised">Furniture</md-button>
                         <md-button ng-click="toggleLeft()" class="md-accent">
                             Close this Sidenav
                         </md-button>
@@ -69,22 +76,31 @@
 
                 </md-sidenav>
 
-                <md-content flex layout-padding>
+                <md-content flex>
 
 
                     <div ng-view></div>
 
                 </md-content>
 
+
+
             </section>
+
 
 
         </main>
 
+          <div flex style="height:230px; background-color: black;" layout="row" >
+              <span flex="20"></span>
+              <span flex="60" layout="column" layout-align="top center">
+                  <h3 style="color: orange;font-family: Garamond;">Find What You Are Looking For</h3>
+                  <h4 style="color: white; font-family: Garamond;">Home * About * Category</h4>
+                  <h5 style="color: Gainsboro; font-family: Garamond;">@DealIt</h5>
+              </span>
+              <span flex="20"></span>
+          </div>
 
-        <footer>
-
-        </footer>
 
         <!--Javascript Dependencies-->
         <script src="/angular.js"></script>

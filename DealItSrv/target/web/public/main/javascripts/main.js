@@ -30,7 +30,7 @@
                    .accentPalette('red');
 
             $mdThemingProvider.theme('altTheme')
-                   .primaryPalette('grey')
+                   .primaryPalette('blue-grey')
                    .accentPalette('amber');
               });
 
@@ -77,11 +77,27 @@
 
 
      //Home controller (Home Page)
-        app.controller('homeController',['$scope','$http', function($scope,$http){
+        app.controller('homeController',['$scope','$http', '$location', function($scope,$http, $location){
 
-              $scope.message="Welcome to the home page";
+              $scope.marketing="What's better than having a tool that makes easy advertise your items."
+                               +" What are you waiting for? Join our family today!";
 
+              $scope.capabilities=[
+                "Sale/Buy or Trade Cars",
+                'Sale/Buy Houses',
+                'Sale/Buy or Trade technology items',
+                'Sale/Buy Furniture'
+              ]
 
+              // Navegation
+
+              $scope.learnMore= function(){
+                $location.path('/about');
+              }
+
+              $scope.joinUs= function(){
+                $location.path('/login');
+              }
 
         }]);
 
