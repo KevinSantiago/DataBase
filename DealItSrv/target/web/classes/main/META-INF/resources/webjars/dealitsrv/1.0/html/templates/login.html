@@ -17,14 +17,21 @@
 
                             <div>
                                 <form name="loginForm">
+
                                     <md-input-container class="md-block">
                                         <label>Email</label>
-                                        <input ng-model="email" flex="30">
+                                        <input ng-model="email" flex="30" required name="Email">
+                                        <div ng-message="loginForm.Email.$error" ng-if="true">
+                                            <div ng-message="required" style="color: red" ng-if="errorFlag.emptyEP">Email is required</div>
+                                        </div>
                                     </md-input-container>
+
                                     <md-input-container class="md-block">
                                         <label>Password</label>
-                                        <input ng-model="password" flex="30" type="password">
+                                        <input ng-model="password" flex="30" required type="password">
+                                        <div ng-message="required" style="color:red" ng-if="errorFlag.emptyEP">Password is required</div>
                                     </md-input-container>
+
                                     <md-button class="md-raised" ng-click="login()">
                                         Submit
                                     </md-button>
@@ -44,36 +51,40 @@
                                 <div layout="row" layout-align="center center">
                                  <md-input-container class="md-block">
                                     <label>Name</label>
-                                    <input ng-model="name">
+                                    <input ng-model="name" required>
+                                    <div style="color:red" ng-if="errorFlag.name">Name is required</div>
                                  </md-input-container>
                                     <span flex="10"></span>
                                  <md-input-container>
                                     <label>Birth Day</label>
-                                    <md-datepicker ng-model="submitedDate"></md-datepicker>
+                                    <md-datepicker ng-model="submitedDate" required></md-datepicker>
+                                     <div style="color: red" ng-if="errorFlag.date">Birth Date is required</div>
                                  </md-input-container>
                                 </div>
 
                                 <div layout="row" layout-align="center center">
                                     <md-input-container class="md-block">
                                         <label>Email</label>
-                                        <input ng-model="email">
+                                        <input ng-model="email" required>
                                     </md-input-container>
                                     <span flex="10"></span>
                                     <md-input-container class="md-block">
                                         <label>Re-enter email</label>
-                                        <input ng-model="reEmail">
+                                        <input ng-model="reEmail" required>
+                                        <div style="color: red" ng-if="errorFlag.email">Email doesn't match</div>
                                     </md-input-container>
                                 </div>
 
                                 <div layout="row" layout-align="center center">
                                     <md-input-container class="md-block">
                                         <label>Password</label>
-                                        <input ng-model="password" type="password">
+                                        <input ng-model="password" type="password" required>
                                     </md-input-container>
                                     <span flex="10"></span>
                                     <md-input-container class="md-block">
                                         <label>Re-enter password</label>
-                                        <input ng-model="rePassword" type="password">
+                                        <input ng-model="rePassword" type="password" required>
+                                        <div style="color: red" ng-if="errorFlag.password">Password doesn't match</div>
                                     </md-input-container>
                                 </div>
                                 <md-button class="md-raised" ng-click="signup()">

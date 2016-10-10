@@ -89,7 +89,7 @@
                 'Sale/Buy Furniture'
               ]
 
-              // Navegation
+              // Navegation inside home view
 
               $scope.learnMore= function(){
                 $location.path('/about');
@@ -121,36 +121,154 @@
      // Login , Sign up controller
 
         app.controller('loginController',['$scope','$http','$location', function($scope,$http,$location){
-                var currentPath= $location.path();
-                $scope.email="";
-                $scope.password="";
-                $scope.name="";
-                $scope.submitedDate="";
-                $scope.reEmail="";
-                $scope.rePassword="";
 
+             // Controller Instances
+                var currentPath= $location.path(); //the current location is stored on this variable
+                $scope.email="";                   //store the email
+                $scope.password="";                //store the password
+                $scope.name="";                    //store the name of the new user
+                $scope.submitedDate="";            //store the Birth date of the new user
+                $scope.reEmail="";                 //Use to verify if the email entered is the same
+                $scope.rePassword="";              //Use to verify if the password entered is the same
+
+                $scope.errorFlag = {
+                   emptyEP: false,
+                   email: false,
+                   password: false,
+                   name: false,
+                   date: false
+                };
 
                 //===================== Functions ==============================================
 
-
+                /*
+                * Call to submit login credentials
+                */
                 $scope.login = function(){
+
+                  if(validateLogin()){
                     $http.post(currentPath+"/submit")
                            .then(function(response){
+                                resetFlags();
+                                resetFields();
                                 alert(response.data);
+                                $location.path('/');
 
                            });
-                }
+                  }
+                  else{
+                     alert("Login failure");
+                  }
+                };
 
+                /*
+                * Call to submit new user credentials
+                */
                 $scope.signup = function(){
+
+                  if(validateSignUp()){
                     $http.post(currentPath+"/signup")
                            .then(function(response){
-
+                                resetFlags();
+                                resetFields();
                                 alert(response.data);
+                                $location.path('/');
                            });
 
+                  }
+                  else{
+                    alert("There is a problem with the form");
+                  }
+                };
 
+                /*
+                * Validates that the email field or the password field isn't empty
+                */
+                var validateLogin = function(){
+                    if ($scope.email === "" || $scope.password === ""){
+                        $scope.errorFlag.emptyEP= true;
+                        return false;
+                    }
+                    return true;
+                };
+
+                /*
+                * Validates that the email entered is the same
+                */
+                var emailIsSame = function(){
+                    if ($scope.email != $scope.reEmail){
+                        $scope.errorFlag.email= true;
+                        return false;
+                    }
+                    return true;
+                };
+
+
+                /*
+                * Validates that the password entered is the same
+                */
+                var passwordIsSame = function(){
+                    if ($scope.password != $scope.rePassword){
+                        $scope.errorFlag.password = true;
+                        return false;
+                    }
+                    return true;
+                };
+
+                /*
+                * Validates date field isn't empty
+                */
+
+                var dateFieldIsEmpty = function(){
+                    if  ($scope.submitedDate === ""){
+                        $scope.errorFlag.date = true;
+                        return true
+                    }
+                    return false;
                 }
 
+                /*
+                * Validate is name field is empty
+                */
+
+                var nameIsEmpty = function(){
+                    if ($scope.name === ""){
+                        $scope.errorFlag.name = true;
+                        return true;
+                    }
+                    return false;
+                }
+
+                /*
+                *  Validate sign up
+                */
+                var validateSignUp = function(){
+                    return (validateLogin() && emailIsSame() && passwordIsSame()
+                              && !dateFieldIsEmpty() && !nameIsEmpty());
+                }
+
+                /*
+                *  Reset Flags
+                */
+                var resetFlags = function(){
+                   $scope.errorFlag.emptyEP= false;
+                   $scope.errorFlag.email= false;
+                   $scope.errorFlag.password= false;
+                   $scope.errorFlag.name= false;
+                   $scope.errorFlag.date= false;
+                }
+
+                /*
+                * Reset Fields
+                */
+                var resetFields = function(){
+                    $scope.email="";
+                    $scope.password="";
+                    $scope.name="";
+                    $scope.submitedDate="";
+                    $scope.reEmail="";
+                    $scope.rePassword="";
+                }
 
         }]);
 
