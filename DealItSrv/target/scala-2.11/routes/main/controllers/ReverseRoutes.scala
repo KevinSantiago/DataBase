@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Mon Oct 10 18:48:50 AST 2016
+// @SOURCE:/home/jariel/Documents/ProjectDataBase/DataBase-master/DealItSrv/conf/routes
+// @DATE:Tue Oct 11 12:54:55 PDT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -93,6 +93,51 @@ package controllers {
         case (path, file) if path == "/public/html/templates" && file == "login.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "login.html")))
           Call("GET", _prefix + { _defaultPrefix } + "login.html")
+      
+        // @LINE:59
+        case (path, file) if path == "/public/images" && file == "login.jpg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "login.jpg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/login")
+      
+        // @LINE:60
+        case (path, file) if path == "/public/images" && file == "car.jpg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "car.jpg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/car")
+      
+        // @LINE:61
+        case (path, file) if path == "/public/images" && file == "conversation.jpeg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "conversation.jpeg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/conversation")
+      
+        // @LINE:62
+        case (path, file) if path == "/public/images" && file == "furniture.jpeg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "furniture.jpeg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/furniture")
+      
+        // @LINE:63
+        case (path, file) if path == "/public/images" && file == "gray.jpg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "gray.jpg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/gray")
+      
+        // @LINE:64
+        case (path, file) if path == "/public/images" && file == "house.jpeg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "house.jpeg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/house")
+      
+        // @LINE:65
+        case (path, file) if path == "/public/images" && file == "startup.jpg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "startup.jpg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/startup")
+      
+        // @LINE:66
+        case (path, file) if path == "/public/images" && file == "technology.jpeg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "technology.jpeg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/technology")
+      
+        // @LINE:67
+        case (path, file) if path == "/public/images" && file == "write.jpg" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/images"), ("file", "write.jpg")))
+          Call("GET", _prefix + { _defaultPrefix } + "images/write")
       
       }
     
