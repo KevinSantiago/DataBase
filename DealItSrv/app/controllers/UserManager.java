@@ -54,7 +54,7 @@ public class UserManager implements Manager<User>{
             newID = userList.get(userList.size()-1).getID() + 1;
 
 
-        userList.add(new User(newID, us.getName(), us.getPhoneNumber(), us.getCity(), us.getEmail()));
+        userList.add(us);
         return 0;
     }
 
@@ -85,10 +85,7 @@ public class UserManager implements Manager<User>{
     public int update(User us){
         for(User e : userList)
             if(e.getID() == us.getID()){
-                e.updateName(us.getName());
-                e.updatePhoneNumber(us.getPhoneNumber());
-                e.updateCity(us.getCity());
-                e.updateEmail(us.getEmail());
+                e = us;
                 return 0;
             }
         return -1;

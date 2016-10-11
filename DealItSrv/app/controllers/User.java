@@ -5,11 +5,10 @@ package controllers;
  * Created by Jose A Rodriguez Rivera on 10/2/16.
  */
 public class User {
-    private int id;
-    private String name;
-    private String phoneNumber;
-    private String city;
+    private int uid;
+    private String username;
     private String email;
+    private UserInfo info;
 
     /**
      * Default Constructor
@@ -19,41 +18,23 @@ public class User {
     /**
      * Constructor. Creates an instance of User.
      * @param id the User id
-     * @param name the name of the User
-     * @param phoneNumber the phone number of the User
-     * @param city the city of the User
+     * @param username the username of the User
      * @param email the email of the user
+     * @param info the UserInfo instance associated with the User
      */
-    public User(int id, String name, String phoneNumber, String city, String email){
-        this.id = id;
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.city = city;
+    public User(int id, String username, String email, UserInfo info){
+        this.uid = id;
+        this.username = username;
         this.email = email;
+        this.info = info;
     }
 
     /**
-     * Returns the name of the User.
-     * @return the name of the User.
+     * Returns the username of the User.
+     * @return the username of the User.
      */
-    public String getName(){
-        return this.name;
-    }
-
-    /**
-     * Returns the User's phone number.
-     * @return the User's phone number
-     */
-    public String getPhoneNumber(){
-        return this.phoneNumber;
-    }
-
-    /**
-     * Returns the User's city.
-     * @return the User's city
-     */
-    public String getCity(){
-        return this.city;
+    public String getUsername(){
+        return this.username;
     }
 
     /**
@@ -69,32 +50,17 @@ public class User {
      * @return the User's id
      */
     public int getID(){
-        return this.id;
+        return this.uid;
     }
 
     /**
-     * Updates the User's name.
-     * @param name the User's new name
+     * Updates the User's username.
+     * @param username the User's new username
      */
-    public void updateName(String name){
-        this.name = name;
+    public void updateUsername(String username){
+        this.username = username;
     }
 
-    /**
-     * Updates the User's phone number.
-     * @param phoneNumber the User's new phone number
-     */
-    public void updatePhoneNumber(String phoneNumber){
-        this.phoneNumber = phoneNumber;
-    }
-
-    /**
-     * Updates the User's city.
-     * @param city the User's new city
-     */
-    public void updateCity(String city){
-        this.city = city;
-    }
 
     /**
      * Updates the User's email.
@@ -102,5 +68,14 @@ public class User {
      */
     public void updateEmail(String email){
         this.email = email;
+    }
+
+
+    public UserInfo getInfo() {
+        return info;
+    }
+
+    public void setInfo(UserInfo info) {
+        this.info = info;
     }
 }

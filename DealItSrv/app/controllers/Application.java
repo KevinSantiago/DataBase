@@ -4,6 +4,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
 import play.mvc.*;
 
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * Receives the requests and calls the appropriate Manager class to process it and returns the status code.
  * Created by Jose A Rodriguez Rivera on 10/2/16.
@@ -20,7 +23,10 @@ public class Application extends Controller {
         userManager = new UserManager();
         itemManager = new ItemManager();
 
-        User testUser = new User(0, "John Doe", "787-123-4567", "Mayaguez", "john.doe@gmail.com");
+        Account acc = new Account(1, "Admin", "john.doe@gmail.com", new Date(2016, 10, 11), new CreditCard("John Doe", "1234-5678-9999-0000", new Date(2019, 3, 1), 666, "My House"));
+        Address addr = new Address(1, "My House", "Mayaguez", "00680");
+        UserInfo userInfo = new UserInfo("john.doe@gmail.com", 1, "John", "Doe", "787-123-4567", new Date(1992, 4, 25), addr, acc);
+        User testUser = new User(1,"john_wayne", "john.doe@gmail.com", userInfo);
         userManager.add(testUser);
 
         Item testItem1 = new Item(0, "A", ":)", 12.34, testUser, false);
