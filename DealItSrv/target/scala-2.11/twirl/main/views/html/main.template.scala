@@ -55,8 +55,8 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Tue Oct 11 15:41:25 PDT 2016
-                  SOURCE: /home/jariel/Documents/Database/DataBase/DealItSrv/app/views/main.scala.html
+                  DATE: Tue Oct 11 15:57:43 PDT 2016
+                  SOURCE: /home/jariel/Documents/DataBase/DealItSrv/app/views/main.scala.html
                   HASH: 2f30aeff65793d0e877196dc6156ae5e6d58f00c
                   MATRIX: 530->1|655->31|683->33
                   LINES: 20->1|25->1|27->3
