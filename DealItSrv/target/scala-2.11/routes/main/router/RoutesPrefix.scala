@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jariel/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Tue Oct 11 15:57:42 PDT 2016
+// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
+// @DATE:Tue Oct 11 16:32:53 AST 2016
 
 
 package router {

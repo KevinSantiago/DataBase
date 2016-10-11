@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jariel/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Tue Oct 11 15:57:42 PDT 2016
+// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
+// @DATE:Tue Oct 11 16:32:53 AST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -82,6 +82,10 @@ package controllers.javascript {
         
           if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("login.html") + """) {
             return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login.html"})
+          }
+        
+          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("vehicle.html") + """) {
+            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "vehicle.html"})
           }
         
           if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("login.jpg") + """) {

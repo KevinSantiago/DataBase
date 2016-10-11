@@ -14,6 +14,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
         .when("/login", {
             templateUrl: "login.html",
             controller: "loginController"
+        })
+        .when("/vehicle", {
+            templateUrl: "vehicle.html",
+            controller: "vehicleController"
         });
     });
 
@@ -52,6 +56,15 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
         $scope.logNav = function(){
             $location.path('/login');
         };
+
+        $scope.goVehicle = function(){
+            $location.path('/vehicle');
+        };
+    }]);
+
+    // Vehicle Category Controller
+    app.controller('vehicleController',['$scope', function($scope){
+        $scope.message = "This is the vehicle category!!";
     }]);
 
     //Home controller (Home Page)
