@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Mon Oct 10 18:48:50 AST 2016
+// @SOURCE:/home/jariel/Documents/Database/DataBase/DealItSrv/conf/routes
+// @DATE:Tue Oct 11 15:41:24 PDT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

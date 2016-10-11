@@ -53,3 +53,16 @@ GET     /angular-material.css       controllers.Assets.at(path="/public/javascri
 GET    /home.html                   controllers.Assets.at(path="/public/html/templates", file="home.html")
 GET    /about.html                  controllers.Assets.at(path="/public/html/templates", file="about.html")
 GET    /login.html                  controllers.Assets.at(path="/public/html/templates", file="login.html")
+
+#Image
+
+GET    /images/login                controllers.Assets.at(path="/public/images", file="login.jpg")
+GET    /images/car                  controllers.Assets.at(path="/public/images", file="car.jpg")
+GET    /images/conversation         controllers.Assets.at(path="/public/images", file="conversation.jpeg")
+GET    /images/furniture            controllers.Assets.at(path="/public/images", file="furniture.jpeg")
+GET    /images/gray                 controllers.Assets.at(path="/public/images", file="gray.jpg")
+GET    /images/house                controllers.Assets.at(path="/public/images", file="house.jpeg")
+GET    /images/startup              controllers.Assets.at(path="/public/images", file="startup.jpg")
+GET    /images/technology           controllers.Assets.at(path="/public/images", file="technology.jpeg")
+GET    /images/write                controllers.Assets.at(path="/public/images", file="write.jpg")
+
