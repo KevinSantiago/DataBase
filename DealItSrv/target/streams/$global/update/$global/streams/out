@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/deadmanpr/Documents/Git/DataBase/DealItSrv/}dealitsrv...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/kevin/Documents/DataBase/DealItSrv/}dealitsrv...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: dealitsrv#dealitsrv_2.11;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2016e569[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2879384d[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
@@ -43,7 +43,7 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime(*)][0m
@@ -204,11 +204,11 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml.jackson.core#jackson-databind;2.7.6[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.core#jackson-databind;2.7.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 ...[0m
@@ -217,9 +217,9 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 ...[0m
@@ -228,9 +228,9 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-netty-utils;2.5.8 ...[0m
@@ -253,7 +253,7 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#jul-to-slf4j;1.7.21[0m
 [0m[[0mdebug[0m] [0m	found org.slf4j#jul-to-slf4j;1.7.21 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.slf4j#jcl-over-slf4j;1.7.21 ...[0m
@@ -262,7 +262,7 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#jcl-over-slf4j;1.7.21[0m
 [0m[[0mdebug[0m] [0m	found org.slf4j#jcl-over-slf4j;1.7.21 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-streams_2.11;2.5.8 ...[0m
@@ -322,35 +322,36 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe#ssl-config-akka_2.11;0.2.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe#ssl-config-akka_2.11;0.2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe#ssl-config-core_2.11;0.2.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#ssl-config-core_2.11;0.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#ssl-config-core_2.11;0.2.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#ssl-config-core_2.11;0.2.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe#ssl-config-core_2.11;0.2.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe#ssl-config-core_2.11;0.2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-streams_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master(*)][0m
@@ -872,15 +873,15 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: ch.qos.logback#logback-classic;1.1.7[0m
 [0m[[0mdebug[0m] [0m	found ch.qos.logback#logback-classic;1.1.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving ch.qos.logback#logback-core;1.1.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: ch.qos.logback#logback-core;1.1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)], test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: ch.qos.logback#logback-core;1.1.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)], test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: ch.qos.logback#logback-core;1.1.7[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: ch.qos.logback#logback-core;1.1.7[0m
 [0m[[0mdebug[0m] [0m	found ch.qos.logback#logback-core;1.1.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->runtime(*)][0m
@@ -1073,67 +1074,67 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.asynchttpclient#async-http-client;2.0.11[0m
 [0m[[0mdebug[0m] [0m	found org.asynchttpclient#async-http-client;2.0.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.asynchttpclient#netty-resolver-dns;2.0.11 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.asynchttpclient#netty-resolver-dns;2.0.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.asynchttpclient#netty-resolver-dns;2.0.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.asynchttpclient#netty-resolver-dns;2.0.11[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.asynchttpclient#netty-resolver-dns;2.0.11[0m
 [0m[[0mdebug[0m] [0m	found org.asynchttpclient#netty-resolver-dns;2.0.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.asynchttpclient#netty-resolver;2.0.11 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.asynchttpclient#netty-resolver;2.0.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.asynchttpclient#netty-resolver;2.0.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.asynchttpclient#netty-resolver;2.0.11[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.asynchttpclient#netty-resolver;2.0.11[0m
 [0m[[0mdebug[0m] [0m	found org.asynchttpclient#netty-resolver;2.0.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.asynchttpclient#netty-codec-dns;2.0.11 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.asynchttpclient#netty-codec-dns;2.0.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.asynchttpclient#netty-codec-dns;2.0.11 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.asynchttpclient#netty-codec-dns;2.0.11[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.asynchttpclient#netty-codec-dns;2.0.11[0m
 [0m[[0mdebug[0m] [0m	found org.asynchttpclient#netty-codec-dns;2.0.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.javassist#javassist;3.20.0-GA ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.javassist#javassist;3.20.0-GA {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.javassist#javassist;3.20.0-GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.javassist#javassist;3.20.0-GA[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.javassist#javassist;3.20.0-GA[0m
 [0m[[0mdebug[0m] [0m	found org.javassist#javassist;3.20.0-GA in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->compile][0m
@@ -1271,7 +1272,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
@@ -1338,23 +1339,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->compile(*)][0m
@@ -1362,11 +1363,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->compile(*)][0m
@@ -1396,23 +1397,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.11;0.7.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
@@ -1827,10 +1828,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
@@ -1944,47 +1945,47 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)][0m
@@ -2092,7 +2093,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
@@ -2159,23 +2160,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->compile(*)][0m
@@ -2183,11 +2184,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->compile(*)][0m
@@ -2217,23 +2218,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.11;0.7.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
@@ -2648,10 +2649,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
@@ -2765,47 +2766,47 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)][0m
@@ -3522,8 +3523,8 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.4->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.4->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime(*)][0m
@@ -3716,13 +3717,13 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.mockito#mockito-core;1.9.5[0m
 [0m[[0mdebug[0m] [0m	found org.mockito#mockito-core;1.9.5 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.11;3.6.6->org.mockito#mockito-core;1.9.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.objenesis#objenesis;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.objenesis#objenesis;1.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.objenesis#objenesis;1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.objenesis#objenesis;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.objenesis#objenesis;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.objenesis#objenesis;1.0[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.objenesis#objenesis;1.0[0m
 [0m[[0mdebug[0m] [0m	found org.objenesis#objenesis;1.0 in sbt-chain[0m
@@ -3775,7 +3776,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
@@ -3842,23 +3843,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->compile(*)][0m
@@ -3866,11 +3867,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->compile(*)][0m
@@ -3900,23 +3901,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.11;0.7.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
@@ -4331,10 +4332,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
@@ -4448,47 +4449,47 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)][0m
@@ -4598,7 +4599,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
@@ -4665,23 +4666,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->compile(*)][0m
@@ -4689,11 +4690,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->compile(*)][0m
@@ -4723,23 +4724,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.11;0.7.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
@@ -5154,10 +5155,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
@@ -5271,47 +5272,47 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)][0m
@@ -5421,7 +5422,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
@@ -5488,23 +5489,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->compile(*)][0m
@@ -5512,11 +5513,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->compile(*)][0m
@@ -5546,23 +5547,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.11;0.7.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
@@ -5977,10 +5978,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->ch.qos.logback#logback-classic;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->ch.qos.logback#logback-core;1.1.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.20 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ch.qos.logback#logback-classic;1.1.7->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-logback_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
@@ -6094,47 +6095,47 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-codec-http;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-resolver;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)][0m
@@ -6591,8 +6592,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.4->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.4->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.4->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;3.6.6->org.scalaz#scalaz-effect_2.11;7.1.4 [compile->master(*)][0m
@@ -6659,11 +6660,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.11;3.6.6->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.11;3.6.6->org.mockito#mockito-core;1.9.5 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.11;3.6.6->org.mockito#mockito-core;1.9.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.hamcrest#hamcrest-core;1.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.objenesis#objenesis;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.objenesis#objenesis;1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.9.5->org.objenesis#objenesis;1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-specs2_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-specs2_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
@@ -6844,23 +6845,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-json_2.11;2.5.8->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-netty-utils;2.5.8 [compile->compile(*)][0m
@@ -6868,11 +6869,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-utils;2.5.8->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.typesafe.play#play-streams_2.11;2.5.8 [compile->compile(*)][0m
@@ -6902,23 +6903,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.11;0.7.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-akka_2.11;0.2.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->com.typesafe#config;1.3.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.11;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.11;2.4.10->org.reactivestreams#reactive-streams;1.0.0 [compile->master(*)][0m
@@ -6935,7 +6936,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
@@ -7457,14 +7458,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
@@ -7648,19 +7649,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-analysis;4.1!asm-analysis.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-util;4.1!asm-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3049ms :: artifacts dl 82ms[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 provided produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 optional produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile-internal produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime-internal produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test-internal produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 plugin produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 sources produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 docs produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 pom produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 scala-tool produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3049ms resolve - 82ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5308ms :: artifacts dl 213ms[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 provided produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 optional produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile-internal produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime-internal produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test-internal produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 plugin produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 sources produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 docs produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 pom produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 scala-tool produced in /home/kevin/Documents/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (5308ms resolve - 213ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

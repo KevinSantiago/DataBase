@@ -4,7 +4,7 @@
 		module="dealitsrv-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20161011165816"
+		publication="20161011172307"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

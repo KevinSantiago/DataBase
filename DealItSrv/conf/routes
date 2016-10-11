@@ -53,3 +53,4 @@ GET     /angular-material.css       controllers.Assets.at(path="/public/javascri
 GET    /home.html                   controllers.Assets.at(path="/public/html/templates", file="home.html")
 GET    /about.html                  controllers.Assets.at(path="/public/html/templates", file="about.html")
 GET    /login.html                  controllers.Assets.at(path="/public/html/templates", file="login.html")
+GET    /cars.html                   controllers.Assets.at(path="/public/html/templates", file="cars.html")
