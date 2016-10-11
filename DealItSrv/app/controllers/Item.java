@@ -13,7 +13,7 @@ public class Item {
     private double price;
     private User seller;
     private boolean isSold;
-    private Image image; //Any ideas??
+    private String category;
 
 
     /**
@@ -30,11 +30,13 @@ public class Item {
      * @param price the price of the Item
      * @param seller the User that is selling the Item
      * @param isSold boolean variable representing sell status (sold/unsold)
+     * @param category the Item's category
      */
-    public Item(int id, String name, String description, double price, User seller, boolean isSold){
+    public Item(int id, String name, String description, String category, double price, User seller, boolean isSold){
         this.id = id;
         this.name = name;
         this.description = description;
+        this.category = category;
         this.price = price;
         this.seller = seller;
         this.isSold = isSold;
@@ -65,6 +67,13 @@ public class Item {
         return this.description;
     }
 
+    /**
+     * Returns the Item's category.
+     * @return the item category
+     */
+    public String getCategory(){
+        return this.category;
+    }
     /**
      * Returns the price of this Item.
      * @return the price of this Item
