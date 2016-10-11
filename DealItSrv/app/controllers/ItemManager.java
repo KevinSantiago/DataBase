@@ -56,7 +56,7 @@ public class ItemManager implements Manager<Item>{
             newID = itemList.get(itemList.size()-1).getID() + 1;
 
 
-        itemList.add(new Item(newID, it.getName(), it.getDescription(), it.getPrice(), it.getSeller(), false));
+        itemList.add(new Item(newID, it.getName(), it.getDescription(), it.getCategory(),it.getPrice(), it.getSeller(), false));
         return 0;
     }
 

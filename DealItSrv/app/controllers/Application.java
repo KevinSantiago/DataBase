@@ -29,11 +29,11 @@ public class Application extends Controller {
         User testUser = new User(1,"john_wayne", "john.doe@gmail.com", userInfo);
         userManager.add(testUser);
 
-        Item testItem1 = new Item(0, "A", ":)", 12.34, testUser, false);
-        Item testItem2 = new Item(1, "B", ":)", 22.34, testUser, false);
-        Item testItem3 = new Item(2, "C", ":)", 26.34, testUser, false);
-        Item testItem4 = new Item(3, "D", ":)", 2.84, testUser, false);
-        Item testItem5 = new Item(4, "E", ":)", 72.34, testUser, false);
+        Item testItem1 = new Item(0, "A", ":)", "Car" ,12.34, testUser, false);
+        Item testItem2 = new Item(1, "B", ":)", "Car",22.34, testUser, false);
+        Item testItem3 = new Item(2, "C", ":)", "Car",26.34, testUser, false);
+        Item testItem4 = new Item(3, "D", ":)", "Car",2.84, testUser, false);
+        Item testItem5 = new Item(4, "E", ":)", "Car",72.34, testUser, false);
 
         itemManager.add(testItem1);
         itemManager.add(testItem2);
