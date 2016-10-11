@@ -1,66 +1,70 @@
 <div layout="column">
-  <div layout="column">
-      <div layout="row">
-          <img src="https://static.pexels.com/photos/28993/pexels-photo.jpg" height="200" flex>
-          <img src="https://static.pexels.com/photos/106399/pexels-photo-106399.jpeg" height="200" flex>
-          <img src="https://static.pexels.com/photos/109371/pexels-photo-109371.jpeg" height="200" flex>
-          <img src="https://static.pexels.com/photos/140982/pexels-photo-140982.jpeg" height="200" flex>
-      </div>
-      <md-toolbar class="md-hue-2" md-theme="altTheme">
-          <div class="md-toolbar-tools" layout="row">
-              <md-button>Cars</md-button>
-              <md-button>Houses</md-button>
-              <md-button>Technology</md-button>
-              <md-button>Furniture</md-button>
-          </div>
-      </md-toolbar>
-  </div>
+    <div layout="column">
+        <div layout="row">
+            <img src="https://static.pexels.com/photos/28993/pexels-photo.jpg" height="200" flex>
+            <img src="https://static.pexels.com/photos/106399/pexels-photo-106399.jpeg" height="200" flex>
+            <img src="https://static.pexels.com/photos/109371/pexels-photo-109371.jpeg" height="200" flex>
+            <img src="https://static.pexels.com/photos/140982/pexels-photo-140982.jpeg" height="200" flex>
+        </div>
 
-  <div layout="row">
-   <div flex="20">
-       <img src="http://www.bowers-wilkins.com/Images/AdminGallery/grey-background.jpg" height="450" width="100%" flex>
-   </div>
-   <div layout="column" flex="60">
-    <div layout="row">
-
-     <div flex>
-      <h2 style="color:orange; text-align: center;">Marketing Web Application</h2>
-         <div layout="row">
-             <span flex="20"></span>
-             <span flex="50" style="font-size: 1vw;">{{marketing}}</span>
-             <span flex="30"></span>
-         </div>
-         <span flex="20"></span>
-         <div layout="row" layout-align="center center">
-             <md-button class="md-raised" style="background-color: orange;" ng-click="learnMore()">Learn More</md-button>
-             <md-button class="md-raised" style="background-color: orange" ng-click="joinUs()">Join us</md-button>
-         </div>
-     </div>
+        <md-toolbar class="md-hue-2" md-theme="altTheme">
+            <div class="md-toolbar-tools" layout="row">
+                <md-button>Cars</md-button>
+                <md-button>Houses</md-button>
+                <md-button>Technology</md-button>
+                <md-button>Furniture</md-button>
+            </div>
+        </md-toolbar>
 
     </div>
 
-    <div flex height="300" style="background-color:orange;border-radius:5px">
+    <div layout="row">
+        <div flex="20">
+            <img src="http://www.bowers-wilkins.com/Images/AdminGallery/grey-background.jpg" height="450" width="100%" flex>
+        </div>
 
+        <div layout="column" flex="60">
+            <div layout="row">
+                <div flex>
 
-        <div ng-cloak>
-            <md-content>
-                <md-tabs md-dynamic-height md-border-bottom style="background-color: DarkSlateGray">
-                    <md-tab label="Things To Do">
-                        <md-content class="md-padding">
-                            <h2 style="color: orange; text-align: center;">Capabilities</h2>
-                            <ul>
-                                <li ng-repeat="capability in capabilities" style="font-size: 1vw;">{{capability}}</li>
-                            </ul>
-                        </md-content>
-                    </md-tab>
-                </md-tabs>
-            </md-content>
+                    <h2 style="color:orange; text-align: center;">Marketing Web Application</h2>
+
+                    <div layout="row">
+                        <span flex="20"></span>
+                        <span flex="50" style="font-size: 1vw;">{{marketing}}</span>
+                        <span flex="30"></span>
+                    </div>
+
+                    <span flex="20"></span>
+                    <div layout="row" layout-align="center center">
+                        <md-button class="md-raised" style="background-color: orange;" ng-click="learnMore()">Learn More</md-button>
+                        <md-button class="md-raised" style="background-color: orange" ng-click="joinUs()">Join us</md-button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div flex height="300" style="background-color:orange;border-radius:5px">
+                <div ng-cloak>
+                    <md-content>
+                        <md-tabs md-dynamic-height md-border-bottom style="background-color: DarkSlateGray">
+                            <md-tab label="Things To Do">
+                                <md-content class="md-padding">
+                                    <h2 style="color: orange; text-align: center;">Capabilities</h2>
+                                    <ul>
+                                        <li ng-repeat="capability in capabilities" style="font-size: 1vw;">{{capability}}</li>
+                                    </ul>
+                                </md-content>
+                            </md-tab>
+                        </md-tabs>
+                    </md-content>
+                </div>
+            </div>
+        </div>
+
+        <div flex="20">
+            <img src="http://www.bowers-wilkins.com/Images/AdminGallery/grey-background.jpg" height="450" width="100%" flex>
         </div>
 
     </div>
-   </div>
-   <div flex="20">
-       <img src="http://www.bowers-wilkins.com/Images/AdminGallery/grey-background.jpg" height="450" width="100%" flex>
-   </div>
-  </div>
- </div>
+</div>
