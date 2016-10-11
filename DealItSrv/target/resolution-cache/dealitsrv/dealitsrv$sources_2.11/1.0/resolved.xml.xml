@@ -4,7 +4,7 @@
 		module="dealitsrv$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161002003741"
+		publication="20161011131329"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -210,9 +210,6 @@
 		<dependency org="com.h2database" name="h2" rev="1.4.192" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="h2" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="tyrex" name="tyrex" rev="1.0.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="tyrex" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.5.8" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="play-cache_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
@@ -326,9 +323,6 @@
 		</dependency>
 		<dependency org="org.fluentlenium" name="fluentlenium-core" rev="0.10.9" transitive="false" conf="test->default(compile);test-internal->default(compile)">
 			<artifact name="fluentlenium-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="org.seleniumhq.selenium" name="selenium-java" rev="2.48.2" transitive="false" conf="test->default(compile);test-internal->default(compile)">
-			<artifact name="selenium-java" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.seleniumhq.selenium" name="selenium-chrome-driver" rev="2.48.2" transitive="false" conf="test->default(compile);test-internal->default(compile)">
 			<artifact name="selenium-chrome-driver" type="src" ext="jar" conf="sources" e:classifier="sources"/>

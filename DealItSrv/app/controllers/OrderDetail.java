@@ -1,4 +1,4 @@
-package controller;
+package controllers;
 
 import java.util.Date;
 
@@ -12,7 +12,7 @@ public class OrderDetail{
     private int quantity;
     private CreditCard creditCard;
 
-    public OrderDetail(int oid, int pid, Date orderDate, int quantity, String creditCard) {
+    public OrderDetail(int oid, int pid, Date orderDate, int quantity, CreditCard creditCard) {
         this.oid = oid;
         this.pid = pid;
         this.orderDate = orderDate;
