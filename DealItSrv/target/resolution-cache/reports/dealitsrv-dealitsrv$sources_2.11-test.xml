@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161011131329"/>
+		date="20161011172600"/>
 	<dependencies>
 		<module organisation="org.seleniumhq.selenium" name="selenium-leg-rc">
 			<revision name="2.48.2" status="release" pubdate="20151009161141" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="112">
@@ -895,11 +895,11 @@
 				<metadata-artifact status="no" details="" size="17296" time="0" location="/home/deadmanpr/.ivy2/cache/io.netty/netty-codec-http/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-codec-http/4.0.41.Final/netty-codec-http-4.0.41.Final.pom"/>
 				<caller organisation="dealitsrv" name="dealitsrv$sources_2.11" conf="test, compile, runtime" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="netty-codec-http" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="355490" time="0" location="/home/deadmanpr/.ivy2/cache/io.netty/netty-codec-http/srcs/netty-codec-http-4.0.41.Final-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty-codec-http/4.0.41.Final/netty-codec-http-4.0.41.Final-sources.jar"/>
-					</artifact>
 					<artifact name="netty-codec-http" type="jar" ext="jar" status="no" details="" size="453056" time="0" location="/home/deadmanpr/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty-codec-http/4.0.41.Final/netty-codec-http-4.0.41.Final.jar"/>
+					</artifact>
+					<artifact name="netty-codec-http" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="355490" time="0" location="/home/deadmanpr/.ivy2/cache/io.netty/netty-codec-http/srcs/netty-codec-http-4.0.41.Final-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty-codec-http/4.0.41.Final/netty-codec-http-4.0.41.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
