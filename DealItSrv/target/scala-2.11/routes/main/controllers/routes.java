@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Tue Oct 11 20:28:24 PDT 2016
+// @DATE:Wed Oct 12 19:01:31 AST 2016
 
 package controllers;
 
