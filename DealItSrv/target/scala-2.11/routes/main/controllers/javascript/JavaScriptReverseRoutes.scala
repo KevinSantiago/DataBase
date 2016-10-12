@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Tue Oct 11 20:28:24 PDT 2016
+// @DATE:Wed Oct 12 19:01:31 AST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -82,46 +82,6 @@ package controllers.javascript {
         
           if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("login.html") + """) {
             return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login.html"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("write.jpg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/write.jpg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("startup.jpg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/startup.jpg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("talk.jpeg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/talk.jpeg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("background.jpg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/background.jpg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("cars.jpg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/cars.jpg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("house.jpeg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/house.jpeg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("technology.jpeg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/technology.jpeg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("furniture.jpeg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/furniture.jpeg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("gray.jpg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/gray.jpg"})
-          }
-        
-          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/images") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("login.jpg") + """) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "images/login.jpg"})
           }
         
         }

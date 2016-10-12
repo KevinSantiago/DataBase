@@ -53,15 +53,4 @@ GET    /home.html                   controllers.Assets.at(path="/public/html/tem
 GET    /about.html                  controllers.Assets.at(path="/public/html/templates", file="about.html")
 GET    /login.html                  controllers.Assets.at(path="/public/html/templates", file="login.html")
 
-#Images
 
-GET    /images/write.jpg            controllers.Assets.at(path="/public/images", file="write.jpg")
-GET    /images/startup.jpg          controllers.Assets.at(path="/public/images", file="startup.jpg")
-GET    /images/talk.jpeg            controllers.Assets.at(path="/public/images", file="talk.jpeg")
-GET    /images/background.jpg       controllers.Assets.at(path="/public/images", file="background.jpg")
-GET    /images/cars.jpg             controllers.Assets.at(path="/public/images", file="cars.jpg")
-GET    /images/house.jpeg           controllers.Assets.at(path="/public/images", file="house.jpeg")
-GET    /images/technology.jpeg      controllers.Assets.at(path="/public/images", file="technology.jpeg")
-GET    /images/furniture.jpeg       controllers.Assets.at(path="/public/images", file="furniture.jpeg")
-GET    /images/gray.jpg             controllers.Assets.at(path="/public/images", file="gray.jpg")
-GET    /images/login.jpg            controllers.Assets.at(path="/public/images", file="login.jpg")
