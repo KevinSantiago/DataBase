@@ -20,7 +20,7 @@
                             <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
                         </md-button>
 
-                        <span style="font-family: Garamond; color:white; font-size: 2vw;" flex="20">DealIt</span>
+                        <span style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()" flex="20">DealIt</span>
                         <span flex></span>
                         <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
 
@@ -57,10 +57,10 @@
                         <md-button class="md-accent" ng-disabled="true">
                             Categories
                         </md-button>
-                        <md-button class="md-raised">Cars</md-button>
-                        <md-button class="md-raised">Houses</md-button>
-                        <md-button class="md-raised">Technology</md-button>
-                        <md-button class="md-raised">Furniture</md-button>
+                        <md-button class="md-raised" ng-click="navCar()">Cars</md-button>
+                        <md-button class="md-raised" ng-click="navHouse()">Houses</md-button>
+                        <md-button class="md-raised" ng-click="navTechnology()">Technology</md-button>
+                        <md-button class="md-raised" ng-click="navFurniture()">Furniture</md-button>
                         <md-button ng-click="toggleLeft()" class="md-accent">
                             Close
                         </md-button>

@@ -1,20 +1,29 @@
 <div layout="column">
-    <div layout="row">
-        <span flex="33"></span>
-        <img src="https://static.pexels.com/photos/28993/pexels-photo.jpg" height="400" flex="33">
-        <span flex="33"></span>
+    <div layout="column">
+        <div layout="row">
+            <div flex="33"></div>
+            <img src="http://i1126.photobucket.com/albums/l611/jariellaureano1/cars_zpsjcnbuyxk.jpg" height="400" flex="33">
+            <div flex="33"></div>
+        </div>
     </div>
-    <md-content>
-        <md-tabs md-dynamic-height md-border-bottom style="background-color: DarkSlateGray ;">
-            <md-tab label="Cars">
-                <md-content class="md-padding">
-                    <h1 class="md-display-2" style="color: orange">Cars</h1>
-                    <div layout="row">
-                        <p flex="50">{{message}}</p>
-                        <span flex></span>
-                    </div>
-                </md-content>
-            </md-tab>
-        </md-tabs>
-    </md-content>
+
+    <div>
+        <md-content>
+            <md-tabs md-dynamic-height md-border-bottom style="background-color: DarkSlateGray ;">
+
+                <md-tab label="Cars">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2" style="color: orange">Cars</h1>
+                        <div layout="row">
+                            <p flex="50">{{carCategory}}</p>
+                            <span flex></span>
+                        </div>
+                    </md-content>
+                </md-tab>
+                <md-tab label="House" ng-click="navHouse()"></md-tab>
+                <md-tab label="Technology" ng-click="navTechnology()"></md-tab>
+                <md-tab label="Furniture" ng-click="navFurniture()"></md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
 </div>
