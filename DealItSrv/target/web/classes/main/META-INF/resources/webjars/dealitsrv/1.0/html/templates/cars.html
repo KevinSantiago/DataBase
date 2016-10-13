@@ -10,7 +10,6 @@
     <div>
         <md-content>
             <md-tabs md-dynamic-height md-border-bottom style="background-color: DarkSlateGray ;">
-
                 <md-tab label="Cars">
                     <md-content class="md-padding">
                         <h1 class="md-display-2" style="color: orange">Cars</h1>
@@ -18,6 +17,7 @@
                             <p flex="50">{{carCategory}}</p>
                             <span flex></span>
                         </div>
+                        <div id="grid1" ui-grid="gridOptions1" class="grid"> </div>
                     </md-content>
                 </md-tab>
                 <md-tab label="House" ng-click="navHouse()"></md-tab>

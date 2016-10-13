@@ -1,4 +1,4 @@
-var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
+var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
 
     // routing configuration
     app.config(function($routeProvider){
@@ -51,8 +51,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
         $scope.toggleRight = buildToggler('right');
 
         $http.get(currentPath+"/DealItSrv")
-              .then(function(response){
-                  alert(response.data);
+              .then(function(response){   
 
 			});
 
@@ -146,29 +145,106 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
 
 
      //Car Category Controller
-    app.controller('carController', ['$scope', function($scope){
+    app.controller('carController', ['$scope','$http','$location', function($scope,$http,$location){
+        var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.carCategory="This is the car category page";
+      
+        $scope.gridOptions1= {
+           enableSorting: true,
+           columnDefs: [
+                {field: 'name'},
+                {field: 'description'},
+                {field: 'price'}
+               ],
+           onRegisterApi: function( gridApi){
+                  $scope.grid1Api= gridApi;
+            }
+         };
+
+        $http.get(generalPath+"/DealItSrv/items")
+                .then(function(response){
+					$scope.gridOptions1.data=response.data;
+   				});
+            
+      
+
     }]);
 
     //House Category Controller
-    app.controller('houseController', ['$scope', function($scope){
+    app.controller('houseController', ['$scope','$http','$location', function($scope,$http,$location){
+		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.houseCategory="This is the house category page";
+
+		$scope.gridOptions1= {
+           enableSorting: true,
+           columnDefs: [
+                {field: 'name'},
+                {field: 'description'},
+                {field: 'price'}
+               ],
+           onRegisterApi: function( gridApi){
+                  $scope.grid1Api= gridApi;
+            }
+         };
+
+        $http.get(generalPath+"/DealItSrv/items")
+                .then(function(response){
+					$scope.gridOptions1.data=response.data;
+   				});
+        
     }]);
 
     //Technology Category Controller
-    app.controller('technologyController', ['$scope', function($scope){
+    app.controller('technologyController', ['$scope','$http','$location', function($scope,$http,$location){
+		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.technologyCategory="This is technology category page";
+		
+		$scope.gridOptions1= {
+           enableSorting: true,
+           columnDefs: [
+                {field: 'name'},
+                {field: 'description'},
+                {field: 'price'}
+               ],
+           onRegisterApi: function( gridApi){
+                  $scope.grid1Api= gridApi;
+            }
+         };
+
+        $http.get(generalPath+"/DealItSrv/items")
+                .then(function(response){
+					$scope.gridOptions1.data=response.data;
+   				});
+        
     }]);
 
     //Furniture Category Controller
-    app.controller('furnitureController', ['$scope', function($scope){
+    app.controller('furnitureController', ['$scope','$http','$location', function($scope,$http,$location){
+		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.furnitureCategory="This is furniture category page";
+        
+		$scope.gridOptions1= {
+           enableSorting: true,
+           columnDefs: [
+                {field: 'name'},
+                {field: 'description'},
+                {field: 'price'}
+               ],
+           onRegisterApi: function( gridApi){
+                  $scope.grid1Api= gridApi;
+            }
+         };
+
+        $http.get(generalPath+"/DealItSrv/items")
+                .then(function(response){
+					$scope.gridOptions1.data=response.data;
+   				});
     }]);
 
 
     // Login , Sign up controller
     app.controller('loginController',['$scope','$http','$location', function($scope,$http,$location){
-
+	
     // Controller Instances
      var currentPath= $location.path(); //the current location is stored on this variable
 
