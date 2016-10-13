@@ -53,15 +53,15 @@
                     </md-toolbar>
 
                     <md-content layout-margin layout="column">
-                        <md-button class='md-raised' ng-click="navHome()">Home</md-button>
-                        <md-button class='md-raised' ng-click="navAbout()">About</md-button>
+                        <md-button class='md-raised' ng-click="navHome(); toggleLeft()">Home</md-button>
+                        <md-button class='md-raised' ng-click="navAbout(); toggleLeft()">About</md-button>
                         <md-button class="md-accent" ng-disabled="true">
                             Categories
                         </md-button>
-                        <md-button class="md-raised" ng-click="navCar()">Cars</md-button>
-                        <md-button class="md-raised" ng-click="navHouse()">Houses</md-button>
-                        <md-button class="md-raised" ng-click="navTechnology()">Technology</md-button>
-                        <md-button class="md-raised" ng-click="navFurniture()">Furniture</md-button>
+                        <md-button class="md-raised" ng-click="navCar(); toggleLeft()">Cars</md-button>
+                        <md-button class="md-raised" ng-click="navHouse(); toggleLeft()">Houses</md-button>
+                        <md-button class="md-raised" ng-click="navTechnology(); toggleLeft()">Technology</md-button>
+                        <md-button class="md-raised" ng-click="navFurniture(); toggleLeft()">Furniture</md-button>
                         <md-button ng-click="toggleLeft()" class="md-accent">
                             Close
                         </md-button>

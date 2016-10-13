@@ -150,24 +150,24 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         $scope.carCategory="This is the car category page";
       
         $scope.gridOptions1= {
-           enableSorting: true,
-           columnDefs: [
+            enableSorting: true,
+            columnDefs: [
                 {field: 'name'},
                 {field: 'description'},
                 {field: 'price'}
-               ],
+            ],
            onRegisterApi: function( gridApi){
                   $scope.grid1Api= gridApi;
-            }
-         };
+           }
+        };
 
         $http.get(generalPath+"/DealItSrv/items/cars")
-                .then(function(response){
-					$scope.gridOptions1.data=response.data;
-					$scope.gridOptions1.columnDefs[0].enableHiding=false;
-					$scope.gridOptions1.columnDefs[1].enableHiding=false;
-					$scope.gridOptions1.columnDefs[2].enableHiding=false;
-   				});
+        .then(function(response){
+			$scope.gridOptions1.data=response.data;
+			$scope.gridOptions1.columnDefs[0].enableHiding=false;
+			$scope.gridOptions1.columnDefs[1].enableHiding=false;
+			$scope.gridOptions1.columnDefs[2].enableHiding=false;
+   		});
             
       
 
@@ -179,24 +179,24 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         $scope.houseCategory="This is the house category page";
 
 		$scope.gridOptions1= {
-           enableSorting: true,
-           columnDefs: [
+            enableSorting: true,
+            columnDefs: [
                 {field: 'name'},
                 {field: 'description'},
                 {field: 'price'}
-               ],
-           onRegisterApi: function( gridApi){
-                  $scope.grid1Api= gridApi;
-                  $scope.gridOptions1.columnDefs[0].enableHiding=false;
-                  $scope.gridOptions1.columnDefs[1].enableHiding=false;
-                  $scope.gridOptions1.columnDefs[2].enableHiding=false;
+            ],
+            onRegisterApi: function( gridApi){
+                $scope.grid1Api= gridApi;
+                $scope.gridOptions1.columnDefs[0].enableHiding=false;
+                $scope.gridOptions1.columnDefs[1].enableHiding=false;
+                $scope.gridOptions1.columnDefs[2].enableHiding=false;
             }
-         };
+        };
 
         $http.get(generalPath+"/DealItSrv/items/houses")
-                .then(function(response){
-					$scope.gridOptions1.data=response.data;
-   				});
+        .then(function(response){
+			$scope.gridOptions1.data=response.data;
+   		});
         
     }]);
 
@@ -206,25 +206,25 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         $scope.technologyCategory="This is technology category page";
 		
 		$scope.gridOptions1= {
-           enableSorting: true,
-           columnDefs: [
+            enableSorting: true,
+            columnDefs: [
                 {field: 'name'},
                 {field: 'description'},
                 {field: 'price'}
-               ],
-           onRegisterApi: function( gridApi){
-                  $scope.grid1Api= gridApi;
-                  $scope.grid1Api= gridApi;
-                  $scope.gridOptions1.columnDefs[0].enableHiding=false;
-                  $scope.gridOptions1.columnDefs[1].enableHiding=false;
-                  $scope.gridOptions1.columnDefs[2].enableHiding=false;
+            ],
+            onRegisterApi: function( gridApi){
+                $scope.grid1Api= gridApi;
+                $scope.grid1Api= gridApi;
+                $scope.gridOptions1.columnDefs[0].enableHiding=false;
+                $scope.gridOptions1.columnDefs[1].enableHiding=false;
+                $scope.gridOptions1.columnDefs[2].enableHiding=false;
             }
          };
 
         $http.get(generalPath+"/DealItSrv/items/technology")
-                .then(function(response){
-					$scope.gridOptions1.data=response.data;
-   				});
+        .then(function(response){
+			$scope.gridOptions1.data=response.data;
+   		});
         
     }]);
 
@@ -234,21 +234,25 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         $scope.furnitureCategory="This is furniture category page";
         
 		$scope.gridOptions1= {
-           enableSorting: true,
-           columnDefs: [
+            enableSorting: true,
+            columnDefs: [
                 {field: 'name'},
                 {field: 'description'},
                 {field: 'price'}
-               ],
-           onRegisterApi: function( gridApi){
-                  $scope.grid1Api= gridApi;
+            ],
+            onRegisterApi: function( gridApi){
+                $scope.grid1Api= gridApi;4
+                $scope.grid1Api= gridApi;
+                $scope.gridOptions1.columnDefs[0].enableHiding=false;
+                $scope.gridOptions1.columnDefs[1].enableHiding=false;
+                $scope.gridOptions1.columnDefs[2].enableHiding=false;
             }
-         };
+        };
 
         $http.get(generalPath+"/DealItSrv/items/furniture")
-                .then(function(response){
-					$scope.gridOptions1.data=response.data;
-   				});
+            .then(function(response){
+			    $scope.gridOptions1.data=response.data;
+   		    });
     }]);
 
 
