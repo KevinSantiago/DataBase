@@ -161,7 +161,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
             }
          };
 
-        $http.get(generalPath+"/DealItSrv/items")
+        $http.get(generalPath+"/DealItSrv/items/cars")
                 .then(function(response){
 					$scope.gridOptions1.data=response.data;
    				});
@@ -187,7 +187,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
             }
          };
 
-        $http.get(generalPath+"/DealItSrv/items")
+        $http.get(generalPath+"/DealItSrv/items/houses")
                 .then(function(response){
 					$scope.gridOptions1.data=response.data;
    				});
@@ -211,7 +211,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
             }
          };
 
-        $http.get(generalPath+"/DealItSrv/items")
+        $http.get(generalPath+"/DealItSrv/items/technology")
                 .then(function(response){
 					$scope.gridOptions1.data=response.data;
    				});
@@ -235,7 +235,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
             }
          };
 
-        $http.get(generalPath+"/DealItSrv/items")
+        $http.get(generalPath+"/DealItSrv/items/furniture")
                 .then(function(response){
 					$scope.gridOptions1.data=response.data;
    				});

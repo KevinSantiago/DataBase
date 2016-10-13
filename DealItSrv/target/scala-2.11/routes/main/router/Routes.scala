@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/deadmanpr/Documents/Git/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Oct 13 14:26:14 AST 2016
+// @SOURCE:C:/Users/j-oma/Desktop/DataBase/DealItSrv/conf/routes
+// @DATE:Thu Oct 13 15:53:01 BOT 2016
 
 package router
 
@@ -303,7 +303,7 @@ class Routes(
       "addItem",
       Nil,
       "POST",
-      """GET     /DealItSrv/items/:id        controllers.Application.getItemByID(id: Integer)""",
+      """GET     /DealItSrv/items/:id       controllers.Application.getItemByID(id: Integer)""",
       this.prefix + """DealItSrv/items"""
     )
   )
@@ -337,7 +337,7 @@ class Routes(
       "getCars",
       Nil,
       "GET",
-      """DELETE  /DealItSrv/items/:id        controllers.Application.deleteItemByID(id: Integer)""",
+      """DELETE  /DealItSrv/items/:id       controllers.Application.deleteItemByID(id: Integer)""",
       this.prefix + """DealItSrv/items/cars"""
     )
   )
