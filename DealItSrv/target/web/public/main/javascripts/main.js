@@ -14,22 +14,6 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
         .when("/login", {
             templateUrl: "login.html",
             controller: "loginController"
-        })
-        .when("/cars", {
-            templateUrl: "cars.html",
-            controller: "carController"
-        })
-        .when("/house", {
-            templateUrl: "house.html",
-            controller: "houseController"
-        })
-        .when("/technology", {
-            templateUrl: "technology.html",
-            controller: "technologyController"
-        })
-        .when("/furniture", {
-            templateUrl: "furniture.html",
-            controller: "furnitureController"
         });
     });
 
@@ -46,8 +30,15 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
 
     //Main controller
     app.controller('mainController',['$scope','$http','$location','$mdSidenav',function($scope,$http,$location,$mdSidenav){
+        var currentPath = $location.path();
         $scope.toggleLeft = buildToggler('left');
         $scope.toggleRight = buildToggler('right');
+
+        $http.get(currentPath+"/DealItSrv")
+              .then(function(response){
+                  alert(response.data);
+
+			});
 
         function buildToggler(componentId) {
             return function() {
@@ -67,22 +58,6 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
 
         $scope.logNav = function(){
             $location.path('/login');
-        };
-
-        $scope.navCar = function(){
-            $location.path('/cars');
-        };
-
-        $scope.navHouse = function(){
-            $location.path('/house');
-        };
-
-        $scope.navTechnology = function(){
-            $location.path('/technology');
-        };
-
-        $scope.navFurniture = function(){
-            $location.path('/furniture');
         };
     }]);
 
@@ -111,34 +86,15 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
 
     //About page controller
     app.controller('aboutController',['$scope', function($scope){
-        $scope.aboutUs="We are a group of students looking to contribute with innovating ideas.We live on a society that depends on  science and technology. As technology advance  our goal is making things easier."
+    $scope.aboutUs="We are a group of students looking to contribute with innovating ideas.We live on a society that depends on  science and technology. As technology advance  our goal is making things easier."
                   +" Things like cars, houses, and clothes advertisement are now performed online.";
 
-        $scope.clients="DealIt is a web application that offers a user friendly interface were can be placed sales/trades and special offers."
+    $scope.clients="DealIt is a web application that offers a user friendly interface were can be placed sales/trades and special offers."
                   +" The sales/trade transactions could be anything such as: vehicles, houses, electronics, furniture, and miscellaneous.As mentioned before"
                   +" sales/trades could be anything, so this web application targets everyone willing to"
                   +" sale/buy/trade something that fits in one of the above categories.";
     }]);
 
-    //Car Category Controller
-    app.controller('carController', ['$scope', function($scope){
-        $scope.carCategory="This is the car category page";
-    }]);
-
-    //House Category Controller
-    app.controller('houseController', ['$scope', function($scope){
-        $scope.houseCategory="This is the house category page";
-    }]);
-
-    //Technology Category Controller
-    app.controller('technologyController', ['$scope', function($scope){
-        $scope.technologyCategory="This is technology category page";
-    }]);
-
-    //Furniture Category Controller
-    app.controller('furnitureController', ['$scope', function($scope){
-        $scope.furnitureCategory="This is furniture category page";
-    }]);
 
     // Login , Sign up controller
     app.controller('loginController',['$scope','$http','$location', function($scope,$http,$location){
@@ -166,23 +122,21 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
     /*
      * Call to submit login credentials
     */
-
     $scope.login = function(){
-
+        
         if(validateLogin()){
-            $http.post(currentPath+"/submit")
-            .then(function(response){
-                resetFlags();
-                resetFields();
-                alert(response.data);
-                $location.path('/');
-
-            });
-        }
-        else{
-            alert("Login failure");
-        }
-    };
+            $http.post(currentPath+"/submit",{ email: $scope.email, password: $scope.password})
+                .then(function(response){
+                      resetFlags();
+					  resetFields();
+                      alert(response.data);
+                      $location.path("/");
+               });
+          }
+          else{
+             alert("Login failure");
+          }
+     };
 
     /*
      * Call to submit new user credentials
@@ -204,6 +158,22 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
         }
     };
 
+   
+	$scope.signup2 = function(){
+         if(validateSignUp()){
+            $http.post(currentPath+"/signup2",{name: $scope.name, bdate: $scope.submitedDate, email: $scope.email, password: $scope.password})
+                  .then(function(response){
+                       resetFlags();
+                       resetFields();
+                       alert(response.data);
+                       $location.path("/"); 
+                  });
+          }
+          else{
+              alert("There is a problem with the form!");
+          }
+    };
+   
     /*
      * Validates that the email field or the password field isn't empty
     */

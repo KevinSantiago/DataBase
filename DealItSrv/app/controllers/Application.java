@@ -84,6 +84,32 @@ public class Application extends Controller {
         return ok("Item updated!\n");
     }
 
+	/**
+     * Submit user credentials .Expects the user credentials in JSON format.
+     * @return Status depending on request outcome
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result loginUser(){
+        JsonNode user = request().body().asJson();
+        if(user.findPath("email").textValue() == null || user.findPath("password").textValue() == null)
+             return badRequest("Parameters missing! ");
+
+        return ok(user.findPath("email").textValue()+" has login successfully");
+    }
+
+    /**
+     * Submit new user credentials. Expects the new user credentials in JSON format.
+     * @return Status depending on request outcome
+     */
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createUser(){
+         JsonNode newUser = request().body().asJson();
+         if(newUser.findPath("name").textValue() == null || newUser.findPath("bdate").textValue() == null || newUser.findPath("email").textValue() == null || newUser.findPath("password").textValue() == null)
+               return badRequest("Parameters missing!");
+
+         return ok("Welcome to our community!\n"+newUser.findPath("name").textValue());
+     }
+
     /**
      * Returns the Item on the server associated with the ID given.
      * @param id the id of the Item
