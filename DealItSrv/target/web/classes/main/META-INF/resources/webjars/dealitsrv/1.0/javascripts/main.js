@@ -14,6 +14,22 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
         .when("/login", {
             templateUrl: "login.html",
             controller: "loginController"
+        })
+        .when("/cars", {
+            templateUrl: "cars.html",
+            controller: "carController"
+        })
+        .when("/house", {
+            templateUrl: "house.html",
+            controller: "houseController"
+        })
+        .when("/technology", {
+            templateUrl: "technology.html",
+            controller: "technologyController"
+        })
+        .when("/furniture", {
+            templateUrl: "furniture.html",
+            controller: "furnitureController"
         });
     });
 
@@ -52,6 +68,22 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
         $scope.logNav = function(){
             $location.path('/login');
         };
+
+        $scope.navCar = function(){
+            $location.path('/cars');
+        };
+
+        $scope.navHouse = function(){
+            $location.path('/house');
+        };
+
+        $scope.navTechnology = function(){
+            $location.path('/technology');
+        };
+
+        $scope.navFurniture = function(){
+            $location.path('/furniture');
+        };
     }]);
 
     //Home controller (Home Page)
@@ -79,15 +111,34 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons"]);
 
     //About page controller
     app.controller('aboutController',['$scope', function($scope){
-    $scope.aboutUs="We are a group of students looking to contribute with innovating ideas.We live on a society that depends on  science and technology. As technology advance  our goal is making things easier."
+        $scope.aboutUs="We are a group of students looking to contribute with innovating ideas.We live on a society that depends on  science and technology. As technology advance  our goal is making things easier."
                   +" Things like cars, houses, and clothes advertisement are now performed online.";
 
-    $scope.clients="DealIt is a web application that offers a user friendly interface were can be placed sales/trades and special offers."
+        $scope.clients="DealIt is a web application that offers a user friendly interface were can be placed sales/trades and special offers."
                   +" The sales/trade transactions could be anything such as: vehicles, houses, electronics, furniture, and miscellaneous.As mentioned before"
                   +" sales/trades could be anything, so this web application targets everyone willing to"
                   +" sale/buy/trade something that fits in one of the above categories.";
     }]);
 
+    //Car Category Controller
+    app.controller('carController', ['$scope', function($scope){
+        $scope.carCategory="This is the car category page";
+    }]);
+
+    //House Category Controller
+    app.controller('houseController', ['$scope', function($scope){
+        $scope.houseCategory="This is the house category page";
+    }]);
+
+    //Technology Category Controller
+    app.controller('technologyController', ['$scope', function($scope){
+        $scope.technologyCategory="This is technology category page";
+    }]);
+
+    //Furniture Category Controller
+    app.controller('furnitureController', ['$scope', function($scope){
+        $scope.furnitureCategory="This is furniture category page";
+    }]);
 
     // Login , Sign up controller
     app.controller('loginController',['$scope','$http','$location', function($scope,$http,$location){
