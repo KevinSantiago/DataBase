@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for dealitsrv#dealitsrv$sources_2.11;1.0 [compile]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@736e4935
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@58f765d8
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)]
 [info] Resolving com.typesafe.play#twirl-api_2.11;1.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2068f965
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a2740e4
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#twirl-api_2.11;1.1.1
 [debug] 	local: revision in cache: com.typesafe.play#twirl-api_2.11;1.1.1
 [debug] 	found com.typesafe.play#twirl-api_2.11;1.1.1 in sbt-chain
@@ -25,7 +25,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.commons#commons-lang3;3.4 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-lang3;3.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17f29704
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a036263
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.4
 [debug] 	local: revision in cache: org.apache.commons#commons-lang3;3.4
 [debug] 	found org.apache.commons#commons-lang3;3.4 in sbt-chain
@@ -34,7 +34,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.commons#commons-lang3;3.4 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3518faa7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40ec7d5f
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1
 [debug] 	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain
@@ -43,7 +43,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-server_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-server_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49f07abd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6163cabb
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-server_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-server_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-server_2.11;2.5.8 in sbt-chain
@@ -52,7 +52,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-server_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@db76f9d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43a5aa1a
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play_2.11;2.5.8
 [debug] 	found com.typesafe.play#play_2.11;2.5.8 in sbt-chain
@@ -61,7 +61,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#build-link;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#build-link;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4195c5f4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@793eebd9
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#build-link;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#build-link;2.5.8
 [debug] 	found com.typesafe.play#build-link;2.5.8 in sbt-chain
@@ -70,7 +70,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#build-link;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-exceptions;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-exceptions;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b24d949
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76eae3e5
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-exceptions;2.5.8
 [debug] 	found com.typesafe.play#play-exceptions;2.5.8 in sbt-chain
@@ -79,7 +79,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-exceptions;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-iteratees_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-iteratees_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7cce29b8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40b68288
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-iteratees_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-iteratees_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-iteratees_2.11;2.5.8 in sbt-chain
@@ -88,7 +88,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-iteratees_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-stm#scala-stm_2.11;0.7 [compile->default(compile)]
 [info] Resolving org.scala-stm#scala-stm_2.11;0.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20f294e5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@727c14f9
 [debug] sbt-chain: module revision found in cache: org.scala-stm#scala-stm_2.11;0.7
 [debug] 	local: revision in cache: org.scala-stm#scala-stm_2.11;0.7
 [debug] 	found org.scala-stm#scala-stm_2.11;0.7 in sbt-chain
@@ -97,7 +97,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-stm#scala-stm_2.11;0.7 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe#config;1.3.0 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6109fad4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ebff808
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.3.0
 [debug] 	local: revision in cache: com.typesafe#config;1.3.0
 [debug] 	found com.typesafe#config;1.3.0 in sbt-chain
@@ -106,7 +106,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe#config;1.3.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-json_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-json_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17cf94a0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e4960e8
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-json_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-json_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-json_2.11;2.5.8 in sbt-chain
@@ -115,7 +115,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-json_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-functional_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-functional_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6981c119
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49209fe4
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-functional_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-functional_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-functional_2.11;2.5.8 in sbt-chain
@@ -124,7 +124,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-functional_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-datacommons_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-datacommons_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5232ce2e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13165c9a
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-datacommons_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-datacommons_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-datacommons_2.11;2.5.8 in sbt-chain
@@ -133,7 +133,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-datacommons_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->joda-time#joda-time;2.9.4 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.9.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@708a41e9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@141a3614
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.9.4
 [debug] 	local: revision in cache: joda-time#joda-time;2.9.4
 [debug] 	found joda-time#joda-time;2.9.4 in sbt-chain
@@ -142,7 +142,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->joda-time#joda-time;2.9.4 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.joda#joda-convert;1.8.1 [compile->default(compile)]
 [info] Resolving org.joda#joda-convert;1.8.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14a77587
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@aafb6df
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.8.1
 [debug] 	local: revision in cache: org.joda#joda-convert;1.8.1
 [debug] 	found org.joda#joda-convert;1.8.1 in sbt-chain
@@ -151,7 +151,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.joda#joda-convert;1.8.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7cd6820
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5438c7f1
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7
 [debug] 	local: revision in cache: org.scala-lang#scala-reflect;2.11.7
 [debug] 	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain
@@ -161,7 +161,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.7.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c8d8eff
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e0ae590
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.7.6
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-core;2.7.6
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.7.6 in sbt-chain
@@ -170,7 +170,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.7.6 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.7.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62768591
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@522c1400
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.7.6
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-annotations;2.7.6
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.7.6 in sbt-chain
@@ -179,7 +179,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.7.6 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.7.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f3a73ae
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57e2641b
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.7.6
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-databind;2.7.6
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.7.6 in sbt-chain
@@ -188,7 +188,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.7.6 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41d1d34
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f4aede8
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6
 [debug] 	local: revision in cache: com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6
 [debug] 	found com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 in sbt-chain
@@ -197,7 +197,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.7.6 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40a8e8c9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c670da9
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6
 [debug] 	local: revision in cache: com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6
 [debug] 	found com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 in sbt-chain
@@ -206,7 +206,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.6 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-netty-utils;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-netty-utils;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74fe3c33
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a02728f
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-netty-utils;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-netty-utils;2.5.8
 [debug] 	found com.typesafe.play#play-netty-utils;2.5.8 in sbt-chain
@@ -215,7 +215,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-netty-utils;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.slf4j#slf4j-api;1.7.21 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.21 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@155d9122
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1d6ecef1
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.21
 [debug] 	local: revision in cache: org.slf4j#slf4j-api;1.7.21
 [debug] 	found org.slf4j#slf4j-api;1.7.21 in sbt-chain
@@ -224,7 +224,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.slf4j#slf4j-api;1.7.21 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.21 [compile->default(compile)]
 [info] Resolving org.slf4j#jul-to-slf4j;1.7.21 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bbfba2a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49b764e3
 [debug] sbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.21
 [debug] 	local: revision in cache: org.slf4j#jul-to-slf4j;1.7.21
 [debug] 	found org.slf4j#jul-to-slf4j;1.7.21 in sbt-chain
@@ -233,7 +233,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.21 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.21 [compile->default(compile)]
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.21 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@767a90bc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f3943c0
 [debug] sbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.21
 [debug] 	local: revision in cache: org.slf4j#jcl-over-slf4j;1.7.21
 [debug] 	found org.slf4j#jcl-over-slf4j;1.7.21 in sbt-chain
@@ -242,7 +242,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-streams_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-streams_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2652ce0b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a870c5f
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-streams_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-streams_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-streams_2.11;2.5.8 in sbt-chain
@@ -251,7 +251,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-streams_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.reactivestreams#reactive-streams;1.0.0 [compile->default(compile)]
 [info] Resolving org.reactivestreams#reactive-streams;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@354e4be6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53b56358
 [debug] sbt-chain: module revision found in cache: org.reactivestreams#reactive-streams;1.0.0
 [debug] 	local: revision in cache: org.reactivestreams#reactive-streams;1.0.0
 [debug] 	found org.reactivestreams#reactive-streams;1.0.0 in sbt-chain
@@ -260,7 +260,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.reactivestreams#reactive-streams;1.0.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.akka#akka-stream_2.11;2.4.10 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-stream_2.11;2.4.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3722c386
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@360ecc5d
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-stream_2.11;2.4.10
 [debug] 	local: revision in cache: com.typesafe.akka#akka-stream_2.11;2.4.10
 [debug] 	found com.typesafe.akka#akka-stream_2.11;2.4.10 in sbt-chain
@@ -269,7 +269,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.akka#akka-stream_2.11;2.4.10 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.10 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.4.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79d89b70
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@402807c4
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.4.10
 [debug] 	local: revision in cache: com.typesafe.akka#akka-actor_2.11;2.4.10
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.4.10 in sbt-chain
@@ -278,7 +278,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.10 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c4cd676
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a5c710e
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-java8-compat_2.11;0.7.0
 [debug] 	local: revision in cache: org.scala-lang.modules#scala-java8-compat_2.11;0.7.0
 [debug] 	found org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 in sbt-chain
@@ -287,7 +287,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#ssl-config-akka_2.11;0.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2884ee19
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a14caca
 [debug] sbt-chain: module revision found in cache: com.typesafe#ssl-config-akka_2.11;0.2.1
 [debug] 	local: revision in cache: com.typesafe#ssl-config-akka_2.11;0.2.1
 [debug] 	found com.typesafe#ssl-config-akka_2.11;0.2.1 in sbt-chain
@@ -296,7 +296,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#ssl-config-core_2.11;0.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7752c15e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8736fef
 [debug] sbt-chain: module revision found in cache: com.typesafe#ssl-config-core_2.11;0.2.1
 [debug] 	local: revision in cache: com.typesafe#ssl-config-core_2.11;0.2.1
 [debug] 	found com.typesafe#ssl-config-core_2.11;0.2.1 in sbt-chain
@@ -305,7 +305,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a77cba3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3971f7d9
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4
 [debug] 	local: revision in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain
@@ -314,7 +314,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.4.10 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-slf4j_2.11;2.4.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c21157c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e620877
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.11;2.4.10
 [debug] 	local: revision in cache: com.typesafe.akka#akka-slf4j_2.11;2.4.10
 [debug] 	found com.typesafe.akka#akka-slf4j_2.11;2.4.10 in sbt-chain
@@ -323,7 +323,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.4.10 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->commons-codec#commons-codec;1.10 [compile->default(compile)]
 [info] Resolving commons-codec#commons-codec;1.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d2f6462
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24214ee1
 [debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.10
 [debug] 	local: revision in cache: commons-codec#commons-codec;1.10
 [debug] 	found commons-codec#commons-codec;1.10 in sbt-chain
@@ -332,7 +332,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->commons-codec#commons-codec;1.10 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xerces#xercesImpl;2.11.0 [compile->default(compile)]
 [info] Resolving xerces#xercesImpl;2.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@573acaf9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fc7fdad
 [debug] sbt-chain: module revision found in cache: xerces#xercesImpl;2.11.0
 [debug] 	local: revision in cache: xerces#xercesImpl;2.11.0
 [debug] 	found xerces#xercesImpl;2.11.0 in sbt-chain
@@ -341,7 +341,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xerces#xercesImpl;2.11.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xml-apis#xml-apis;1.4.01 [compile->default(compile)]
 [info] Resolving xml-apis#xml-apis;1.4.01 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2455aef3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36d21167
 [debug] sbt-chain: module revision found in cache: xml-apis#xml-apis;1.4.01
 [debug] 	local: revision in cache: xml-apis#xml-apis;1.4.01
 [debug] 	found xml-apis#xml-apis;1.4.01 in sbt-chain
@@ -350,7 +350,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xml-apis#xml-apis;1.4.01 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->javax.transaction#jta;1.1 [compile->default(compile)]
 [info] Resolving javax.transaction#jta;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73233c72
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@400f845
 [debug] sbt-chain: module revision found in cache: javax.transaction#jta;1.1
 [debug] 	local: revision in cache: javax.transaction#jta;1.1
 [debug] 	found javax.transaction#jta;1.1 in sbt-chain
@@ -359,7 +359,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->javax.transaction#jta;1.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.inject#guice;4.0 [compile->default(compile)]
 [info] Resolving com.google.inject#guice;4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@261edb29
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a8b177a
 [debug] sbt-chain: module revision found in cache: com.google.inject#guice;4.0
 [debug] 	local: revision in cache: com.google.inject#guice;4.0
 [debug] 	found com.google.inject#guice;4.0 in sbt-chain
@@ -368,7 +368,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.inject#guice;4.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->javax.inject#javax.inject;1 [compile->default(compile)]
 [info] Resolving javax.inject#javax.inject;1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@441d4aff
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f797da6
 [debug] sbt-chain: module revision found in cache: javax.inject#javax.inject;1
 [debug] 	local: revision in cache: javax.inject#javax.inject;1
 [debug] 	found javax.inject#javax.inject;1 in sbt-chain
@@ -377,7 +377,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->javax.inject#javax.inject;1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->aopalliance#aopalliance;1.0 [compile->default(compile)]
 [info] Resolving aopalliance#aopalliance;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@156e71f9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1295a872
 [debug] sbt-chain: module revision found in cache: aopalliance#aopalliance;1.0
 [debug] 	local: revision in cache: aopalliance#aopalliance;1.0
 [debug] 	found aopalliance#aopalliance;1.0 in sbt-chain
@@ -386,7 +386,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->aopalliance#aopalliance;1.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.inject.extensions#guice-assistedinject;4.0 [compile->default(compile)]
 [info] Resolving com.google.inject.extensions#guice-assistedinject;4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c3528af
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19072b8b
 [debug] sbt-chain: module revision found in cache: com.google.inject.extensions#guice-assistedinject;4.0
 [debug] 	local: revision in cache: com.google.inject.extensions#guice-assistedinject;4.0
 [debug] 	found com.google.inject.extensions#guice-assistedinject;4.0 in sbt-chain
@@ -395,7 +395,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-netty-server_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-netty-server_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46a83a5d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c3dac65
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-netty-server_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-netty-server_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-netty-server_2.11;2.5.8 in sbt-chain
@@ -404,7 +404,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-netty-server_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.netty#netty-reactive-streams-http;1.0.8 [compile->default(compile)]
 [info] Resolving com.typesafe.netty#netty-reactive-streams-http;1.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f054f91
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3efde879
 [debug] sbt-chain: module revision found in cache: com.typesafe.netty#netty-reactive-streams-http;1.0.8
 [debug] 	local: revision in cache: com.typesafe.netty#netty-reactive-streams-http;1.0.8
 [debug] 	found com.typesafe.netty#netty-reactive-streams-http;1.0.8 in sbt-chain
@@ -413,7 +413,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.netty#netty-reactive-streams-http;1.0.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->default(compile)]
 [info] Resolving com.typesafe.netty#netty-reactive-streams;1.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@133c55c8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e150a8b
 [debug] sbt-chain: module revision found in cache: com.typesafe.netty#netty-reactive-streams;1.0.8
 [debug] 	local: revision in cache: com.typesafe.netty#netty-reactive-streams;1.0.8
 [debug] 	found com.typesafe.netty#netty-reactive-streams;1.0.8 in sbt-chain
@@ -422,7 +422,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-handler;4.0.41.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-handler;4.0.41.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f2855f9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37ce46de
 [debug] sbt-chain: module revision found in cache: io.netty#netty-handler;4.0.41.Final
 [debug] 	local: revision in cache: io.netty#netty-handler;4.0.41.Final
 [debug] 	found io.netty#netty-handler;4.0.41.Final in sbt-chain
@@ -431,7 +431,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-handler;4.0.41.Final [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-buffer;4.0.41.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-buffer;4.0.41.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@556f6908
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18a6d12c
 [debug] sbt-chain: module revision found in cache: io.netty#netty-buffer;4.0.41.Final
 [debug] 	local: revision in cache: io.netty#netty-buffer;4.0.41.Final
 [debug] 	found io.netty#netty-buffer;4.0.41.Final in sbt-chain
@@ -440,7 +440,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-buffer;4.0.41.Final [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-common;4.0.41.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-common;4.0.41.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55db7704
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35705d46
 [debug] sbt-chain: module revision found in cache: io.netty#netty-common;4.0.41.Final
 [debug] 	local: revision in cache: io.netty#netty-common;4.0.41.Final
 [debug] 	found io.netty#netty-common;4.0.41.Final in sbt-chain
@@ -449,7 +449,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-common;4.0.41.Final [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-transport;4.0.41.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-transport;4.0.41.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38cfe5c8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6be9c008
 [debug] sbt-chain: module revision found in cache: io.netty#netty-transport;4.0.41.Final
 [debug] 	local: revision in cache: io.netty#netty-transport;4.0.41.Final
 [debug] 	found io.netty#netty-transport;4.0.41.Final in sbt-chain
@@ -458,7 +458,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-transport;4.0.41.Final [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-codec;4.0.41.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-codec;4.0.41.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15e37fcf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@447835a6
 [debug] sbt-chain: module revision found in cache: io.netty#netty-codec;4.0.41.Final
 [debug] 	local: revision in cache: io.netty#netty-codec;4.0.41.Final
 [debug] 	found io.netty#netty-codec;4.0.41.Final in sbt-chain
@@ -467,7 +467,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-codec;4.0.41.Final [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-codec-http;4.0.41.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-codec-http;4.0.41.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73ebd147
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@666a93eb
 [debug] sbt-chain: module revision found in cache: io.netty#netty-codec-http;4.0.41.Final
 [debug] 	local: revision in cache: io.netty#netty-codec-http;4.0.41.Final
 [debug] 	found io.netty#netty-codec-http;4.0.41.Final in sbt-chain
@@ -476,7 +476,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-codec-http;4.0.41.Final [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-transport-native-epoll;4.0.41.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14582f76
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e559e66
 [debug] sbt-chain: module revision found in cache: io.netty#netty-transport-native-epoll;4.0.41.Final
 [debug] 	local: revision in cache: io.netty#netty-transport-native-epoll;4.0.41.Final
 [debug] 	found io.netty#netty-transport-native-epoll;4.0.41.Final in sbt-chain
@@ -485,7 +485,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty-transport-native-epoll;4.0.41.Final [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-logback_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-logback_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@619cf761
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78505203
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-logback_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-logback_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-logback_2.11;2.5.8 in sbt-chain
@@ -494,7 +494,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-logback_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->ch.qos.logback#logback-classic;1.1.7 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-classic;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7755b196
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b3df134
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-classic;1.1.7
 [debug] 	local: revision in cache: ch.qos.logback#logback-classic;1.1.7
 [debug] 	found ch.qos.logback#logback-classic;1.1.7 in sbt-chain
@@ -503,7 +503,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->ch.qos.logback#logback-classic;1.1.7 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->ch.qos.logback#logback-core;1.1.7 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-core;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ed94ce6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70cab4d8
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-core;1.1.7
 [debug] 	local: revision in cache: ch.qos.logback#logback-core;1.1.7
 [debug] 	found ch.qos.logback#logback-core;1.1.7 in sbt-chain
@@ -512,7 +512,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->ch.qos.logback#logback-core;1.1.7 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-jdbc_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e0aa8c1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42e3e6ad
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-jdbc_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-jdbc_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-jdbc_2.11;2.5.8 in sbt-chain
@@ -521,7 +521,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-jdbc-api_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-jdbc-api_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@565f3d94
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c2f2669
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-jdbc-api_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-jdbc-api_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-jdbc-api_2.11;2.5.8 in sbt-chain
@@ -530,7 +530,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-jdbc-api_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.jolbox#bonecp;0.8.0.RELEASE [compile->default(compile)]
 [info] Resolving com.jolbox#bonecp;0.8.0.RELEASE ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12d81f82
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7f61f59b
 [debug] sbt-chain: module revision found in cache: com.jolbox#bonecp;0.8.0.RELEASE
 [debug] 	local: revision in cache: com.jolbox#bonecp;0.8.0.RELEASE
 [debug] 	found com.jolbox#bonecp;0.8.0.RELEASE in sbt-chain
@@ -539,7 +539,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.jolbox#bonecp;0.8.0.RELEASE [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.zaxxer#HikariCP;2.5.0 [compile->default(compile)]
 [info] Resolving com.zaxxer#HikariCP;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3086f4e4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1249ae8e
 [debug] sbt-chain: module revision found in cache: com.zaxxer#HikariCP;2.5.0
 [debug] 	local: revision in cache: com.zaxxer#HikariCP;2.5.0
 [debug] 	found com.zaxxer#HikariCP;2.5.0 in sbt-chain
@@ -548,7 +548,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.zaxxer#HikariCP;2.5.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->default(compile)]
 [info] Resolving com.googlecode.usc#jdbcdslog;1.0.6.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40f2a86
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15a6e436
 [debug] sbt-chain: module revision found in cache: com.googlecode.usc#jdbcdslog;1.0.6.2
 [debug] 	local: revision in cache: com.googlecode.usc#jdbcdslog;1.0.6.2
 [debug] 	found com.googlecode.usc#jdbcdslog;1.0.6.2 in sbt-chain
@@ -557,7 +557,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.h2database#h2;1.4.192 [compile->default(compile)]
 [info] Resolving com.h2database#h2;1.4.192 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a32bdb2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4be6f0f7
 [debug] sbt-chain: module revision found in cache: com.h2database#h2;1.4.192
 [debug] 	local: revision in cache: com.h2database#h2;1.4.192
 [debug] 	found com.h2database#h2;1.4.192 in sbt-chain
@@ -566,7 +566,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.h2database#h2;1.4.192 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-cache_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@292d6386
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54a47e1a
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-cache_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-cache_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-cache_2.11;2.5.8 in sbt-chain
@@ -575,7 +575,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sf.ehcache#ehcache-core;2.6.11 [compile->default(compile)]
 [info] Resolving net.sf.ehcache#ehcache-core;2.6.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@195f5016
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c00752c
 [debug] sbt-chain: module revision found in cache: net.sf.ehcache#ehcache-core;2.6.11
 [debug] 	local: revision in cache: net.sf.ehcache#ehcache-core;2.6.11
 [debug] 	found net.sf.ehcache#ehcache-core;2.6.11 in sbt-chain
@@ -584,7 +584,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sf.ehcache#ehcache-core;2.6.11 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->default(compile)]
 [info] Resolving com.typesafe.play#play-ws_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@566e8c00
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10c47f3f
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-ws_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-ws_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-ws_2.11;2.5.8 in sbt-chain
@@ -593,7 +593,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.guava#guava;19.0 [compile->default(compile)]
 [info] Resolving com.google.guava#guava;19.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e641378
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5619b04
 [debug] sbt-chain: module revision found in cache: com.google.guava#guava;19.0
 [debug] 	local: revision in cache: com.google.guava#guava;19.0
 [debug] 	found com.google.guava#guava;19.0 in sbt-chain
@@ -602,7 +602,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.guava#guava;19.0 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#async-http-client;2.0.11 [compile->default(compile)]
 [info] Resolving org.asynchttpclient#async-http-client;2.0.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@574c2d9e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d183714
 [debug] sbt-chain: module revision found in cache: org.asynchttpclient#async-http-client;2.0.11
 [debug] 	local: revision in cache: org.asynchttpclient#async-http-client;2.0.11
 [debug] 	found org.asynchttpclient#async-http-client;2.0.11 in sbt-chain
@@ -611,7 +611,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#async-http-client;2.0.11 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->default(compile)]
 [info] Resolving org.asynchttpclient#netty-resolver-dns;2.0.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55e04c06
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@477f49aa
 [debug] sbt-chain: module revision found in cache: org.asynchttpclient#netty-resolver-dns;2.0.11
 [debug] 	local: revision in cache: org.asynchttpclient#netty-resolver-dns;2.0.11
 [debug] 	found org.asynchttpclient#netty-resolver-dns;2.0.11 in sbt-chain
@@ -620,7 +620,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#netty-resolver-dns;2.0.11 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#netty-resolver;2.0.11 [compile->default(compile)]
 [info] Resolving org.asynchttpclient#netty-resolver;2.0.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13eb8329
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1bcb0e8
 [debug] sbt-chain: module revision found in cache: org.asynchttpclient#netty-resolver;2.0.11
 [debug] 	local: revision in cache: org.asynchttpclient#netty-resolver;2.0.11
 [debug] 	found org.asynchttpclient#netty-resolver;2.0.11 in sbt-chain
@@ -629,7 +629,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#netty-resolver;2.0.11 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->default(compile)]
 [info] Resolving org.asynchttpclient#netty-codec-dns;2.0.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@348319b8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8de66a8
 [debug] sbt-chain: module revision found in cache: org.asynchttpclient#netty-codec-dns;2.0.11
 [debug] 	local: revision in cache: org.asynchttpclient#netty-codec-dns;2.0.11
 [debug] 	found org.asynchttpclient#netty-codec-dns;2.0.11 in sbt-chain
@@ -638,7 +638,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.javassist#javassist;3.20.0-GA [compile->default(compile)]
 [info] Resolving org.javassist#javassist;3.20.0-GA ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35dbc001
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@458e7426
 [debug] sbt-chain: module revision found in cache: org.javassist#javassist;3.20.0-GA
 [debug] 	local: revision in cache: org.javassist#javassist;3.20.0-GA
 [debug] 	found org.javassist#javassist;3.20.0-GA in sbt-chain
@@ -647,7 +647,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.javassist#javassist;3.20.0-GA [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->oauth.signpost#signpost-core;1.2.1.2 [compile->default(compile)]
 [info] Resolving oauth.signpost#signpost-core;1.2.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d64fffa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12de1bc
 [debug] sbt-chain: module revision found in cache: oauth.signpost#signpost-core;1.2.1.2
 [debug] 	local: revision in cache: oauth.signpost#signpost-core;1.2.1.2
 [debug] 	found oauth.signpost#signpost-core;1.2.1.2 in sbt-chain
@@ -656,7 +656,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->oauth.signpost#signpost-core;1.2.1.2 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->default(compile)]
 [info] Resolving oauth.signpost#signpost-commonshttp4;1.2.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b4a3831
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b910dd5
 [debug] sbt-chain: module revision found in cache: oauth.signpost#signpost-commonshttp4;1.2.1.2
 [debug] 	local: revision in cache: oauth.signpost#signpost-commonshttp4;1.2.1.2
 [debug] 	found oauth.signpost#signpost-commonshttp4;1.2.1.2 in sbt-chain
@@ -665,7 +665,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->oauth.signpost#signpost-commonshttp4;1.2.1.2 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpcore;4.0.1 [compile->default(compile)]
 [info] Resolving org.apache.httpcomponents#httpcore;4.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@435a89bf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66ea9360
 [debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.0.1
 [debug] 	local: revision in cache: org.apache.httpcomponents#httpcore;4.0.1
 [debug] 	found org.apache.httpcomponents#httpcore;4.0.1 in sbt-chain
@@ -674,7 +674,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpcore;4.0.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpclient;4.0.1 [compile->default(compile)]
 [info] Resolving org.apache.httpcomponents#httpclient;4.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@288f0e66
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1bf8878a
 [debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.0.1
 [debug] 	local: revision in cache: org.apache.httpcomponents#httpclient;4.0.1
 [debug] 	found org.apache.httpcomponents#httpclient;4.0.1 in sbt-chain
@@ -683,7 +683,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpclient;4.0.1 [compile->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->commons-logging#commons-logging;1.1.1 [compile->default(compile)]
 [info] Resolving commons-logging#commons-logging;1.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f86cfb6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4aca1e9
 [debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.1
 [debug] 	local: revision in cache: commons-logging#commons-logging;1.1.1
 [debug] 	found commons-logging#commons-logging;1.1.1 in sbt-chain
@@ -2179,7 +2179,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->oauth.signpost#signpost-commonshttp4;1.2.1.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-test_2.11;2.5.8 [test->default(compile)]
 [info] Resolving com.typesafe.play#play-test_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a51165d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70998ddf
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-test_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-test_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-test_2.11;2.5.8 in sbt-chain
@@ -2188,7 +2188,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-test_2.11;2.5.8 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->junit#junit;4.12 [test->default(compile)]
 [info] Resolving junit#junit;4.12 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21f3e512
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f649159
 [debug] sbt-chain: module revision found in cache: junit#junit;4.12
 [debug] 	local: revision in cache: junit#junit;4.12
 [debug] 	found junit#junit;4.12 in sbt-chain
@@ -2197,7 +2197,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->junit#junit;4.12 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.hamcrest#hamcrest-core;1.3 [test->default(compile)]
 [info] Resolving org.hamcrest#hamcrest-core;1.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15600bc8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c2b1b82
 [debug] sbt-chain: module revision found in cache: org.hamcrest#hamcrest-core;1.3
 [debug] 	local: revision in cache: org.hamcrest#hamcrest-core;1.3
 [debug] 	found org.hamcrest#hamcrest-core;1.3 in sbt-chain
@@ -2206,7 +2206,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.hamcrest#hamcrest-core;1.3 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.novocode#junit-interface;0.11 [test->default(compile)]
 [info] Resolving com.novocode#junit-interface;0.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66cb363a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ea788df
 [debug] sbt-chain: module revision found in cache: com.novocode#junit-interface;0.11
 [debug] 	local: revision in cache: com.novocode#junit-interface;0.11
 [debug] 	found com.novocode#junit-interface;0.11 in sbt-chain
@@ -2215,7 +2215,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.novocode#junit-interface;0.11 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-sbt#test-interface;1.0 [test->default(compile)]
 [info] Resolving org.scala-sbt#test-interface;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c8a69d3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e99e44e
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#test-interface;1.0
 [debug] 	local: revision in cache: org.scala-sbt#test-interface;1.0
 [debug] 	found org.scala-sbt#test-interface;1.0 in sbt-chain
@@ -2224,7 +2224,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-sbt#test-interface;1.0 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.code.findbugs#jsr305;3.0.1 [test->default(compile)]
 [info] Resolving com.google.code.findbugs#jsr305;3.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f571717
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@82789dc
 [debug] sbt-chain: module revision found in cache: com.google.code.findbugs#jsr305;3.0.1
 [debug] 	local: revision in cache: com.google.code.findbugs#jsr305;3.0.1
 [debug] 	found com.google.code.findbugs#jsr305;3.0.1 in sbt-chain
@@ -2233,7 +2233,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.code.findbugs#jsr305;3.0.1 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.htmlunit#htmlunit;2.20 [test->default(compile)]
 [info] Resolving net.sourceforge.htmlunit#htmlunit;2.20 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6137f551
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73a142fa
 [debug] sbt-chain: module revision found in cache: net.sourceforge.htmlunit#htmlunit;2.20
 [debug] 	local: revision in cache: net.sourceforge.htmlunit#htmlunit;2.20
 [debug] 	found net.sourceforge.htmlunit#htmlunit;2.20 in sbt-chain
@@ -2242,7 +2242,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.htmlunit#htmlunit;2.20 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xalan#xalan;2.7.2 [test->default(compile)]
 [info] Resolving xalan#xalan;2.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7217b8ea
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5debabd7
 [debug] sbt-chain: module revision found in cache: xalan#xalan;2.7.2
 [debug] 	local: revision in cache: xalan#xalan;2.7.2
 [debug] 	found xalan#xalan;2.7.2 in sbt-chain
@@ -2251,7 +2251,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xalan#xalan;2.7.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xalan#serializer;2.7.2 [test->default(compile)]
 [info] Resolving xalan#serializer;2.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44ad9538
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2dadc136
 [debug] sbt-chain: module revision found in cache: xalan#serializer;2.7.2
 [debug] 	local: revision in cache: xalan#serializer;2.7.2
 [debug] 	found xalan#serializer;2.7.2 in sbt-chain
@@ -2260,7 +2260,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->xalan#serializer;2.7.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpclient;4.5.2 [test->default(compile)]
 [info] Resolving org.apache.httpcomponents#httpclient;4.5.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e7f595e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71f5c6c1
 [debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.5.2
 [debug] 	local: revision in cache: org.apache.httpcomponents#httpclient;4.5.2
 [debug] 	found org.apache.httpcomponents#httpclient;4.5.2 in sbt-chain
@@ -2269,7 +2269,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpclient;4.5.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpcore;4.4.4 [test->default(compile)]
 [info] Resolving org.apache.httpcomponents#httpcore;4.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11e06a93
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71c07e3b
 [debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.4.4
 [debug] 	local: revision in cache: org.apache.httpcomponents#httpcore;4.4.4
 [debug] 	found org.apache.httpcomponents#httpcore;4.4.4 in sbt-chain
@@ -2278,7 +2278,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpcore;4.4.4 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->commons-logging#commons-logging;1.2 [test->default(compile)]
 [info] Resolving commons-logging#commons-logging;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78d59ac8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@321f133e
 [debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.2
 [debug] 	local: revision in cache: commons-logging#commons-logging;1.2
 [debug] 	found commons-logging#commons-logging;1.2 in sbt-chain
@@ -2287,7 +2287,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->commons-logging#commons-logging;1.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpmime;4.5.2 [test->default(compile)]
 [info] Resolving org.apache.httpcomponents#httpmime;4.5.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74e8d257
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ee4d31a
 [debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpmime;4.5.2
 [debug] 	local: revision in cache: org.apache.httpcomponents#httpmime;4.5.2
 [debug] 	found org.apache.httpcomponents#httpmime;4.5.2 in sbt-chain
@@ -2296,7 +2296,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.httpcomponents#httpmime;4.5.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.htmlunit#htmlunit-core-js;2.17 [test->default(compile)]
 [info] Resolving net.sourceforge.htmlunit#htmlunit-core-js;2.17 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32194f70
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16eb2f12
 [debug] sbt-chain: module revision found in cache: net.sourceforge.htmlunit#htmlunit-core-js;2.17
 [debug] 	local: revision in cache: net.sourceforge.htmlunit#htmlunit-core-js;2.17
 [debug] 	found net.sourceforge.htmlunit#htmlunit-core-js;2.17 in sbt-chain
@@ -2305,7 +2305,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.htmlunit#htmlunit-core-js;2.17 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.nekohtml#nekohtml;1.9.22 [test->default(compile)]
 [info] Resolving net.sourceforge.nekohtml#nekohtml;1.9.22 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e132c16
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29513fc8
 [debug] sbt-chain: module revision found in cache: net.sourceforge.nekohtml#nekohtml;1.9.22
 [debug] 	local: revision in cache: net.sourceforge.nekohtml#nekohtml;1.9.22
 [debug] 	found net.sourceforge.nekohtml#nekohtml;1.9.22 in sbt-chain
@@ -2314,7 +2314,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.nekohtml#nekohtml;1.9.22 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.cssparser#cssparser;0.9.18 [test->default(compile)]
 [info] Resolving net.sourceforge.cssparser#cssparser;0.9.18 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7400da91
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46ab6e
 [debug] sbt-chain: module revision found in cache: net.sourceforge.cssparser#cssparser;0.9.18
 [debug] 	local: revision in cache: net.sourceforge.cssparser#cssparser;0.9.18
 [debug] 	found net.sourceforge.cssparser#cssparser;0.9.18 in sbt-chain
@@ -2323,7 +2323,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.sourceforge.cssparser#cssparser;0.9.18 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.w3c.css#sac;1.3 [test->default(compile)]
 [info] Resolving org.w3c.css#sac;1.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@697842e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b409421
 [debug] sbt-chain: module revision found in cache: org.w3c.css#sac;1.3
 [debug] 	local: revision in cache: org.w3c.css#sac;1.3
 [debug] 	found org.w3c.css#sac;1.3 in sbt-chain
@@ -2332,7 +2332,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.w3c.css#sac;1.3 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->commons-io#commons-io;2.4 [test->default(compile)]
 [info] Resolving commons-io#commons-io;2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b41a830
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@518a4c4
 [debug] sbt-chain: module revision found in cache: commons-io#commons-io;2.4
 [debug] 	local: revision in cache: commons-io#commons-io;2.4
 [debug] 	found commons-io#commons-io;2.4 in sbt-chain
@@ -2341,7 +2341,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->commons-io#commons-io;2.4 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty.websocket#websocket-client;9.2.15.v20160210 [test->default(compile)]
 [info] Resolving org.eclipse.jetty.websocket#websocket-client;9.2.15.v20160210 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@be8fd0d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b470a99
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.websocket#websocket-client;9.2.15.v20160210
 [debug] 	local: revision in cache: org.eclipse.jetty.websocket#websocket-client;9.2.15.v20160210
 [debug] 	found org.eclipse.jetty.websocket#websocket-client;9.2.15.v20160210 in sbt-chain
@@ -2350,7 +2350,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty.websocket#websocket-client;9.2.15.v20160210 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty#jetty-util;9.2.15.v20160210 [test->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-util;9.2.15.v20160210 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d674d12
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2899e916
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-util;9.2.15.v20160210
 [debug] 	local: revision in cache: org.eclipse.jetty#jetty-util;9.2.15.v20160210
 [debug] 	found org.eclipse.jetty#jetty-util;9.2.15.v20160210 in sbt-chain
@@ -2359,7 +2359,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty#jetty-util;9.2.15.v20160210 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty#jetty-io;9.2.15.v20160210 [test->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-io;9.2.15.v20160210 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15149097
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74122ad6
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-io;9.2.15.v20160210
 [debug] 	local: revision in cache: org.eclipse.jetty#jetty-io;9.2.15.v20160210
 [debug] 	found org.eclipse.jetty#jetty-io;9.2.15.v20160210 in sbt-chain
@@ -2368,7 +2368,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty#jetty-io;9.2.15.v20160210 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty.websocket#websocket-common;9.2.15.v20160210 [test->default(compile)]
 [info] Resolving org.eclipse.jetty.websocket#websocket-common;9.2.15.v20160210 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28eb4de
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41e33385
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.websocket#websocket-common;9.2.15.v20160210
 [debug] 	local: revision in cache: org.eclipse.jetty.websocket#websocket-common;9.2.15.v20160210
 [debug] 	found org.eclipse.jetty.websocket#websocket-common;9.2.15.v20160210 in sbt-chain
@@ -2377,7 +2377,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty.websocket#websocket-common;9.2.15.v20160210 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty.websocket#websocket-api;9.2.15.v20160210 [test->default(compile)]
 [info] Resolving org.eclipse.jetty.websocket#websocket-api;9.2.15.v20160210 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a9f98cd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24ebb5cc
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.websocket#websocket-api;9.2.15.v20160210
 [debug] 	local: revision in cache: org.eclipse.jetty.websocket#websocket-api;9.2.15.v20160210
 [debug] 	found org.eclipse.jetty.websocket#websocket-api;9.2.15.v20160210 in sbt-chain
@@ -2386,7 +2386,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.eclipse.jetty.websocket#websocket-api;9.2.15.v20160210 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.fluentlenium#fluentlenium-core;0.10.9 [test->default(compile)]
 [info] Resolving org.fluentlenium#fluentlenium-core;0.10.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b35cf36
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77ead289
 [debug] sbt-chain: module revision found in cache: org.fluentlenium#fluentlenium-core;0.10.9
 [debug] 	local: revision in cache: org.fluentlenium#fluentlenium-core;0.10.9
 [debug] 	found org.fluentlenium#fluentlenium-core;0.10.9 in sbt-chain
@@ -2395,7 +2395,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.fluentlenium#fluentlenium-core;0.10.9 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-chrome-driver;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-chrome-driver;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27f6565c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c133cda
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-chrome-driver;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-chrome-driver;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-chrome-driver;2.48.2 in sbt-chain
@@ -2404,7 +2404,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-chrome-driver;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-remote-driver;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-remote-driver;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b2ddf36
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fdcc1b6
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-remote-driver;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-remote-driver;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-remote-driver;2.48.2 in sbt-chain
@@ -2413,7 +2413,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-remote-driver;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->cglib#cglib-nodep;2.1_3 [test->default(compile)]
 [info] Resolving cglib#cglib-nodep;2.1_3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b1c8ca
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6218e760
 [debug] sbt-chain: module revision found in cache: cglib#cglib-nodep;2.1_3
 [debug] 	local: revision in cache: cglib#cglib-nodep;2.1_3
 [debug] 	found cglib#cglib-nodep;2.1_3 in sbt-chain
@@ -2422,7 +2422,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->cglib#cglib-nodep;2.1_3 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.code.gson#gson;2.3.1 [test->default(compile)]
 [info] Resolving com.google.code.gson#gson;2.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7cb00a53
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ce73922
 [debug] sbt-chain: module revision found in cache: com.google.code.gson#gson;2.3.1
 [debug] 	local: revision in cache: com.google.code.gson#gson;2.3.1
 [debug] 	found com.google.code.gson#gson;2.3.1 in sbt-chain
@@ -2431,7 +2431,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.google.code.gson#gson;2.3.1 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-api;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-api;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66f99b43
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@393c2eaf
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-api;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-api;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-api;2.48.2 in sbt-chain
@@ -2440,7 +2440,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-api;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.commons#commons-exec;1.3 [test->default(compile)]
 [info] Resolving org.apache.commons#commons-exec;1.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e43bbfe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@658b7a4a
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-exec;1.3
 [debug] 	local: revision in cache: org.apache.commons#commons-exec;1.3
 [debug] 	found org.apache.commons#commons-exec;1.3 in sbt-chain
@@ -2449,7 +2449,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.apache.commons#commons-exec;1.3 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.java.dev.jna#jna;4.1.0 [test->default(compile)]
 [info] Resolving net.java.dev.jna#jna;4.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b6dafaa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@76a69a7a
 [debug] sbt-chain: module revision found in cache: net.java.dev.jna#jna;4.1.0
 [debug] 	local: revision in cache: net.java.dev.jna#jna;4.1.0
 [debug] 	found net.java.dev.jna#jna;4.1.0 in sbt-chain
@@ -2458,7 +2458,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.java.dev.jna#jna;4.1.0 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.java.dev.jna#jna-platform;4.1.0 [test->default(compile)]
 [info] Resolving net.java.dev.jna#jna-platform;4.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64a85897
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b0896ef
 [debug] sbt-chain: module revision found in cache: net.java.dev.jna#jna-platform;4.1.0
 [debug] 	local: revision in cache: net.java.dev.jna#jna-platform;4.1.0
 [debug] 	found net.java.dev.jna#jna-platform;4.1.0 in sbt-chain
@@ -2467,7 +2467,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->net.java.dev.jna#jna-platform;4.1.0 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-edge-driver;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-edge-driver;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3015204
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b1826e6
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-edge-driver;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-edge-driver;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-edge-driver;2.48.2 in sbt-chain
@@ -2476,7 +2476,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-edge-driver;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-htmlunit-driver;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-htmlunit-driver;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e89efdc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e745be5
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-htmlunit-driver;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-htmlunit-driver;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-htmlunit-driver;2.48.2 in sbt-chain
@@ -2485,7 +2485,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-htmlunit-driver;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-support;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-support;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fd14664
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f8b443
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-support;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-support;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-support;2.48.2 in sbt-chain
@@ -2494,7 +2494,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-support;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-firefox-driver;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-firefox-driver;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@de2f08a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@685c00b7
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-firefox-driver;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-firefox-driver;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-firefox-driver;2.48.2 in sbt-chain
@@ -2503,7 +2503,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-firefox-driver;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-ie-driver;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-ie-driver;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43d917c5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7baa3981
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-ie-driver;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-ie-driver;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-ie-driver;2.48.2 in sbt-chain
@@ -2512,7 +2512,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-ie-driver;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-safari-driver;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-safari-driver;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75d3cf6b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19cf7592
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-safari-driver;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-safari-driver;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-safari-driver;2.48.2 in sbt-chain
@@ -2521,7 +2521,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-safari-driver;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.webbitserver#webbit;0.4.14 [test->default(compile)]
 [info] Resolving org.webbitserver#webbit;0.4.14 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c1b1c3e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e4e4d8b
 [debug] sbt-chain: module revision found in cache: org.webbitserver#webbit;0.4.14
 [debug] 	local: revision in cache: org.webbitserver#webbit;0.4.14
 [debug] 	found org.webbitserver#webbit;0.4.14 in sbt-chain
@@ -2530,7 +2530,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.webbitserver#webbit;0.4.14 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty;3.5.2.Final [test->default(compile)]
 [info] Resolving io.netty#netty;3.5.2.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40458fb1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9811a8d
 [debug] sbt-chain: module revision found in cache: io.netty#netty;3.5.2.Final
 [debug] 	local: revision in cache: io.netty#netty;3.5.2.Final
 [debug] 	found io.netty#netty;3.5.2.Final in sbt-chain
@@ -2539,7 +2539,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->io.netty#netty;3.5.2.Final [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-leg-rc;2.48.2 [test->default(compile)]
 [info] Resolving org.seleniumhq.selenium#selenium-leg-rc;2.48.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29307cf6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@419c9a66
 [debug] sbt-chain: module revision found in cache: org.seleniumhq.selenium#selenium-leg-rc;2.48.2
 [debug] 	local: revision in cache: org.seleniumhq.selenium#selenium-leg-rc;2.48.2
 [debug] 	found org.seleniumhq.selenium#selenium-leg-rc;2.48.2 in sbt-chain
@@ -2548,7 +2548,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.seleniumhq.selenium#selenium-leg-rc;2.48.2 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-specs2_2.11;2.5.8 [test->default(compile)]
 [info] Resolving com.typesafe.play#play-specs2_2.11;2.5.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b553266
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f2bfdae
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-specs2_2.11;2.5.8
 [debug] 	local: revision in cache: com.typesafe.play#play-specs2_2.11;2.5.8
 [debug] 	found com.typesafe.play#play-specs2_2.11;2.5.8 in sbt-chain
@@ -2557,7 +2557,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->com.typesafe.play#play-specs2_2.11;2.5.8 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-core_2.11;3.6.6 [test->default(compile)]
 [info] Resolving org.specs2#specs2-core_2.11;3.6.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f24f7e7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22f9a78f
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2-core_2.11;3.6.6
 [debug] 	local: revision in cache: org.specs2#specs2-core_2.11;3.6.6
 [debug] 	found org.specs2#specs2-core_2.11;3.6.6 in sbt-chain
@@ -2566,7 +2566,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-core_2.11;3.6.6 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-matcher_2.11;3.6.6 [test->default(compile)]
 [info] Resolving org.specs2#specs2-matcher_2.11;3.6.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f76744
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21c5a17
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2-matcher_2.11;3.6.6
 [debug] 	local: revision in cache: org.specs2#specs2-matcher_2.11;3.6.6
 [debug] 	found org.specs2#specs2-matcher_2.11;3.6.6 in sbt-chain
@@ -2575,7 +2575,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-matcher_2.11;3.6.6 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-common_2.11;3.6.6 [test->default(compile)]
 [info] Resolving org.specs2#specs2-common_2.11;3.6.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40f4ac84
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70ad9f8f
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2-common_2.11;3.6.6
 [debug] 	local: revision in cache: org.specs2#specs2-common_2.11;3.6.6
 [debug] 	found org.specs2#specs2-common_2.11;3.6.6 in sbt-chain
@@ -2584,7 +2584,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-common_2.11;3.6.6 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz#scalaz-core_2.11;7.1.4 [test->default(compile)]
 [info] Resolving org.scalaz#scalaz-core_2.11;7.1.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14c7ec6a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32f2f342
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.11;7.1.4
 [debug] 	local: revision in cache: org.scalaz#scalaz-core_2.11;7.1.4
 [debug] 	found org.scalaz#scalaz-core_2.11;7.1.4 in sbt-chain
@@ -2593,7 +2593,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz#scalaz-core_2.11;7.1.4 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [test->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ba0943
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11e7ad5d
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4
 [debug] 	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.4 in sbt-chain
@@ -2602,7 +2602,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.4 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz#scalaz-effect_2.11;7.1.4 [test->default(compile)]
 [info] Resolving org.scalaz#scalaz-effect_2.11;7.1.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50543f31
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@296fcee7
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-effect_2.11;7.1.4
 [debug] 	local: revision in cache: org.scalaz#scalaz-effect_2.11;7.1.4
 [debug] 	found org.scalaz#scalaz-effect_2.11;7.1.4 in sbt-chain
@@ -2611,7 +2611,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz#scalaz-effect_2.11;7.1.4 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz#scalaz-concurrent_2.11;7.1.4 [test->default(compile)]
 [info] Resolving org.scalaz#scalaz-concurrent_2.11;7.1.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2878c3c4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@200389f7
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-concurrent_2.11;7.1.4
 [debug] 	local: revision in cache: org.scalaz#scalaz-concurrent_2.11;7.1.4
 [debug] 	found org.scalaz#scalaz-concurrent_2.11;7.1.4 in sbt-chain
@@ -2620,7 +2620,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz#scalaz-concurrent_2.11;7.1.4 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz.stream#scalaz-stream_2.11;0.8 [test->default(compile)]
 [info] Resolving org.scalaz.stream#scalaz-stream_2.11;0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@475cd944
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a73df09
 [debug] sbt-chain: module revision found in cache: org.scalaz.stream#scalaz-stream_2.11;0.8
 [debug] 	local: revision in cache: org.scalaz.stream#scalaz-stream_2.11;0.8
 [debug] 	found org.scalaz.stream#scalaz-stream_2.11;0.8 in sbt-chain
@@ -2630,7 +2630,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scalaz.stream#scalaz-stream_2.11;0.8 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scodec#scodec-bits_2.11;1.0.9 [test->default(compile)]
 [info] Resolving org.scodec#scodec-bits_2.11;1.0.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b423999
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8bc987b
 [debug] sbt-chain: module revision found in cache: org.scodec#scodec-bits_2.11;1.0.9
 [debug] 	local: revision in cache: org.scodec#scodec-bits_2.11;1.0.9
 [debug] 	found org.scodec#scodec-bits_2.11;1.0.9 in sbt-chain
@@ -2640,7 +2640,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scodec#scodec-bits_2.11;1.0.9 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.spire-math#kind-projector_2.11;0.7.1 [test->default(compile)]
 [info] Resolving org.spire-math#kind-projector_2.11;0.7.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a6d2d60
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20d69816
 [debug] sbt-chain: module revision found in cache: org.spire-math#kind-projector_2.11;0.7.1
 [debug] 	local: revision in cache: org.spire-math#kind-projector_2.11;0.7.1
 [debug] 	found org.spire-math#kind-projector_2.11;0.7.1 in sbt-chain
@@ -2649,7 +2649,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.spire-math#kind-projector_2.11;0.7.1 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.7 [test->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30831618
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fc3bb3a
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.7
 [debug] 	local: revision in cache: org.scala-lang#scala-compiler;2.11.7
 [debug] 	found org.scala-lang#scala-compiler;2.11.7 in sbt-chain
@@ -2658,7 +2658,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.7 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-junit_2.11;3.6.6 [test->default(compile)]
 [info] Resolving org.specs2#specs2-junit_2.11;3.6.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ae8a2a5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5340792f
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2-junit_2.11;3.6.6
 [debug] 	local: revision in cache: org.specs2#specs2-junit_2.11;3.6.6
 [debug] 	found org.specs2#specs2-junit_2.11;3.6.6 in sbt-chain
@@ -2667,7 +2667,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-junit_2.11;3.6.6 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-mock_2.11;3.6.6 [test->default(compile)]
 [info] Resolving org.specs2#specs2-mock_2.11;3.6.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13945f09
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26ac47a9
 [debug] sbt-chain: module revision found in cache: org.specs2#specs2-mock_2.11;3.6.6
 [debug] 	local: revision in cache: org.specs2#specs2-mock_2.11;3.6.6
 [debug] 	found org.specs2#specs2-mock_2.11;3.6.6 in sbt-chain
@@ -2676,7 +2676,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.specs2#specs2-mock_2.11;3.6.6 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.mockito#mockito-core;1.9.5 [test->default(compile)]
 [info] Resolving org.mockito#mockito-core;1.9.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49b86f10
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@239dff44
 [debug] sbt-chain: module revision found in cache: org.mockito#mockito-core;1.9.5
 [debug] 	local: revision in cache: org.mockito#mockito-core;1.9.5
 [debug] 	found org.mockito#mockito-core;1.9.5 in sbt-chain
@@ -2685,7 +2685,7 @@
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.mockito#mockito-core;1.9.5 [test->master]
 [debug] == resolving dependencies dealitsrv#dealitsrv$sources_2.11;1.0->org.objenesis#objenesis;1.0 [test->default(compile)]
 [info] Resolving org.objenesis#objenesis;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ec1f361
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@626a94ea
 [debug] sbt-chain: module revision found in cache: org.objenesis#objenesis;1.0
 [debug] 	local: revision in cache: org.objenesis#objenesis;1.0
 [debug] 	found org.objenesis#objenesis;1.0 in sbt-chain
@@ -6255,8 +6255,8 @@
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.5.8!play-exceptions.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-iteratees_2.11;2.5.8!play-iteratees_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-iteratees_2.11;2.5.8!play-iteratees_2.11.jar
-[debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar
 [debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.3.0!config.jar
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.3.0!config.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-json_2.11;2.5.8!play-json_2.11.jar
@@ -6515,7 +6515,7 @@
 [debug] 	[NOT REQUIRED] org.ow2.asm#asm-analysis;4.1!asm-analysis.jar(src)
 [debug] 	[NOT REQUIRED] org.ow2.asm#asm-util;4.1!asm-util.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] :: resolution report :: resolve 6313ms :: artifacts dl 243ms
+[debug] :: resolution report :: resolve 5195ms :: artifacts dl 201ms
 [debug] 	report for dealitsrv#dealitsrv$sources_2.11;1.0 compile produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv$sources_2.11-compile.xml
 [debug] 	report for dealitsrv#dealitsrv$sources_2.11;1.0 runtime produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv$sources_2.11-runtime.xml
 [debug] 	report for dealitsrv#dealitsrv$sources_2.11;1.0 test produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv$sources_2.11-test.xml
@@ -6529,4 +6529,4 @@
 [debug] 	report for dealitsrv#dealitsrv$sources_2.11;1.0 docs produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv$sources_2.11-docs.xml
 [debug] 	report for dealitsrv#dealitsrv$sources_2.11;1.0 pom produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv$sources_2.11-pom.xml
 [debug] 	report for dealitsrv#dealitsrv$sources_2.11;1.0 scala-tool produced in /home/deadmanpr/Documents/Git/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv$sources_2.11-scala-tool.xml
-[debug] 	resolve done (6313ms resolve - 243ms download)
+[debug] 	resolve done (5195ms resolve - 201ms download)

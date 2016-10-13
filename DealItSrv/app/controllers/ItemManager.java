@@ -102,4 +102,57 @@ public class ItemManager implements Manager<Item>{
     public int getNumberOfElements(){
         return itemList.size();
     }
+
+    /**
+     * Returns the Cars currently on the server list.
+     * @return the Cars currently on the server list
+     */
+    public ArrayList<Item> getCarItems(){
+        ArrayList<Item> atr = new ArrayList<>();
+        for(Item i : itemList){
+            if(i.getCategory().equals("Car"))
+                atr.add(i);
+        }
+        return atr;
+    }
+
+    /**
+     * Returns the Houses currently on the server list.
+     * @return the Houses currently on the server list
+     */
+    public ArrayList<Item> getHouseItems(){
+        ArrayList<Item> atr = new ArrayList<>();
+        for(Item i : itemList){
+            if(i.getCategory().equals("House"))
+                atr.add(i);
+        }
+        return atr;
+    }
+
+    /**
+     * Returns the Furniture currently on the server list.
+     * @return the Furniture currently on the server list
+     */
+    public ArrayList<Item> getFurnitureItems(){
+        ArrayList<Item> atr = new ArrayList<>();
+        for(Item i : itemList){
+            if(i.getCategory().equals("Furniture"))
+                atr.add(i);
+        }
+        return atr;
+    }
+
+    /**
+     * Returns the Technology currently on the server list.
+     * @return the Technology currently on the server list
+     */
+    public ArrayList<Item> getTechnologyItems(){
+        ArrayList<Item> atr = new ArrayList<>();
+        for(Item i : itemList){
+            if(i.getCategory().equals("Technology"))
+                atr.add(i);
+        }
+        return atr;
+    }
+
 }

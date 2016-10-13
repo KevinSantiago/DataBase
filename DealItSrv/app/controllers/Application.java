@@ -29,17 +29,31 @@ public class Application extends Controller {
         User testUser = new User(1,"john_wayne", "john.doe@gmail.com", userInfo);
         userManager.add(testUser);
 
-        Item testItem1 = new Item(0, "A", ":)", "Car" ,12.34, testUser, false);
-        Item testItem2 = new Item(1, "B", ":)", "Car",22.34, testUser, false);
-        Item testItem3 = new Item(2, "C", ":)", "Car",26.34, testUser, false);
-        Item testItem4 = new Item(3, "D", ":)", "Car",2.84, testUser, false);
-        Item testItem5 = new Item(4, "E", ":)", "Car",72.34, testUser, false);
+        Account acc2 = new Account(2, "Normal", "jane.doe@gmail.com", new Date(2016, 10, 13), new CreditCard("Jane Doe", "1234-5678-9101-1121", new Date(2019, 3, 25), 666, "My House"));
+        Address addr2 = new Address(2, "My House", "Mayaguez", "00680");
+        UserInfo userInfo2 = new UserInfo("jane.doe@gmail.com", 2, "Jane", "Doe", "787-123-4567", new Date(1992, 6, 12), addr2, acc2);
+        User testUser2 = new User(2,"jd0612", "jane.doe@gmail.com", userInfo2);
+        userManager.add(testUser2);
+
+        Item testItem1 = new Item(0, "Bugatti Veyron 2017", "Nulla rhoncus dolor vel ante commodo, sed eleifend dolor aliquam. Mauris venenatis metus ante, a.", "Car" ,2000000.99, testUser, false);
+        Item testItem2 = new Item(1, "Michael Jordan's Mansion", "Aenean arcu nulla, ultricies sit amet leo non, feugiat venenatis augue. Curabitur pellentesque tempor nunc.", "House",100000.54, testUser2, false);
+        Item testItem3 = new Item(2, "Desk", "It's a desk!", "Furniture",39.99, testUser, false);
+        Item testItem4 = new Item(3, "Nintendo Entertainment System (NES)", "Fusce eu ipsum neque. Cras vitae purus non risus auctor faucibus. Cras scelerisque congue velit", "Technology",99.99, testUser2, false);
+        Item testItem5 = new Item(4, "Hyundai Accent 1995", "Nullam dolor augue, bibendum in lacus a, euismod pulvinar massa. Fusce id ante at purus.", "Car",8000.99, testUser, false);
+        Item testItem6 = new Item(5, "Windows 95 OS Installation Floppy", "Proin cursus, nibh imperdiet tincidunt suscipit, dui sem finibus sapien, sit amet dictum nunc arcu.", "Technology",5.99, testUser2, false);
+        Item testItem7 = new Item(6, "Samsung Galaxy Note 7 (TNT Edition)", "Aliquam at volutpat metus. Etiam bibendum mauris bibendum faucibus dapibus. Duis maximus eros diam, nec.", "Technology",649.99, testUser, false);
+        Item testItem8 = new Item(7, "Nissan Sentra 1986", "Nunc scelerisque lobortis velit, eget pulvinar enim. Proin non urna risus. Fusce sodales eu sapien.", "Car",2000.12, testUser2, false);
+        Item testItem9 = new Item(8, "Ford Mustang 2002", "Proin nec ultrices ipsum. Donec hendrerit porttitor cursus. Nunc metus nulla, finibus in augue placerat.", "Car",2.00, testUser, false);
 
         itemManager.add(testItem1);
         itemManager.add(testItem2);
         itemManager.add(testItem3);
         itemManager.add(testItem4);
         itemManager.add(testItem5);
+        itemManager.add(testItem6);
+        itemManager.add(testItem7);
+        itemManager.add(testItem8);
+        itemManager.add(testItem9);
 
         return ok("Successful init\n");
     }
@@ -233,6 +247,15 @@ public class Application extends Controller {
     public Result signup(){
         return ok("Sign Up Successful!\n"); //For testing purposes
       }
+
+    public Result getCars() { return ok(Json.toJson(itemManager.getCarItems())); }
+
+    public Result getHouses() { return ok(Json.toJson(itemManager.getHouseItems())); }
+
+    public Result getTechnologyItems() { return ok(Json.toJson(itemManager.getTechnologyItems())); }
+
+    public Result getFurniture() { return ok(Json.toJson(itemManager.getFurnitureItems())); }
+
 
 
 
