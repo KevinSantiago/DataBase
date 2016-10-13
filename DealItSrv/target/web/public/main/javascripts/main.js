@@ -164,6 +164,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         $http.get(generalPath+"/DealItSrv/items/cars")
                 .then(function(response){
 					$scope.gridOptions1.data=response.data;
+					$scope.gridOptions1.columnDefs[0].enableHiding=false;
+					$scope.gridOptions1.columnDefs[1].enableHiding=false;
+					$scope.gridOptions1.columnDefs[2].enableHiding=false;
    				});
             
       
@@ -184,6 +187,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
                ],
            onRegisterApi: function( gridApi){
                   $scope.grid1Api= gridApi;
+                  $scope.gridOptions1.columnDefs[0].enableHiding=false;
+                  $scope.gridOptions1.columnDefs[1].enableHiding=false;
+                  $scope.gridOptions1.columnDefs[2].enableHiding=false;
             }
          };
 
@@ -208,6 +214,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
                ],
            onRegisterApi: function( gridApi){
                   $scope.grid1Api= gridApi;
+                  $scope.grid1Api= gridApi;
+                  $scope.gridOptions1.columnDefs[0].enableHiding=false;
+                  $scope.gridOptions1.columnDefs[1].enableHiding=false;
+                  $scope.gridOptions1.columnDefs[2].enableHiding=false;
             }
          };
 
