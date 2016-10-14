@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Oct 13 16:24:26 AST 2016
+// @DATE:Thu Oct 13 23:40:49 AST 2016
 
 package router
 
@@ -80,6 +80,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """house.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "house.html")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """technology.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "technology.html")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """furniture.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "furniture.html")"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addPost.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "addPost.html")"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/submit""", """controllers.Application.loginUser"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -733,6 +735,40 @@ class Routes(
     )
   )
 
+  // @LINE:67
+  private[this] lazy val controllers_Assets_at38_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addPost.html")))
+  )
+  private[this] lazy val controllers_Assets_at38_invoker = createInvoker(
+    Assets_0.at(fakeValue[String], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Assets",
+      "at",
+      Seq(classOf[String], classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """addPost.html"""
+    )
+  )
+
+  // @LINE:68
+  private[this] lazy val controllers_Application_loginUser39_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/submit")))
+  )
+  private[this] lazy val controllers_Application_loginUser39_invoker = createInvoker(
+    Application_1.loginUser,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "loginUser",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """post/submit"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -962,6 +998,18 @@ class Routes(
     case controllers_Assets_at37_route(params) =>
       call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("furniture.html"))) { (path, file) =>
         controllers_Assets_at37_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:67
+    case controllers_Assets_at38_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("addPost.html"))) { (path, file) =>
+        controllers_Assets_at38_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:68
+    case controllers_Application_loginUser39_route(params) =>
+      call { 
+        controllers_Application_loginUser39_invoker.call(Application_1.loginUser)
       }
   }
 }

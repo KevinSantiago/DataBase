@@ -15,6 +15,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
             templateUrl: "login.html",
             controller: "loginController"
         })
+        .when("/addPost", {
+            templateUrl: "addPost.html",
+            controller: "addPostController"
+        })
         .when("/cars", {
             templateUrl: "cars.html",
             controller: "carController"
@@ -73,6 +77,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
 
         $scope.logNav = function(){
             $location.path('/login');
+        };
+
+        $scope.navPost = function(){
+            $location.path('/addPost')
         };
 
         $scope.navCar = function(){
@@ -148,7 +156,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
     app.controller('carController', ['$scope','$http','$location', function($scope,$http,$location){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.carCategory="This is the car category page";
-      
+
         $scope.gridOptions1= {
             enableSorting: true,
             columnDefs: [
@@ -168,8 +176,8 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
 			$scope.gridOptions1.columnDefs[1].enableHiding=false;
 			$scope.gridOptions1.columnDefs[2].enableHiding=false;
    		});
-            
-      
+
+
 
     }]);
 
@@ -197,14 +205,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
    		});
-        
+
     }]);
 
     //Technology Category Controller
     app.controller('technologyController', ['$scope','$http','$location', function($scope,$http,$location){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.technologyCategory="This is technology category page";
-		
+
 		$scope.gridOptions1= {
             enableSorting: true,
             columnDefs: [
@@ -225,14 +233,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
    		});
-        
+
     }]);
 
     //Furniture Category Controller
     app.controller('furnitureController', ['$scope','$http','$location', function($scope,$http,$location){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.furnitureCategory="This is furniture category page";
-        
+
 		$scope.gridOptions1= {
             enableSorting: true,
             columnDefs: [
@@ -255,6 +263,95 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
    		    });
     }]);
 
+    // Create New Post
+    app.controller('addPostController', ['$scope', '$http', '$location', function($scope, $http, $location){
+
+        var currentPath=$location.path();
+
+        $scope.name="";
+        $scope.description="";
+        $scope.category="";
+        $scope.price="";
+        $scope.seller="";
+
+        $scope.errorFlag = {
+            emptyEP: false,
+            name: false,
+            category: false,
+            seller: false,
+        };
+
+
+        $scope.post = function(){
+            if(validatePost()){
+                //$http.post(currentPath+"/submit", {name: $scope.name, category: $scope.category})
+                //.then(function(response){
+                    resetFlags();
+                    resetFields();
+                    alert("Post " + $scope.name + " successfully created");
+                    $location.path("/");
+                //});
+            }
+            else{
+                alert("Post failure");
+            }
+        };
+
+
+        var validatePost = function(){
+            if ($scope.name === "" || $scope.category === "" || $scope.seller === ""){
+                $scope.errorFlag.emptyEP= true;
+                return false;
+            }
+            return true;
+        };
+
+
+        var nameIsEmpty = function(){
+            if ($scope.name === ""){
+                $scope.errorFlag.name = true;
+                return true;
+            }
+            return false;
+        }
+
+        var categoryIsEmpty = function(){
+            if ($scope.name === ""){
+                $scope.errorFlag.category = true;
+                return true;
+            }
+            return false;
+        }
+
+        var sellerIsEmpty = function(){
+            if ($scope.name === ""){
+                $scope.errorFlag.seller = true;
+                return true;
+            }
+            return false;
+        }
+
+        /*
+         *  Reset Flags
+        */
+        var resetFlags = function(){
+            $scope.errorFlag.emptyEP= false;
+            $scope.errorFlag.name= false;
+            $scope.errorFlag.category= false;
+            $scope.errorFlag.seller= false;
+        }
+
+        /*
+         * Reset Fields
+        */
+        var resetFields = function(){
+            $scope.name="";
+            $scope.seller="";
+            $scope.category="";
+            $scope.description="";
+            $scope.price="";
+        }
+    }]);
 
     // Login , Sign up controller
     app.controller('loginController',['$scope','$http','$location', function($scope,$http,$location){
@@ -286,17 +383,17 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
         
         if(validateLogin()){
             $http.post(currentPath+"/submit",{ email: $scope.email, password: $scope.password})
-                .then(function(response){
-                      resetFlags();
-					  resetFields();
-                      alert(response.data);
-                      $location.path("/");
-               });
-          }
-          else{
-             alert("Login failure");
-          }
-     };
+            .then(function(response){
+                resetFlags();
+				resetFields();
+                alert(response.data);
+                $location.path("/");
+            });
+        }
+        else{
+            alert("Login failure");
+        }
+    };
 
     /*
      * Call to submit new user credentials
@@ -320,18 +417,18 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid"]);
 
    
 	$scope.signup2 = function(){
-         if(validateSignUp()){
+        if(validateSignUp()){
             $http.post(currentPath+"/signup2",{name: $scope.name, bdate: $scope.submitedDate, email: $scope.email, password: $scope.password})
-                  .then(function(response){
-                       resetFlags();
-                       resetFields();
-                       alert(response.data);
-                       $location.path("/"); 
-                  });
-          }
-          else{
-              alert("There is a problem with the form!");
-          }
+            .then(function(response){
+                resetFlags();
+                resetFields();
+                alert(response.data);
+                $location.path("/");
+            });
+        }
+        else{
+            alert("There is a problem with the form!");
+        }
     };
    
     /*

@@ -64,4 +64,5 @@ GET    /cars.html                   controllers.Assets.at(path="/public/html/tem
 GET    /house.html                  controllers.Assets.at(path="/public/html/templates", file="house.html")
 GET    /technology.html             controllers.Assets.at(path="/public/html/templates", file="technology.html")
 GET    /furniture.html              controllers.Assets.at(path="/public/html/templates", file="furniture.html")
-
+GET    /addPost.html                controllers.Assets.at(path="/public/html/templates", file="addPost.html")
+POST    /post/submit                controllers.Application.loginUser

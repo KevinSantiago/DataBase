@@ -21,9 +21,16 @@
                             <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
                         </md-button>
 
-                        <span flex="20""><md-button style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()">DealIt</md-button></span>
+                        <span flex="20"><md-button style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()">DealIt</md-button></span>
                         <span flex></span>
                         <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
+
+                        <md-button ng-click="navPost()">
+                            <md-tooltip>
+                                Create New Post
+                            </md-tooltip>
+                            <ng-md-icon icon="add" style="fill:black;" ng-click="navPost()"></ng-md-icon>
+                        </md-button>
 
                         <md-button ng-click="logNav()">
                             <md-tooltip>
