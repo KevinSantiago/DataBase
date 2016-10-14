@@ -27,14 +27,14 @@ DELETE  /DealItSrv/users/:id        controllers.Application.deleteUserByID(id: I
 
 # Items
 GET     /DealItSrv/items            controllers.Application.getItems
-#GET     /DealItSrv/items/:id       controllers.Application.getItemByID(id: Integer)
+GET     /DealItSrv/items/:id        controllers.Application.getItemByID(id: Integer)
 POST    /DealItSrv/items            controllers.Application.addItem
 PUT     /DealItSrv/items            controllers.Application.updateItem
-#DELETE  /DealItSrv/items/:id       controllers.Application.deleteItemByID(id: Integer)
-GET     /DealItSrv/items/cars       controllers.Application.getCars()
-GET     /DealItSrv/items/technology controllers.Application.getTechnologyItems()
-GET     /DealItSrv/items/furniture  controllers.Application.getFurniture()
-GET     /DealItSrv/items/houses     controllers.Application.getHouses()
+DELETE  /DealItSrv/items/:id        controllers.Application.deleteItemByID(id: Integer)
+GET     /DealItSrv/itemsByCat/cars           controllers.Application.getCars()
+GET     /DealItSrv/itemsByCat/technology     controllers.Application.getTechnologyItems()
+GET     /DealItSrv/itemsByCat/furniture      controllers.Application.getFurniture()
+GET     /DealItSrv/itemsByCat/houses         controllers.Application.getHouses()
 
 
 # Home page
@@ -64,4 +64,6 @@ GET    /cars.html                   controllers.Assets.at(path="/public/html/tem
 GET    /house.html                  controllers.Assets.at(path="/public/html/templates", file="house.html")
 GET    /technology.html             controllers.Assets.at(path="/public/html/templates", file="technology.html")
 GET    /furniture.html              controllers.Assets.at(path="/public/html/templates", file="furniture.html")
+GET    /profile.html                controllers.Assets.at(path="/public/html/templates", file="profile.html")
+GET    /item.html                   controllers.Assets.at(path="/public/html/templates", file="item.html")
 

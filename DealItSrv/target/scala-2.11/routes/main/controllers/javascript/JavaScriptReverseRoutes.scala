@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Oct 13 16:24:26 AST 2016
+// @SOURCE:C:/Users/j-oma/Desktop/DataBase/DealItSrv/conf/routes
+// @DATE:Thu Oct 13 23:19:18 BOT 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -112,6 +112,14 @@ package controllers.javascript {
             return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "furniture.html"})
           }
         
+          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("profile.html") + """) {
+            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profile.html"})
+          }
+        
+          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("item.html") + """) {
+            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "item.html"})
+          }
+        
         }
       """
     )
@@ -141,7 +149,7 @@ package controllers.javascript {
       "controllers.Application.getFurniture",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/furniture"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/furniture"})
         }
       """
     )
@@ -201,7 +209,17 @@ package controllers.javascript {
       "controllers.Application.getCars",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/cars"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/cars"})
+        }
+      """
+    )
+  
+    // @LINE:33
+    def deleteItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.deleteItemByID",
+      """
+        function(id0) {
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
         }
       """
     )
@@ -221,7 +239,7 @@ package controllers.javascript {
       "controllers.Application.getHouses",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/houses"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/houses"})
         }
       """
     )
@@ -261,7 +279,17 @@ package controllers.javascript {
       "controllers.Application.getTechnologyItems",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/technology"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/technology"})
+        }
+      """
+    )
+  
+    // @LINE:30
+    def getItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getItemByID",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
         }
       """
     )

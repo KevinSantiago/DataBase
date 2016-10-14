@@ -1,0 +1,35 @@
+<div layout="column">
+   <div layout="row">
+       <md-card md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline" style="color: orange">{{user}}</span>
+            <span class="md-subhead" style="color: orange">User</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-lg card-media">
+                <img src="http://www.aspirehire.co.uk/aspirehire-co-uk/_img/profile.svg">
+            </div>
+          </md-card-title-media>
+        </md-card-title>
+      </md-card>
+      <img src="http://i.stack.imgur.com/p9mUO.jpg" flex height="300">
+   </div>
+   <md-toolbar style="background-color: DarkSlateGray;color: orange;">
+    <div class="md-toolbar-tools">Own Items</div>
+  </md-toolbar>
+
+   <md-content>
+    <md-subheader class="md-primary">Active items</md-subheader>
+    <md-list>
+      <md-list-item class="md-3-line" ng-repeat="item in items">
+        <div class="md-list-item-text">
+          <h3>{{item.name}}</h3>
+          <h4>{{item.price}}</h4>
+          <p>{{item.description}}</p>
+        </div>
+        <md-divider md-inset ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+  </md-content>
+</div>

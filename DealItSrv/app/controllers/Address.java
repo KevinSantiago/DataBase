@@ -7,14 +7,16 @@ public class Address {
     private int uid;
     private String street;
     private String city;
+    private String country;
     private String zipCode;
     
     public Address(){}
 
-    public Address(int uid, String street, String city, String zipCode) {
+    public Address(int uid, String street, String city, String country, String zipCode) {
         this.uid = uid;
         this.street = street;
         this.city = city;
+        this.country = country;
         this.zipCode = zipCode;
     }
 
@@ -44,5 +46,13 @@ public class Address {
 
     public void updateZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void updateCountry(String country) {
+        this.country = country;
     }
 }

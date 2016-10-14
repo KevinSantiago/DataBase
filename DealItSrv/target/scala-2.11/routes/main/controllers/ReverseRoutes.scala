@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Oct 13 16:24:26 AST 2016
+// @SOURCE:C:/Users/j-oma/Desktop/DataBase/DealItSrv/conf/routes
+// @DATE:Thu Oct 13 23:19:18 BOT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -129,6 +129,16 @@ package controllers {
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "furniture.html")))
           Call("GET", _prefix + { _defaultPrefix } + "furniture.html")
       
+        // @LINE:67
+        case (path, file) if path == "/public/html/templates" && file == "profile.html" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "profile.html")))
+          Call("GET", _prefix + { _defaultPrefix } + "profile.html")
+      
+        // @LINE:68
+        case (path, file) if path == "/public/html/templates" && file == "item.html" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "item.html")))
+          Call("GET", _prefix + { _defaultPrefix } + "item.html")
+      
       }
     
     }
@@ -151,7 +161,7 @@ package controllers {
     // @LINE:36
     def getFurniture(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/items/furniture")
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/itemsByCat/furniture")
     }
   
     // @LINE:15
@@ -187,7 +197,13 @@ package controllers {
     // @LINE:34
     def getCars(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/items/cars")
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/itemsByCat/cars")
+    }
+  
+    // @LINE:33
+    def deleteItemByID(id:Integer): Call = {
+      import ReverseRouteContext.empty
+      Call("DELETE", _prefix + { _defaultPrefix } + "DealItSrv/items/" + implicitly[PathBindable[Integer]].unbind("id", id))
     }
   
     // @LINE:22
@@ -199,7 +215,7 @@ package controllers {
     // @LINE:37
     def getHouses(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/items/houses")
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/itemsByCat/houses")
     }
   
     // @LINE:23
@@ -223,7 +239,13 @@ package controllers {
     // @LINE:35
     def getTechnologyItems(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/items/technology")
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/itemsByCat/technology")
+    }
+  
+    // @LINE:30
+    def getItemByID(id:Integer): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/items/" + implicitly[PathBindable[Integer]].unbind("id", id))
     }
   
     // @LINE:32

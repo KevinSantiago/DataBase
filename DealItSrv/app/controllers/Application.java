@@ -24,13 +24,13 @@ public class Application extends Controller {
         itemManager = new ItemManager();
 
         Account acc = new Account(1, "Admin", "john.doe@gmail.com", new Date(2016, 10, 11), new CreditCard("John Doe", "1234-5678-9999-0000", new Date(2019, 3, 1), 666, "My House"));
-        Address addr = new Address(1, "My House", "Mayaguez", "00680");
+        Address addr = new Address(1, "My House", "Mayaguez", "Puerto Rico", "00680");
         UserInfo userInfo = new UserInfo("john.doe@gmail.com", 1, "John", "Doe", "787-123-4567", new Date(1992, 4, 25), addr, acc);
         User testUser = new User(1,"john_wayne", "john.doe@gmail.com", userInfo);
         userManager.add(testUser);
 
         Account acc2 = new Account(2, "Normal", "jane.doe@gmail.com", new Date(2016, 10, 13), new CreditCard("Jane Doe", "1234-5678-9101-1121", new Date(2019, 3, 25), 666, "My House"));
-        Address addr2 = new Address(2, "My House", "Mayaguez", "00680");
+        Address addr2 = new Address(2, "My House", "Mayaguez", "Puerto Rico", "00680");
         UserInfo userInfo2 = new UserInfo("jane.doe@gmail.com", 2, "Jane", "Doe", "787-123-4567", new Date(1992, 6, 12), addr2, acc2);
         User testUser2 = new User(2,"jd0612", "jane.doe@gmail.com", userInfo2);
         userManager.add(testUser2);
