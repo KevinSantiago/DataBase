@@ -53,6 +53,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         .when("/item",{
             templateUrl: "item.html",
             controller: "itemController"
+        })
+        .when("/addPost", {
+            templateUrl: "addPost.html",
+            controller: "addPostController"
         });
     });
 
@@ -116,6 +120,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
         $scope.navProfile = function(){
             $location.path('/profile')
+        };
+
+         $scope.navPost = function(){
+            $location.path('/addPost')
         };
     }]);
 
@@ -524,3 +532,92 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }
 }]);
 
+// Create New Post
+    app.controller('addPostController', ['$scope', '$http', '$location', function($scope, $http, $location){
+
+        var currentPath=$location.path();
+
+        $scope.name="";
+        $scope.description="";
+        $scope.category="";
+        $scope.price="";
+        $scope.seller="";
+
+        $scope.errorFlag = {
+            emptyEP: false,
+            name: false,
+            category: false,
+            seller: false,
+        };
+
+
+        $scope.post = function(){
+            if(validatePost()){
+                //$http.post(currentPath+"/submit", {name: $scope.name, category: $scope.category})
+                //.then(function(response){
+                    resetFlags();
+                    resetFields();
+                    alert("Post successfully created");
+                    $location.path("/");
+                //});
+            }
+            else{
+                alert("Post failure");
+            }
+        };
+
+
+        var validatePost = function(){
+            if ($scope.name === "" || $scope.category === "" || $scope.seller === ""){
+                $scope.errorFlag.emptyEP= true;
+                return false;
+            }
+            return true;
+        };
+
+
+        var nameIsEmpty = function(){
+            if ($scope.name === ""){
+                $scope.errorFlag.name = true;
+                return true;
+            }
+            return false;
+        }
+
+        var categoryIsEmpty = function(){
+            if ($scope.name === ""){
+                $scope.errorFlag.category = true;
+                return true;
+            }
+            return false;
+        }
+
+        var sellerIsEmpty = function(){
+            if ($scope.name === ""){
+                $scope.errorFlag.seller = true;
+                return true;
+            }
+            return false;
+        }
+
+        /*
+         *  Reset Flags
+        */
+        var resetFlags = function(){
+            $scope.errorFlag.emptyEP= false;
+            $scope.errorFlag.name= false;
+            $scope.errorFlag.category= false;
+            $scope.errorFlag.seller= false;
+        }
+
+        /*
+         * Reset Fields
+        */
+        var resetFields = function(){
+            $scope.name="";
+            $scope.seller="";
+            $scope.category="";
+            $scope.description="";
+            $scope.price="";
+        }
+    }]);

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/j-oma/Desktop/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Oct 13 23:19:18 BOT 2016
+// @DATE:Fri Oct 14 07:32:28 BOT 2016
 
 
 package router {

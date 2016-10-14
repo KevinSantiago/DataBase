@@ -35,7 +35,7 @@ GET     /DealItSrv/itemsByCat/cars           controllers.Application.getCars()
 GET     /DealItSrv/itemsByCat/technology     controllers.Application.getTechnologyItems()
 GET     /DealItSrv/itemsByCat/furniture      controllers.Application.getFurniture()
 GET     /DealItSrv/itemsByCat/houses         controllers.Application.getHouses()
-
+#POST   /post/submit                controllers.ItemManager. <- add the method to receive the data
 
 # Home page
 GET     /                           controllers.Assets.at(path="/public/html/", file="index.html")
@@ -66,4 +66,4 @@ GET    /technology.html             controllers.Assets.at(path="/public/html/tem
 GET    /furniture.html              controllers.Assets.at(path="/public/html/templates", file="furniture.html")
 GET    /profile.html                controllers.Assets.at(path="/public/html/templates", file="profile.html")
 GET    /item.html                   controllers.Assets.at(path="/public/html/templates", file="item.html")
-
+GET    /addPost.html                controllers.Assets.at(path="/public/html/templates", file="addPost.html")

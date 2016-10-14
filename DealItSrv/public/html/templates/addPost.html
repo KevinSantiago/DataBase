@@ -1,0 +1,61 @@
+<div layout="column">
+    <div layout="row">
+        <img src="http://i1126.photobucket.com/albums/l611/jariellaureano1/login_zpswvjizzmn.jpg" height="400" flex>
+    </div>
+
+    <div ng-cloak layout="row">
+
+        <md-content flex>
+            <md-tabs md-dynamic-height md-border-bottom style="background-color: darkslategrey">
+
+                <md-tab label="Create New Post">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2" style="color: orange; text-align: center;">Create New Post</h1>
+
+                        <div>
+                            <form name="postForm" style="text-align: center;">
+
+                                <div layout="row" layout-align="center center">
+                                    <md-input-container class="md-block">
+                                        <label>Name</label>
+                                        <input ng-model="name" required>
+                                        <div style="color:red" ng-if="errorFlag.name">Name is required</div>
+                                    </md-input-container>
+                                    <span flex="10"></span>
+                                    <md-input-container>
+                                        <label>Seller</label>
+                                        <input ng-model="seller" required>
+                                        <div style="color: red" ng-if="errorFlag.seller">Seller is required</div>
+                                    </md-input-container>
+                                </div>
+
+                                <div layout="row" layout-align="center center">
+                                    <md-input-container class="md-block">
+                                        <label>Price</label>
+                                        <input ng-model="price">
+                                    </md-input-container>
+                                    <span flex="10"></span>
+                                    <md-input-container class="md-block">
+                                        <label>Category</label>
+                                        <input ng-model="category" required>
+                                        <div style="color: red" ng-if="errorFlag.category">Category is required</div>
+                                    </md-input-container>
+                                </div>
+
+                                <div layout="row" layout-align="center center">
+                                    <md-input-container class="md-block">
+                                        <label>Description</label>
+                                        <input type="text" ng-model="description">
+                                    </md-input-container>
+                                </div>
+                                <md-button class="md-raised" ng-click="post()">
+                                    Submit
+                                </md-button>
+                            </form>
+                        </div>
+                    </md-content>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+</div>
