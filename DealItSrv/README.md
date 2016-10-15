@@ -9,9 +9,9 @@
 
 - After the server is running, it can be accessed using the routes stated in the routes file located in the conf folder.
 
-        Example: localhost:9000/DealItSrv
+        Example: localhost:9000/
 
 - This server is hosted on Heroku as well. Therefore, instead of running the server locally, you can use the following route:
 
-		Example: http://deal-it-srv.herokuapp.com/DealItSrv
+		Example: http://deal-it-srv.herokuapp.com/
 
