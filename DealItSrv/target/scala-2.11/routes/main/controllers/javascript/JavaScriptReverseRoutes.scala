@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/j-oma/Desktop/DataBase/DealItSrv/conf/routes
-// @DATE:Fri Oct 14 07:32:28 BOT 2016
+// @SOURCE:/home/jariel/Documents/Copia Actual/DataBase/DealItSrv/conf/routes
+// @DATE:Sun Nov 13 14:43:22 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -138,26 +138,6 @@ package controllers.javascript {
     }
 
   
-    // @LINE:25
-    def updateUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.updateUser",
-      """
-        function() {
-          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users"})
-        }
-      """
-    )
-  
-    // @LINE:36
-    def getFurniture: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getFurniture",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/furniture"})
-        }
-      """
-    )
-  
     // @LINE:15
     def loginUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.loginUser",
@@ -168,32 +148,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:26
-    def deleteUserByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.deleteUserByID",
-      """
-        function(id0) {
-          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
-        }
-      """
-    )
-  
-    // @LINE:24
-    def addUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.addUser",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users"})
-        }
-      """
-    )
-  
     // @LINE:29
-    def getItems: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getItems",
+    def getOrderContent: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getOrderContent",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/order/content"})
+        }
+      """
+    )
+  
+    // @LINE:34
+    def getItemsPerCategory: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getItemsPerCategory",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat"})
         }
       """
     )
@@ -208,52 +178,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:34
-    def getCars: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getCars",
+    // @LINE:24
+    def getCreditCard: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getCreditCard",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/cars"})
-        }
-      """
-    )
-  
-    // @LINE:33
-    def deleteItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.deleteItemByID",
-      """
-        function(id0) {
-          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/user/creditcard"})
         }
       """
     )
   
     // @LINE:22
-    def getUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getUsers",
+    def getUserInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getUserInfo",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users"})
-        }
-      """
-    )
-  
-    // @LINE:37
-    def getHouses: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getHouses",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/houses"})
-        }
-      """
-    )
-  
-    // @LINE:23
-    def getUserByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getUserByID",
-      """
-        function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/users/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/user"})
         }
       """
     )
@@ -264,6 +204,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/signup"})
+        }
+      """
+    )
+  
+    // @LINE:36
+    def getFeedbackFromProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getFeedbackFromProduct",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/product/feedback"})
         }
       """
     )
@@ -279,16 +229,26 @@ package controllers.javascript {
     )
   
     // @LINE:35
-    def getTechnologyItems: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getTechnologyItems",
+    def getProductOwnerInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getProductOwnerInfo",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/technology"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/product/ownerinfo"})
         }
       """
     )
   
-    // @LINE:30
+    // @LINE:28
+    def getOrdersFromAccount: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getOrdersFromAccount",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/order"})
+        }
+      """
+    )
+  
+    // @LINE:33
     def getItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getItemByID",
       """
@@ -298,12 +258,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:32
-    def updateItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.updateItem",
+    // @LINE:37
+    def getProductInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getProductInfo",
       """
         function() {
-          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/product/info"})
         }
       """
     )
@@ -318,12 +278,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:31
-    def addItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.addItem",
+    // @LINE:23
+    def getPhoneNumbers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPhoneNumbers",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/user/phone"})
+        }
+      """
+    )
+  
+    // @LINE:25
+    def getProductsFromUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getProductsFromUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/user/products"})
         }
       """
     )

@@ -163,6 +163,8 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.navFurniture = function(){
             $location.path('/furniture');
         };
+
+
     }]);
 
 
@@ -189,10 +191,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             enableRowSelection: true,
             enableRowHeaderSelection:false,
             columnDefs: [
-                {field: 'name'},
-                {field: 'description'},
+                {field: 'item'},
+                {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
+                {field: 'pid'},
             ],
            onRegisterApi: function( gridApi){
                   $scope.grid1Api= gridApi;
@@ -206,7 +208,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
            }
         };
 
-        $http.get(generalPath+"/DealItSrv/itemsByCat/cars")
+        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "car"})
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -214,8 +216,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 			$scope.gridOptions1.columnDefs[2].enableHiding=false;
 
         });
-            
-      
+
 
     }]);
 
@@ -229,10 +230,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             enableRowSelection: true,
             enableRowHeaderSelection:false,
             columnDefs: [
-                {field: 'name'},
-                {field: 'description'},
+                {field: 'item'},
+                {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
+                {field: 'pid'},
             ],
            onRegisterApi: function( gridApi){
                   $scope.grid1Api= gridApi;
@@ -246,7 +247,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
            }
         };
 
-        $http.get(generalPath+"/DealItSrv/itemsByCat/houses")
+        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "house"})
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -267,10 +268,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             enableRowSelection: true,
             enableRowHeaderSelection:false,
             columnDefs: [
-                {field: 'name'},
-                {field: 'description'},
+                {field: 'item'},
+                {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
+                {field: 'pid'},
             ],
            onRegisterApi: function( gridApi){
                   $scope.grid1Api= gridApi;
@@ -284,7 +285,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
            }
         };
 
-        $http.get(generalPath+"/DealItSrv/itemsByCat/technology")
+        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "technology"})
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -305,10 +306,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             enableRowSelection: true,
             enableRowHeaderSelection:false,
             columnDefs: [
-                {field: 'name'},
-                {field: 'description'},
+                {field: 'item'},
+                {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
+                {field: 'pid'},
             ],
            onRegisterApi: function( gridApi){
                   $scope.grid1Api= gridApi;
@@ -322,7 +323,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
            }
         };
 
-        $http.get(generalPath+"/DealItSrv/itemsByCat/furniture")
+        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "furniture"})
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -399,7 +400,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                       resetFlags();
 					  resetFields();
                       alert(response.data);
-                      $location.path("/");
+                      //$location.path("/");
                });
           }
           else{

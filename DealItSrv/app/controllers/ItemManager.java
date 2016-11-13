@@ -49,14 +49,8 @@ public class ItemManager implements Manager<Item>{
      * @return 0, indicating no problems were had
      */
     public int add(Item it){
-        int newID;
-        if(itemList.isEmpty())
-            newID = 0;
-        else
-            newID = itemList.get(itemList.size()-1).getID() + 1;
 
-
-        itemList.add(new Item(newID, it.getName(), it.getDescription(), it.getCategory(),it.getPrice(), it.getSeller(), false));
+        itemList.add(it);
         return 0;
     }
 
@@ -87,8 +81,8 @@ public class ItemManager implements Manager<Item>{
     public int update(Item it){
         for(Item e : itemList)
             if(e.getID() == it.getID()){
-                e.updateName(it.getName());
-                e.updateDescription(it.getDescription());
+                e.updateItem(it.getItem());
+                e.updateCondition(it.getCondition());
                 e.updatePrice(it.getPrice());
                 return 0;
             }
@@ -110,7 +104,7 @@ public class ItemManager implements Manager<Item>{
     public ArrayList<Item> getCarItems(){
         ArrayList<Item> atr = new ArrayList<>();
         for(Item i : itemList){
-            if(i.getCategory().equals("Car"))
+            if(i.getCategory().equals("car"))
                 atr.add(i);
         }
         return atr;
@@ -123,7 +117,7 @@ public class ItemManager implements Manager<Item>{
     public ArrayList<Item> getHouseItems(){
         ArrayList<Item> atr = new ArrayList<>();
         for(Item i : itemList){
-            if(i.getCategory().equals("House"))
+            if(i.getCategory().equals("house"))
                 atr.add(i);
         }
         return atr;
@@ -136,7 +130,7 @@ public class ItemManager implements Manager<Item>{
     public ArrayList<Item> getFurnitureItems(){
         ArrayList<Item> atr = new ArrayList<>();
         for(Item i : itemList){
-            if(i.getCategory().equals("Furniture"))
+            if(i.getCategory().equals("furniture"))
                 atr.add(i);
         }
         return atr;
@@ -149,7 +143,7 @@ public class ItemManager implements Manager<Item>{
     public ArrayList<Item> getTechnologyItems(){
         ArrayList<Item> atr = new ArrayList<>();
         for(Item i : itemList){
-            if(i.getCategory().equals("Technology"))
+            if(i.getCategory().equals("technology"))
                 atr.add(i);
         }
         return atr;

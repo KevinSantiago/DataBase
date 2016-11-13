@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/j-oma/Desktop/DataBase/DealItSrv/}dealitsrv...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/jariel/Documents/Copia%20Actual/DataBase/DealItSrv/}dealitsrv...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: dealitsrv#dealitsrv_2.11;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31865204[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c9ed1c8[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
@@ -489,23 +489,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.google.inject.extensions#guice-assistedinject;4.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.inject.extensions#guice-assistedinject;4.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\j-oma\.ivy2\local\com.google.inject.extensions\guice-assistedinject\4.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.google.inject.extensions#guice-assistedinject;4.0[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/j-oma/OneDrive/Documents/JavaPlay/activator-1.3.10-minimal/repository/com.google.inject.extensions/guice-assistedinject/4.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.google.inject.extensions#guice-assistedinject;4.0[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.google.inject.extensions#guice-assistedinject;4.0[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom (4.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.pom(pom.original) (434ms)[0m
-[0m[[0minfo[0m] [0mResolving com.google.inject.extensions#extensions-parent;4.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.inject.extensions#extensions-parent;4.0 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.inject.extensions#extensions-parent;4.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.inject.extensions#extensions-parent;4.0[0m
-[0m[[0mdebug[0m] [0m	found com.google.inject.extensions#guice-assistedinject;4.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.inject.extensions#guice-assistedinject;4.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.inject.extensions#guice-assistedinject;4.0[0m
+[0m[[0mdebug[0m] [0m	found com.google.inject.extensions#guice-assistedinject;4.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.5.8->com.google.inject.extensions#guice-assistedinject;4.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.google.inject.extensions#guice-assistedinject;4.0->com.google.inject#guice;4.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.google.inject.extensions#guice-assistedinject;4.0->com.google.inject#guice;4.0 [compile->compile(*)][0m
@@ -1053,6 +1039,207 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-jdbc_2.11;2.5.8 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-jdbc_2.11;2.5.8 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-jdbc_2.11;2.5.8[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java-jdbc_2.11;2.5.8[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-jdbc_2.11;2.5.8 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java_2.11;2.5.8 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java_2.11;2.5.8 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.5.8[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java_2.11;2.5.8[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java_2.11;2.5.8 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.yaml#snakeyaml;1.16 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.yaml#snakeyaml;1.16 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.yaml#snakeyaml;1.16[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.yaml#snakeyaml;1.16[0m
+[0m[[0mdebug[0m] [0m	found org.yaml#snakeyaml;1.16 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.hibernate#hibernate-validator;5.2.4.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hibernate#hibernate-validator;5.2.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hibernate#hibernate-validator;5.2.4.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.hibernate#hibernate-validator;5.2.4.Final[0m
+[0m[[0mdebug[0m] [0m	found org.hibernate#hibernate-validator;5.2.4.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving javax.validation#validation-api;1.1.0.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: javax.validation#validation-api;1.1.0.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: javax.validation#validation-api;1.1.0.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: javax.validation#validation-api;1.1.0.Final[0m
+[0m[[0mdebug[0m] [0m	found javax.validation#validation-api;1.1.0.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.jboss.logging#jboss-logging;3.2.1.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jboss.logging#jboss-logging;3.2.1.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.jboss.logging#jboss-logging;3.2.1.Final[0m
+[0m[[0mdebug[0m] [0m	found org.jboss.logging#jboss-logging;3.2.1.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.fasterxml#classmate;1.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml#classmate;1.1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.fasterxml#classmate;1.1.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml#classmate;1.1.0[0m
+[0m[[0mdebug[0m] [0m	found com.fasterxml#classmate;1.1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving javax.el#javax.el-api;3.0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: javax.el#javax.el-api;3.0.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: javax.el#javax.el-api;3.0.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: javax.el#javax.el-api;3.0.0[0m
+[0m[[0mdebug[0m] [0m	found javax.el#javax.el-api;3.0.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.springframework#spring-context;4.2.7.RELEASE ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.springframework#spring-context;4.2.7.RELEASE {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.springframework#spring-context;4.2.7.RELEASE[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.springframework#spring-context;4.2.7.RELEASE[0m
+[0m[[0mdebug[0m] [0m	found org.springframework#spring-context;4.2.7.RELEASE in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.springframework#spring-core;4.2.7.RELEASE ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.springframework#spring-core;4.2.7.RELEASE[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.springframework#spring-core;4.2.7.RELEASE[0m
+[0m[[0mdebug[0m] [0m	found org.springframework#spring-core;4.2.7.RELEASE in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.springframework#spring-beans;4.2.7.RELEASE ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.springframework#spring-beans;4.2.7.RELEASE[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.springframework#spring-beans;4.2.7.RELEASE[0m
+[0m[[0mdebug[0m] [0m	found org.springframework#spring-beans;4.2.7.RELEASE in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.reflections#reflections;0.9.10 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.reflections#reflections;0.9.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.reflections#reflections;0.9.10[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.reflections#reflections;0.9.10[0m
+[0m[[0mdebug[0m] [0m	found org.reflections#reflections;0.9.10 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0minfo[0m] [0mResolving org.javassist#javassist;3.18.2-GA ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.javassist#javassist;3.18.2-GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.javassist#javassist;3.18.2-GA[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.javassist#javassist;3.18.2-GA[0m
+[0m[[0mdebug[0m] [0m	found org.javassist#javassist;3.18.2-GA in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving net.jodah#typetools;0.4.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.jodah#typetools;0.4.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.jodah#typetools;0.4.4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: net.jodah#typetools;0.4.4[0m
+[0m[[0mdebug[0m] [0m	found net.jodah#typetools;0.4.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.google.guava#guava;19.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.guava#guava;19.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.guava#guava;19.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.guava#guava;19.0[0m
+[0m[[0mdebug[0m] [0m	found com.google.guava#guava;19.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.google.code.findbugs#jsr305;3.0.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.code.findbugs#jsr305;3.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.code.findbugs#jsr305;3.0.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.code.findbugs#jsr305;3.0.1[0m
+[0m[[0mdebug[0m] [0m	found com.google.code.findbugs#jsr305;3.0.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.tomcat#tomcat-servlet-api;8.0.33 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.tomcat#tomcat-servlet-api;8.0.33 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.tomcat#tomcat-servlet-api;8.0.33[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.tomcat#tomcat-servlet-api;8.0.33[0m
+[0m[[0mdebug[0m] [0m	found org.apache.tomcat#tomcat-servlet-api;8.0.33 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-cache_2.11;2.5.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-cache_2.11;2.5.8 {compile=[default(compile)]}[0m
@@ -1101,14 +1288,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving com.google.guava#guava;19.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.guava#guava;19.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.guava#guava;19.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.guava#guava;19.0[0m
-[0m[[0mdebug[0m] [0m	found com.google.guava#guava;19.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.asynchttpclient#async-http-client;2.0.11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.asynchttpclient#async-http-client;2.0.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1176,6 +1356,9 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.javassist#javassist;3.20.0-GA[0m
 [0m[[0mdebug[0m] [0m	found org.javassist#javassist;3.20.0-GA in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->org.asynchttpclient#async-http-client;2.0.11 [compile->runtime(*)][0m
@@ -1296,6 +1479,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.8->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.postgresql#postgresql;9.3-1102-jdbc41 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.postgresql#postgresql;9.3-1102-jdbc41 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/jariel/.ivy2/local/org.postgresql/postgresql/9.3-1102-jdbc41/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.postgresql#postgresql;9.3-1102-jdbc41[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/jariel/Documents/activator-1.3.10-minimal/repository/org.postgresql/postgresql/9.3-1102-jdbc41/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.postgresql#postgresql;9.3-1102-jdbc41[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.postgresql#postgresql;9.3-1102-jdbc41[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom (9.3-1102-jdbc41)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.pom(pom.original) (234ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/jariel/.ivy2/local/org.postgresql/postgresql/9.3-1102-jdbc41/jars/postgresql.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/jariel/Documents/activator-1.3.10-minimal/repository/org.postgresql/postgresql/9.3-1102-jdbc41/jars/postgresql.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
+[0m[[0mdebug[0m] [0m	found org.postgresql#postgresql;9.3-1102-jdbc41 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [compile][0m
@@ -1983,6 +2188,117 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->compile][0m
@@ -2146,6 +2462,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [runtime][0m
@@ -2834,6 +3154,117 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->compile][0m
@@ -2997,6 +3428,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-test_2.11;2.5.8 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.5.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.5.8 {test=[default(compile)]}[0m
@@ -3057,14 +3492,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving com.google.code.findbugs#jsr305;3.0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.code.findbugs#jsr305;3.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.code.findbugs#jsr305;3.0.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.code.findbugs#jsr305;3.0.1[0m
-[0m[[0mdebug[0m] [0m	found com.google.code.findbugs#jsr305;3.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.5.8->net.sourceforge.htmlunit#htmlunit;2.20 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving net.sourceforge.htmlunit#htmlunit;2.20 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.htmlunit#htmlunit;2.20 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -4722,6 +5150,117 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->compile][0m
@@ -4885,6 +5424,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -5575,6 +6118,117 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->compile][0m
@@ -5738,6 +6392,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [test-internal][0m
@@ -6428,6 +7086,117 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.8->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-jdbc_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.5.8->com.typesafe.play#play-java_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.typesafe.play#play_2.11;2.5.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.yaml#snakeyaml;1.16 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.hibernate#hibernate-validator;5.2.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->javax.validation#validation-api;1.1.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->org.jboss.logging#jboss-logging;3.2.1.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.2.4.Final->com.fasterxml#classmate;1.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->javax.el#javax.el-api;3.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-context;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-aop;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-beans;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-expression;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-core;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.springframework#spring-beans;4.2.7.RELEASE [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.springframework#spring-core;4.2.7.RELEASE {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.reflections#reflections;0.9.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.google.code.findbugs#annotations;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;18.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.10->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->net.jodah#typetools;0.4.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.guava#guava;19.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->com.google.code.findbugs#jsr305;3.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.5.8->org.apache.tomcat#tomcat-servlet-api;8.0.33 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-java-jdbc_2.11;2.5.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-cache_2.11;2.5.8 [compile->compile][0m
@@ -6591,6 +7360,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-ws_2.11;2.5.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-test_2.11;2.5.8 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-test_2.11;2.5.8 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->com.typesafe.play#play-test_2.11;2.5.8 [test->compile][0m
@@ -8084,8 +8857,15 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-netty-server_2.11;2.5.8!play-netty-server_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-logback_2.11;2.5.8!play-logback_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.11;2.5.8!play-jdbc_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.11;2.5.8!play-java-jdbc_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.5.8!play-cache_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-ws_2.11;2.5.8!play-ws_2.11.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.jar (663ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play_2.11;2.5.8!play_2.11.jar[0m
@@ -8144,8 +8924,22 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.googlecode.usc#jdbcdslog;1.0.6.2!jdbcdslog.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.h2database#h2;1.4.192!h2.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] tyrex#tyrex;1.0.1!tyrex.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sf.ehcache#ehcache-core;2.6.11!ehcache-core.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java_2.11;2.5.8!play-java_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.yaml#snakeyaml;1.16!snakeyaml.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate#hibernate-validator;5.2.4.Final!hibernate-validator.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.el#javax.el-api;3.0.0!javax.el-api.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.springframework#spring-context;4.2.7.RELEASE!spring-context.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.springframework#spring-core;4.2.7.RELEASE!spring-core.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.springframework#spring-beans;4.2.7.RELEASE!spring-beans.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.reflections#reflections;0.9.10!reflections.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.jodah#typetools;0.4.4!typetools.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;19.0!guava.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.1!jsr305.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.tomcat#tomcat-servlet-api;8.0.33!tomcat-servlet-api.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.validation#validation-api;1.1.0.Final!validation-api.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss.logging#jboss-logging;3.2.1.Final!jboss-logging.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.fasterxml#classmate;1.1.0!classmate.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sf.ehcache#ehcache-core;2.6.11!ehcache-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.asynchttpclient#async-http-client;2.0.11!async-http-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-core;1.2.1.2!signpost-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-commonshttp4;1.2.1.2!signpost-commonshttp4.jar[0m
@@ -8160,7 +8954,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-specs2_2.11;2.5.8!play-specs2_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.12!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.11!junit-interface.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.1!jsr305.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sourceforge.htmlunit#htmlunit;2.20!htmlunit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fluentlenium#fluentlenium-core;0.10.9!fluentlenium-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar[0m
@@ -8225,19 +9018,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-analysis;4.1!asm-analysis.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-util;4.1!asm-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 11983ms :: artifacts dl 169ms[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 provided produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 optional produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile-internal produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime-internal produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test-internal produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 plugin produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 sources produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 docs produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 pom produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 scala-tool produced in C:\Users\j-oma\Desktop\DataBase\DealItSrv\target\resolution-cache\reports\dealitsrv-dealitsrv_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (11983ms resolve - 169ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5198ms :: artifacts dl 768ms[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 provided produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 optional produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile-internal produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime-internal produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test-internal produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 plugin produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 sources produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 docs produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 pom produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 scala-tool produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (5198ms resolve - 768ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

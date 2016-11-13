@@ -7,13 +7,12 @@ import java.awt.*;
  * Created by Jose A Rodriguez Rivera on 10/2/16.
  */
 public class Item {
-    private int id;
-    private String name;
-    private String description;
-    private double price;
-    private User seller;
-    private boolean isSold;
+    private int pid;
+    private String item;
+    private String brand;
+    private float price;
     private String category;
+    private String condition;
 
 
     /**
@@ -32,14 +31,14 @@ public class Item {
      * @param isSold boolean variable representing sell status (sold/unsold)
      * @param category the Item's category
      */
-    public Item(int id, String name, String description, String category, double price, User seller, boolean isSold){
-        this.id = id;
-        this.name = name;
-        this.description = description;
+    public Item(int pid, String item, String brand, String category, float price, String condition){
+        this.pid = pid;
+        this.item = item;
+        this.brand = brand;
         this.category = category;
         this.price = price;
-        this.seller = seller;
-        this.isSold = isSold;
+        this.condition = condition;
+
     }
 
     /**
@@ -47,15 +46,15 @@ public class Item {
      * @return the ID of this Item
      */
     public int getID(){
-        return this.id;
+        return this.pid;
     }
 
     /**
      * Returns the name of this Item.
      * @return the name of this Item.
      */
-    public String getName(){
-        return this.name;
+    public String getItem(){
+        return this.item;
     }
 
 
@@ -63,8 +62,8 @@ public class Item {
      * Returns the description for this Item.
      * @return the description for this Item
      */
-    public String getDescription(){
-        return this.description;
+    public String getCondition(){
+        return this.condition;
     }
 
     /**
@@ -78,56 +77,39 @@ public class Item {
      * Returns the price of this Item.
      * @return the price of this Item
      */
-    public double getPrice(){
+    public float getPrice(){
         return this.price;
     }
 
+    public String getBrand(){ return this.brand;}
     /**
      * Updates the name of this Item.
      * @param name the new name for the Item
      */
-    public void updateName(String name){
-       this.name = name;
+    public void updateItem(String name){
+       this.item= name;
    }
 
     /**
      * Updates the description for this Item.
      * @param description the new description for this Item
      */
-    public void updateDescription(String description){
-       this.description = description;
+    public void updateCondition(String description){
+       this.condition = condition;
    }
 
     /**
      * Updates the price of this Item.
      * @param price the price of this Item
      */
-    public void updatePrice(double price){
+    public void updatePrice(float price){
        this.price = price;
    }
 
-    /**
-     * Returns if the Item was sold or not.
-     * @return true if the Item was sold
-     */
-    public boolean isSold(){
-        return this.isSold;
-    }
 
-    /**
-     * Sets the sell status of the Item.
-     * @param isSold true if the Item was sold
-     */
-    public void setSellStatus(boolean isSold){
-        this.isSold = isSold;
-    }
 
-    /**
-     * Returns the User that is selling the Item.
-     * @return this Item's seller
-     */
-    public User getSeller(){
-        return this.seller;
-    }
+
+
+
 
 }
