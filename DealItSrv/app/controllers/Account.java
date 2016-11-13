@@ -9,16 +9,15 @@ public class Account {
     private int accountID;
     private String type;
     private String email;
-    
+
     private CreditCard card;
 
     public Account(){}
 
-    public Account(int accountID, String type, String email, Date registerDate, CreditCard card) {
+    public Account(int accountID, String type, String email, CreditCard card) {
         this.accountID = accountID;
         this.type = type;
         this.email = email;
-        this.registerDate = registerDate;
         this.card = card;
     }
 

@@ -4,28 +4,19 @@ package controllers;
  * Created by Kevin Santiago
  */
 public class Order{
-    private int oid;
-    private String username;
+    public int oid;
+    public String ctype;
+    public String cnumber;
+    public String date;
 
-    public Order(int oid, String username) {
+
+    public Order(int oid, String ctype, String cnumber, String date) {
         this.oid = oid;
-        this.username = username;
+        this.ctype = ctype;
+        this.cnumber = cnumber;
+        this.date = date;
     }
 
-    public int getOid() {
-        return oid;
-    }
 
-    public void setOid(int oid) {
-        this.oid = oid;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 }
 

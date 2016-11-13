@@ -163,6 +163,8 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.navFurniture = function(){
             $location.path('/furniture');
         };
+
+
     }]);
 
 
@@ -214,8 +216,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 			$scope.gridOptions1.columnDefs[2].enableHiding=false;
 
         });
-            
-      
+
 
     }]);
 

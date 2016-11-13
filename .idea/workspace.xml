@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ecc2e8-2d36-45bb-be06-b0f4e6059348" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_addUser8_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_deleteUserByID10_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_getItems11_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_getUserByID7_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_getUsers6_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_updateUser9_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at35_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at36_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at37_invoker$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$36$$anonfun$apply$36.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$36.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$37$$anonfun$apply$37.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$37.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$38$$anonfun$apply$38.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$38.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/output" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/OrderDetail.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Account.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Account.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Application.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Item.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ItemManager.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ItemManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Login.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/CreditCard.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/CreditCard.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Order.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Order.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ReverseApplication.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ReverseApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/UserInfo.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/UserInfo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_createUser5_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_createUser5_invoker$1.class" />
@@ -119,91 +104,29 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/views/html/index_Scope0$index.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/views/html/index_Scope0$index.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/views/html/main_Scope0$main.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/views/html/main_Scope0$main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/copy-resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/playRoutes/$global/streams/op-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/assets/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/assets/$global/streams/sync-mappings" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DataBase.iml" afterPath="$PROJECT_DIR$/.idea/DataBase.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/Account.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/Account.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/Item.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/ItemManager.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/ItemManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/Login.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/build.sbt" afterPath="$PROJECT_DIR$/DealItSrv/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/conf/application.conf" afterPath="$PROJECT_DIR$/DealItSrv/conf/application.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/Order.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/UserInfo.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/UserInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/conf/routes" afterPath="$PROJECT_DIR$/DealItSrv/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-docs.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-optional.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-plugin.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-pom.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-provided.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-scala-tool.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-sources.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/runtime/managedClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/application.conf" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/application.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/routes" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/routes.java" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/routes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/Routes.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/Routes.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/RoutesPrefix.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/RoutesPrefix.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/twirl/main/views/html/index.template.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/twirl/main/views/html/index.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/twirl/main/views/html/main.template.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/twirl/main/views/html/main.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/ivyConfiguration/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/playCommonClassloader/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/runtime/managedClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/javascripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/public/main/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/target/web/public/main/javascripts/main.js" />
     </list>
@@ -224,22 +147,12 @@
     <favorites_list name="DataBase" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/public/javascripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="324" column="79" selection-start-line="324" selection-start-column="79" selection-end-line="324" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/ItemManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-490">
-              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+            <state relative-caret-position="792">
+              <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -248,8 +161,8 @@
       <file leaf-file-name="routes" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="159">
+              <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -258,29 +171,61 @@
       <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="167" column="39" selection-start-line="167" selection-start-column="39" selection-end-line="167" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-966">
+              <caret line="182" column="8" selection-start-line="182" selection-start-column="8" selection-end-line="182" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="288">
+              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Manager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Manager.java">
+      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <element signature="e#404#405#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Address.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Address.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -292,79 +237,19 @@
       <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding>
-                <element signature="e#325#326#0" expanded="false" />
-                <element signature="e#355#356#0" expanded="false" />
-                <element signature="e#390#391#0" expanded="false" />
-                <element signature="e#421#422#0" expanded="false" />
-                <element signature="e#469#470#0" expanded="false" />
-                <element signature="e#509#510#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderDetail.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/OrderDetail.java">
+      <file leaf-file-name="OrderLine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding>
-                <element signature="e#585#586#0" expanded="false" />
-                <element signature="e#615#616#0" expanded="false" />
-                <element signature="e#642#643#0" expanded="false" />
-                <element signature="e#668#669#0" expanded="false" />
-                <element signature="e#703#704#0" expanded="false" />
-                <element signature="e#733#734#0" expanded="false" />
-                <element signature="e#767#768#0" expanded="false" />
-                <element signature="e#799#800#0" expanded="false" />
-                <element signature="e#847#848#0" expanded="false" />
-                <element signature="e#889#890#0" expanded="false" />
-                <element signature="e#921#922#0" expanded="false" />
-                <element signature="e#952#953#0" expanded="false" />
-                <element signature="e#997#998#0" expanded="false" />
-                <element signature="e#1037#1038#0" expanded="false" />
-                <element signature="e#1078#1079#0" expanded="false" />
-                <element signature="e#1111#1112#0" expanded="false" />
-                <element signature="e#1167#1168#0" expanded="false" />
-                <element signature="e#1211#1212#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreditCard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#636#637#0" expanded="false" />
-                <element signature="e#663#664#0" expanded="false" />
-                <element signature="e#700#701#0" expanded="false" />
-                <element signature="e#733#734#0" expanded="false" />
-                <element signature="e#765#766#0" expanded="false" />
-                <element signature="e#795#796#0" expanded="false" />
-                <element signature="e#831#832#0" expanded="false" />
-                <element signature="e#866#867#0" expanded="false" />
-                <element signature="e#907#908#0" expanded="false" />
-                <element signature="e#944#945#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="98" />
-              <folding>
-                <element signature="e#2053#2054#0" expanded="true" />
-                <element signature="e#2082#2083#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -387,8 +272,6 @@
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Product.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/ProductDetail.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Category.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Order.java" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/cars.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/index.html" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/ConnectionDb.java" />
@@ -398,19 +281,31 @@
         <option value="$PROJECT_DIR$/DealItSrv/build.sbt" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Item.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/ItemManager.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/conf/routes" />
-        <option value="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Account.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/UserInfo.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Order.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/conf/routes" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" />
       </list>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="52" />
-    <option name="width" value="1835" />
-    <option name="height" value="938" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1837" />
+    <option name="height" value="966" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -437,8 +332,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -513,7 +408,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,7 +417,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/postgresql-9.4.1212.jre6.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -794,7 +689,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="52" width="1835" height="938" extended-state="0" />
+    <frame x="65" y="24" width="1837" height="966" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -808,7 +703,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2506812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -821,6 +716,31 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -842,6 +762,114 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DealItSrv/public/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5832">
+          <caret line="324" column="79" selection-start-line="324" selection-start-column="79" selection-end-line="324" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/ItemManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1422">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#617#618#0" expanded="false" />
+            <element signature="e#2402#2403#0" expanded="false" />
+            <element signature="e#2440#2441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#494#495#0" expanded="false" />
+            <element signature="e#526#527#0" expanded="false" />
+            <element signature="e#557#558#0" expanded="false" />
+            <element signature="e#584#585#0" expanded="false" />
+            <element signature="e#616#617#0" expanded="false" />
+            <element signature="e#644#645#0" expanded="false" />
+            <element signature="e#681#682#0" expanded="false" />
+            <element signature="e#708#709#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+            <element signature="e#780#781#0" expanded="false" />
+            <element signature="e#825#826#0" expanded="false" />
+            <element signature="e#859#860#0" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#938#939#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="98" />
+          <folding>
+            <element signature="e#2053#2054#0" expanded="false" />
+            <element signature="e#2082#2083#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/public/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2898">
           <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding />
@@ -861,12 +889,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3247#3248#0" expanded="true" />
-            <element signature="e#3322#3323#0" expanded="true" />
-            <element signature="e#3446#3447#0" expanded="true" />
-            <element signature="e#3521#3522#0" expanded="true" />
-            <element signature="e#3646#3647#0" expanded="true" />
-            <element signature="e#3721#3722#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -875,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,14 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#div#0;n#md-toolbar#0;n#md-content#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#2;n#div#0;n#md-toolbar#0;n#md-content#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#2;n#div#0;n#md-toolbar#0;n#md-content#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#md-toolbar#0;n#md-sidenav#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h3#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,11 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#md-tabs#0;n#md-content#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#md-content#0;n#md-tab#1;n#md-tabs#0;n#md-content#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,13 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#md-button#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#md-button#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h2#0;n#md-content#0;n#md-tab#0;n#md-tabs#0;n#md-content#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,25 +958,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
-          <folding>
-            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#div#0;n#md-toolbar#0;n#md-content#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#2;n#div#0;n#md-toolbar#0;n#md-content#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#2;n#div#0;n#md-toolbar#0;n#md-content#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#md-toolbar#0;n#md-sidenav#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h3#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,24 +969,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/ConnectionDb.java" />
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/ConnectionDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/ConnectionDB.java" />
     <entry file="file://$PROJECT_DIR$/DealItSrv/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="128" selection-start-line="8" selection-start-column="128" selection-end-line="8" selection-end-column="128" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,69 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
-          <folding>
-            <element signature="e#3247#3248#0" expanded="true" />
-            <element signature="e#3322#3323#0" expanded="true" />
-            <element signature="e#3446#3447#0" expanded="true" />
-            <element signature="e#3521#3522#0" expanded="true" />
-            <element signature="e#3646#3647#0" expanded="true" />
-            <element signature="e#3721#3722#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="98" />
-          <folding>
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/ItemManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-490">
-          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/public/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="324" column="79" selection-start-line="324" selection-start-column="79" selection-end-line="324" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,71 +1003,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Order.java">
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/ItemManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="1422">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
           <folding>
-            <element signature="e#325#326#0" expanded="false" />
-            <element signature="e#355#356#0" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#421#422#0" expanded="false" />
-            <element signature="e#469#470#0" expanded="false" />
-            <element signature="e#509#510#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#617#618#0" expanded="false" />
+            <element signature="e#2402#2403#0" expanded="false" />
+            <element signature="e#2440#2441#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/OrderDetail.java">
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="98" />
           <folding>
-            <element signature="e#585#586#0" expanded="false" />
-            <element signature="e#615#616#0" expanded="false" />
-            <element signature="e#642#643#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#703#704#0" expanded="false" />
-            <element signature="e#733#734#0" expanded="false" />
-            <element signature="e#767#768#0" expanded="false" />
-            <element signature="e#799#800#0" expanded="false" />
-            <element signature="e#847#848#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#921#922#0" expanded="false" />
-            <element signature="e#952#953#0" expanded="false" />
-            <element signature="e#997#998#0" expanded="false" />
-            <element signature="e#1037#1038#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-            <element signature="e#1111#1112#0" expanded="false" />
-            <element signature="e#1167#1168#0" expanded="false" />
-            <element signature="e#1211#1212#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1218#1219#0" expanded="false" />
+            <element signature="e#1340#1341#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1515#1516#0" expanded="false" />
+            <element signature="e#1552#1553#0" expanded="false" />
+            <element signature="e#1671#1672#0" expanded="false" />
+            <element signature="e#1707#1708#0" expanded="false" />
+            <element signature="e#1829#1830#0" expanded="false" />
+            <element signature="e#1862#1863#0" expanded="false" />
+            <element signature="e#2053#2054#0" expanded="false" />
+            <element signature="e#2082#2083#0" expanded="false" />
+            <element signature="e#2258#2259#0" expanded="false" />
+            <element signature="e#2298#2299#0" expanded="false" />
+            <element signature="e#2439#2440#0" expanded="false" />
+            <element signature="e#2471#2472#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/public/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="167" column="39" selection-start-line="167" selection-start-column="39" selection-end-line="167" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-966">
+          <caret line="182" column="8" selection-start-line="182" selection-start-column="8" selection-end-line="182" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#636#637#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#700#701#0" expanded="false" />
-            <element signature="e#733#734#0" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-            <element signature="e#831#832#0" expanded="false" />
-            <element signature="e#866#867#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#944#945#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="288">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -3,7 +3,7 @@ package controllers;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
 import play.mvc.*;
-
+import java.util.*;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -67,7 +67,159 @@ public class Application extends Controller {
             return ok(Json.toJson(itm.getAll()));
         }
         else{
-            return ok("lalalal");
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get user info by account id
+     */
+
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getUserInfo(){
+        JsonNode info = request().body().asJson();
+        int aid = info.findPath("aid").intValue();
+        if(aid != 0){
+            UserInfo user_info = DBManager.getUserInfo(aid);
+            return ok(Json.toJson(user_info));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get users phone numbers
+     */
+
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getPhoneNumbers(){
+
+        JsonNode info = request().body().asJson();
+        int uid = info.findPath("uid").intValue();
+
+        if(uid != 0){
+            return ok(Json.toJson(DBManager.getPhoneNumbers(uid)));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get user credit card info
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getCreditCard(){
+
+        JsonNode info = request().body().asJson();
+        int aid = info.findPath("aid").intValue();
+
+        if(aid != 0){
+            CreditCard credit_card = DBManager.getCreditCard(aid);
+            return ok(Json.toJson(credit_card));
+
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get product owner info
+     *
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getProductOwnerInfo(){
+        JsonNode info = request().body().asJson();
+        int pid = info.findPath("pid").intValue();
+        if(pid != 0){
+            UserInfo user_info = DBManager.getOwnerOfProductInfo(pid);
+            return ok(Json.toJson(user_info));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get Feedback from product
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getFeedbackFromProduct(){
+        JsonNode info = request().body().asJson();
+        int pid = info.findPath("pid").intValue();
+        if(pid != 0){
+            return ok(Json.toJson(DBManager.getFeedback(pid)));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get item info by their pid
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getProductInfo(){
+        JsonNode info = request().body().asJson();
+        int pid = info.findPath("pid").intValue();
+
+        if(pid != 0){
+            Item itr = DBManager.getProductInfo(pid);
+            return ok(Json.toJson(itr));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get order content
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getOrderContent(){
+        JsonNode info = request().body().asJson();
+        int oid = info.findPath("oid").intValue();
+
+        if(oid != 0){
+            return ok(Json.toJson(DBManager.getOrderContent(oid)));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get Orders Bind to an Account
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getOrdersFromAccount(){
+        JsonNode info = request().body().asJson();
+        int aid = info.findPath("aid").intValue();
+        if(aid != 0){
+            Order otr = DBManager.getOrdersFromAccount(aid);
+            return ok(Json.toJson(otr));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
+
+    /**
+     * Get all products under one account
+     *
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result getProductsFromUser(){
+        JsonNode info = request().body().asJson();
+        int aid = info.findPath("aid").intValue();
+        if(aid != 0){
+            ItemManager itm = DBManager.getItemsBindToAccount(aid);
+            return ok(Json.toJson(itm.getAll()));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
         }
     }
 
@@ -123,14 +275,6 @@ public class Application extends Controller {
     public Result signup(){
         return ok("Sign Up Successful!\n"); //For testing purposes
       }
-
-    public Result getCars() { return ok(Json.toJson(itemManager.getCarItems())); }
-
-    public Result getHouses() { return ok(Json.toJson(itemManager.getHouseItems())); }
-
-    public Result getTechnologyItems() { return ok(Json.toJson(itemManager.getTechnologyItems())); }
-
-    public Result getFurniture() { return ok(Json.toJson(itemManager.getFurnitureItems())); }
 
 
 
