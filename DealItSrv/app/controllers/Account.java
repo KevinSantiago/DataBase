@@ -9,7 +9,7 @@ public class Account {
     private int accountID;
     private String type;
     private String email;
-    private Date registerDate;
+    
     private CreditCard card;
 
     public Account(){}
@@ -34,9 +34,7 @@ public class Account {
         return email;
     }
 
-    public Date getRegisterDate() {
-        return registerDate;
-    }
+
 
     public CreditCard getCard() {
         return card;

@@ -6,12 +6,14 @@ package controllers;
 public class Login {
     private String username;
     private String password;
+    private int aid;
 
     public Login(){}
 
-    public Login(String username, String password) {
+    public Login(String username, String password, int aid) {
         this.username = username;
         this.password = password;
+        this.aid=aid;
     }
 
     public String getUsername() {

@@ -4,7 +4,7 @@
 		module="dealitsrv_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161013185257"
+		publication="20161112145202"
 	>
 		<description>
 		DealItSrv
@@ -41,8 +41,10 @@
 		<dependency org="com.typesafe.play" name="play-netty-server_2.11" rev="2.5.8" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-logback_2.11" rev="2.5.8" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-jdbc_2.11" rev="2.5.8" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java-jdbc_2.11" rev="2.5.8" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.5.8" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.5.8" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-specs2_2.11" rev="2.5.8" conf="test->default(compile)"/>
+		<dependency org="org.postgresql" name="postgresql" rev="9.3-1102-jdbc41" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
