@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/jariel/Documents/Copia%20Actual/DataBase/DealItSrv/}dealitsrv...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/jariel/Documents/Oficial/DataBase/DealItSrv/}dealitsrv...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: dealitsrv#dealitsrv_2.11;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c9ed1c8[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4aba38e7[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
@@ -1482,22 +1482,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.postgresql#postgresql;9.3-1102-jdbc41 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.postgresql#postgresql;9.3-1102-jdbc41 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/jariel/.ivy2/local/org.postgresql/postgresql/9.3-1102-jdbc41/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.postgresql#postgresql;9.3-1102-jdbc41[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/jariel/Documents/activator-1.3.10-minimal/repository/org.postgresql/postgresql/9.3-1102-jdbc41/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.postgresql#postgresql;9.3-1102-jdbc41[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.postgresql#postgresql;9.3-1102-jdbc41[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom (9.3-1102-jdbc41)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.pom(pom.original) (234ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/jariel/.ivy2/local/org.postgresql/postgresql/9.3-1102-jdbc41/jars/postgresql.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/jariel/Documents/activator-1.3.10-minimal/repository/org.postgresql/postgresql/9.3-1102-jdbc41/jars/postgresql.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
-[0m[[0mdebug[0m] [0m	found org.postgresql#postgresql;9.3-1102-jdbc41 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.postgresql#postgresql;9.3-1102-jdbc41[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.postgresql#postgresql;9.3-1102-jdbc41[0m
+[0m[[0mdebug[0m] [0m	found org.postgresql#postgresql;9.3-1102-jdbc41 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.postgresql#postgresql;9.3-1102-jdbc41 [compile->master][0m
@@ -8860,12 +8847,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.11;2.5.8!play-java-jdbc_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.5.8!play-cache_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-ws_2.11;2.5.8!play-ws_2.11.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.jar (663ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.postgresql#postgresql;9.3-1102-jdbc41!postgresql.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play_2.11;2.5.8!play_2.11.jar[0m
@@ -9018,19 +9000,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-analysis;4.1!asm-analysis.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-util;4.1!asm-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5198ms :: artifacts dl 768ms[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 provided produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 optional produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile-internal produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime-internal produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test-internal produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 plugin produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 sources produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 docs produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 pom produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 scala-tool produced in /home/jariel/Documents/Copia Actual/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (5198ms resolve - 768ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2929ms :: artifacts dl 76ms[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 provided produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 optional produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile-internal produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime-internal produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test-internal produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 plugin produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 sources produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 docs produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 pom produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 scala-tool produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2929ms resolve - 76ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -57,6 +57,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         .when("/addPost", {
             templateUrl: "addPost.html",
             controller: "addPostController"
+        })
+        .when("/cart", {
+            templateUrl: "cart.html",
+            controller: "cartController"
         });
     });
 
@@ -124,6 +128,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
          $scope.navPost = function(){
             $location.path('/addPost')
+        };
+
+        $scope.shoppingCart = function(){
+            $location.path('/cart')
         };
     }]);
 
@@ -346,6 +354,54 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                $scope.sellerPhoneNumber = response.data.seller.info.phoneNumber;
                $scope.sellerCity = response.data.seller.info.address.city + ", " + response.data.seller.info.address.country;
             });
+
+    }]);
+
+    //Shopping Cart controller
+    app.controller('cartController', ['$scope','$http','$location' ,'SharedVariables',function($scope,$http,$location, SharedVariables){
+       var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
+
+        $http.get(generalPath+"/DealItSrv/items")
+            .then(function(response){
+                $scope.items=response.data;
+            });
+
+        $scope.total = 0;
+        //TODO: Calculate total
+
+
+        $scope.gridOptions1= {
+            enableSorting: true,
+            enableRowSelection: true,
+            enableRowHeaderSelection: false,
+            enableHorizontalScrollbar: 0,
+            enableVerticalScrollbar: 0,
+            columnDefs: [
+                {field: 'name'},
+               // {field: 'brand'},
+               // {field: 'condition'},
+                {field: 'price', cellFilter: 'currency'},
+                {field: 'id'}
+            ],
+            onRegisterApi: function (gridApi) {
+                $scope.grid1Api = gridApi;
+                gridApi.selection.on.rowSelectionChanged($scope, function (row) {
+                    var id = row.entity.id;
+                    SharedVariables.setItemID(id);
+                    $location.path('/item');
+                });
+                $scope.gridOptions1.columnDefs[2].visible = false;
+            }
+        };
+
+            $http.get(generalPath+"/DealItSrv/items")
+                    .then(function(response){
+                        $scope.gridOptions1.data=response.data;
+                        $scope.gridOptions1.columnDefs[0].enableHiding=false;
+                        $scope.gridOptions1.columnDefs[1].enableHiding=false;
+                        $scope.gridOptions1.columnDefs[2].enableHiding=false;
+
+                    });
 
     }]);
 

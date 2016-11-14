@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jariel/Documents/Copia Actual/DataBase/DealItSrv/conf/routes
-// @DATE:Sun Nov 13 14:43:22 PST 2016
+// @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
+// @DATE:Mon Nov 14 11:17:52 PST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -143,6 +143,11 @@ package controllers {
         case (path, file) if path == "/public/html/templates" && file == "addPost.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "addPost.html")))
           Call("GET", _prefix + { _defaultPrefix } + "addPost.html")
+      
+        // @LINE:69
+        case (path, file) if path == "/public/html/templates" && file == "cart.html" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "cart.html")))
+          Call("GET", _prefix + { _defaultPrefix } + "cart.html")
       
       }
     

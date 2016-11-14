@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jariel/Documents/Copia Actual/DataBase/DealItSrv/conf/routes
-// @DATE:Sun Nov 13 14:43:22 PST 2016
+// @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
+// @DATE:Mon Nov 14 11:17:52 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -122,6 +122,10 @@ package controllers.javascript {
         
           if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("addPost.html") + """) {
             return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "addPost.html"})
+          }
+        
+          if (path0 == """ + implicitly[JavascriptLiteral[String]].to("/public/html/templates") + """ && file1 == """ + implicitly[JavascriptLiteral[String]].to("cart.html") + """) {
+            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "cart.html"})
           }
         
         }

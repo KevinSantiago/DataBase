@@ -1,107 +1,104 @@
+
 <!DOCTYPE html>
-    <html>
-    <head>
-        <title>DealIT</title>
-        <!--Css Dependencies-->
-        <link rel="stylesheet" href="/angular-material.css">
-        <link rel="stylesheet" href="/ui-grid.css">
-    </head>
-    <body ng-app='myapp' ng-controller='mainController'>
-        <header>
-            <md-content layout="column">
-                <!--Contiene lo que esta en el header-->
-                <md-toolbar class="md-hue-2">
+<html>
+<head>
+    <title>DealIT</title>
+    <!--Css Dependencies-->
+    <link rel="stylesheet" href="/angular-material.css">
+    <link rel="stylesheet" href="/ui-grid.css">
+</head>
+<body ng-app='myapp' ng-controller='mainController'>
+<header>
+    <md-content layout="column">
+        <!--Contiene lo que esta en el header-->
+        <md-toolbar class="md-hue-2">
 
-                    <div class="md-toolbar-tools" layout="row">
+            <div class="md-toolbar-tools" layout="row">
 
-                        <md-button ng-click="toggleLeft()">
-                            <md-tooltip>
-                                Navegation
-                            </md-tooltip>
-                            <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
-                        </md-button>
+                <md-button ng-click="toggleLeft()">
+                    <md-tooltip>
+                        Navegation
+                    </md-tooltip>
+                    <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
+                </md-button>
 
-                        <span flex="20""><md-button style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()">DealIt</md-button></span>
-                        <span flex></span>
-                        <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
+                <span flex="20""><md-button style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()">DealIt</md-button></span>
+                <span flex></span>
+                <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
+                <md-button ng-click="navPost()">
+                    <md-tooltip>
+                        Create New Post
+                    </md-tooltip>
+                    <ng-md-icon icon="add" style="fill:black;" ng-click="navPost()"></ng-md-icon>
+                </md-button>
 
-                        <md-button ng-click="navPost()">
-                            <md-tooltip>
-                                Create New Post
-                            </md-tooltip>
-                            <ng-md-icon icon="add" style="fill:black;" ng-click="navPost()"></ng-md-icon>
-                        </md-button>
-                        
-                        <md-button ng-click="logNav()">
-                            <md-tooltip>
-                                Login/SignUp
-                            </md-tooltip>
-                            <ng-md-icon icon="login" style="fill:black;"></ng-md-icon>
-                        </md-button>
-    
-                        <md-button ng-click="navProfile()">
-                            <md-tooltip>
-                                Account
-                            </md-tooltip>
-                            <ng-md-icon icon="account_box" style="fill:black;"></ng-md-icon>
-                        </md-button>
-
-                    </div>
-
-                </md-toolbar>
-           </md-content>
-        </header>
-
-        <main>
-            <section layout="row" flex="">
-                <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
-                    <md-toolbar class="md-hue-2">
-                        <h1 class="md-toolbar-tools" style="color:white;">Navigation</h1>
-                    </md-toolbar>
-
-                    <md-content layout-margin layout="column">
-                        <md-button class='md-raised' ng-click="navHome(); toggleLeft()">Home</md-button>
-                        <md-button class='md-raised' ng-click="navAbout(); toggleLeft()">About</md-button>
-                        <md-button class="md-accent" ng-disabled="true">
-                            Categories
-                        </md-button>
-                        <md-button class="md-raised" ng-click="navCar(); toggleLeft()">Cars</md-button>
-                        <md-button class="md-raised" ng-click="navHouse(); toggleLeft()">Houses</md-button>
-                        <md-button class="md-raised" ng-click="navTechnology(); toggleLeft()">Technology</md-button>
-                        <md-button class="md-raised" ng-click="navFurniture(); toggleLeft()">Furniture</md-button>
-                        <md-button ng-click="toggleLeft()" class="md-accent">
-                            Close
-                        </md-button>
-                    </md-content>
-
-                </md-sidenav>
-                <md-content flex>
-                    <div ng-view></div>
-                </md-content>
-            </section>
-        </main>
-
-        <div flex style="height:230px; background-color: black;" layout="row" >
-            <span flex="20"></span>
-            <span flex="60" layout="column" layout-align="top center">
+                <md-button ng-click="logNav()">
+                    <md-tooltip>
+                        Login/SignUp
+                    </md-tooltip>
+                    <ng-md-icon icon="login" style="fill:black;"></ng-md-icon>
+                </md-button>
+                <md-button ng-click="shoppingCart()">
+                    <md-tooltip>
+                        View Your Shopping Cart
+                    </md-tooltip>
+                    <ng-md-icon icon="shopping_cart" style="fill:black;"></ng-md-icon>
+                </md-button>
+                <md-button ng-click="navProfile()">
+                    <md-tooltip>
+                        Account
+                    </md-tooltip>
+                    <ng-md-icon icon="account_box" style="fill:black;"></ng-md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+    </md-content>
+</header>
+<main>
+    <section layout="row" flex="">
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+            <md-toolbar class="md-hue-2">
+                <h1 class="md-toolbar-tools" style="color:white;">Navigation</h1>
+            </md-toolbar>
+            <md-content layout-margin layout="column">
+                <md-button class='md-raised' ng-click="navHome(); toggleLeft()">Home</md-button>
+                <md-button class='md-raised' ng-click="navAbout(); toggleLeft()">About</md-button>
+                <md-button class="md-accent" ng-disabled="true">
+                    Categories
+                </md-button>
+                <md-button class="md-raised" ng-click="navCar(); toggleLeft()">Cars</md-button>
+                <md-button class="md-raised" ng-click="navHouse(); toggleLeft()">Houses</md-button>
+                <md-button class="md-raised" ng-click="navTechnology(); toggleLeft()">Technology</md-button>
+                <md-button class="md-raised" ng-click="navFurniture(); toggleLeft()">Furniture</md-button>
+                <md-button ng-click="toggleLeft()" class="md-accent">
+                    Close
+                </md-button>
+            </md-content>
+        </md-sidenav>
+        <md-content flex>
+            <div ng-view></div>
+        </md-content>
+    </section>
+</main>
+<div flex style="height:230px; background-color: black;" layout="row" >
+    <span flex="20"></span>
+    <span flex="60" layout="column" layout-align="top center">
                 <h3 style="color: orange;font-family: Garamond;">Find What You Are Looking For</h3>
                 <h4 style="color: white; font-family: Garamond;">Home * About * Category</h4>
                 <h5 style="color: Gainsboro; font-family: Garamond;">@DealIt</h5>
             </span>
-            <span flex="20"></span>
-        </div>
-
-        <!--Javascript Dependencies-->
-        <script src="/angular.js"></script>
-        <script src="/angular-route.js"></script>
-        <script src="/angular-animate.js"></script>
-        <script src="/angular-aria.js"></script>
-        <script src="/angular-messages.js"></script>
-        <script src="/angular-material.js"></script>
-        <script src="/angular-material-icons.js"></script>
-        <script src="/ui-grid.js"></script>
-
-        <!--Javascripts-->
-        <script type="text/javascript" src="/main.js"></script>
-    </body>
+    <span flex="20"></span>
+</div>
+<!--Javascript Dependencies-->
+<script src="/angular.js"></script>
+<script src="/angular-route.js"></script>
+<script src="/angular-animate.js"></script>
+<script src="/angular-aria.js"></script>
+<script src="/angular-messages.js"></script>
+<script src="/angular-material.js"></script>
+<script src="/angular-material-icons.js"></script>
+<script src="/ui-grid.js"></script>
+<!--Javascripts-->
+<script type="text/javascript" src="/main.js"></script>
+</body>
 </html>

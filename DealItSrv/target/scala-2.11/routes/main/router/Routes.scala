@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jariel/Documents/Copia Actual/DataBase/DealItSrv/conf/routes
-// @DATE:Sun Nov 13 14:43:22 PST 2016
+// @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
+// @DATE:Mon Nov 14 11:17:52 PST 2016
 
 package router
 
@@ -82,6 +82,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """profile.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "profile.html")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """item.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "item.html")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addPost.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "addPost.html")"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cart.html""", """controllers.Assets.at(path:String = "/public/html/templates", file:String = "cart.html")"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -769,6 +770,23 @@ class Routes(
     )
   )
 
+  // @LINE:69
+  private[this] lazy val controllers_Assets_at40_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cart.html")))
+  )
+  private[this] lazy val controllers_Assets_at40_invoker = createInvoker(
+    Assets_0.at(fakeValue[String], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Assets",
+      "at",
+      Seq(classOf[String], classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """cart.html"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -1010,6 +1028,12 @@ class Routes(
     case controllers_Assets_at39_route(params) =>
       call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("addPost.html"))) { (path, file) =>
         controllers_Assets_at39_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:69
+    case controllers_Assets_at40_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("cart.html"))) { (path, file) =>
+        controllers_Assets_at40_invoker.call(Assets_0.at(path, file))
       }
   }
 }

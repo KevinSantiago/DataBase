@@ -66,3 +66,4 @@ GET    /furniture.html              controllers.Assets.at(path="/public/html/tem
 GET    /profile.html                controllers.Assets.at(path="/public/html/templates", file="profile.html")
 GET    /item.html                   controllers.Assets.at(path="/public/html/templates", file="item.html")
 GET    /addPost.html                controllers.Assets.at(path="/public/html/templates", file="addPost.html")
+GET    /cart.html                   controllers.Assets.at(path="/public/html/templates", file="cart.html")

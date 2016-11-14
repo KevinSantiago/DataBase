@@ -7,15 +7,15 @@
 		revision="1.0"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161112145202"/>
+		date="20161114111736"/>
 	<dependencies>
 		<module organisation="org.postgresql" name="postgresql">
-			<revision name="9.3-1102-jdbc41" status="release" pubdate="20140718073917" resolver="public" artresolver="public" homepage="http://jdbc.postgresql.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="88">
+			<revision name="9.3-1102-jdbc41" status="release" pubdate="20140718073917" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="88">
 				<license name="BSD License" url="http://jdbc.postgresql.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="1481" time="234" location="/home/jariel/.ivy2/cache/org.postgresql/postgresql/ivy-9.3-1102-jdbc41.xml" searched="true" original-local-location="/home/jariel/.ivy2/cache/org.postgresql/postgresql/ivy-9.3-1102-jdbc41.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom"/>
+				<metadata-artifact status="no" details="" size="2356" time="0" location="/home/jariel/.ivy2/cache/org.postgresql/postgresql/ivy-9.3-1102-jdbc41.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.pom"/>
 				<caller organisation="dealitsrv" name="dealitsrv_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="9.3-1102-jdbc41" rev-constraint-default="9.3-1102-jdbc41" rev-constraint-dynamic="9.3-1102-jdbc41" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="postgresql" type="jar" ext="jar" status="successful" details="" size="592322" time="663" location="/home/jariel/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.3-1102-jdbc41.jar">
+					<artifact name="postgresql" type="jar" ext="jar" status="no" details="" size="592322" time="0" location="/home/jariel/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.3-1102-jdbc41.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1102-jdbc41/postgresql-9.3-1102-jdbc41.jar"/>
 					</artifact>
 				</artifacts>

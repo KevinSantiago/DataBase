@@ -1,0 +1,23 @@
+<div layout="column">
+    <div layout="row">
+        <img src="http://i.stack.imgur.com/p9mUO.jpg" flex height="300">
+    </div>
+    <md-toolbar style="background-color: DarkSlateGray;color: orange;">
+        <div class="md-toolbar-tools" layout = "row">
+            Your Shopping Cart
+        </div>
+    </md-toolbar>
+
+
+    <div>
+        <md-content>
+            <div id="grid1" ui-grid="gridOptions1" ui-grid-selection class="grid"> </div>
+        </md-content>
+
+    </div>
+
+    <h1 align="right">Total: {{total | currency:"$"}}</h1>
+    <md-button align="right" class="md-raised" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);">Checkout</md-button>
+
+
+</div>
