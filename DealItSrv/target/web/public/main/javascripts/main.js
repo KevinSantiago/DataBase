@@ -123,15 +123,19 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         };
 
         $scope.navProfile = function(){
-            $location.path('/profile')
+            $location.path('/profile');
         };
 
          $scope.navPost = function(){
-            $location.path('/addPost')
+            $location.path('/addPost');
+        };
+
+        $scope.navItem = function(){
+            $location.path('/item');
         };
 
         $scope.shoppingCart = function(){
-            $location.path('/cart')
+            $location.path('/cart');
         };
     }]);
 
@@ -189,7 +193,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
 
-     //Car Category Controller
+    //Car Category Controller
     app.controller('carController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.carCategory="This is the car category page";
@@ -202,18 +206,18 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 {field: 'item'},
                 {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'pid'},
+                {field: 'id'},
             ],
-           onRegisterApi: function( gridApi){
-                  $scope.grid1Api= gridApi;
-               gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                   var id = row.entity.id;
-                   SharedVariables.setItemID(id);
-                   $location.path('/item');
-               });
-               $scope.gridOptions1.columnDefs[3].visible = false;
+            onRegisterApi: function( gridApi){
+                    $scope.grid1Api= gridApi;
+                gridApi.selection.on.rowSelectionChanged($scope,function(row){
+                    var id = row.entity.id;
+                    SharedVariables.setItemID(id);
+                    $location.path('/item');
+                });
+                $scope.gridOptions1.columnDefs[3].visible = true;
 
-           }
+            }
         };
 
         $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "car"})
@@ -241,18 +245,18 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 {field: 'item'},
                 {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'pid'},
+                {field: 'id'},
             ],
-           onRegisterApi: function( gridApi){
-                  $scope.grid1Api= gridApi;
-               gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                   var id = row.entity.id;
-                   SharedVariables.setItemID(id);
-                   $location.path('/item');
-               });
-               $scope.gridOptions1.columnDefs[3].visible = false;
+            onRegisterApi: function( gridApi){
+                    $scope.grid1Api= gridApi;
+                gridApi.selection.on.rowSelectionChanged($scope,function(row){
+                    var id = row.entity.id;
+                    SharedVariables.setItemID(id);
+                    $location.path('/item');
+                });
+                $scope.gridOptions1.columnDefs[3].visible = false;
 
-           }
+            }
         };
 
         $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "house"})
@@ -279,10 +283,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 {field: 'item'},
                 {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'pid'},
+                {field: 'id'},
             ],
-           onRegisterApi: function( gridApi){
-                  $scope.grid1Api= gridApi;
+           onRegisterApi: function(gridApi){
+               $scope.grid1Api= gridApi;
                gridApi.selection.on.rowSelectionChanged($scope,function(row){
                    var id = row.entity.id;
                    SharedVariables.setItemID(id);
@@ -317,10 +321,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 {field: 'item'},
                 {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
-                {field: 'pid'},
+                {field: 'id'},
             ],
-           onRegisterApi: function( gridApi){
-                  $scope.grid1Api= gridApi;
+            onRegisterApi: function( gridApi){
+               $scope.grid1Api= gridApi;
                gridApi.selection.on.rowSelectionChanged($scope,function(row){
                    var id = row.entity.id;
                    SharedVariables.setItemID(id);
@@ -345,15 +349,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     //Item Details controller
     app.controller('itemController', ['$scope','$http','$location', 'SharedVariables' ,function($scope,$http,$location, SharedVariables){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-        $http.get(generalPath+"/DealItSrv/items/"+SharedVariables.getItemID())
-            .then(function(response){
-               $scope.itemName = response.data.name;
-               $scope.itemDesc = response.data.description;
-               $scope.itemPrice = response.data.price;
-               $scope.sellerName = response.data.seller.info.firstName + " " + response.data.seller.info.lastName;
-               $scope.sellerPhoneNumber = response.data.seller.info.phoneNumber;
-               $scope.sellerCity = response.data.seller.info.address.city + ", " + response.data.seller.info.address.country;
-            });
+        var pid = SharedVariables.getItemID();
+        $http.post(generalPath+"/DealItSrv/product/info", {pid: SharedVariables.getItemID()})
+
+        .then(function(response){
+            $scope.itemName = response.data.item;
+            $scope.itemDesc = response.data.condition;
+            $scope.itemPrice = response.data.price;
+        });
 
     }]);
 

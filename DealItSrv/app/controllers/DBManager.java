@@ -43,6 +43,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return credentials;
     }
 
@@ -72,6 +73,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return itm;
 
 
@@ -105,6 +107,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return itm;
     }
 
@@ -113,7 +116,7 @@ public class DBManager extends Controller{
         Item itr= null;
         if(cdb!=null){
             PreparedStatement ps = null;
-            String sql="select pname as item,price,conditions,brand,cname as _category\n"+
+            String sql="select pname as item, price, conditions, brand, cname as _category \n"+
                     "from product natural join category\n"+
                     "where pid=?";
 
@@ -135,6 +138,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return itr;
     }
 
@@ -162,6 +166,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return otr;
     }
 
@@ -189,6 +194,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return order;
     }
 
@@ -221,6 +227,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return user_info;
     }
 
@@ -252,6 +259,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return user_info;
     }
 
@@ -274,6 +282,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return phone_numbers;
     }
 
@@ -299,6 +308,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return comments;
     }
 
@@ -327,6 +337,7 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+        cdb.close();
         return credit_card;
     }
 
