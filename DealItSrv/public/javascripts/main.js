@@ -347,16 +347,59 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Item Details controller
-    app.controller('itemController', ['$scope','$http','$location', 'SharedVariables' ,function($scope,$http,$location, SharedVariables){
+    app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout' ,function($scope,$http,$location, SharedVariables,$q,$timeout){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         var pid = SharedVariables.getItemID();
-        $http.post(generalPath+"/DealItSrv/product/info", {pid: SharedVariables.getItemID()})
 
-        .then(function(response){
-            $scope.itemName = response.data.item;
-            $scope.itemDesc = response.data.condition;
-            $scope.itemPrice = response.data.price;
-        });
+
+
+
+         $http.post(generalPath+"/DealItSrv/product/info", {pid: SharedVariables.getItemID()})
+                 .then(function(response){
+
+                     $timeout(function(){
+                         //any code in here will automatically have an apply run afterwards
+                          $scope.itemName = response.data.item;
+                          $scope.itemDesc = response.data.condition;
+                          $scope.itemPrice = response.data.price;
+                          $scope.pid= response.data.id;
+
+                          $http.post(generalPath+"/DealItSrv/product/ownerinfo",{pid: $scope.pid})
+                                 .then(function(response){
+
+                                   $timeout(function(){
+
+                                        $scope.email = response.data.email;
+                                        $scope.firstName = response.data.firstName;
+                                        $scope.lastName = response.data.lastName;
+                                        $scope.city = response.data.city;
+                                        $scope.state = response.data.state;
+                                        $scope.uid= response.data.userID;
+                                        
+
+                                        $http.post(generalPath+"/DealItSrv/user/phone",{uid: $scope.uid})
+                                               .then(function(response){
+                                                    $timeout(function(){
+                                                        $scope.phones=response.data;
+
+                                                        $http.post(generalPath+"/DealItSrv/product/feedback",{pid: $scope.pid})
+                                                               .then(function(response){
+                                                                   $timeout(function(){
+                                                                         $scope.feedback= response.data;
+
+                                                                   });
+                                                               });
+                                                    });
+
+                                               });
+                                   });
+
+                                 });
+                     });
+
+                 });
+
+
 
     }]);
 
