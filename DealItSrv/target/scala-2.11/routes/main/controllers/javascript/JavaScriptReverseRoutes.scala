@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Mon Nov 14 11:17:52 PST 2016
+// @DATE:Tue Nov 15 18:29:36 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -202,16 +202,6 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
-    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.signup",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/signup"})
-        }
-      """
-    )
-  
     // @LINE:36
     def getFeedbackFromProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getFeedbackFromProduct",
@@ -248,16 +238,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/order"})
-        }
-      """
-    )
-  
-    // @LINE:33
-    def getItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getItemByID",
-      """
-        function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/items/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
         }
       """
     )

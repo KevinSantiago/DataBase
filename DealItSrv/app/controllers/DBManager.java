@@ -39,6 +39,7 @@ public class DBManager extends Controller{
                     int aid= rs.getInt("aid");
                     credentials = new Login(user,password,aid);
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -68,6 +69,7 @@ public class DBManager extends Controller{
                     int pid = rs.getInt("pid");
                     itm.add(new Item(pid,item,brand,category,price,condition));
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -101,6 +103,7 @@ public class DBManager extends Controller{
 
                     itm.add(new Item(pid,item,brand,category,price,condition));
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -113,7 +116,7 @@ public class DBManager extends Controller{
         Item itr= null;
         if(cdb!=null){
             PreparedStatement ps = null;
-            String sql="select pname as item,price,conditions,brand,cname as _category\n"+
+            String sql="select pname as item, price, conditions, brand, cname as _category \n"+
                     "from product natural join category\n"+
                     "where pid=?";
 
@@ -130,7 +133,7 @@ public class DBManager extends Controller{
 
                     itr = new Item(pid,item,brand,category,price,condition);
                 }
-
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -158,6 +161,7 @@ public class DBManager extends Controller{
                     String date = rs.getString("_date");
                     otr = new Order(oid,ctype,cnumber, date);
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -185,6 +189,7 @@ public class DBManager extends Controller{
                     int quantity = rs.getInt("quantity");
                     order.add(new OrderLine(oid, pid, pname,quantity));
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -217,6 +222,7 @@ public class DBManager extends Controller{
                     int aid = rs.getInt("aid");
                     user_info = new UserInfo(email,aid,name, lastname, birth,  city, state, uid);
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -248,6 +254,7 @@ public class DBManager extends Controller{
                     int uid = rs.getInt("uid");
                     user_info = new UserInfo(email,aid,name, lastname, birth,  city, state, uid);
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -270,6 +277,7 @@ public class DBManager extends Controller{
                     String phone = rs.getString("phone");
                     phone_numbers.add(phone);
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -294,7 +302,7 @@ public class DBManager extends Controller{
                     String comment = rs.getString("comnt");
                     comments.add(comment);
                 }
-
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
@@ -323,6 +331,7 @@ public class DBManager extends Controller{
                     String expdate = rs.getString("expdate");
                     credit_card = new CreditCard(crid,number, expdate, scode, type);
                 }
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }

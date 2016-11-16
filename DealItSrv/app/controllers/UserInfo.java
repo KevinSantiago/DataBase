@@ -68,7 +68,16 @@ public class UserInfo {
         this.birthDate = birthDate;
     }
 
+    public int getUserID(){
+        return userID;
+    }
 
+    public String getCity(){
+        return city;
+    }
 
+    public String getState(){
+        return state;
+    }
 
 }

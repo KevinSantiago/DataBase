@@ -1,22 +1,28 @@
 <div layout="column">
     <div layout="row"> 
         <div flex="20"><img src="http://i.stack.imgur.com/p9mUO.jpg" width="100%" height="700"></div>
-        <div flex="60">
 
-                        <h1 class="md-display-2" style="color: orange">{{itemName}}</h1>
-                        <h1 class="md-display-2">{{itemPrice | currency:"USD$"}}</h1>
+                <div flex="60">
 
-                        <div layout="row">
-                            <p flex="60">{{itemDesc}}</p>
-                            <div layout="column">
-                                <p flex="20">Contact Info:<br>{{sellerName}}<br>{{sellerPhoneNumber}}<br>{{sellerCity}}</p>
-                            </div>
+                                <h1 class="md-display-2" style="color: orange">{{itemName}}</h1>
+                                <h1 class="md-display-2">{{itemPrice | currency:"USD$"}}</h1>
 
-                            <span flex></span>
-                        </div>
+                                <div layout="row">
+                                    <p flex="60">{{itemDesc}}</p>
+                                    <div layout="column">
+                                        <p flex="20">Contact Info:<br>{{firstName}} {{lastName}}<br>
+                                        Telephone:<ul><li ng-repeat="item in phones">{{item}}</li></ul><br>
+                                        Location: {{city}} , {{state}}
+
+                                        </p>
+                                    </div>
+
+                                    <span flex></span>
+                                </div>
 
 
-        </div>
+                </div>
+
         <div flex="20"><img src="http://i.stack.imgur.com/p9mUO.jpg" width="100%" height="700"></div>
     </div>
 </div>

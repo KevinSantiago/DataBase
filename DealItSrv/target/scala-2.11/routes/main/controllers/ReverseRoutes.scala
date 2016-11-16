@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Mon Nov 14 11:17:52 PST 2016
+// @DATE:Tue Nov 15 18:29:36 PST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -198,12 +198,6 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "DealItSrv/user")
     }
   
-    // @LINE:18
-    def signup(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "login/signup")
-    }
-  
     // @LINE:36
     def getFeedbackFromProduct(): Call = {
       import ReverseRouteContext.empty
@@ -226,12 +220,6 @@ package controllers {
     def getOrdersFromAccount(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "DealItSrv/order")
-    }
-  
-    // @LINE:33
-    def getItemByID(id:Integer): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/items/" + implicitly[PathBindable[Integer]].unbind("id", id))
     }
   
     // @LINE:37
