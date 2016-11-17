@@ -507,6 +507,43 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             $location.path('/order_success');
          };
 
+         $scope.total = 0;
+        $scope.gridOptions1= {
+            enableSorting: true,
+            enableRowSelection: true,
+            enableRowHeaderSelection: false,
+            enableHorizontalScrollbar: 0,
+            enableVerticalScrollbar: 0,
+            columnDefs: [
+                {field: 'item'},
+                // {field: 'brand'},
+                // {field: 'condition'},
+                {field: 'price', cellFilter: 'currency'},
+                {field: 'id'}
+            ],
+            onRegisterApi: function (gridApi) {
+                $scope.grid1Api = gridApi;
+                $scope.gridOptions1.columnDefs[2].visible = false;
+            }
+        };
+
+
+        var shopCart = SharedVariables.getShoppingCart();
+        var iData = [];
+        for(var i = 0; i < shopCart.length ; i++){
+            $http.get(generalPath+"/DealItSrv/items/" + shopCart[i])
+                .then(function(response){
+                    iData.push(response.data);
+                    $scope.total += response.data.price;
+                    console.log(iData[i]);
+                });
+        }
+
+        $scope.gridOptions1.data = iData;
+        $scope.gridOptions1.columnDefs[0].enableHiding=false;
+        $scope.gridOptions1.columnDefs[1].enableHiding=false;
+        $scope.gridOptions1.columnDefs[2].enableHiding=false;
+
     }]);
 
     //Order Success controller

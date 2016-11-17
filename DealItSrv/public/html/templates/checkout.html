@@ -16,6 +16,12 @@
 
 
     <!-- Shopping Cart Contents, Total -->
+    <div>
+        <md-content>
+            <div id="grid1" ui-grid="gridOptions1" ui-grid-selection class="grid"> </div>
+        </md-content>
+        <h1 align="right">Total: {{total | currency:"$"}}</h1>
+    </div>
 
     <table>
         <td><ng-md-icon icon="account_balance"></ng-md-icon></td>
