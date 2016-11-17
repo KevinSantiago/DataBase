@@ -5,8 +5,9 @@
                 <div flex="60">
 
                                 <h1 class="md-display-2" style="color: orange">{{itemName}}</h1>
-                                <h1 class="md-display-2">{{itemPrice | currency:"USD$"}}</h1>
-
+                                <h1 class="md-display-2">{{itemPrice | currency:"$"}}</h1>
+                    <md-button class="md-raised" ng-hide="inShoppingCart" style="min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="addToShoppingCart()">Add to Shopping Cart</md-button>
+                    <md-button class="md-raised" ng-show="inShoppingCart" style="min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="removeFromShoppingCart()">Remove from Shopping Cart</md-button>
                                 <div layout="row">
                                     <p flex="60">{{itemDesc}}</p>
                                     <div layout="column">
