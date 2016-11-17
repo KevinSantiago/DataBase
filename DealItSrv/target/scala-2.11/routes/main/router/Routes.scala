@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Wed Nov 16 20:25:07 PST 2016
+// @DATE:Wed Nov 16 22:00:06 PST 2016
 
 package router
 
@@ -54,7 +54,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/order""", """controllers.Application.getOrdersFromAccount"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/order/content""", """controllers.Application.getOrderContent"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/items/""" + "$" + """id<[^/]+>""", """controllers.Application.getItemByID(id:Integer)"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/itemsByCat""", """controllers.Application.getItemsPerCategory"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/itemsByCat/""" + "$" + """category<[^/]+>""", """controllers.Application.getItemsPerCategory(category:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/product/ownerinfo""", """controllers.Application.getProductOwnerInfo"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/product/feedback""", """controllers.Application.getFeedbackFromProduct"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/product/info""", """controllers.Application.getProductInfo"""),
@@ -297,19 +297,19 @@ class Routes(
   )
 
   // @LINE:34
-  private[this] lazy val controllers_Application_getItemsPerCategory12_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/itemsByCat")))
+  private[this] lazy val controllers_Application_getItemsPerCategory12_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/itemsByCat/"), DynamicPart("category", """[^/]+""",true)))
   )
   private[this] lazy val controllers_Application_getItemsPerCategory12_invoker = createInvoker(
-    Application_1.getItemsPerCategory,
+    Application_1.getItemsPerCategory(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
       "getItemsPerCategory",
-      Nil,
-      "POST",
+      Seq(classOf[String]),
+      "GET",
       """""",
-      this.prefix + """DealItSrv/itemsByCat"""
+      this.prefix + """DealItSrv/itemsByCat/""" + "$" + """category<[^/]+>"""
     )
   )
 
@@ -883,8 +883,8 @@ class Routes(
   
     // @LINE:34
     case controllers_Application_getItemsPerCategory12_route(params) =>
-      call { 
-        controllers_Application_getItemsPerCategory12_invoker.call(Application_1.getItemsPerCategory)
+      call(params.fromPath[String]("category", None)) { (category) =>
+        controllers_Application_getItemsPerCategory12_invoker.call(Application_1.getItemsPerCategory(category))
       }
   
     // @LINE:35

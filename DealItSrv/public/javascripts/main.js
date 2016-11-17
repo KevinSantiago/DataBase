@@ -228,7 +228,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     app.controller('carController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.carCategory="This is the car category page";
-      
+        $scope.category="car";
         $scope.gridOptions1= {
             enableSorting: true,
             enableRowSelection: true,
@@ -251,7 +251,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             }
         };
 
-        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "car"})
+        $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -267,7 +267,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     app.controller('houseController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.houseCategory="This is the house category page";
-
+        $scope.category="house";
 		$scope.gridOptions1= {
             enableSorting: true,
             enableRowSelection: true,
@@ -290,7 +290,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             }
         };
 
-        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "house"})
+        $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -305,7 +305,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     app.controller('technologyController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.technologyCategory="This is technology category page";
-		
+		$scope.category="technology";
         $scope.gridOptions1= {
             enableSorting: true,
             enableRowSelection: true,
@@ -328,7 +328,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
            }
         };
 
-        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "technology"})
+        $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -343,7 +343,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     app.controller('furnitureController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.furnitureCategory="This is furniture category page";
-        
+        $scope.category="furniture";
 		$scope.gridOptions1= {
             enableSorting: true,
             enableRowSelection: true,
@@ -366,7 +366,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
            }
         };
 
-        $http.post(generalPath+"/DealItSrv/itemsByCat",{category: "furniture"})
+        $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 			$scope.gridOptions1.data=response.data;
 			$scope.gridOptions1.columnDefs[0].enableHiding=false;
@@ -381,7 +381,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout' ,function($scope,$http,$location, SharedVariables,$q,$timeout){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         var pid = SharedVariables.getItemID();
-
+        
 
         $scope.inShoppingCart = false;
 

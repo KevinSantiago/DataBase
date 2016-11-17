@@ -31,7 +31,7 @@ POST    /DealItSrv/order/content    controllers.Application.getOrderContent
 # Items
 
 GET     /DealItSrv/items/:id        controllers.Application.getItemByID(id: Integer)
-POST    /DealItSrv/itemsByCat       controllers.Application.getItemsPerCategory
+GET    /DealItSrv/itemsByCat/:category       controllers.Application.getItemsPerCategory(category: String)
 POST    /DealItSrv/product/ownerinfo controllers.Application.getProductOwnerInfo
 POST    /DealItSrv/product/feedback controllers.Application.getFeedbackFromProduct
 POST    /DealItSrv/product/info     controllers.Application.getProductInfo

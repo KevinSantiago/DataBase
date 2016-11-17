@@ -1,5 +1,9 @@
 <div layout="column">
-    <span style="height:25px"></span>
+    <md-toolbar style="background-color: DarkSlateGray;color: orange;">
+        <div class="md-toolbar-tools" layout = "row">
+            {{itemName}}
+        </div>
+    </md-toolbar>
     <div layout="row">
         <div flex="70">
             <div layout="row" style="background-color: Lavender;" layout-align="space-around end">
@@ -21,13 +25,11 @@
             <h4 style="margin-left:10%">email: {{email}}</h4>
             <md-divider></md-divider>
             <br>
-            <!--<md-button style="margin-left:30%" class="md-raised md-primary"><ng-md-icon icon="shopping_cart" style="fill:black;" ng-click="addToShoppingCart()"></ng-md-icon>   Add to Cart</md-button><br>-->
             <md-button class="md-raised" ng-hide="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="addToShoppingCart()">Add to Shopping Cart</md-button>
             <md-button class="md-raised" ng-show="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="removeFromShoppingCart()">Remove from Shopping Cart</md-button>
         </div>
     </div>
     <div>
-        <h1 style="margin-left:40%;color: orange;">{{itemName}}</h1>
         <md-divider></md-divider>
         <h2 style="color:orange">Description</h2>
         <p style="width:60%">

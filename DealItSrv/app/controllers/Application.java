@@ -69,10 +69,10 @@ public class Application extends Controller {
     /**
      * Get items by category
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getItemsPerCategory(){
-        JsonNode info = request().body().asJson();
-        String category = info.findPath("category").textValue();
+   // @BodyParser.Of(BodyParser.Json.class)
+    public Result getItemsPerCategory(String category){
+       // JsonNode info = request().body().asJson();
+       // String category = info.findPath("category").textValue();
         if(category != null){
             ItemManager itm = DBManager.getItemsPerCategory(category);
             return ok(Json.toJson(itm.getAll()));

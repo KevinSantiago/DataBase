@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for dealitsrv#dealitsrv_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies dealitsrv#dealitsrv_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6edaed1c[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f7509c8[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
@@ -9000,7 +9000,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-analysis;4.1!asm-analysis.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-util;4.1!asm-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2907ms :: artifacts dl 65ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3642ms :: artifacts dl 160ms[0m
 [0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 compile produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 runtime produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 test produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml[0m
@@ -9014,5 +9014,5 @@
 [0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 docs produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 pom produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for dealitsrv#dealitsrv_2.11;1.0 scala-tool produced in /home/jariel/Documents/Oficial/DataBase/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2907ms resolve - 65ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3642ms resolve - 160ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

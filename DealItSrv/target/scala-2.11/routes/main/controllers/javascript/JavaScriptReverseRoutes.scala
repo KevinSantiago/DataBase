@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Wed Nov 16 20:25:07 PST 2016
+// @DATE:Wed Nov 16 22:00:06 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -170,16 +170,6 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:34
-    def getItemsPerCategory: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getItemsPerCategory",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat"})
-        }
-      """
-    )
-  
     // @LINE:19
     def createUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.createUser",
@@ -246,6 +236,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/order"})
+        }
+      """
+    )
+  
+    // @LINE:34
+    def getItemsPerCategory: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getItemsPerCategory",
+      """
+        function(category0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/itemsByCat/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("category", encodeURIComponent(category0))})
         }
       """
     )
