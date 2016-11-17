@@ -11,18 +11,17 @@ GET     /DealItSrv                  controllers.Application.index
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 # Login / Logout
-POST    /DealItSrv/logout           controllers.Application.logout
-POST   /login/submit               controllers.Application.loginUser
+POST    /DealItSrv/logout                   controllers.Application.logout
+GET     /login/submit/:password/:username   controllers.Application.loginUser(password: String,username: String)
 
 #Sign Up
-# POST    /login/signup               controllers.Application.signup
 POST    /login/signup2              controllers.Application.createUser
 
 # Users
-POST    /DealItSrv/user             controllers.Application.getUserInfo
-POST    /DealItSrv/user/phone       controllers.Application.getPhoneNumbers
-POST    /DealItSrv/user/creditcard  controllers.Application.getCreditCard
-POST    /DealItSrv/user/products    controllers.Application.getProductsFromUser
+POST    /DealItSrv/user                  controllers.Application.getUserInfo
+GET     /DealItSrv/user/phone/:uid       controllers.Application.getPhoneNumbers(uid: Integer)
+GET     /DealItSrv/user/creditcard/:aid  controllers.Application.getCreditCard(aid: Integer)
+POST    /DealItSrv/user/products         controllers.Application.getProductsFromUser
 
 #Orders
 POST    /DealItSrv/order            controllers.Application.getOrdersFromAccount
@@ -30,11 +29,11 @@ POST    /DealItSrv/order/content    controllers.Application.getOrderContent
 
 # Items
 
-GET     /DealItSrv/items/:id        controllers.Application.getItemByID(id: Integer)
-GET    /DealItSrv/itemsByCat/:category       controllers.Application.getItemsPerCategory(category: String)
-POST    /DealItSrv/product/ownerinfo controllers.Application.getProductOwnerInfo
-POST    /DealItSrv/product/feedback controllers.Application.getFeedbackFromProduct
-POST    /DealItSrv/product/info     controllers.Application.getProductInfo
+GET     /DealItSrv/items/:id                  controllers.Application.getItemByID(id: Integer)
+GET     /DealItSrv/itemsByCat/:category       controllers.Application.getItemsPerCategory(category: String)
+GET     /DealItSrv/product/ownerinfo/:pid     controllers.Application.getProductOwnerInfo(pid: Integer)
+GET     /DealItSrv/product/feedback/:pid      controllers.Application.getFeedbackFromProduct(pid: Integer)
+GET     /DealItSrv/product/info/:pid          controllers.Application.getProductInfo(pid: Integer)
 
 # Home page
 GET     /                           controllers.Assets.at(path="/public/html/", file="index.html")

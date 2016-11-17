@@ -73,7 +73,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             templateUrl: "profile.html",
             controller: "profileController"
         })
-        .when("/item",{
+        .when("/item/:pid",{
             templateUrl: "item.html",
             controller: "itemController"
         })
@@ -244,7 +244,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 gridApi.selection.on.rowSelectionChanged($scope,function(row){
                     var id = row.entity.id;
                     SharedVariables.setItemID(id);
-                    $location.path('/item');
+                    $location.path('/item/'+id);
                 });
                 $scope.gridOptions1.columnDefs[3].visible = false;
 
@@ -283,7 +283,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 gridApi.selection.on.rowSelectionChanged($scope,function(row){
                     var id = row.entity.id;
                     SharedVariables.setItemID(id);
-                    $location.path('/item');
+                    $location.path('/item/'+id);
                 });
                 $scope.gridOptions1.columnDefs[3].visible = false;
 
@@ -321,7 +321,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                gridApi.selection.on.rowSelectionChanged($scope,function(row){
                    var id = row.entity.id;
                    SharedVariables.setItemID(id);
-                   $location.path('/item');
+                   $location.path('/item/'+id);
                });
                $scope.gridOptions1.columnDefs[3].visible = false;
 
@@ -359,7 +359,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                gridApi.selection.on.rowSelectionChanged($scope,function(row){
                    var id = row.entity.id;
                    SharedVariables.setItemID(id);
-                   $location.path('/item');
+                   $location.path('/item/'+id);
                });
                $scope.gridOptions1.columnDefs[3].visible = false;
 
@@ -378,18 +378,19 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Item Details controller
-    app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout' ,function($scope,$http,$location, SharedVariables,$q,$timeout){
+    app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout','$routeParams' ,function($scope,$http,$location, SharedVariables,$q,$timeout,$routeParams){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-        var pid = SharedVariables.getItemID();
-        
+       // var pid = SharedVariables.getItemID();
+        var pid = $routeParams.pid;
 
+        SharedVariables.setItemID(pid);
         $scope.inShoppingCart = false;
 
         if(SharedVariables.isInShoppingCart(SharedVariables.getItemID())){
             $scope.inShoppingCart = true;
         }
 
-         $http.post(generalPath+"/DealItSrv/product/info", {pid: SharedVariables.getItemID()})
+         $http.get(generalPath+"/DealItSrv/product/info/"+pid)
                  .then(function(response){
 
                      $timeout(function(){
@@ -402,7 +403,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                           $scope.itemCond = response.data.condition;
                           $scope.itemBrand = response.data.brand;
 
-                          $http.post(generalPath+"/DealItSrv/product/ownerinfo",{pid: $scope.pid})
+                          $http.get(generalPath+"/DealItSrv/product/ownerinfo/"+$scope.pid)
                                  .then(function(response){
 
                                    $timeout(function(){
@@ -415,14 +416,16 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                                         $scope.uid= response.data.userID;
 
 
-                                        $http.post(generalPath+"/DealItSrv/user/phone",{uid: $scope.uid})
+                                        $http.get(generalPath+"/DealItSrv/user/phone/"+$scope.uid)
                                                .then(function(response){
                                                     $timeout(function(){
+
                                                         $scope.phones=response.data;
 
-                                                        $http.post(generalPath+"/DealItSrv/product/feedback",{pid: $scope.pid})
+                                                        $http.get(generalPath+"/DealItSrv/product/feedback/"+$scope.pid)
                                                                .then(function(response){
                                                                    $timeout(function(){
+                                                                         ;
                                                                          $scope.feedback= response.data;
 
                                                                    });
@@ -584,7 +587,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 $scope.birth = response.data.birthDate;
                 var userid = response.data.userID;
 
-                $http.post(generalPath+"/DealItSrv/user/phone", {uid: userid})
+                $http.get(generalPath+"/DealItSrv/user/phone/"+userid)
                 .then(function(response){
                     $scope.phones = response.data;
                 });
@@ -592,7 +595,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             });
         });
 
-        $http.post(generalPath+"/DealItSrv/user/creditcard", {aid: AID})
+        $http.get(generalPath+"/DealItSrv/user/creditcard/"+AID)
         .then(function(response){
             $scope.creditcard = response.data.cardNumber;
             $scope.type = response.data.type;
@@ -603,10 +606,11 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
     // Login , Sign up controller
     app.controller('loginController',['$scope','$http','$location', 'SharedVariables', function($scope,$http,$location, SharedVariables){
-	
-    // Controller Instances
-     var currentPath= $location.path(); //the current location is stored on this variable
 
+    // Controller Instances
+
+     var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port()+$location.path(); //the current location is stored on this variable
+;
      $scope.email="";                   //store the email
      $scope.password="";                //store the password
      $scope.name="";                    //store the name of the new user
@@ -628,9 +632,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
      * Call to submit login credentials
     */
     $scope.login = function(){
-        
+        alert(generalPath+"/submit/"+$scope.password+"/"+$scope.email);
         if(validateLogin()){
-            $http.post(currentPath+"/submit",{ email: $scope.email, password: $scope.password})
+            $http.get(generalPath+"/submit/"+$scope.password+"/"+$scope.email)
                 .then(function(response){
                     resetFlags();
 				    resetFields();

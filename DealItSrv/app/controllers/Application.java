@@ -30,12 +30,9 @@ public class Application extends Controller {
      * Submit user credentials .Expects the user credentials in JSON format.
      * @return Status depending on request outcome
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result loginUser(){
 
-        JsonNode user = request().body().asJson();
-        String username = user.findPath("email").textValue();
-        String password = user.findPath("password").textValue();
+    public Result loginUser(String password,String username){
+
         String logAlert;
 
         if((username != null) && (password != null)){
@@ -103,11 +100,8 @@ public class Application extends Controller {
      * Get users phone numbers
      */
 
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getPhoneNumbers(){
 
-        JsonNode info = request().body().asJson();
-        int uid = info.findPath("uid").intValue();
+    public Result getPhoneNumbers(int uid){
 
         if(uid != 0){
             return ok(Json.toJson(DBManager.getPhoneNumbers(uid)));
@@ -120,11 +114,8 @@ public class Application extends Controller {
     /**
      * Get user credit card info
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getCreditCard(){
 
-        JsonNode info = request().body().asJson();
-        int aid = info.findPath("aid").intValue();
+    public Result getCreditCard(int aid){
 
         if(aid != 0){
             CreditCard credit_card = DBManager.getCreditCard(aid);
@@ -140,10 +131,9 @@ public class Application extends Controller {
      * Get product owner info
      *
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getProductOwnerInfo(){
-        JsonNode info = request().body().asJson();
-        int pid = info.findPath("pid").intValue();
+
+    public Result getProductOwnerInfo(int pid){
+
         if(pid != 0){
             UserInfo user_info = DBManager.getOwnerOfProductInfo(pid);
             return ok(Json.toJson(user_info));
@@ -156,10 +146,9 @@ public class Application extends Controller {
     /**
      * Get Feedback from product
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getFeedbackFromProduct(){
-        JsonNode info = request().body().asJson();
-        int pid = info.findPath("pid").intValue();
+
+    public Result getFeedbackFromProduct(int pid){
+
         if(pid != 0){
             return ok(Json.toJson(DBManager.getFeedback(pid)));
         }
@@ -171,10 +160,8 @@ public class Application extends Controller {
     /**
      * Get item info by their pid
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getProductInfo(){
-        JsonNode info = request().body().asJson();
-        int pid = info.findPath("pid").intValue();
+
+    public Result getProductInfo(int pid){
 
         if(pid != 0){
             Item itr = DBManager.getProductInfo(pid);
