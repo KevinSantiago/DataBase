@@ -30,7 +30,7 @@ POST    /DealItSrv/order/content    controllers.Application.getOrderContent
 
 # Items
 
-# GET     /DealItSrv/items/:id        controllers.Application.getItemByID(id: Integer)
+GET     /DealItSrv/items/:id        controllers.Application.getItemByID(id: Integer)
 POST    /DealItSrv/itemsByCat       controllers.Application.getItemsPerCategory
 POST    /DealItSrv/product/ownerinfo controllers.Application.getProductOwnerInfo
 POST    /DealItSrv/product/feedback controllers.Application.getFeedbackFromProduct
@@ -67,3 +67,5 @@ GET    /profile.html                controllers.Assets.at(path="/public/html/tem
 GET    /item.html                   controllers.Assets.at(path="/public/html/templates", file="item.html")
 GET    /addPost.html                controllers.Assets.at(path="/public/html/templates", file="addPost.html")
 GET    /cart.html                   controllers.Assets.at(path="/public/html/templates", file="cart.html")
+GET    /checkout.html               controllers.Assets.at(path="/public/html/templates", file="checkout.html")
+GET    /order_success.html          controllers.Assets.at(path="/public/html/templates", file="order_success.html")

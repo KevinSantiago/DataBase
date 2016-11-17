@@ -1,0 +1,37 @@
+<div layout="column">
+    <div layout="row">
+       <!-- <img src="http://i.stack.imgur.com/p9mUO.jpg" flex height="300">-->
+    </div>
+    <md-toolbar style="background-color: DarkSlateGray;color: orange;">
+        <div class="md-toolbar-tools" layout = "row">
+            Checkout
+        </div>
+    </md-toolbar>
+
+    <table>
+        <td><ng-md-icon icon="shopping_cart"></ng-md-icon></td>
+        <td><h1>Order Summary</h1></td>
+    </table>
+
+
+
+    <!-- Shopping Cart Contents, Total -->
+
+    <table>
+        <td><ng-md-icon icon="account_balance"></ng-md-icon></td>
+        <td><h1>Address</h1></td>
+    </table>
+
+    <!-- Address Selection -->
+
+    <table>
+        <td><ng-md-icon icon="credit_card"></ng-md-icon></td>
+        <td><h1>Payment Method</h1></td>
+    </table>
+
+    <!-- Select Payment Method -->
+
+    <md-button align="right" class="md-raised" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="placeOrder()">Place Order</md-button>
+
+
+</div>

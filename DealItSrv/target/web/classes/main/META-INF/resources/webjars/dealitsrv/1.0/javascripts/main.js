@@ -2,6 +2,8 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
       app.service('SharedVariables', function(){
         var itemID = 0;
+        var itemName, itemPrice;
+        var shoppingCartID = [];
 
         return {
             getItemID: function getItemID() {
@@ -9,6 +11,20 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             },
             setItemID: function setItemID(value) {
                 itemID = value;
+            },
+            addToShoppingCart: function(id){
+                shoppingCartID.push(id);
+            },
+            removeFromShoppingCart: function(id){
+                var itr = shoppingCartID.indexOf(id);
+                shoppingCartID.splice(itr,1);
+            },
+            getShoppingCart: function(){
+                return shoppingCartID;
+            },
+            isInShoppingCart: function(id){
+                var itr = shoppingCartID.indexOf(id);
+                return itr != -1;
             }
          };
      });
@@ -61,6 +77,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         .when("/cart", {
             templateUrl: "cart.html",
             controller: "cartController"
+        })
+        .when("/checkout",{
+            templateUrl: "checkout.html",
+            controller: "checkoutController"
+        })
+        .when("/order_success",{
+            templateUrl: "order_success.html",
+            controller: "orderSuccessController"
         });
     });
 
@@ -352,7 +376,11 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         var pid = SharedVariables.getItemID();
 
 
+        $scope.inShoppingCart = false;
 
+        if(SharedVariables.isInShoppingCart(SharedVariables.getItemID())){
+            $scope.inShoppingCart = true;
+        }
 
          $http.post(generalPath+"/DealItSrv/product/info", {pid: SharedVariables.getItemID()})
                  .then(function(response){
@@ -399,6 +427,19 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
                  });
 
+          $scope.addToShoppingCart = function(){
+              SharedVariables.addToShoppingCart(SharedVariables.getItemID());
+              alert("Item added to Shopping Cart");
+              $scope.inShoppingCart = true;
+          };
+
+          $scope.removeFromShoppingCart = function(){
+              SharedVariables.removeFromShoppingCart(SharedVariables.getItemID());
+              alert("Item removed from Shopping Cart");
+              $scope.inShoppingCart = false;
+          };
+
+
 
 
     }]);
@@ -407,10 +448,6 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     app.controller('cartController', ['$scope','$http','$location' ,'SharedVariables',function($scope,$http,$location, SharedVariables){
        var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
 
-        $http.get(generalPath+"/DealItSrv/items")
-            .then(function(response){
-                $scope.items=response.data;
-            });
 
         $scope.total = 0;
         //TODO: Calculate total
@@ -423,7 +460,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             enableHorizontalScrollbar: 0,
             enableVerticalScrollbar: 0,
             columnDefs: [
-                {field: 'name'},
+                {field: 'item'},
                // {field: 'brand'},
                // {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
@@ -440,14 +477,45 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             }
         };
 
-            $http.get(generalPath+"/DealItSrv/items")
-                    .then(function(response){
-                        $scope.gridOptions1.data=response.data;
-                        $scope.gridOptions1.columnDefs[0].enableHiding=false;
-                        $scope.gridOptions1.columnDefs[1].enableHiding=false;
-                        $scope.gridOptions1.columnDefs[2].enableHiding=false;
 
-                    });
+        var shopCart = SharedVariables.getShoppingCart();
+        var iData = [];
+        for(var i = 0; i < shopCart.length ; i++){
+            $http.get(generalPath+"/DealItSrv/items/" + shopCart[i])
+                .then(function(response){
+                    iData.push(response.data);
+                    $scope.total += response.data.price;
+                });
+        }
+
+        $scope.gridOptions1.data = iData;
+        $scope.gridOptions1.columnDefs[0].enableHiding=false;
+        $scope.gridOptions1.columnDefs[1].enableHiding=false;
+        $scope.gridOptions1.columnDefs[2].enableHiding=false;
+
+        $scope.goToCheckout = function() {
+            $location.path('/checkout');
+        };
+
+    }]);
+
+    //Checkout controller
+    app.controller('checkoutController', ['$scope','$http','$location' ,'SharedVariables',function($scope,$http,$location, SharedVariables){
+         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
+
+         $scope.placeOrder = function(){
+            $location.path('/order_success');
+         };
+
+    }]);
+
+    //Order Success controller
+    app.controller('orderSuccessController', ['$scope','$http','$location' ,'SharedVariables',function($scope,$http,$location, SharedVariables){
+     var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
+
+        $scope.returnToHomePage = function(){
+            $location.path('/');
+        };
 
     }]);
 

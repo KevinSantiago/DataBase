@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Tue Nov 15 18:29:36 PST 2016
+// @SOURCE:/home/deadmanpr/Documents/Git/DataBase/DealItSrv/conf/routes
+// @DATE:Wed Nov 16 20:13:30 AST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -149,6 +149,16 @@ package controllers {
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "cart.html")))
           Call("GET", _prefix + { _defaultPrefix } + "cart.html")
       
+        // @LINE:70
+        case (path, file) if path == "/public/html/templates" && file == "checkout.html" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "checkout.html")))
+          Call("GET", _prefix + { _defaultPrefix } + "checkout.html")
+      
+        // @LINE:71
+        case (path, file) if path == "/public/html/templates" && file == "order_success.html" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "order_success.html")))
+          Call("GET", _prefix + { _defaultPrefix } + "order_success.html")
+      
       }
     
     }
@@ -220,6 +230,12 @@ package controllers {
     def getOrdersFromAccount(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "DealItSrv/order")
+    }
+  
+    // @LINE:33
+    def getItemByID(id:Integer): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/items/" + implicitly[PathBindable[Integer]].unbind("id", id))
     }
   
     // @LINE:37

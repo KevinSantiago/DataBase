@@ -243,9 +243,9 @@ public class Application extends Controller {
      * @return Status code depending on request outcome. If ok, returns the Item in JSON format
      */
     public Result getItemByID(int id){
-        Item itr = itemManager.getByID(id);
+        Item itr = DBManager.getProductInfo(id);
         if(itr == null)
-            return notFound("Invalid ID. Item not found!\n");
+            return notFound("tem not found!\n");
 
         return ok(Json.toJson(itr));
 
