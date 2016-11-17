@@ -25,26 +25,34 @@
                 <span flex="20""><md-button style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()">DealIt</md-button></span>
                 <span flex></span>
                 <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
-                <md-button ng-click="navPost()">
+                <md-button ng-click="navPost()" ng-if="log">
                     <md-tooltip>
                         Create New Post
                     </md-tooltip>
                     <ng-md-icon icon="add" style="fill:black;" ng-click="navPost()"></ng-md-icon>
                 </md-button>
 
-                <md-button ng-click="logNav()">
+                <md-button ng-click="logNav()" ng-if="!log">
                     <md-tooltip>
                         Login/SignUp
                     </md-tooltip>
                     <ng-md-icon icon="login" style="fill:black;"></ng-md-icon>
                 </md-button>
-                <md-button ng-click="shoppingCart()">
+
+                <md-button ng-click="logout()" ng-if="log">
+                    <md-tooltip>
+                        Logout
+                    </md-tooltip>
+                    <ng-md-icon icon="login" style="fill:black;"></ng-md-icon>
+                </md-button>
+
+                <md-button ng-click="shoppingCart()" ng-if="log">
                     <md-tooltip>
                         View Your Shopping Cart
                     </md-tooltip>
                     <ng-md-icon icon="shopping_cart" style="fill:black;"></ng-md-icon>
                 </md-button>
-                <md-button ng-click="navProfile()">
+                <md-button ng-click="navProfile()" ng-if="log">
                     <md-tooltip>
                         Account
                     </md-tooltip>
@@ -89,16 +97,17 @@
             </span>
     <span flex="20"></span>
 </div>
-<!--Javascript Dependencies-->
-<script src="/angular.js"></script>
-<script src="/angular-route.js"></script>
-<script src="/angular-animate.js"></script>
-<script src="/angular-aria.js"></script>
-<script src="/angular-messages.js"></script>
-<script src="/angular-material.js"></script>
-<script src="/angular-material-icons.js"></script>
-<script src="/ui-grid.js"></script>
-<!--Javascripts-->
-<script type="text/javascript" src="/main.js"></script>
+            <!--Javascript Dependencies-->
+            <script src="/angular.js"></script>
+            <script src="/angular-route.js"></script>
+            <script src="/angular-animate.js"></script>
+            <script src="/angular-aria.js"></script>
+            <script src="/angular-messages.js"></script>
+            <script src="/angular-material.js"></script>
+            <script src="/angular-material-icons.js"></script>
+            <script src="/angular-local-storage.js"></script>
+            <script src="/ui-grid.js"></script>
+            <!--Javascripts-->
+            <script type="text/javascript" src="/main.js"></script>
 </body>
 </html>

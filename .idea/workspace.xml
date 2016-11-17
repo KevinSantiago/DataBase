@@ -2,55 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ecc2e8-2d36-45bb-be06-b0f4e6059348" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Application.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/Application.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ReverseApplication.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ReverseApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ReverseAssets.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/ReverseAssets.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/javascript/ReverseApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_index0_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_loginUser3_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_loginUser3_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_logout2_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Application_logout2_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at1_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at1_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at20_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at20_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at21_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at21_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at22_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at22_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at23_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at23_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at24_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at24_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at25_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at25_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at26_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at26_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at27_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at27_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at28_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at28_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at29_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at29_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at30_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at30_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at31_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at31_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at32_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at32_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at33_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at33_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at34_invoker$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_at34_invoker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$10$$anonfun$apply$10.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$10$$anonfun$apply$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$10.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$11$$anonfun$apply$11.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$11$$anonfun$apply$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$11.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$12.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$12.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$13.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$14$$anonfun$apply$14.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$14$$anonfun$apply$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$14.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$15$$anonfun$apply$15.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$15$$anonfun$apply$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$15.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$16$$anonfun$apply$16.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$16$$anonfun$apply$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$16.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$17$$anonfun$apply$17.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$17$$anonfun$apply$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$17.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$18.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$19$$anonfun$apply$19.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$19$$anonfun$apply$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$19.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$20$$anonfun$apply$20.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$20$$anonfun$apply$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$20.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$21$$anonfun$apply$21.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$21$$anonfun$apply$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$21.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$22$$anonfun$apply$22.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$22$$anonfun$apply$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$22.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$23$$anonfun$apply$23.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$23$$anonfun$apply$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$23.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$24$$anonfun$apply$24.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$24$$anonfun$apply$24.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$24.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$24.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$25$$anonfun$apply$25.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$25$$anonfun$apply$25.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$25.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$25.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$26$$anonfun$apply$26.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$26$$anonfun$apply$26.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$26.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$26.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$27$$anonfun$apply$27.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$27$$anonfun$apply$27.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$27.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$27.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$28$$anonfun$apply$28.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$28$$anonfun$apply$28.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$28.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$28.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$29$$anonfun$apply$29.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$29$$anonfun$apply$29.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$29.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$29.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$30$$anonfun$apply$30.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$30$$anonfun$apply$30.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$30.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$30.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$31$$anonfun$apply$31.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$31$$anonfun$apply$31.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$31.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$31.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$32$$anonfun$apply$32.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$32$$anonfun$apply$32.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$32.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$32.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$33$$anonfun$apply$33.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$33$$anonfun$apply$33.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$33.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$33.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$34$$anonfun$apply$34.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$34$$anonfun$apply$34.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$34.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$34.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$35$$anonfun$apply$35.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$35$$anonfun$apply$35.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$35.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$35.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$7$$anonfun$apply$7.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$7$$anonfun$apply$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$7.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$8.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/router/Routes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/copy-resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/playRoutes/$global/streams/op-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/assets/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/assets/$global/streams/sync-mappings" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/conf/routes" afterPath="$PROJECT_DIR$/DealItSrv/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/default/dealitsrv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-docs.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-optional.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-plugin.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-pom.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-provided.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-scala-tool.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-sources.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test.xml" afterPath="$PROJECT_DIR$/DealItSrv/project/target/resolution-cache/reports/default-dealitsrv-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/html/templates/item.html" afterPath="$PROJECT_DIR$/DealItSrv/public/html/templates/item.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/html/index.html" afterPath="$PROJECT_DIR$/DealItSrv/public/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/html/templates/profile.html" afterPath="$PROJECT_DIR$/DealItSrv/public/html/templates/profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/dealitsrv/dealitsrv_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml" afterPath="$PROJECT_DIR$/DealItSrv/target/resolution-cache/reports/dealitsrv-dealitsrv_2.11-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/routes" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" />
@@ -58,11 +117,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/Routes.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/Routes.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/RoutesPrefix.scala" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/routes/main/router/RoutesPrefix.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/playCommonClassloader/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/update/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/playRoutes/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/playRoutes/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/html/index.html" afterPath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/javascripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/public/main/html/index.html" afterPath="$PROJECT_DIR$/DealItSrv/target/web/public/main/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/public/main/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/target/web/public/main/javascripts/main.js" />
     </list>
     <ignored path="DataBase.iws" />
@@ -83,38 +142,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="item.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/item.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-button#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-button#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/public/javascripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2736">
-              <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
+            <state relative-caret-position="18">
+              <caret line="208" column="37" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/cart.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="188" selection-start-line="20" selection-start-column="188" selection-end-line="20" selection-end-column="188" />
-              <folding>
-                <element signature="n#style#0;n#md-button#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="186">
+              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,23 +175,10 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="288">
+              <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/checkout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
-              <folding>
-                <element signature="n#style#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-button#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,9 +187,63 @@
       <file leaf-file-name="routes" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DealItSrv/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="33" column="105" selection-start-line="33" selection-start-column="105" selection-end-line="33" selection-end-column="105" />
+            <state relative-caret-position="252">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+              <folding>
+                <element signature="e#447#448#0" expanded="false" />
+                <element signature="e#475#476#0" expanded="false" />
+                <element signature="e#509#510#0" expanded="false" />
+                <element signature="e#539#540#0" expanded="false" />
+                <element signature="e#570#571#0" expanded="false" />
+                <element signature="e#597#598#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="150" column="54" selection-start-line="150" selection-start-column="54" selection-end-line="150" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-toolbar#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#div#0;n#md-toolbar#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-button#0;n#md-content#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#1;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#2;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#3;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#4;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,25 +286,25 @@
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Account.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/public/html/index.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/userAccount.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/about.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/cars.html" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/UserInfo.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Utils.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Login.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Order.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java" />
         <option value="$PROJECT_DIR$/DealItSrv/app/controllers/LoginManager.java" />
-        <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/profile.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/checkout.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/order_success.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/cart.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/item.html" />
-        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" />
         <option value="$PROJECT_DIR$/DealItSrv/conf/routes" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" />
+        <option value="$PROJECT_DIR$/DealItSrv/public/html/templates/profile.html" />
         <option value="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/DealItSrv/public/html/index.html" />
       </list>
     </option>
   </component>
@@ -224,8 +318,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1837" />
-    <option name="height" value="966" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -255,114 +349,7 @@
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DealItSrv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DealItSrv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DealItSrv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DealItSrv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DealItSrv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="PackagesPane" />
     </panes>
@@ -649,7 +636,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1837" height="966" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -663,7 +650,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1894393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46221787" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -677,32 +664,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1894393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -722,13 +683,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -869,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/userAccount.html" />
     <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/technology.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/OrderLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -985,27 +925,7 @@
         <state relative-caret-position="342">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#md-button#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#span#1;n#md-card-title-text#0;n#md-card-title#0;n#md-card#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="n#style#0;n#md-button#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1034,8 +954,8 @@
         <state relative-caret-position="654">
           <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
           <folding>
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1046,35 +966,6 @@
           <caret line="20" column="188" selection-start-line="20" selection-start-column="188" selection-end-line="20" selection-end-column="188" />
           <folding>
             <element signature="n#style#0;n#md-button#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-button#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="33" column="105" selection-start-line="33" selection-start-column="105" selection-end-line="33" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1091,10 +982,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#md-button#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+            <element signature="e#509#510#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#570#571#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="150" column="54" selection-start-line="150" selection-start-column="54" selection-end-line="150" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-toolbar#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ng-md-icon#0;n#div#0;n#md-toolbar#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-button#0;n#md-content#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#1;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#2;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#3;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ng-md-icon#0;n#md-button#0;n#md-list-item#4;n#md-list#0;n#md-content#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-toolbar#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#md-list-item#0;n#md-list#0;n#md-content#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DealItSrv/public/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
+        <state relative-caret-position="18">
+          <caret line="208" column="37" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealItSrv/public/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
           <folding />
         </state>
       </provider>
