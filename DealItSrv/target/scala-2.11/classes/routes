@@ -18,7 +18,7 @@ GET     /login/submit/:password/:username   controllers.Application.loginUser(pa
 POST    /login/signup2              controllers.Application.createUser
 
 # Users
-POST    /DealItSrv/user                  controllers.Application.getUserInfo
+GET     /DealItSrv/user/:aid             controllers.Application.getUserInfo(aid: Integer)
 GET     /DealItSrv/user/phone/:uid       controllers.Application.getPhoneNumbers(uid: Integer)
 GET     /DealItSrv/user/creditcard/:aid  controllers.Application.getCreditCard(aid: Integer)
 GET     /DealItSrv/user/products/:aid    controllers.Application.getProductsFromUser(aid: Integer)
@@ -34,6 +34,8 @@ GET     /DealItSrv/itemsByCat/:category       controllers.Application.getItemsPe
 GET     /DealItSrv/product/ownerinfo/:pid     controllers.Application.getProductOwnerInfo(pid: Integer)
 GET     /DealItSrv/product/feedback/:pid      controllers.Application.getFeedbackFromProduct(pid: Integer)
 GET     /DealItSrv/product/info/:pid          controllers.Application.getProductInfo(pid: Integer)
+GET     /DealItSrv/filter/:filter/:category   controllers.Application.filterResults(filter: String, category: String)
+
 
 # Home page
 GET     /                           controllers.Assets.at(path="/public/html/", file="index.html")

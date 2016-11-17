@@ -81,6 +81,43 @@ public class DBManager extends Controller{
 
     }
 
+    public static ItemManager FilterResults(String filter, String category){
+        Connection cdb = DB.getConnection();
+        ItemManager itm = new ItemManager();
+        String fs = "%"+filter+"%";
+        if(cdb!=null){
+
+            PreparedStatement ps = null;
+            String sql="select pname as item, brand, conditions, price,pid,img_url,description\n" +
+                    " from product natural join category\n" +
+                    "  where cname=? and\n" +
+                    "  pname like ?";
+
+            try {
+                ps=cdb.prepareStatement(sql);
+                ps.setString(1,category);
+                ps.setString(2,fs);
+                ResultSet rs = ps.executeQuery();
+                while(rs.next()){
+                    String item = rs.getString("item");
+                    String brand = rs.getString("brand");
+                    String condition = rs.getString("conditions");
+                    float price = rs.getFloat("price");
+                    int pid = rs.getInt("pid");
+                    String img_url= rs.getString("img_url");
+                    String description= rs.getString("description");
+                    itm.add(new Item(pid,item,brand,category,price,condition,img_url,description));
+                }
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+        return itm;
+
+
+    }
+
     public static ItemManager getItemsBindToAccount(int aid){
         Connection cdb = DB.getConnection();
         ItemManager itm = new ItemManager();
