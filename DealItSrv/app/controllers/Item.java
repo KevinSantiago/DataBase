@@ -13,6 +13,8 @@ public class Item {
     private float price;
     private String category;
     private String condition;
+    private String img_url;
+    private String description;
 
 
     /**
@@ -31,14 +33,25 @@ public class Item {
      * @param isSold boolean variable representing sell status (sold/unsold)
      * @param category the Item's category
      */
-    public Item(int pid, String item, String brand, String category, float price, String condition){
+    public Item(int pid, String item, String brand, String category, float price, String condition, String img_url, String description){
         this.pid = pid;
         this.item = item;
         this.brand = brand;
         this.category = category;
         this.price = price;
         this.condition = condition;
+        this.img_url=img_url;
+        this.description= description;
+    }
 
+
+
+    public String getImage(){
+        return img_url;
+    }
+
+    public String getDescription(){
+        return description;
     }
 
     /**

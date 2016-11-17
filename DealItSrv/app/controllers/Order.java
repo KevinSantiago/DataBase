@@ -17,6 +17,20 @@ public class Order{
         this.date = date;
     }
 
+    public int getOid() {
+        return oid;
+    }
 
+    public String getCtype() {
+        return ctype;
+    }
+
+    public String getCnumber() {
+        return cnumber;
+    }
+
+    public String getDate() {
+        return date;
+    }
 }
 

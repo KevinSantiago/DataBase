@@ -20,6 +20,8 @@ public class Login {
         return username;
     }
 
+    public int getAID() { return aid; }
+
     public void setUsername(String username) {
         this.username = username;
     }

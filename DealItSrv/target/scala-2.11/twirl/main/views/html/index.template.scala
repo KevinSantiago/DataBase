@@ -49,7 +49,7 @@ Seq[Any](format.raw/*1.19*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 15 18:29:38 PST 2016
+                  DATE: Wed Nov 16 20:25:08 PST 2016
                   SOURCE: /home/jariel/Documents/Oficial/DataBase/DealItSrv/app/views/index.scala.html
                   HASH: aeb73be514da17904eb1f62ccf8de981a6015ef2
                   MATRIX: 527->1|639->18|667->21|698->44|737->46|769->53|783->59|820->76|852->79

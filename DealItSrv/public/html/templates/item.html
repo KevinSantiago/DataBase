@@ -1,28 +1,70 @@
 <div layout="column">
-    <div layout="row"> 
-        <div flex="20"><img src="http://i.stack.imgur.com/p9mUO.jpg" width="100%" height="700"></div>
+    <span style="height:25px"></span>
+    <div layout="row">
+        <div flex="70">
+            <div layout="row" style="background-color: Lavender;" layout-align="space-around end">
+                <span flex="30" style="height:400px"></span>
+                <div flex="40"><img ng-src="{{image}}" width="100%" height="300"></div>
+                <span flex="30"></span>
+            </div>
+            <div style="height:200px" flex layout="row">
+                <span style="height:200px;" flex></span>
+            </div>
+         </div>
+        <div flex="30" style="border-left-style: solid;border-bottom-style: solid;border-radius: 5px;">
+            <span layout="row" style="margin-left: 30%"><h2>{{itemPrice | currency:"USD$"}}</h2><h5>price</h5></span>
 
-                <div flex="60">
+            <md-divider></md-divider>
+            <h3>Contact Info:</h3><br>
+            <h4 style="margin-left:10%">name: {{firstName}} {{lastName}}</h4>
+            <h4 style="margin-left:10%">phone: {{phones[0]}}</h4>
+            <h4 style="margin-left:10%">email: {{email}}</h4>
+            <md-divider></md-divider>
+            <br>
+            <!--<md-button style="margin-left:30%" class="md-raised md-primary"><ng-md-icon icon="shopping_cart" style="fill:black;" ng-click="addToShoppingCart()"></ng-md-icon>   Add to Cart</md-button><br>-->
+            <md-button class="md-raised" ng-hide="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="addToShoppingCart()">Add to Shopping Cart</md-button>
+            <md-button class="md-raised" ng-show="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="removeFromShoppingCart()">Remove from Shopping Cart</md-button>
+        </div>
+    </div>
+    <div>
+        <h1 style="margin-left:40%;color: orange;">{{itemName}}</h1>
+        <md-divider></md-divider>
+        <h2 style="color:orange">Description</h2>
+        <p style="width:60%">
+            {{itemDesc}}
+        </p>
+        <md-divider></md-divider>
+        <a id="details"><h2 style="color:orange">Product Information</h2></a>
+        <table cellspacing="20" style="border-top-style: solid;border-bottom-style: solid">
+            <tr>
+                <td style="background-color:WhiteSmoke ;border-top-style: solid;">Product Name:</td>
+                <td>{{itemName}}</td>
+            </tr>
+            <tr >
+                <td style="background-color:WhiteSmoke;border-top-style: solid;">Condition:</td>
+                <td>{{itemCond}}</td>
+            </tr>
+            <tr>
+                <td style="background-color:WhiteSmoke; border-top-style:solid;">Brand:</td>
+                <td>{{itemBrand}}</td>
+            </tr>
+        </table><br>
+        <md-divider></md-divider>
+        <md-toolbar layout="row" class="md-hue-3">
+            <div class="md-toolbar-tools">
+                <span>Customer Reviews</span>
+            </div>
+        </md-toolbar>
+        <md-list>
+            <md-list-item class="md-3-line" ng-repeat="comment in feedback" ng-click="null">
 
-                                <h1 class="md-display-2" style="color: orange">{{itemName}}</h1>
-                                <h1 class="md-display-2">{{itemPrice | currency:"USD$"}}</h1>
+                <div class="md-list-item-text" layout="column">
 
-                                <div layout="row">
-                                    <p flex="60">{{itemDesc}}</p>
-                                    <div layout="column">
-                                        <p flex="20">Contact Info:<br>{{firstName}} {{lastName}}<br>
-                                        Telephone:<ul><li ng-repeat="item in phones">{{item}}</li></ul><br>
-                                        Location: {{city}} , {{state}}
-
-                                        </p>
-                                    </div>
-
-                                    <span flex></span>
-                                </div>
-
+                    <h4>{{comment}}</h4>
 
                 </div>
+            </md-list-item>
+        </md-list>
 
-        <div flex="20"><img src="http://i.stack.imgur.com/p9mUO.jpg" width="100%" height="700"></div>
     </div>
 </div>
