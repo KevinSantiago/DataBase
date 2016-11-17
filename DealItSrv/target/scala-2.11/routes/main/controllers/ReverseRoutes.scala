@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Nov 17 04:33:11 PST 2016
+// @DATE:Thu Nov 17 07:34:07 PST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -79,82 +79,87 @@ package controllers {
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-ui-grid"), ("file", "ui-grid.js")))
           Call("GET", _prefix + { _defaultPrefix } + "ui-grid.js")
       
-        // @LINE:53
+        // @LINE:51
+        case (path, file) if path == "/public/javascripts/node_modules/angular-local-storage/src" && file == "angular-local-storage.js" =>
+          implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-local-storage/src"), ("file", "angular-local-storage.js")))
+          Call("GET", _prefix + { _defaultPrefix } + "angular-local-storage.js")
+      
+        // @LINE:54
         case (path, file) if path == "/public/javascripts/node_modules/angular-material" && file == "angular-material.css" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-material"), ("file", "angular-material.css")))
           Call("GET", _prefix + { _defaultPrefix } + "angular-material.css")
       
-        // @LINE:54
+        // @LINE:55
         case (path, file) if path == "/public/javascripts/node_modules/angular-ui-grid" && file == "ui-grid.css" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-ui-grid"), ("file", "ui-grid.css")))
           Call("GET", _prefix + { _defaultPrefix } + "ui-grid.css")
       
-        // @LINE:55
+        // @LINE:56
         case (path, file) if path == "/public/javascripts/node_modules/angular-ui-grid" && file == "ui-grid.woff" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/javascripts/node_modules/angular-ui-grid"), ("file", "ui-grid.woff")))
           Call("GET", _prefix + { _defaultPrefix } + "ui-grid.woff")
       
-        // @LINE:58
+        // @LINE:59
         case (path, file) if path == "/public/html/templates" && file == "home.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "home.html")))
           Call("GET", _prefix + { _defaultPrefix } + "home.html")
       
-        // @LINE:59
+        // @LINE:60
         case (path, file) if path == "/public/html/templates" && file == "about.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "about.html")))
           Call("GET", _prefix + { _defaultPrefix } + "about.html")
       
-        // @LINE:60
+        // @LINE:61
         case (path, file) if path == "/public/html/templates" && file == "login.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "login.html")))
           Call("GET", _prefix + { _defaultPrefix } + "login.html")
       
-        // @LINE:61
+        // @LINE:62
         case (path, file) if path == "/public/html/templates" && file == "cars.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "cars.html")))
           Call("GET", _prefix + { _defaultPrefix } + "cars.html")
       
-        // @LINE:62
+        // @LINE:63
         case (path, file) if path == "/public/html/templates" && file == "house.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "house.html")))
           Call("GET", _prefix + { _defaultPrefix } + "house.html")
       
-        // @LINE:63
+        // @LINE:64
         case (path, file) if path == "/public/html/templates" && file == "technology.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "technology.html")))
           Call("GET", _prefix + { _defaultPrefix } + "technology.html")
       
-        // @LINE:64
+        // @LINE:65
         case (path, file) if path == "/public/html/templates" && file == "furniture.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "furniture.html")))
           Call("GET", _prefix + { _defaultPrefix } + "furniture.html")
       
-        // @LINE:65
+        // @LINE:66
         case (path, file) if path == "/public/html/templates" && file == "profile.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "profile.html")))
           Call("GET", _prefix + { _defaultPrefix } + "profile.html")
       
-        // @LINE:66
+        // @LINE:67
         case (path, file) if path == "/public/html/templates" && file == "item.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "item.html")))
           Call("GET", _prefix + { _defaultPrefix } + "item.html")
       
-        // @LINE:67
+        // @LINE:68
         case (path, file) if path == "/public/html/templates" && file == "addPost.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "addPost.html")))
           Call("GET", _prefix + { _defaultPrefix } + "addPost.html")
       
-        // @LINE:68
+        // @LINE:69
         case (path, file) if path == "/public/html/templates" && file == "cart.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "cart.html")))
           Call("GET", _prefix + { _defaultPrefix } + "cart.html")
       
-        // @LINE:69
+        // @LINE:70
         case (path, file) if path == "/public/html/templates" && file == "checkout.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "checkout.html")))
           Call("GET", _prefix + { _defaultPrefix } + "checkout.html")
       
-        // @LINE:70
+        // @LINE:71
         case (path, file) if path == "/public/html/templates" && file == "order_success.html" =>
           implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/html/templates"), ("file", "order_success.html")))
           Call("GET", _prefix + { _defaultPrefix } + "order_success.html")
@@ -178,6 +183,12 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/user/phone/" + implicitly[PathBindable[Integer]].unbind("uid", uid))
     }
   
+    // @LINE:24
+    def getProductsFromUser(aid:Integer): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/user/products/" + implicitly[PathBindable[Integer]].unbind("aid", aid))
+    }
+  
     // @LINE:28
     def getOrderContent(): Call = {
       import ReverseRouteContext.empty
@@ -194,6 +205,12 @@ package controllers {
     def getUserInfo(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "DealItSrv/user")
+    }
+  
+    // @LINE:27
+    def getOrdersFromAccount(aid:Integer): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/order/" + implicitly[PathBindable[Integer]].unbind("aid", aid))
     }
   
     // @LINE:36
@@ -226,12 +243,6 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "DealItSrv/user/creditcard/" + implicitly[PathBindable[Integer]].unbind("aid", aid))
     }
   
-    // @LINE:27
-    def getOrdersFromAccount(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "DealItSrv/order")
-    }
-  
     // @LINE:35
     def getFeedbackFromProduct(pid:Integer): Call = {
       import ReverseRouteContext.empty
@@ -254,12 +265,6 @@ package controllers {
     def index(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "DealItSrv")
-    }
-  
-    // @LINE:24
-    def getProductsFromUser(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "DealItSrv/user/products")
     }
   
   }

@@ -21,11 +21,11 @@ POST    /login/signup2              controllers.Application.createUser
 POST    /DealItSrv/user                  controllers.Application.getUserInfo
 GET     /DealItSrv/user/phone/:uid       controllers.Application.getPhoneNumbers(uid: Integer)
 GET     /DealItSrv/user/creditcard/:aid  controllers.Application.getCreditCard(aid: Integer)
-POST    /DealItSrv/user/products         controllers.Application.getProductsFromUser
+GET     /DealItSrv/user/products/:aid    controllers.Application.getProductsFromUser(aid: Integer)
 
 #Orders
-POST    /DealItSrv/order            controllers.Application.getOrdersFromAccount
-POST    /DealItSrv/order/content    controllers.Application.getOrderContent
+GET     /DealItSrv/order/:aid            controllers.Application.getOrdersFromAccount(aid: Integer)
+POST    /DealItSrv/order/content         controllers.Application.getOrderContent
 
 # Items
 
@@ -48,6 +48,7 @@ GET     /angular-animate.js         controllers.Assets.at(path="/public/javascri
 GET     /angular-messages.js        controllers.Assets.at(path="/public/javascripts/node_modules/angular-messages", file="angular-messages.js")
 GET     /angular-material-icons.js  controllers.Assets.at(path="/public/javascripts/node_modules/angular-material-icons", file="angular-material-icons.js")
 GET     /ui-grid.js                 controllers.Assets.at(path="/public/javascripts/node_modules/angular-ui-grid", file="ui-grid.js")
+GET     /angular-local-storage.js   controllers.Assets.at(path="/public/javascripts/node_modules/angular-local-storage/src", file="angular-local-storage.js")
 
 # Stylesheet routes
 GET     /angular-material.css       controllers.Assets.at(path="/public/javascripts/node_modules/angular-material", file="angular-material.css")

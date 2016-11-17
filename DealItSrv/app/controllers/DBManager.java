@@ -145,9 +145,10 @@ public class DBManager extends Controller{
         return itr;
     }
 
-    public static Order getOrdersFromAccount(int aid){
+    public static ArrayList<Order> getOrdersFromAccount(int aid){
         Connection cdb = DB.getConnection();
         Order otr = null;
+        ArrayList<Order> otm = new ArrayList<Order>();
         if(cdb!=null){
             PreparedStatement ps = null;
             String sql="select oid,ctype,cnumber,_date\n" +
@@ -163,14 +164,14 @@ public class DBManager extends Controller{
                     String ctype = rs.getString("ctype");
                     String cnumber = rs.getString("cnumber");
                     String date = rs.getString("_date");
-                    otr = new Order(oid,ctype,cnumber, date);
+                    otm.add(new Order(oid,ctype,cnumber, date));
                 }
                 cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }
         }
-        return otr;
+        return otm;
     }
 
     public static ArrayList<OrderLine> getOrderContent(int oid){

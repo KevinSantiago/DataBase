@@ -66,10 +66,9 @@ public class Application extends Controller {
     /**
      * Get items by category
      */
-   // @BodyParser.Of(BodyParser.Json.class)
+
     public Result getItemsPerCategory(String category){
-       // JsonNode info = request().body().asJson();
-       // String category = info.findPath("category").textValue();
+
         if(category != null){
             ItemManager itm = DBManager.getItemsPerCategory(category);
             return ok(Json.toJson(itm.getAll()));
@@ -191,13 +190,12 @@ public class Application extends Controller {
     /**
      * Get Orders Bind to an Account
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getOrdersFromAccount(){
-        JsonNode info = request().body().asJson();
-        int aid = info.findPath("aid").intValue();
+
+    public Result getOrdersFromAccount(int aid){
+
         if(aid != 0){
-            Order otr = DBManager.getOrdersFromAccount(aid);
-            return ok(Json.toJson(otr));
+
+            return ok(Json.toJson(DBManager.getOrdersFromAccount(aid)));
         }
         else{
             return ok("Some Unexpected Error has Ocurred");
@@ -208,10 +206,9 @@ public class Application extends Controller {
      * Get all products under one account
      *
      */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getProductsFromUser(){
-        JsonNode info = request().body().asJson();
-        int aid = info.findPath("aid").intValue();
+
+    public Result getProductsFromUser(int aid){
+
         if(aid != 0){
             ItemManager itm = DBManager.getItemsBindToAccount(aid);
             return ok(Json.toJson(itm.getAll()));

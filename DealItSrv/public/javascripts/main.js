@@ -1,11 +1,11 @@
-var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","ui.grid.selection"]);
+var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","ui.grid.selection","LocalStorageModule"]);
 
     app.service('SharedVariables', function(){
         var itemID = 0;
         var userAID = 0;
         var itemName, itemPrice;
         var shoppingCartID = [];
-
+        var logged = false;
         return {
             getUserAID: function getUserAID() {
                 return userAID;
@@ -95,6 +95,16 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         });
     });
 
+
+    //configuration local storage
+    app.config(['localStorageServiceProvider', function(localStorageServiceProvider){
+
+         localStorageServiceProvider.setPrefix('dealit');
+
+
+    }]);
+
+
     // configuring theming
     app.config(function($mdThemingProvider) {
         $mdThemingProvider.theme('default')
@@ -107,8 +117,22 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     });
 
     //Main controller
-    app.controller('mainController',['$scope','$http','$location','$mdSidenav',function($scope,$http,$location,$mdSidenav){
+    app.controller('mainController',['$scope','$http','$location','$mdSidenav','localStorageService',function($scope,$http,$location,$mdSidenav,localStorageService){
         var currentPath = $location.path();
+        //check if user is Log
+        islogged();
+
+
+        function islogged(){
+           var aid = localStorageService.get('aid');
+           if(aid != null){
+               $scope.log = true;
+           }
+           else{
+               $scope.log = false;
+           }
+        }
+
         $scope.toggleLeft = buildToggler('left');
         $scope.toggleRight = buildToggler('right');
 
@@ -125,15 +149,22 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
         //Navegation configuration (All this functions just change the url in which you are current located)
 
+        $scope.logout = function(){
+           localStorageService.set('aid', null);
+           islogged();
+           $location.path('/');
+        };
         $scope.navHome= function(){
             $location.path('/');  //The parameter is the path to which you want to change
         };
 
         $scope.navAbout= function(){
+
             $location.path('/about');
         };
 
         $scope.logNav = function(){
+
             $location.path('/login');
         };
 
@@ -171,7 +202,12 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Home controller (Home Page)
-    app.controller('homeController',['$scope','$http', '$location', function($scope,$http, $location){
+    app.controller('homeController',['$scope','$http', '$location','localStorageService','$window', function($scope,$http, $location, localStorageService,$window){
+
+        if(localStorageService.get('status') != null){
+           localStorageService.set('status', null);
+           $window.location.reload();
+        }
 
         $scope.marketing="What's better than having a tool that makes easy advertise your items."
                         +" What are you waiting for? Join our family today!";
@@ -212,7 +248,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
     //About page controller
-    app.controller('aboutController',['$scope', function($scope){
+    app.controller('aboutController',['$scope','localStorageService', function($scope,localStorageService){
     $scope.aboutUs="We are a group of students looking to contribute with innovating ideas.We live on a society that depends on  science and technology. As technology advance  our goal is making things easier."
                   +" Things like cars, houses, and clothes advertisement are now performed online.";
 
@@ -225,7 +261,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
     //Car Category Controller
-    app.controller('carController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
+    app.controller('carController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.carCategory="This is the car category page";
         $scope.category="car";
@@ -264,7 +300,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //House Category Controller
-    app.controller('houseController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
+    app.controller('houseController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.houseCategory="This is the house category page";
         $scope.category="house";
@@ -302,7 +338,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Technology Category Controller
-    app.controller('technologyController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
+    app.controller('technologyController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.technologyCategory="This is technology category page";
 		$scope.category="technology";
@@ -340,7 +376,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Furniture Category Controller
-    app.controller('furnitureController', ['$scope','$http','$location','SharedVariables', function($scope,$http,$location,SharedVariables){
+    app.controller('furnitureController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.furnitureCategory="This is furniture category page";
         $scope.category="furniture";
@@ -378,9 +414,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Item Details controller
-    app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout','$routeParams' ,function($scope,$http,$location, SharedVariables,$q,$timeout,$routeParams){
+    app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout',
+    '$routeParams','localStorageService' ,function($scope,$http,$location, SharedVariables,$q,$timeout,$routeParams,localStorageService ){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-       
+
         var pid = $routeParams.pid;
 
         SharedVariables.setItemID(pid);
@@ -458,7 +495,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Shopping Cart controller
-    app.controller('cartController', ['$scope','$http','$location' ,'SharedVariables',function($scope,$http,$location, SharedVariables){
+    app.controller('cartController', ['$scope','$http','$location' ,'SharedVariables','localStorageService',function($scope,$http,$location, SharedVariables, localStorageService){
        var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
 
 
@@ -515,7 +552,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Checkout controller
-    app.controller('checkoutController', ['$scope','$http','$location' ,'SharedVariables',function($scope,$http,$location, SharedVariables){
+    app.controller('checkoutController', ['$scope','$http','$location' ,'SharedVariables','localStorageService',function($scope,$http,$location, SharedVariables,localStorageService){
          var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
 
          $scope.placeOrder = function(){
@@ -562,7 +599,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Order Success controller
-    app.controller('orderSuccessController', ['$scope','$http','$location' ,'SharedVariables',function($scope,$http,$location, SharedVariables){
+    app.controller('orderSuccessController', ['$scope','$http','$location' ,'SharedVariables','localStorageService',function($scope,$http,$location, SharedVariables,localStorageService){
      var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
 
         $scope.returnToHomePage = function(){
@@ -572,45 +609,73 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Profile Controller
-    app.controller('profileController',['$scope','$http','$location','SharedVariables', '$timeout', function($scope,$http,$location, SharedVariables, $timeout){
+    app.controller('profileController',['$scope','$http','$location','SharedVariables', '$timeout','localStorageService', function($scope,$http,$location, SharedVariables, $timeout, localStorageService){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-        var AID = SharedVariables.getUserAID();
+        //var AID = SharedVariables.getUserAID();
+        var AID = localStorageService.get('aid');
         $http.post(generalPath+"/DealItSrv/user", {aid: AID})
-
-        .then(function(response){
-
-            $timeout(function(){
-                $scope.email = response.data.email;
-                $scope.name = response.data.firstName + " " + response.data.lastName;
-                $scope.city = response.data.city;
-                $scope.state = response.data.state;
-                $scope.birth = response.data.birthDate;
-                var userid = response.data.userID;
-
-                $http.get(generalPath+"/DealItSrv/user/phone/"+userid)
                 .then(function(response){
-                    $scope.phones = response.data;
+
+                    $timeout(function(){
+                        $scope.email = response.data.email;
+                        $scope.name = response.data.firstName + " " + response.data.lastName;
+                        $scope.city = response.data.city;
+                        $scope.state = response.data.state;
+                        $scope.birth = response.data.birthDate;
+                        var userid = response.data.userID;
+
+                        $http.get(generalPath+"/DealItSrv/user/phone/"+userid)
+                        .then(function(response){
+                            $scope.phones = response.data;
+                        });
+
+                    });
                 });
 
-            });
-        });
-
         $http.get(generalPath+"/DealItSrv/user/creditcard/"+AID)
-        .then(function(response){
-            $scope.creditcard = response.data.cardNumber;
-            $scope.type = response.data.type;
-        });
+                .then(function(response){
+
+                     $timeout(function(){
+                        $scope.creditcard = response.data.cardNumber;
+                        $scope.type = response.data.type;
+                     });
+
+                });
+
+        //Get active items
+
+        $http.get(generalPath+"/DealItSrv/user/products/"+AID)
+                .then(function(response){
+                    $timeout(function(){
+                         $scope.activeItems= response.data
+
+                    });
+                });
+
+
+        //Get past orders
+
+        $http.get(generalPath+"/DealItSrv/order/"+AID)
+                .then(function(response){
+                     $timeout(function(){
+                          $scope.orders= response.data;
+
+                     });
+                });
 
     }]);
 
 
     // Login , Sign up controller
-    app.controller('loginController',['$scope','$http','$location', 'SharedVariables', function($scope,$http,$location, SharedVariables){
+    app.controller('loginController',['$scope','$http','$location', 'SharedVariables','localStorageService','$route', function($scope,$http,$location, SharedVariables, localStorageService, $route){
+
+
+
 
     // Controller Instances
 
      var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port()+$location.path(); //the current location is stored on this variable
-;
+
      $scope.email="";                   //store the email
      $scope.password="";                //store the password
      $scope.name="";                    //store the name of the new user
@@ -632,7 +697,6 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
      * Call to submit login credentials
     */
     $scope.login = function(){
-        alert(generalPath+"/submit/"+$scope.password+"/"+$scope.email);
         if(validateLogin()){
             $http.get(generalPath+"/submit/"+$scope.password+"/"+$scope.email)
                 .then(function(response){
@@ -641,7 +705,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 				    if(response.data.valid){
                         SharedVariables.setUserAID(response.data.aid);
-                        $location.path("/");
+                        localStorageService.set('aid', response.data.aid);
+                        localStorageService.set('status', 'cambio');
+                        $location.path('/')
                     } else
                         alert(response.data.exeLog);
                });
@@ -777,7 +843,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 }]);
 
 // Create New Post
-    app.controller('addPostController', ['$scope', '$http', '$location', function($scope, $http, $location){
+    app.controller('addPostController', ['$scope', '$http', '$location','localStorageService', function($scope, $http, $location, localStorageService){
 
         var currentPath=$location.path();
 
