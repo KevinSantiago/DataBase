@@ -36,22 +36,33 @@ public class Application extends Controller {
         JsonNode user = request().body().asJson();
         String username = user.findPath("email").textValue();
         String password = user.findPath("password").textValue();
+        String logAlert;
+
         if((username != null) && (password != null)){
             Login cred = DBManager.getCredentials(username);
                if(cred != null){
                    if(cred.passwordMatch(password)){
-                       return ok("Login successfully");
+                       int aid = cred.getAID();
+                       logAlert = "Login Succesfull";
+                       LoginManager status = DBManager.getLoginStatus(logAlert, true, aid);
+                       return ok(Json.toJson(status));
                    }
                    else{
-                       return ok("Password Doesn't Match");
+                       logAlert = "Password Doesn't Match";
+                       LoginManager status = DBManager.getLoginStatus(logAlert, false, 0);
+                       return ok(Json.toJson(status));
                    }
                }
                else{
-                   return ok("Not valid username!");
+                   logAlert = "Not valid username!";
+                   LoginManager status = DBManager.getLoginStatus(logAlert, false, 0);
+                   return ok(Json.toJson(status));
                }
         }
         else{
-            return ok("Not valid credentials!");
+            logAlert = "Not valid credentials!";
+            LoginManager status = DBManager.getLoginStatus(logAlert, false, 0);
+            return ok(Json.toJson(status));
         }
     }
 

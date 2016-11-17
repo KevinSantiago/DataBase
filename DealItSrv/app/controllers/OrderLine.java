@@ -19,5 +19,19 @@ public class OrderLine{
         this.quantity=quantity;
     }
 
+    public int getOid() {
+        return oid;
+    }
 
+    public int getPid() {
+        return pid;
+    }
+
+    public String getPname() {
+        return pname;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
 }

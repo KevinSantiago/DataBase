@@ -3,8 +3,20 @@
         <md-card md-theme-watch>
             <md-card-title>
                 <md-card-title-text>
-                    <span class="md-headline" style="color: orange">{{user}}</span>
+                    <span class="md-headline" style="color: orange">{{name}}</span>
                     <span class="md-subhead" style="color: orange">User</span>
+                    <p>email:       {{email}}</p>
+                    <p>State:       {{state}}</p>
+                    <p>City:        {{city}}</p>
+                    <p>Birth:       {{birth}}</p>
+                    <p>Card Type:   {{type}}</p>
+                    <p>Credit Card: {{creditcard}}</p>
+                    <p>Phone:</p>
+                    <ul>
+                        <li ng-repeat="phone in phones">
+                            {{phone}}
+                        </li>
+                    </ul>
                 </md-card-title-text>
                 <md-card-title-media>
                     <div class="md-media-lg card-media">

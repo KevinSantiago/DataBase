@@ -1,17 +1,24 @@
 var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","ui.grid.selection"]);
 
-      app.service('SharedVariables', function(){
+    app.service('SharedVariables', function(){
         var itemID = 0;
+        var userAID = 0;
 
         return {
+            getUserAID: function getUserAID() {
+                return userAID;
+            },
+            setUserAID: function setUserAID(value) {
+                userAID = value;
+            },
             getItemID: function getItemID() {
                 return itemID;
             },
             setItemID: function setItemID(value) {
                 itemID = value;
             }
-         };
-     });
+        };
+    });
     
     
     
@@ -351,56 +358,47 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         var pid = SharedVariables.getItemID();
 
+        $http.post(generalPath+"/DealItSrv/product/info", {pid: SharedVariables.getItemID()})
+            .then(function(response){
+
+                $timeout(function(){
+                    //any code in here will automatically have an apply run afterwards
+                    $scope.itemName = response.data.item;
+                    $scope.itemDesc = response.data.condition;
+                    $scope.itemPrice = response.data.price;
+                    $scope.pid= response.data.id;
+
+                    $http.post(generalPath+"/DealItSrv/product/ownerinfo",{pid: $scope.pid})
+                        .then(function(response){
+
+                            $timeout(function(){
+
+                                $scope.email = response.data.email;
+                                $scope.firstName = response.data.firstName;
+                                $scope.lastName = response.data.lastName;
+                                $scope.city = response.data.city;
+                                $scope.state = response.data.state;
+                                $scope.uid= response.data.userID;
 
 
+                                $http.post(generalPath+"/DealItSrv/user/phone",{uid: $scope.uid})
+                                .then(function(response){
+                                    $timeout(function(){
+                                        $scope.phones=response.data;
 
-         $http.post(generalPath+"/DealItSrv/product/info", {pid: SharedVariables.getItemID()})
-                 .then(function(response){
+                                        $http.post(generalPath+"/DealItSrv/product/feedback",{pid: $scope.pid})
+                                        .then(function(response){
+                                            $timeout(function(){
+                                                $scope.feedback= response.data;
 
-                     $timeout(function(){
-                         //any code in here will automatically have an apply run afterwards
-                          $scope.itemName = response.data.item;
-                          $scope.itemDesc = response.data.condition;
-                          $scope.itemPrice = response.data.price;
-                          $scope.pid= response.data.id;
-
-                          $http.post(generalPath+"/DealItSrv/product/ownerinfo",{pid: $scope.pid})
-                                 .then(function(response){
-
-                                   $timeout(function(){
-
-                                        $scope.email = response.data.email;
-                                        $scope.firstName = response.data.firstName;
-                                        $scope.lastName = response.data.lastName;
-                                        $scope.city = response.data.city;
-                                        $scope.state = response.data.state;
-                                        $scope.uid= response.data.userID;
-                                        
-
-                                        $http.post(generalPath+"/DealItSrv/user/phone",{uid: $scope.uid})
-                                               .then(function(response){
-                                                    $timeout(function(){
-                                                        $scope.phones=response.data;
-
-                                                        $http.post(generalPath+"/DealItSrv/product/feedback",{pid: $scope.pid})
-                                                               .then(function(response){
-                                                                   $timeout(function(){
-                                                                         $scope.feedback= response.data;
-
-                                                                   });
-                                                               });
-                                                    });
-
-                                               });
-                                   });
-
-                                 });
-                     });
-
-                 });
-
-
-
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                });
+            });
     }]);
 
     //Shopping Cart controller
@@ -452,24 +450,40 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Profile Controller
-    app.controller('profileController',['$scope','$http','$location', function($scope,$http,$location){
+    app.controller('profileController',['$scope','$http','$location','SharedVariables', '$timeout', function($scope,$http,$location, SharedVariables, $timeout){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
+        var AID = SharedVariables.getUserAID();
+        $http.post(generalPath+"/DealItSrv/user", {aid: AID})
 
-        $http.get(generalPath+"/DealItSrv/items")
+        .then(function(response){
+
+            $timeout(function(){
+                $scope.email = response.data.email;
+                $scope.name = response.data.firstName + " " + response.data.lastName;
+                $scope.city = response.data.city;
+                $scope.state = response.data.state;
+                $scope.birth = response.data.birthDate;
+                var userid = response.data.userID;
+
+                $http.post(generalPath+"/DealItSrv/user/phone", {uid: userid})
                 .then(function(response){
-                     $scope.items=response.data;
+                    $scope.phones = response.data;
                 });
 
-        $http.get(generalPath+"/DealItSrv/users")
-                .then(function(response){
-                     $scope.user=response.data[0].info.firstName +" "+response.data[0].info.lastName;
-                });
-        
+            });
+        });
+
+        $http.post(generalPath+"/DealItSrv/user/creditcard", {aid: AID})
+        .then(function(response){
+            $scope.creditcard = response.data.cardNumber;
+            $scope.type = response.data.type;
+        });
+
     }]);
 
 
     // Login , Sign up controller
-    app.controller('loginController',['$scope','$http','$location', function($scope,$http,$location){
+    app.controller('loginController',['$scope','$http','$location', 'SharedVariables', function($scope,$http,$location, SharedVariables){
 	
     // Controller Instances
      var currentPath= $location.path(); //the current location is stored on this variable
@@ -499,16 +513,20 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         if(validateLogin()){
             $http.post(currentPath+"/submit",{ email: $scope.email, password: $scope.password})
                 .then(function(response){
-                      resetFlags();
-					  resetFields();
-                      alert(response.data);
-                      //$location.path("/");
+                    resetFlags();
+				    resetFields();
+
+				    if(response.data.valid){
+                        SharedVariables.setUserAID(response.data.aid);
+                        $location.path("/");
+                    } else
+                        alert(response.data.exeLog);
                });
-          }
-          else{
-             alert("Login failure");
-          }
-     };
+        }
+        else{
+            alert("Login failure");
+        }
+    };
 
     /*
      * Call to submit new user credentials
@@ -540,10 +558,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                        alert(response.data);
                        $location.path("/"); 
                   });
-          }
-          else{
+         }
+         else{
               alert("There is a problem with the form!");
-          }
+         }
     };
    
     /*

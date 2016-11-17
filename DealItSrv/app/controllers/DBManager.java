@@ -339,7 +339,10 @@ public class DBManager extends Controller{
         return credit_card;
     }
 
-
+    public static LoginManager getLoginStatus(String loginMessage, boolean status, int aid){
+        LoginManager log = new LoginManager(aid, loginMessage, status);
+        return log;
+    }
 
 
 }
