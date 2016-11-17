@@ -53,7 +53,7 @@ public class DBManager extends Controller{
         if(cdb!=null){
 
             PreparedStatement ps = null;
-            String sql="select pname as item, brand, conditions, price,pid\n" +
+            String sql="select pname as item, brand, conditions, price,pid,img_url,description\n" +
                     "from product natural join category\n" +
                     "where cname= ?";
 
@@ -67,7 +67,9 @@ public class DBManager extends Controller{
                     String condition = rs.getString("conditions");
                     float price = rs.getFloat("price");
                     int pid = rs.getInt("pid");
-                    itm.add(new Item(pid,item,brand,category,price,condition));
+                    String img_url= rs.getString("img_url");
+                    String description= rs.getString("description");
+                    itm.add(new Item(pid,item,brand,category,price,condition,img_url,description));
                 }
                 cdb.close();
             }catch(Exception e){
@@ -85,7 +87,7 @@ public class DBManager extends Controller{
         if(cdb!=null){
 
             PreparedStatement ps = null;
-            String sql="select pid,pname as item,price,conditions,brand,cname as _category\n" +
+            String sql="select pid,pname as item,price,conditions,brand,cname as _category,img_url,description\n" +
                     "from account natural join product natural join category\n" +
                     "where aid=?";
 
@@ -100,8 +102,9 @@ public class DBManager extends Controller{
                     float price = rs.getFloat("price");
                     String brand = rs.getString("brand");
                     String category = rs.getString("_category");
-
-                    itm.add(new Item(pid,item,brand,category,price,condition));
+                    String img_url = rs.getString("img_url");
+                    String description = rs.getString("description");
+                    itm.add(new Item(pid,item,brand,category,price,condition,img_url,description));
                 }
                 cdb.close();
             }catch(Exception e){
@@ -116,7 +119,7 @@ public class DBManager extends Controller{
         Item itr= null;
         if(cdb!=null){
             PreparedStatement ps = null;
-            String sql="select pname as item, price, conditions, brand, cname as _category \n"+
+            String sql="select pname as item, price, conditions, brand, cname as _category,img_url,description \n"+
                     "from product natural join category\n"+
                     "where pid=?";
 
@@ -130,8 +133,9 @@ public class DBManager extends Controller{
                     float price = rs.getFloat("price");
                     String brand = rs.getString("brand");
                     String category = rs.getString("_category");
-
-                    itr = new Item(pid,item,brand,category,price,condition);
+                    String img_url = rs.getString("img_url");
+                    String description = rs.getString("description");
+                    itr = new Item(pid,item,brand,category,price,condition,img_url,description);
                 }
                 cdb.close();
             }catch(Exception e){
