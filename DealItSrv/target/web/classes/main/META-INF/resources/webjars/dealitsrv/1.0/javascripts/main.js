@@ -450,7 +450,6 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
         $scope.total = 0;
-        //TODO: Calculate total
 
 
         $scope.gridOptions1= {
@@ -494,7 +493,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.gridOptions1.columnDefs[2].enableHiding=false;
 
         $scope.goToCheckout = function() {
-            $location.path('/checkout');
+            if(shopCart.length == 0)
+                alert("Your shopping cart is empty!");
+            else
+                $location.path('/checkout');
         };
 
     }]);
@@ -510,7 +512,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
          $scope.total = 0;
         $scope.gridOptions1= {
             enableSorting: true,
-            enableRowSelection: true,
+            enableRowSelection: false,
             enableRowHeaderSelection: false,
             enableHorizontalScrollbar: 0,
             enableVerticalScrollbar: 0,
