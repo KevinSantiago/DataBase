@@ -78,14 +78,24 @@ public class Application extends Controller {
         }
     }
 
+
+    public Result filterResults(String filter, String category){
+
+        if(category != null && filter != null){
+            ItemManager itm = DBManager.FilterResults(filter,category);
+            return ok(Json.toJson(itm.getAll()));
+        }
+        else{
+            return ok("Some Unexpected Error has Ocurred");
+        }
+    }
     /**
      * Get user info by account id
      */
 
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result getUserInfo(){
-        JsonNode info = request().body().asJson();
-        int aid = info.findPath("aid").intValue();
+
+    public Result getUserInfo(int aid){
+
         if(aid != 0){
             UserInfo user_info = DBManager.getUserInfo(aid);
             return ok(Json.toJson(user_info));

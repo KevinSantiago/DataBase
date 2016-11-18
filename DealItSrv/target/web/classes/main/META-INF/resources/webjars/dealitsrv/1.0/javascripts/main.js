@@ -29,6 +29,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             getShoppingCart: function(){
                 return shoppingCartID;
             },
+            cleanShoppingCart: function(){
+                shoppingCartID = [];
+            },
             isInShoppingCart: function(id){
                 var itr = shoppingCartID.indexOf(id);
                 return itr != -1;
@@ -261,164 +264,160 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
     //Car Category Controller
-    app.controller('carController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
+    app.controller('carController', ['$scope','$http','$location','SharedVariables','localStorageService','$timeout',function($scope,$http,$location,SharedVariables,localStorageService, $timeout){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.carCategory="This is the car category page";
         $scope.category="car";
-        $scope.gridOptions1= {
-            enableSorting: true,
-            enableRowSelection: true,
-            enableRowHeaderSelection:false,
-            columnDefs: [
-                {field: 'item'},
-                {field: 'condition'},
-                {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
-            ],
-            onRegisterApi: function( gridApi){
-                    $scope.grid1Api= gridApi;
-                gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                    var id = row.entity.id;
-                    SharedVariables.setItemID(id);
-                    $location.path('/item/'+id);
-                });
-                $scope.gridOptions1.columnDefs[3].visible = false;
-
-            }
-        };
+        $scope.filterName="";
 
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
-			$scope.gridOptions1.data=response.data;
-			$scope.gridOptions1.columnDefs[0].enableHiding=false;
-			$scope.gridOptions1.columnDefs[1].enableHiding=false;
-			$scope.gridOptions1.columnDefs[2].enableHiding=false;
+
+			$scope.items=response.data;
+
 
         });
+
+        $scope.viewDetails= function(index){
+            var id = $scope.items[index].id;
+            SharedVariables.setItemID(id);
+            $location.path('/item/'+id);
+        };
+
+        $scope.filterResults= function(){
+
+                     if($scope.filterName != null){
+                           $http.get(generalPath+"/DealItSrv/filter/"+$scope.filterName+"/"+$scope.category)
+                                    .then(function(response){
+                                        $timeout(function(){
+                                             $scope.items=response.data;
+                                        });
+
+                                    })
+                     }
+                 };
 
 
     }]);
 
     //House Category Controller
-    app.controller('houseController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
+    app.controller('houseController', ['$scope','$http','$location','SharedVariables','localStorageService','$timeout', function($scope,$http,$location,SharedVariables,localStorageService, $timeout){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.houseCategory="This is the house category page";
         $scope.category="house";
-		$scope.gridOptions1= {
-            enableSorting: true,
-            enableRowSelection: true,
-            enableRowHeaderSelection:false,
-            columnDefs: [
-                {field: 'item'},
-                {field: 'condition'},
-                {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
-            ],
-            onRegisterApi: function( gridApi){
-                    $scope.grid1Api= gridApi;
-                gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                    var id = row.entity.id;
-                    SharedVariables.setItemID(id);
-                    $location.path('/item/'+id);
-                });
-                $scope.gridOptions1.columnDefs[3].visible = false;
-
-            }
-        };
+		$scope.filterName="";
 
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
-			$scope.gridOptions1.data=response.data;
-			$scope.gridOptions1.columnDefs[0].enableHiding=false;
-			$scope.gridOptions1.columnDefs[1].enableHiding=false;
-			$scope.gridOptions1.columnDefs[2].enableHiding=false;
+
+			$scope.items=response.data;
+
 
         });
-        
+
+         $scope.viewDetails= function(index){
+                    var id = $scope.items[index].id;
+                    SharedVariables.setItemID(id);
+                    $location.path('/item/'+id);
+                };
+
+         $scope.filterResults= function(){
+
+                      if($scope.filterName != null){
+                            $http.get(generalPath+"/DealItSrv/filter/"+$scope.filterName+"/"+$scope.category)
+                                     .then(function(response){
+                                         $timeout(function(){
+                                              $scope.items=response.data;
+                                         });
+
+                                     })
+                      }
+                  };
     }]);
 
     //Technology Category Controller
-    app.controller('technologyController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
+    app.controller('technologyController', ['$scope','$http','$location','SharedVariables','localStorageService','$timeout', function($scope,$http,$location,SharedVariables,localStorageService, $timeout){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.technologyCategory="This is technology category page";
 		$scope.category="technology";
-        $scope.gridOptions1= {
-            enableSorting: true,
-            enableRowSelection: true,
-            enableRowHeaderSelection:false,
-            columnDefs: [
-                {field: 'item'},
-                {field: 'condition'},
-                {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
-            ],
-           onRegisterApi: function(gridApi){
-               $scope.grid1Api= gridApi;
-               gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                   var id = row.entity.id;
-                   SharedVariables.setItemID(id);
-                   $location.path('/item/'+id);
-               });
-               $scope.gridOptions1.columnDefs[3].visible = false;
-
-           }
-        };
+        $scope.filterName="";
 
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
-			$scope.gridOptions1.data=response.data;
-			$scope.gridOptions1.columnDefs[0].enableHiding=false;
-			$scope.gridOptions1.columnDefs[1].enableHiding=false;
-			$scope.gridOptions1.columnDefs[2].enableHiding=false;
+
+			$scope.items=response.data;
+
 
         });
+
+         $scope.viewDetails= function(index){
+                    var id = $scope.items[index].id;
+                    SharedVariables.setItemID(id);
+                    $location.path('/item/'+id);
+                };
+
+
+         $scope.filterResults= function(){
+
+                      if($scope.filterName != null){
+                            $http.get(generalPath+"/DealItSrv/filter/"+$scope.filterName+"/"+$scope.category)
+                                     .then(function(response){
+                                         $timeout(function(){
+                                              $scope.items=response.data;
+                                         });
+
+                                     })
+                      }
+                  };
+
 		
     }]);
 
     //Furniture Category Controller
-    app.controller('furnitureController', ['$scope','$http','$location','SharedVariables','localStorageService', function($scope,$http,$location,SharedVariables,localStorageService){
+    app.controller('furnitureController', ['$scope','$http','$location','SharedVariables','localStorageService','$timeout', function($scope,$http,$location,SharedVariables,localStorageService,$timeout){
 		var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.furnitureCategory="This is furniture category page";
         $scope.category="furniture";
-		$scope.gridOptions1= {
-            enableSorting: true,
-            enableRowSelection: true,
-            enableRowHeaderSelection:false,
-            columnDefs: [
-                {field: 'item'},
-                {field: 'condition'},
-                {field: 'price', cellFilter: 'currency'},
-                {field: 'id'},
-            ],
-            onRegisterApi: function( gridApi){
-               $scope.grid1Api= gridApi;
-               gridApi.selection.on.rowSelectionChanged($scope,function(row){
-                   var id = row.entity.id;
-                   SharedVariables.setItemID(id);
-                   $location.path('/item/'+id);
-               });
-               $scope.gridOptions1.columnDefs[3].visible = false;
-
-           }
-        };
+		$scope.filterName="";
 
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
-			$scope.gridOptions1.data=response.data;
-			$scope.gridOptions1.columnDefs[0].enableHiding=false;
-			$scope.gridOptions1.columnDefs[1].enableHiding=false;
-			$scope.gridOptions1.columnDefs[2].enableHiding=false;
+
+			$scope.items=response.data;
+
 
         });
 
+         $scope.viewDetails= function(index){
+                    var id = $scope.items[index].id;
+                    SharedVariables.setItemID(id);
+                    $location.path('/item/'+id);
+                };
+
+         $scope.filterResults= function(){
+
+             if($scope.filterName != null){
+                   $http.get(generalPath+"/DealItSrv/filter/"+$scope.filterName+"/"+$scope.category)
+                            .then(function(response){
+                                $timeout(function(){
+                                     $scope.items=response.data;
+                                });
+
+                            })
+             }
+         };
     }]);
 
     //Item Details controller
     app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout',
     '$routeParams','localStorageService' ,function($scope,$http,$location, SharedVariables,$q,$timeout,$routeParams,localStorageService ){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-
+        $scope.log= false;
         var pid = $routeParams.pid;
+
+        if(localStorageService.get('aid') != null){
+           $scope.log= true;
+        }
 
         SharedVariables.setItemID(pid);
         $scope.inShoppingCart = false;
@@ -552,10 +551,12 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Checkout controller
-    app.controller('checkoutController', ['$scope','$http','$location' ,'SharedVariables','localStorageService',function($scope,$http,$location, SharedVariables,localStorageService){
+    app.controller('checkoutController', ['$scope','$http','$location' ,
+    'SharedVariables','localStorageService','$timeout',function($scope,$http,$location, SharedVariables,localStorageService,$timeout){
          var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-
+         var AID = localStorageService.get('aid');
          $scope.placeOrder = function(){
+            SharedVariables.cleanShoppingCart();
             $location.path('/order_success');
          };
 
@@ -596,6 +597,18 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.gridOptions1.columnDefs[1].enableHiding=false;
         $scope.gridOptions1.columnDefs[2].enableHiding=false;
 
+
+        //Fill Credit Card info
+
+        $http.get(generalPath+"/DealItSrv/user/creditcard/"+AID)
+                       .then(function(response){
+
+                            $timeout(function(){
+                               $scope.creditCard=response.data;
+                            });
+
+                       });
+
     }]);
 
     //Order Success controller
@@ -613,7 +626,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         //var AID = SharedVariables.getUserAID();
         var AID = localStorageService.get('aid');
-        $http.post(generalPath+"/DealItSrv/user", {aid: AID})
+        $http.get(generalPath+"/DealItSrv/user/"+AID)
                 .then(function(response){
 
                     $timeout(function(){

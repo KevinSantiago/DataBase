@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Nov 17 07:34:07 PST 2016
+// @DATE:Thu Nov 17 13:33:14 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -194,22 +194,32 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
-    def getUserInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getUserInfo",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/user"})
-        }
-      """
-    )
-  
     // @LINE:27
     def getOrdersFromAccount: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getOrdersFromAccount",
       """
         function(aid0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/order/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("aid", aid0)})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def getUserInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getUserInfo",
+      """
+        function(aid0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/user/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("aid", aid0)})
+        }
+      """
+    )
+  
+    // @LINE:37
+    def filterResults: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.filterResults",
+      """
+        function(filter0,category1) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/filter/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("filter", encodeURIComponent(filter0)) + "/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("category", encodeURIComponent(category1))})
         }
       """
     )

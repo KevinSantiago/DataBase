@@ -11,15 +11,25 @@ public class CreditCard {
     public String expDate;
     public String securityCode;
     public String type;
+    public String bzip;
+    public String bcity;
+    public String country;
+    public String bstate;
+    public String baddress;
 
     public CreditCard(){}
 
-    public CreditCard(int crID,String cardNumber, String expDate, String securityCode, String type) {
+    public CreditCard(int crID,String cardNumber, String expDate, String securityCode, String type,String bzip,String bcity,String country, String bstate, String baddress) {
         this.cardNumber = cardNumber;
         this.expDate = expDate;
         this.securityCode = securityCode;
         this.type= type;
         this.crID = crID;
+        this.bzip=bzip;
+        this.bcity=bcity;
+        this.country=country;
+        this.bstate=bstate;
+        this.baddress=baddress;
     }
 
 

@@ -1,9 +1,21 @@
 <div layout="column">
     <div layout="column">
         <div layout="row">
-            <div flex="33"><img src="http://i.stack.imgur.com/p9mUO.jpg" height="400" flex></div>
+            <div flex="33" style="background-color: WhiteSmoke">
+                <md-toolbar style="background-color: DarkSlateGray;color: orange;">
+                    <div class="md-toolbar-tools" layout = "row">
+                        <ng-md-icon icon="search" style="fill:orange;"></ng-md-icon>
+                        <span>Search:</span>
+                    </div>
+                </md-toolbar>
+                <md-input-container>
+                    <label>Search Name:</label>
+                    <input ng-model="filterName">
+                </md-input-container>
+                <md-button ng-click="filterResults()">Search</md-button>
+            </div>
             <img src="http://i1126.photobucket.com/albums/l611/jariellaureano1/technology_zps3m6dqgwu.jpeg" height="400" flex="33">
-            <div flex="33"><img src="http://i.stack.imgur.com/p9mUO.jpg" height="400" flex></div>
+            <div flex="33" style="background-color: WhiteSmoke"></div>
         </div>
     </div>
 
@@ -13,11 +25,20 @@
                 <md-tab label="Technology">
                     <md-content class="md-padding">
                         <h1 class="md-display-2" style="color: orange">Technology</h1>
-                        <div layout="row">
-                            <p flex="50">{{technologyCategory}}</p>
-                            <span flex></span>
-                        </div>
-                        <div id="grid1" ui-grid="gridOptions1" ui-grid-selection class="grid"> </div>
+                        <md-content style="border-top-style: solid">
+                            <md-list>
+                                <md-list-item class="md-3-line" ng-repeat="item in items">
+                                    <img ng-src="{{item.image}}?{{$index}}" class="md-avatar" alt="{{item.item}}" />
+                                    <div class="md-list-item-text">
+                                        <h3>Item: {{item.item}}</h3>
+                                        <h4>Condition: {{item.condition}}</h4>
+                                        <p><b>Price:</b> {{item.price | currency}}</p>
+                                    </div>
+                                    <md-button class="md-secondary" ng-click="viewDetails($index)">View Details</md-button>
+                                    <md-divider ng-if="!$last"></md-divider>
+                                </md-list-item>
+                            </md-list>
+                        </md-content>
                     </md-content>
                 </md-tab>
                 <md-tab label="Furniture" ng-click="navFurniture()"></md-tab>
