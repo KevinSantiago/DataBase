@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ecc2e8-2d36-45bb-be06-b0f4e6059348" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/CreditCard.class" afterPath="$PROJECT_DIR$/DealItSrv/target/scala-2.11/classes/controllers/CreditCard.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.~lock.ReportPhase1.docx#" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/copyResources/$global/streams/copy-resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/assets/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/assets/$global/streams/sync-mappings" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/CreditCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" afterPath="$PROJECT_DIR$/DealItSrv/app/controllers/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/html/templates/checkout.html" afterPath="$PROJECT_DIR$/DealItSrv/public/html/templates/checkout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/html/templates/item.html" afterPath="$PROJECT_DIR$/DealItSrv/public/html/templates/item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/html/templates/login.html" afterPath="$PROJECT_DIR$/DealItSrv/public/html/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/public/javascripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/$global/playCommonClassloader/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/compile/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/DealItSrv/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/html/templates/login.html" afterPath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/html/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/target/web/classes/main/META-INF/resources/webjars/dealitsrv/1.0/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/public/main/html/templates/login.html" afterPath="$PROJECT_DIR$/DealItSrv/target/web/public/main/html/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DealItSrv/target/web/public/main/javascripts/main.js" afterPath="$PROJECT_DIR$/DealItSrv/target/web/public/main/javascripts/main.js" />
     </list>
     <ignored path="DataBase.iws" />
     <ignored path=".idea/workspace.xml" />
