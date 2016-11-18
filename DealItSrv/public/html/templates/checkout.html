@@ -23,19 +23,38 @@
         <h1 align="right">Total: {{total | currency:"$"}}</h1>
     </div>
 
-    <table>
-        <td><ng-md-icon icon="account_balance"></ng-md-icon></td>
-        <td><h1>Address</h1></td>
+    <table cellspacing="20">
+        <tr>
+            <td><ng-md-icon icon="account_balance"></ng-md-icon><h2>Address</h2></td>
+        </tr>
+        <tr>
+            <td><b>Billing Address:</b> {{creditCard.baddress}}</td>
+        </tr>
+        <tr>
+            <td><b>City:</b> {{creditCard.bcity}}</td>
+        </tr>
+        <tr>
+            <td><b>State:</b> {{creditCard.bstate}}<b>       Country:</b>{{creditCard.country}}         <b>Zipcode:</b>{{creditCard.bzip}}</td>
+        </tr>
     </table>
-
+    <md-divider></md-divider>
     <!-- Address Selection -->
+    <div></div>
+    <table cellspacing="20">
+        <tr>
+            <td><ng-md-icon icon="credit_card"></ng-md-icon><h2>Payment Method</h2></td>
 
-    <table>
-        <td><ng-md-icon icon="credit_card"></ng-md-icon></td>
-        <td><h1>Payment Method</h1></td>
+        </tr>
+        <tr>
+            <td><b>Card Type: </b> {{creditCard.type}}</td>
+            <td><b>Card Number:</b> {{creditCard.cardNumber}}</td>
+            <td><b>Expiration Date:</b> {{creditCard.expDate}}</td>
+        </tr>
+        <tr></tr>
     </table>
-
+    <div></div>
     <!-- Select Payment Method -->
+    <md-divider></md-divider>
 
     <md-button align="right" class="md-raised" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="placeOrder()">Place Order</md-button>
 

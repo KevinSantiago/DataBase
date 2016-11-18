@@ -29,6 +29,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             getShoppingCart: function(){
                 return shoppingCartID;
             },
+            cleanShoppingCart: function(){
+                shoppingCartID = [];
+            },
             isInShoppingCart: function(id){
                 var itr = shoppingCartID.indexOf(id);
                 return itr != -1;
@@ -409,8 +412,12 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     app.controller('itemController', ['$scope','$http','$location', 'SharedVariables','$q','$timeout',
     '$routeParams','localStorageService' ,function($scope,$http,$location, SharedVariables,$q,$timeout,$routeParams,localStorageService ){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-
+        $scope.log= false;
         var pid = $routeParams.pid;
+
+        if(localStorageService.get('aid') != null){
+           $scope.log= true;
+        }
 
         SharedVariables.setItemID(pid);
         $scope.inShoppingCart = false;
@@ -544,10 +551,12 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Checkout controller
-    app.controller('checkoutController', ['$scope','$http','$location' ,'SharedVariables','localStorageService',function($scope,$http,$location, SharedVariables,localStorageService){
+    app.controller('checkoutController', ['$scope','$http','$location' ,
+    'SharedVariables','localStorageService','$timeout',function($scope,$http,$location, SharedVariables,localStorageService,$timeout){
          var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-
+         var AID = localStorageService.get('aid');
          $scope.placeOrder = function(){
+            SharedVariables.cleanShoppingCart();
             $location.path('/order_success');
          };
 
@@ -587,6 +596,18 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.gridOptions1.columnDefs[0].enableHiding=false;
         $scope.gridOptions1.columnDefs[1].enableHiding=false;
         $scope.gridOptions1.columnDefs[2].enableHiding=false;
+
+
+        //Fill Credit Card info
+
+        $http.get(generalPath+"/DealItSrv/user/creditcard/"+AID)
+                       .then(function(response){
+
+                            $timeout(function(){
+                               $scope.creditCard=response.data;
+                            });
+
+                       });
 
     }]);
 

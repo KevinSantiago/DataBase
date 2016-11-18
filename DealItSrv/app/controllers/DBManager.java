@@ -358,7 +358,7 @@ public class DBManager extends Controller{
 
         if(cdb != null){
             PreparedStatement ps = null;
-            String sql = "select crid, ctype, cnumber, scode,expdate from credit_card\n"+
+            String sql = "select crid, ctype, cnumber, scode,expdate,bzip,bcity,country,bstate,baddress from credit_card\n"+
                           "where aid=?";
 
             try{
@@ -371,7 +371,12 @@ public class DBManager extends Controller{
                     String number = rs.getString("cnumber");
                     String scode = rs.getString("scode");
                     String expdate = rs.getString("expdate");
-                    credit_card = new CreditCard(crid,number, expdate, scode, type);
+                    String bzip = rs.getString("bzip");
+                    String bcity = rs.getString("bcity");
+                    String country = rs.getString("country");
+                    String bstate = rs.getString("bstate");
+                    String baddress = rs.getString("baddress");
+                    credit_card = new CreditCard(crid,number, expdate, scode, type, bzip, bcity, country, bstate, baddress);
                 }
                 cdb.close();
             }catch(Exception e){

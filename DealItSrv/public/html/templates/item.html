@@ -6,7 +6,7 @@
     </md-toolbar>
     <div layout="row">
         <div flex="70">
-            <div layout="row" style="background-color: Lavender;" layout-align="space-around end">
+            <div layout="row" style="background-color: WhiteSmoke;" layout-align="space-around end">
                 <span flex="30" style="height:400px"></span>
                 <div flex="40"><img ng-src="{{image}}" width="100%" height="300"></div>
                 <span flex="30"></span>
@@ -25,8 +25,8 @@
             <h4 style="margin-left:10%">email: {{email}}</h4>
             <md-divider></md-divider>
             <br>
-            <md-button class="md-raised" ng-hide="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="addToShoppingCart()">Add to Shopping Cart</md-button>
-            <md-button class="md-raised" ng-show="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="removeFromShoppingCart()">Remove from Shopping Cart</md-button>
+            <md-button class="md-raised" ng-hide="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="addToShoppingCart()" ng-if="log">Add to Shopping Cart</md-button>
+            <md-button class="md-raised" ng-show="inShoppingCart" style="margin-left:30%;min-width: 200px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="removeFromShoppingCart()" ng-if="log">Remove from Shopping Cart</md-button>
         </div>
     </div>
     <div>
@@ -52,7 +52,7 @@
             </tr>
         </table><br>
         <md-divider></md-divider>
-        <md-toolbar layout="row" class="md-hue-3">
+        <md-toolbar layout="row" style="background-color: DarkSlateGray;color: orange;" >
             <div class="md-toolbar-tools">
                 <span>Customer Reviews</span>
             </div>
