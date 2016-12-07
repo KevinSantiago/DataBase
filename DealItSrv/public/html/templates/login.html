@@ -43,53 +43,129 @@
 
                 <md-tab label="Sign Up">
                     <md-content class="md-padding">
-                        <h1 class="md-display-2" style="color: orange; text-align: center;">Join Our Community</h1>
+                        <h1 class="md-display-2" style="color: orange;">Join Our Community</h1>
 
                         <div>
-                            <form name="signupForm" style="text-align: center;">
-
-                                <div layout="row" layout-align="center center">
-                                 <md-input-container class="md-block">
-                                    <label>Name</label>
-                                    <input ng-model="name" required>
-                                    <div style="color:red" ng-if="errorFlag.name">Name is required</div>
-                                 </md-input-container>
-                                    <span flex="10"></span>
-                                 <md-input-container>
-                                    <label>Birth Day</label>
-                                    <md-datepicker ng-model="submitedDate" required></md-datepicker>
-                                     <div style="color: red" ng-if="errorFlag.date">Birth Date is required</div>
-                                 </md-input-container>
-                                </div>
-
-                                <div layout="row" layout-align="center center">
+                            <form name="signupForm">
+                                <h2 style="color: darkslategrey;">Account Info:</h2>
+                                <div layout="row">
                                     <md-input-container class="md-block">
-                                        <label>Email</label>
-                                        <input ng-model="email" required>
-                                    </md-input-container>
-                                    <span flex="10"></span>
-                                    <md-input-container class="md-block">
-                                        <label>Re-enter email</label>
-                                        <input ng-model="reEmail" required>
-                                        <div style="color: red" ng-if="errorFlag.email">Email doesn't match</div>
+                                        <label>Username</label>
+                                        <input ng-model="username" required>
+                                        <div style="color:red" ng-if="errorFlag.name">Username is required</div>
                                     </md-input-container>
                                 </div>
-
-                                <div layout="row" layout-align="center center">
+                                <div layout="row">
                                     <md-input-container class="md-block">
                                         <label>Password</label>
-                                        <input ng-model="password" type="password" required>
+                                        <input ng-model="password" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
                                     </md-input-container>
-                                    <span flex="10"></span>
                                     <md-input-container class="md-block">
-                                        <label>Re-enter password</label>
-                                        <input ng-model="rePassword" type="password" required>
-                                        <div style="color: red" ng-if="errorFlag.password">Password doesn't match</div>
+                                        <label>Retype Password</label>
+                                        <input ng-model="rePassword" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
                                     </md-input-container>
                                 </div>
-                                <md-button class="md-raised" ng-click="signup2()">
-                                    Submit
-                                </md-button>
+
+                                <md-divider></md-divider>
+
+                                <h2 style="color: darkslategrey;">Personal Info:</h2>
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>First Name</label>
+                                        <input ng-model="ufirst" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>Lastname</label>
+                                        <input ng-model="ulast" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                </div>
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>email</label>
+                                        <input ng-model="email" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>Bithdate</label>
+                                        <input ng-model="ubirth" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                </div>
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>City</label>
+                                        <input ng-model="ucity" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>State</label>
+                                        <input ng-model="ustate" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>Phone Number</label>
+                                        <input ng-model="phone" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                </div>
+
+                                <md-divider></md-divider>
+                                <h2 style="color: darkslategrey;">Credit Card Info:</h2>
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>Credit Card Number</label>
+                                        <input ng-model="cnumber" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>Type</label>
+                                        <input ng-model="ctype" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>CVV</label>
+                                        <input ng-model="scode" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                </div>
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>Expiration Date</label>
+                                        <input ng-model="expdate" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                </div>
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>Billing address</label>
+                                        <input ng-model="baddress" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                </div>
+                                <div layout="row">
+                                    <md-input-container class="md-block">
+                                        <label>Country</label>
+                                        <input ng-model="country" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>State</label>
+                                        <input ng-model="bstate" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+                                    <md-input-container class="md-block">
+                                        <label>Zipcode</label>
+                                        <input ng-model="bzip" required>
+                                        <div style="color:red" ng-if="errorFlag.password">Password is required </div>
+                                    </md-input-container>
+
+                                </div>
+                                <md-button class="md-raised" style="max-width:50px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="signup2()">Submit</md-button>
+
 
                             </form>
                         </div>

@@ -16,6 +16,7 @@ public class Login {
         this.aid=aid;
     }
 
+    public String getPassword(){ return password;}
     public String getUsername() {
         return username;
     }

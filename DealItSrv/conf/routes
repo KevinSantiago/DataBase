@@ -16,6 +16,10 @@ GET     /login/submit/:password/:username   controllers.Application.loginUser(pa
 
 #Sign Up
 POST    /login/signup2              controllers.Application.createUser
+POST    /login/createAccount        controllers.Application.createAccount
+POST    /login/createCred           controllers.Application.createCred
+POST    /login/createPhone          controllers.Application.createPhone
+POST    /login/createCreditCard     controllers.Application.createCreditCard
 
 # Users
 GET     /DealItSrv/user/:aid             controllers.Application.getUserInfo(aid: Integer)

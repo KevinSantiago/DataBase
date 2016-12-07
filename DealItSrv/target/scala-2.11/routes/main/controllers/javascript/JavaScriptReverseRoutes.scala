@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Nov 17 13:33:14 PST 2016
+// @DATE:Wed Dec 07 08:52:13 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -154,7 +154,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:22
+    // @LINE:26
     def getPhoneNumbers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getPhoneNumbers",
       """
@@ -164,7 +164,27 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:19
+    def createAccount: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.createAccount",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/createAccount"})
+        }
+      """
+    )
+  
+    // @LINE:22
+    def createCreditCard: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.createCreditCard",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/createCreditCard"})
+        }
+      """
+    )
+  
+    // @LINE:28
     def getProductsFromUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getProductsFromUser",
       """
@@ -174,12 +194,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:28
+    // @LINE:32
     def getOrderContent: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getOrderContent",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/order/content"})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def createPhone: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.createPhone",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/createPhone"})
         }
       """
     )
@@ -194,7 +224,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:31
     def getOrdersFromAccount: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getOrdersFromAccount",
       """
@@ -204,7 +234,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:25
     def getUserInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getUserInfo",
       """
@@ -214,7 +244,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:37
+    // @LINE:41
     def filterResults: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.filterResults",
       """
@@ -224,7 +254,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:36
+    // @LINE:40
     def getProductInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getProductInfo",
       """
@@ -244,6 +274,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:20
+    def createCred: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.createCred",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login/createCred"})
+        }
+      """
+    )
+  
     // @LINE:15
     def loginUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.loginUser",
@@ -254,7 +294,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:34
+    // @LINE:38
     def getProductOwnerInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getProductOwnerInfo",
       """
@@ -264,7 +304,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:23
+    // @LINE:27
     def getCreditCard: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getCreditCard",
       """
@@ -274,7 +314,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:35
+    // @LINE:39
     def getFeedbackFromProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getFeedbackFromProduct",
       """
@@ -284,7 +324,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:33
+    // @LINE:37
     def getItemsPerCategory: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getItemsPerCategory",
       """
@@ -294,7 +334,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:32
+    // @LINE:36
     def getItemByID: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getItemByID",
       """

@@ -680,7 +680,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
     // Login , Sign up controller
-    app.controller('loginController',['$scope','$http','$location', 'SharedVariables','localStorageService','$route', function($scope,$http,$location, SharedVariables, localStorageService, $route){
+    app.controller('loginController',['$scope','$http','$location', 'SharedVariables','localStorageService','$route','$timeout', function($scope,$http,$location, SharedVariables, localStorageService, $route,$timeout){
 
 
 
@@ -689,12 +689,28 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
      var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port()+$location.path(); //the current location is stored on this variable
 
-     $scope.email="";                   //store the email
+     $scope.username="";                //store the email
      $scope.password="";                //store the password
      $scope.name="";                    //store the name of the new user
      $scope.submitedDate="";            //store the Birth date of the new user
      $scope.reEmail="";                 //Use to verify if the email entered is the same
      $scope.rePassword="";              //Use to verify if the password entered is the same
+     $scope.email="";
+     $scope.ufirst="";
+     $scope.ulast="";
+     $scope.ubirth="";
+     $scope.ucity="";
+     $scope.ustate="";
+     $scope.cnumber="";
+     $scope.ctype="";
+     $scope.scode="";
+     $scope.expdate="";
+     $scope.baddress="";
+     $scope.country="";
+     $scope.bstate="";
+     $scope.bzip="";
+     $scope.phone="";
+
 
     $scope.errorFlag = {
         emptyEP: false,
@@ -730,35 +746,49 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         }
     };
 
-    /*
-     * Call to submit new user credentials
-    */
-//    $scope.signup = function(){
-//
-//        if(validateSignUp()){
-//            $http.post(currentPath+"/signup")
-//            .then(function(response){
-//                resetFlags();
-//                resetFields();
-//                alert(response.data);
-//                $location.path('/');
-//            });
-//
-//        }
-//        else{
-//            alert("There is a problem with the form");
-//        }
-//    };
+
+
 
    
 	$scope.signup2 = function(){
          if(validateSignUp()){
-            $http.post(currentPath+"/signup2",{name: $scope.name, bdate: $scope.submitedDate, email: $scope.email, password: $scope.password})
+            $http.post(generalPath+"/signup2",{email: $scope.email, ufirst: $scope.ufirst, ulast: $scope.ulast, ucity: $scope.ucity, ustate: $scope.ustate, ubirth: $scope.ubirth})
                   .then(function(response){
-                       resetFlags();
-                       resetFields();
-                       alert(response.data);
-                       $location.path("/"); 
+                        $scope.uid=response.data;
+                       $timeout(function(){
+
+
+                          $http.post(generalPath+"/createAccount",{uid: $scope.uid})
+                                .then(function(response){
+                                    $scope.aid= response.data;
+
+                                    $timeout(function(){
+
+                                        $http.post(generalPath+"/createCred", {aid: $scope.aid, username: $scope.username, password: $scope.password})
+                                                .then(function(response){
+
+                                                });
+
+                                        $http.post(generalPath+"/createPhone", {uid: $scope.uid, phone: $scope.phone})
+                                                 .then(function(response){
+
+                                                 });
+
+                                        $http.post(generalPath+"/createCreditCard",
+                                        {aid: $scope.aid, cnumber: $scope.cnumber, expDate: $scope.expdate, scode: $scope.scode,
+                                        type: $scope.ctype, bzip: $scope.bzip, bcity: $scope.bcity, country: $scope.country,
+                                        bstate: $scope.bstate, baddress: $scope.baddress})
+                                                .then(function(response){
+
+                                                });
+
+
+                                    })
+
+                                });
+                       });
+
+
                   });
          }
          else{
@@ -770,7 +800,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
      * Validates that the email field or the password field isn't empty
     */
     var validateLogin = function(){
-        if ($scope.email === "" || $scope.password === ""){
+        if ($scope.username === "" || $scope.password === ""){
             $scope.errorFlag.emptyEP= true;
             return false;
         }
@@ -816,7 +846,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
      * Validate is name field is empty
     */
     var nameIsEmpty = function(){
-        if ($scope.name === ""){
+        if ($scope.username === ""){
             $scope.errorFlag.name = true;
             return true;
         }
@@ -827,8 +857,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
      *  Validate sign up
     */
     var validateSignUp = function(){
-        return (validateLogin() && emailIsSame() && passwordIsSame()
-                && !dateFieldIsEmpty() && !nameIsEmpty());
+        return true;
     }
 
     /*

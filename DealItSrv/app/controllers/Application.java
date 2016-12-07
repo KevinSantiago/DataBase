@@ -236,10 +236,44 @@ public class Application extends Controller {
      @BodyParser.Of(BodyParser.Json.class)
      public Result createUser(){
          JsonNode newUser = request().body().asJson();
-         if(newUser.findPath("name").textValue() == null || newUser.findPath("bdate").textValue() == null || newUser.findPath("email").textValue() == null || newUser.findPath("password").textValue() == null)
-               return badRequest("Parameters missing!");
+         UserInfo info = new UserInfo(newUser.findPath("email").textValue(),1,newUser.findPath("ufirst").textValue(),
+                 newUser.findPath("ulast").textValue(), newUser.findPath("ubirth").textValue(), newUser.findPath("ucity").textValue(),
+                 newUser.findPath("ustate").textValue(), 1);
 
-         return ok("Welcome to our community!\n"+newUser.findPath("name").textValue());
+         return ok(DBManager.createUser(info).toString());
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createAccount(){
+         JsonNode info = request().body().asJson();
+         return ok(DBManager.createAccount(info.findPath("uid").textValue()).toString());
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createCred(){
+         JsonNode info = request().body().asJson();
+         Login cred = new Login(info.findPath("username").textValue(),info.findPath("password").textValue(),
+                 Integer.parseInt(info.findPath("aid").textValue()));
+         DBManager.createLoginCred(cred);
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createPhone(){
+         JsonNode info = request().body().asJson();
+         DBManager.createPhone(Integer.parseInt(info.findPath("uid").textValue()),info.findPath("phone").textValue());
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createCreditCard(){
+         JsonNode info = request().body().asJson();
+         CreditCard credit = new CreditCard(1,info.findPath("cnumber").textValue(),info.findPath("expDate").textValue(),
+                 info.findPath("scode").textValue(),info.findPath("type").textValue(),info.findPath("bzip").textValue(),
+                 info.findPath("bcity").textValue(),info.findPath("country").textValue(),info.findPath("bstate").textValue(),
+                 info.findPath("baddress").textValue());
+         DBManager.createCreditCard(credit, Integer.parseInt(info.findPath("aid").textValue()));
+         return ok("Query executed successfully");
      }
 
     /**

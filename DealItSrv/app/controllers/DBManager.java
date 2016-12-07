@@ -386,6 +386,132 @@ public class DBManager extends Controller{
         return credit_card;
     }
 
+    public static Integer createUser(UserInfo info){
+        Connection cdb = DB.getConnection();
+        Integer uid = null;
+        if(cdb != null){
+            PreparedStatement ps= null;
+            String sql="insert into users(ufirst,ulast,ubirth,uemail,ucity,ustate) values(?,?,?,?,?,?)" +
+                    "returning uid;";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setString(1,info.getFirstName());
+                ps.setString(2,info.getLastName());
+                ps.setString(3,info.getBirthDate());
+                ps.setString(4,info.getEmail());
+                ps.setString(5,info.getCity());
+                ps.setString(6,info.getState());
+                ResultSet rs = ps.executeQuery();
+                while(rs.next()){
+                   uid= rs.getInt("uid");
+                }
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+
+
+        }
+        return uid;
+
+    }
+
+    public static Integer createAccount(String uid){
+        Connection cdb = DB.getConnection();
+        Integer aid = null;
+        int uid2 = Integer.parseInt(uid);
+        if(cdb!= null){
+            PreparedStatement ps = null;
+            String sql="insert into account(uid,_type,sdate) values(?,'member','122016')" +
+                    "returning aid;";
+
+            try{
+                ps= cdb.prepareStatement(sql);
+                ps.setInt(1,uid2);
+                ResultSet rs = ps.executeQuery();
+                while(rs.next()){
+                    aid=rs.getInt("aid");
+                }
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+
+
+        }
+        return aid;
+    }
+
+    public static void createLoginCred(Login cred){
+        Connection cdb = DB.getConnection();
+
+        if(cdb!= null){
+            PreparedStatement ps =null;
+            String sql = "insert into login_cred(aid,username,_password) values(?,?,?);";
+
+            try{
+                ps= cdb.prepareStatement(sql);
+                ps.setInt(1,cred.getAID());
+                ps.setString(2,cred.getUsername());
+                ps.setString(3, cred.getPassword());
+                ResultSet rs = ps.executeQuery();
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+
+    }
+
+    public static void createPhone(int uid, String phone){
+        Connection cdb = DB.getConnection();
+
+        if(cdb!= null){
+            PreparedStatement ps = null;
+            String sql ="insert into phone_numbers(uid,phone) values(?,?);";
+
+            try{
+                ps= cdb.prepareStatement(sql);
+                ps.setInt(1,uid);
+                ps.setString(2,phone);
+                ResultSet rs = ps.executeQuery();
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+
+    public static void createCreditCard(CreditCard credit, int aid){
+        Connection cdb= DB.getConnection();
+
+        if(cdb!= null){
+            PreparedStatement ps = null;
+            String sql ="insert into credit_card(aid,cnumber,ctype,scode,expdate,bzip,bcity,country,bstate,baddress)" +
+                    "values(?,?,?,?,?,?,?,?,?,?);";
+
+            try{
+                ps= cdb.prepareStatement(sql);
+                ps.setInt(1,aid);
+                ps.setString(2,credit.cardNumber);
+                ps.setString(3,credit.type);
+                ps.setString(4,credit.securityCode);
+                ps.setString(5,credit.expDate);
+                ps.setString(6,credit.bzip);
+                ps.setString(7,credit.bcity);
+                ps.setString(8,credit.country);
+                ps.setString(9,credit.bstate);
+                ps.setString(10,credit.baddress);
+                ResultSet rs = ps.executeQuery();
+                cdb.close();
+
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+
     public static LoginManager getLoginStatus(String loginMessage, boolean status, int aid){
         LoginManager log = new LoginManager(aid, loginMessage, status);
         return log;
