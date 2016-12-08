@@ -17,40 +17,75 @@
 
                                 <div layout="row" layout-align="center center">
                                     <md-input-container class="md-block">
-                                        <label>Name</label>
-                                        <input ng-model="name" required>
-                                        <div style="color:red" ng-if="errorFlag.name">Name is required</div>
+                                        <br><label>Product Name</label></br>
+                                        <input name="p" ng-model="product" required ng-pattern="/^[\w -]*$/">
+                                        <div ng-messages="postForm.p.$error" role="alert" multiple>
+                                            <div ng-message="required" class="my-message">Not valid Product Name</div>
+                                        </div>
                                     </md-input-container>
                                     <span flex="10"></span>
-                                    <md-input-container>
-                                        <label>Seller</label>
-                                        <input ng-model="seller" required>
-                                        <div style="color: red" ng-if="errorFlag.seller">Seller is required</div>
+                                    <md-input-container class="md-block">
+                                        <br><label>Brand Name</label></br>
+                                        <input name="b" ng-model="brand" required ng-pattern="/^[\w -]*$/">
+                                        <div ng-messages="postForm.b.$error" role="alert" multiple>
+                                            <div ng-message="required" class="my-message">Not valid Brand Name</div>
+                                        </div>
+                                    </md-input-container>
+
+                                </div>
+
+                                <div layout="row" layout-align="center center">
+                                    <md-input-container class="md-block">
+                                        <br><label>Price</label></br>
+                                        <input type="number" ng-model="cost"  ng-pattern="/^[0-9]*$/">
+                                        <div ng-messages="postForm.p.$error" role="alert" multiple>
+                                            <div ng-message="required" class="my-message">Not valid Price</div>
+                                        </div>
+                                    </md-input-container>
+                                    <span flex="15"></span>
+                                    <md-input-container class="md-block">
+                                        <br><label>Category</label></br>
+                                        <select ng-model="categorySelected" ng-change="selectedValue()">
+                                            <option ng-model="category" ng-change="selectedValue()" ng-repeat="category in categories">{{category}}</option>
+                                        </select>
+
                                     </md-input-container>
                                 </div>
 
                                 <div layout="row" layout-align="center center">
                                     <md-input-container class="md-block">
-                                        <label>Price</label>
-                                        <input ng-model="price">
+                                        <br><label>Conditions</label></br>
+                                        <input name="c" type="text" ng-model="conditions" required ng-pattern="/^[\w -]*$/">
+                                        <div ng-messages="postForm.c.$error" role="alert" multiple>
+                                            <div ng-message="required" class="my-message">Not valid Conditions</div>
+                                        </div>
                                     </md-input-container>
                                     <span flex="10"></span>
                                     <md-input-container class="md-block">
-                                        <label>Category</label>
-                                        <input ng-model="category" required>
-                                        <div style="color: red" ng-if="errorFlag.category">Category is required</div>
+                                        <br><label>Image URL</label></br>
+                                        <input name="i" type="text" ng-model="img_url" required>
+                                        <div ng-messages="postForm.i.$error" role="alert" multiple>
+                                            <div ng-message="required" class="my-message">Not valid Image</div>
+                                        </div>
                                     </md-input-container>
                                 </div>
 
                                 <div layout="row" layout-align="center center">
-                                    <md-input-container class="md-block">
-                                        <label>Description</label>
-                                        <input type="text" ng-model="description">
+                                    <md-button class="md-raised" ng-click="post(postForm.$valid)" style="background-color:orange;">
+                                        Post
+                                    </md-button>
+                                    <span flex="5"></span>
+                                    <md-input-container class="md-block" flex="25">
+                                        <br><label>Description</label></br>
+                                        <input name="d" ng-model="description" md-maxlength="200"   ng-pattern="/^[\w -]*$/" required >
+                                        <div ng-messages="postForm.d.$error" role="alert" multiple>
+                                            <div ng-message="required" class="my-message">Not valid Description</div>
+                                        </div>
                                     </md-input-container>
+
                                 </div>
-                                <md-button class="md-raised" ng-click="post()">
-                                    Submit
-                                </md-button>
+
+
                             </form>
                         </div>
                     </md-content>

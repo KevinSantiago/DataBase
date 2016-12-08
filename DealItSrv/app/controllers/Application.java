@@ -236,10 +236,90 @@ public class Application extends Controller {
      @BodyParser.Of(BodyParser.Json.class)
      public Result createUser(){
          JsonNode newUser = request().body().asJson();
-         if(newUser.findPath("name").textValue() == null || newUser.findPath("bdate").textValue() == null || newUser.findPath("email").textValue() == null || newUser.findPath("password").textValue() == null)
-               return badRequest("Parameters missing!");
+         UserInfo info = new UserInfo(newUser.findPath("email").textValue(),1,newUser.findPath("ufirst").textValue(),
+                 newUser.findPath("ulast").textValue(), newUser.findPath("ubirth").textValue(), newUser.findPath("ucity").textValue(),
+                 newUser.findPath("ustate").textValue(), 1);
 
-         return ok("Welcome to our community!\n"+newUser.findPath("name").textValue());
+         return ok(DBManager.createUser(info).toString());
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createAccount(){
+         JsonNode info = request().body().asJson();
+         return ok(DBManager.createAccount(info.findPath("uid").textValue()).toString());
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createCred(){
+         JsonNode info = request().body().asJson();
+         Login cred = new Login(info.findPath("username").textValue(),info.findPath("password").textValue(),
+                 Integer.parseInt(info.findPath("aid").textValue()));
+         DBManager.createLoginCred(cred);
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createPhone(){
+         JsonNode info = request().body().asJson();
+         DBManager.createPhone(Integer.parseInt(info.findPath("uid").textValue()),info.findPath("phone").textValue());
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result createCreditCard(){
+         JsonNode info = request().body().asJson();
+         CreditCard credit = new CreditCard(1,info.findPath("cnumber").textValue(),info.findPath("expDate").textValue(),
+                 info.findPath("scode").textValue(),info.findPath("type").textValue(),info.findPath("bzip").textValue(),
+                 info.findPath("bcity").textValue(),info.findPath("country").textValue(),info.findPath("bstate").textValue(),
+                 info.findPath("baddress").textValue());
+         DBManager.createCreditCard(credit, Integer.parseInt(info.findPath("aid").textValue()));
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result updateCreditCard(){
+         JsonNode info = request().body().asJson();
+         CreditCard credit = new CreditCard(1,info.findPath("cnumber").textValue(),info.findPath("expDate").textValue(),
+                 info.findPath("scode").textValue(),info.findPath("type").textValue(),info.findPath("bzip").textValue(),
+                 info.findPath("bcity").textValue(),info.findPath("country").textValue(),info.findPath("bstate").textValue(),
+                 info.findPath("baddress").textValue());
+         DBManager.updateCreditCard(credit, info.findPath("aid").intValue());
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result updatePhoneNumber(){
+         JsonNode info = request().body().asJson();
+         String phone = info.findPath("phone").textValue();
+         int uid = info.findPath("uid").intValue();
+         DBManager.updatePhoneNumber(phone,uid);
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result updateUserInfo(){
+         JsonNode info = request().body().asJson();
+         UserInfo user = new UserInfo(info.findPath("email").textValue(),1,info.findPath("ufirst").textValue(),
+                 info.findPath("ulast").textValue(), info.findPath("ubirth").textValue(), info.findPath("ucity").textValue(),
+                 info.findPath("ustate").textValue(), info.findPath("uid").intValue());
+         DBManager.updateUserInfo(user);
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result insertOrder(){
+         JsonNode info = request().body().asJson();
+
+         return ok(DBManager.insertOrder(info.findPath("aid").intValue()).toString());
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result insertOrderLine(){
+         JsonNode info = request().body().asJson();
+         OrderLine line = new OrderLine(Integer.parseInt(info.findPath("oid").textValue()), info.findPath("pid").intValue(),
+                 info.findPath("pname").textValue(),1);
+         DBManager.insertOrderLine(line);
+         return ok("Query executed successfully");
      }
 
     /**
@@ -282,6 +362,33 @@ public class Application extends Controller {
       }
 
 
+    /**
+     *
+     * @return The name of every category
+     */
+    public Result getCategoryName() {
+        return ok(Json.toJson(DBManager.getCategoriesNames()));
+    }
 
+    /**
+     * Create new post and submit it to the DB
+     * @return
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result insertNewPost() {
+        JsonNode newPost = request().body().asJson();
+        String category = newPost.findPath("category").textValue();
+        int aid = newPost.findPath("aid").intValue();
+        String productName = newPost.findPath("product").textValue();
+        String brand = newPost.findPath("brand").textValue();
+        String conditions = newPost.findPath("condition").textValue();
+        int price = newPost.findPath("price").intValue();
+        String img_url = newPost.findPath("img_url").textValue();
+        String description = newPost.findPath("description").textValue();
+        boolean status = DBManager.insertNewPost(category, aid, productName, brand, conditions, price, img_url, description);
 
+        if(status)
+            return ok("Successful!\n");
+        return ok("Failed!\n");
+    }
 }

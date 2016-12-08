@@ -34,7 +34,6 @@ public class Account {
     }
 
 
-
     public CreditCard getCard() {
         return card;
     }

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Nov 17 13:33:14 PST 2016
+// @DATE:Thu Dec 08 05:49:33 PST 2016
 
 package router
 
@@ -47,18 +47,29 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/logout""", """controllers.Application.logout"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/submit/""" + "$" + """password<[^/]+>/""" + "$" + """username<[^/]+>""", """controllers.Application.loginUser(password:String, username:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/signup2""", """controllers.Application.createUser"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/createAccount""", """controllers.Application.createAccount"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/createCred""", """controllers.Application.createCred"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/createPhone""", """controllers.Application.createPhone"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/createCreditCard""", """controllers.Application.createCreditCard"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/user/""" + "$" + """aid<[^/]+>""", """controllers.Application.getUserInfo(aid:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/user/phone/""" + "$" + """uid<[^/]+>""", """controllers.Application.getPhoneNumbers(uid:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/user/creditcard/""" + "$" + """aid<[^/]+>""", """controllers.Application.getCreditCard(aid:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/user/products/""" + "$" + """aid<[^/]+>""", """controllers.Application.getProductsFromUser(aid:Integer)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateCreditCard""", """controllers.Application.updateCreditCard"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updatePhoneNumber""", """controllers.Application.updatePhoneNumber"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateUserInfo""", """controllers.Application.updateUserInfo"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/order/""" + "$" + """aid<[^/]+>""", """controllers.Application.getOrdersFromAccount(aid:Integer)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/order/content""", """controllers.Application.getOrderContent"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """insertOrder""", """controllers.Application.insertOrder"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """insertOrderLine""", """controllers.Application.insertOrderLine"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/items/""" + "$" + """id<[^/]+>""", """controllers.Application.getItemByID(id:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/itemsByCat/""" + "$" + """category<[^/]+>""", """controllers.Application.getItemsPerCategory(category:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/product/ownerinfo/""" + "$" + """pid<[^/]+>""", """controllers.Application.getProductOwnerInfo(pid:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/product/feedback/""" + "$" + """pid<[^/]+>""", """controllers.Application.getFeedbackFromProduct(pid:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/product/info/""" + "$" + """pid<[^/]+>""", """controllers.Application.getProductInfo(pid:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/filter/""" + "$" + """filter<[^/]+>/""" + "$" + """category<[^/]+>""", """controllers.Application.filterResults(filter:String, category:String)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/newPost""", """controllers.Application.insertNewPost"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """DealItSrv/categories""", """controllers.Application.getCategoryName"""),
     ("""GET""", this.prefix, """controllers.Assets.at(path:String = "/public/html/", file:String = "index.html")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """angular.js""", """controllers.Assets.at(path:String = "/public/javascripts/node_modules/angular", file:String = "angular.js")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """angular-route.js""", """controllers.Assets.at(path:String = "/public/javascripts/node_modules/angular-route", file:String = "angular-route.js")"""),
@@ -178,11 +189,79 @@ class Routes(
     )
   )
 
+  // @LINE:19
+  private[this] lazy val controllers_Application_createAccount5_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login/createAccount")))
+  )
+  private[this] lazy val controllers_Application_createAccount5_invoker = createInvoker(
+    Application_1.createAccount,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "createAccount",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """login/createAccount"""
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_Application_createCred6_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login/createCred")))
+  )
+  private[this] lazy val controllers_Application_createCred6_invoker = createInvoker(
+    Application_1.createCred,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "createCred",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """login/createCred"""
+    )
+  )
+
   // @LINE:21
-  private[this] lazy val controllers_Application_getUserInfo5_route = Route("GET",
+  private[this] lazy val controllers_Application_createPhone7_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login/createPhone")))
+  )
+  private[this] lazy val controllers_Application_createPhone7_invoker = createInvoker(
+    Application_1.createPhone,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "createPhone",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """login/createPhone"""
+    )
+  )
+
+  // @LINE:22
+  private[this] lazy val controllers_Application_createCreditCard8_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login/createCreditCard")))
+  )
+  private[this] lazy val controllers_Application_createCreditCard8_invoker = createInvoker(
+    Application_1.createCreditCard,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "createCreditCard",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """login/createCreditCard"""
+    )
+  )
+
+  // @LINE:25
+  private[this] lazy val controllers_Application_getUserInfo9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/user/"), DynamicPart("aid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getUserInfo5_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getUserInfo9_invoker = createInvoker(
     Application_1.getUserInfo(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -195,11 +274,11 @@ class Routes(
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_Application_getPhoneNumbers6_route = Route("GET",
+  // @LINE:26
+  private[this] lazy val controllers_Application_getPhoneNumbers10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/user/phone/"), DynamicPart("uid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getPhoneNumbers6_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getPhoneNumbers10_invoker = createInvoker(
     Application_1.getPhoneNumbers(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -212,11 +291,11 @@ class Routes(
     )
   )
 
-  // @LINE:23
-  private[this] lazy val controllers_Application_getCreditCard7_route = Route("GET",
+  // @LINE:27
+  private[this] lazy val controllers_Application_getCreditCard11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/user/creditcard/"), DynamicPart("aid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getCreditCard7_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getCreditCard11_invoker = createInvoker(
     Application_1.getCreditCard(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -229,11 +308,11 @@ class Routes(
     )
   )
 
-  // @LINE:24
-  private[this] lazy val controllers_Application_getProductsFromUser8_route = Route("GET",
+  // @LINE:28
+  private[this] lazy val controllers_Application_getProductsFromUser12_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/user/products/"), DynamicPart("aid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getProductsFromUser8_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getProductsFromUser12_invoker = createInvoker(
     Application_1.getProductsFromUser(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -246,11 +325,62 @@ class Routes(
     )
   )
 
-  // @LINE:27
-  private[this] lazy val controllers_Application_getOrdersFromAccount9_route = Route("GET",
+  // @LINE:29
+  private[this] lazy val controllers_Application_updateCreditCard13_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateCreditCard")))
+  )
+  private[this] lazy val controllers_Application_updateCreditCard13_invoker = createInvoker(
+    Application_1.updateCreditCard,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "updateCreditCard",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """updateCreditCard"""
+    )
+  )
+
+  // @LINE:30
+  private[this] lazy val controllers_Application_updatePhoneNumber14_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updatePhoneNumber")))
+  )
+  private[this] lazy val controllers_Application_updatePhoneNumber14_invoker = createInvoker(
+    Application_1.updatePhoneNumber,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "updatePhoneNumber",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """updatePhoneNumber"""
+    )
+  )
+
+  // @LINE:31
+  private[this] lazy val controllers_Application_updateUserInfo15_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateUserInfo")))
+  )
+  private[this] lazy val controllers_Application_updateUserInfo15_invoker = createInvoker(
+    Application_1.updateUserInfo,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "updateUserInfo",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """updateUserInfo"""
+    )
+  )
+
+  // @LINE:35
+  private[this] lazy val controllers_Application_getOrdersFromAccount16_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/order/"), DynamicPart("aid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getOrdersFromAccount9_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getOrdersFromAccount16_invoker = createInvoker(
     Application_1.getOrdersFromAccount(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -263,11 +393,11 @@ class Routes(
     )
   )
 
-  // @LINE:28
-  private[this] lazy val controllers_Application_getOrderContent10_route = Route("POST",
+  // @LINE:36
+  private[this] lazy val controllers_Application_getOrderContent17_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/order/content")))
   )
-  private[this] lazy val controllers_Application_getOrderContent10_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getOrderContent17_invoker = createInvoker(
     Application_1.getOrderContent,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -280,11 +410,45 @@ class Routes(
     )
   )
 
-  // @LINE:32
-  private[this] lazy val controllers_Application_getItemByID11_route = Route("GET",
+  // @LINE:37
+  private[this] lazy val controllers_Application_insertOrder18_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("insertOrder")))
+  )
+  private[this] lazy val controllers_Application_insertOrder18_invoker = createInvoker(
+    Application_1.insertOrder,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "insertOrder",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """insertOrder"""
+    )
+  )
+
+  // @LINE:38
+  private[this] lazy val controllers_Application_insertOrderLine19_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("insertOrderLine")))
+  )
+  private[this] lazy val controllers_Application_insertOrderLine19_invoker = createInvoker(
+    Application_1.insertOrderLine,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "insertOrderLine",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """insertOrderLine"""
+    )
+  )
+
+  // @LINE:41
+  private[this] lazy val controllers_Application_getItemByID20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/items/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getItemByID11_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getItemByID20_invoker = createInvoker(
     Application_1.getItemByID(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -297,11 +461,11 @@ class Routes(
     )
   )
 
-  // @LINE:33
-  private[this] lazy val controllers_Application_getItemsPerCategory12_route = Route("GET",
+  // @LINE:42
+  private[this] lazy val controllers_Application_getItemsPerCategory21_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/itemsByCat/"), DynamicPart("category", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getItemsPerCategory12_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getItemsPerCategory21_invoker = createInvoker(
     Application_1.getItemsPerCategory(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -314,11 +478,11 @@ class Routes(
     )
   )
 
-  // @LINE:34
-  private[this] lazy val controllers_Application_getProductOwnerInfo13_route = Route("GET",
+  // @LINE:43
+  private[this] lazy val controllers_Application_getProductOwnerInfo22_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/product/ownerinfo/"), DynamicPart("pid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getProductOwnerInfo13_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getProductOwnerInfo22_invoker = createInvoker(
     Application_1.getProductOwnerInfo(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -331,11 +495,11 @@ class Routes(
     )
   )
 
-  // @LINE:35
-  private[this] lazy val controllers_Application_getFeedbackFromProduct14_route = Route("GET",
+  // @LINE:44
+  private[this] lazy val controllers_Application_getFeedbackFromProduct23_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/product/feedback/"), DynamicPart("pid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getFeedbackFromProduct14_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getFeedbackFromProduct23_invoker = createInvoker(
     Application_1.getFeedbackFromProduct(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -348,11 +512,11 @@ class Routes(
     )
   )
 
-  // @LINE:36
-  private[this] lazy val controllers_Application_getProductInfo15_route = Route("GET",
+  // @LINE:45
+  private[this] lazy val controllers_Application_getProductInfo24_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/product/info/"), DynamicPart("pid", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_getProductInfo15_invoker = createInvoker(
+  private[this] lazy val controllers_Application_getProductInfo24_invoker = createInvoker(
     Application_1.getProductInfo(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -365,11 +529,11 @@ class Routes(
     )
   )
 
-  // @LINE:37
-  private[this] lazy val controllers_Application_filterResults16_route = Route("GET",
+  // @LINE:46
+  private[this] lazy val controllers_Application_filterResults25_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/filter/"), DynamicPart("filter", """[^/]+""",true), StaticPart("/"), DynamicPart("category", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_Application_filterResults16_invoker = createInvoker(
+  private[this] lazy val controllers_Application_filterResults25_invoker = createInvoker(
     Application_1.filterResults(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -382,11 +546,45 @@ class Routes(
     )
   )
 
-  // @LINE:41
-  private[this] lazy val controllers_Assets_at17_route = Route("GET",
+  // @LINE:49
+  private[this] lazy val controllers_Application_insertNewPost26_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/newPost")))
+  )
+  private[this] lazy val controllers_Application_insertNewPost26_invoker = createInvoker(
+    Application_1.insertNewPost,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "insertNewPost",
+      Nil,
+      "POST",
+      """ Insert new data""",
+      this.prefix + """DealItSrv/newPost"""
+    )
+  )
+
+  // @LINE:52
+  private[this] lazy val controllers_Application_getCategoryName27_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("DealItSrv/categories")))
+  )
+  private[this] lazy val controllers_Application_getCategoryName27_invoker = createInvoker(
+    Application_1.getCategoryName,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "getCategoryName",
+      Nil,
+      "GET",
+      """ Get Info""",
+      this.prefix + """DealItSrv/categories"""
+    )
+  )
+
+  // @LINE:55
+  private[this] lazy val controllers_Assets_at28_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_Assets_at17_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at28_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -399,11 +597,11 @@ class Routes(
     )
   )
 
-  // @LINE:44
-  private[this] lazy val controllers_Assets_at18_route = Route("GET",
+  // @LINE:58
+  private[this] lazy val controllers_Assets_at29_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular.js")))
   )
-  private[this] lazy val controllers_Assets_at18_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at29_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -416,11 +614,11 @@ class Routes(
     )
   )
 
-  // @LINE:45
-  private[this] lazy val controllers_Assets_at19_route = Route("GET",
+  // @LINE:59
+  private[this] lazy val controllers_Assets_at30_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-route.js")))
   )
-  private[this] lazy val controllers_Assets_at19_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at30_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -433,11 +631,11 @@ class Routes(
     )
   )
 
-  // @LINE:46
-  private[this] lazy val controllers_Assets_at20_route = Route("GET",
+  // @LINE:60
+  private[this] lazy val controllers_Assets_at31_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("main.js")))
   )
-  private[this] lazy val controllers_Assets_at20_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at31_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -450,11 +648,11 @@ class Routes(
     )
   )
 
-  // @LINE:47
-  private[this] lazy val controllers_Assets_at21_route = Route("GET",
+  // @LINE:61
+  private[this] lazy val controllers_Assets_at32_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-aria.js")))
   )
-  private[this] lazy val controllers_Assets_at21_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at32_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -467,11 +665,11 @@ class Routes(
     )
   )
 
-  // @LINE:48
-  private[this] lazy val controllers_Assets_at22_route = Route("GET",
+  // @LINE:62
+  private[this] lazy val controllers_Assets_at33_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-material.js")))
   )
-  private[this] lazy val controllers_Assets_at22_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at33_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -484,11 +682,11 @@ class Routes(
     )
   )
 
-  // @LINE:49
-  private[this] lazy val controllers_Assets_at23_route = Route("GET",
+  // @LINE:63
+  private[this] lazy val controllers_Assets_at34_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-animate.js")))
   )
-  private[this] lazy val controllers_Assets_at23_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at34_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -501,11 +699,11 @@ class Routes(
     )
   )
 
-  // @LINE:50
-  private[this] lazy val controllers_Assets_at24_route = Route("GET",
+  // @LINE:64
+  private[this] lazy val controllers_Assets_at35_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-messages.js")))
   )
-  private[this] lazy val controllers_Assets_at24_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at35_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -518,11 +716,11 @@ class Routes(
     )
   )
 
-  // @LINE:51
-  private[this] lazy val controllers_Assets_at25_route = Route("GET",
+  // @LINE:65
+  private[this] lazy val controllers_Assets_at36_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-material-icons.js")))
   )
-  private[this] lazy val controllers_Assets_at25_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at36_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -535,11 +733,11 @@ class Routes(
     )
   )
 
-  // @LINE:52
-  private[this] lazy val controllers_Assets_at26_route = Route("GET",
+  // @LINE:66
+  private[this] lazy val controllers_Assets_at37_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ui-grid.js")))
   )
-  private[this] lazy val controllers_Assets_at26_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at37_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -552,11 +750,11 @@ class Routes(
     )
   )
 
-  // @LINE:53
-  private[this] lazy val controllers_Assets_at27_route = Route("GET",
+  // @LINE:67
+  private[this] lazy val controllers_Assets_at38_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-local-storage.js")))
   )
-  private[this] lazy val controllers_Assets_at27_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at38_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -569,11 +767,11 @@ class Routes(
     )
   )
 
-  // @LINE:56
-  private[this] lazy val controllers_Assets_at28_route = Route("GET",
+  // @LINE:70
+  private[this] lazy val controllers_Assets_at39_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("angular-material.css")))
   )
-  private[this] lazy val controllers_Assets_at28_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at39_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -586,11 +784,11 @@ class Routes(
     )
   )
 
-  // @LINE:57
-  private[this] lazy val controllers_Assets_at29_route = Route("GET",
+  // @LINE:71
+  private[this] lazy val controllers_Assets_at40_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ui-grid.css")))
   )
-  private[this] lazy val controllers_Assets_at29_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at40_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -603,11 +801,11 @@ class Routes(
     )
   )
 
-  // @LINE:58
-  private[this] lazy val controllers_Assets_at30_route = Route("GET",
+  // @LINE:72
+  private[this] lazy val controllers_Assets_at41_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ui-grid.woff")))
   )
-  private[this] lazy val controllers_Assets_at30_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at41_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -620,11 +818,11 @@ class Routes(
     )
   )
 
-  // @LINE:61
-  private[this] lazy val controllers_Assets_at31_route = Route("GET",
+  // @LINE:75
+  private[this] lazy val controllers_Assets_at42_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("home.html")))
   )
-  private[this] lazy val controllers_Assets_at31_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at42_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -637,11 +835,11 @@ class Routes(
     )
   )
 
-  // @LINE:62
-  private[this] lazy val controllers_Assets_at32_route = Route("GET",
+  // @LINE:76
+  private[this] lazy val controllers_Assets_at43_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("about.html")))
   )
-  private[this] lazy val controllers_Assets_at32_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at43_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -654,11 +852,11 @@ class Routes(
     )
   )
 
-  // @LINE:63
-  private[this] lazy val controllers_Assets_at33_route = Route("GET",
+  // @LINE:77
+  private[this] lazy val controllers_Assets_at44_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login.html")))
   )
-  private[this] lazy val controllers_Assets_at33_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at44_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -671,11 +869,11 @@ class Routes(
     )
   )
 
-  // @LINE:64
-  private[this] lazy val controllers_Assets_at34_route = Route("GET",
+  // @LINE:78
+  private[this] lazy val controllers_Assets_at45_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cars.html")))
   )
-  private[this] lazy val controllers_Assets_at34_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at45_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -688,11 +886,11 @@ class Routes(
     )
   )
 
-  // @LINE:65
-  private[this] lazy val controllers_Assets_at35_route = Route("GET",
+  // @LINE:79
+  private[this] lazy val controllers_Assets_at46_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("house.html")))
   )
-  private[this] lazy val controllers_Assets_at35_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at46_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -705,11 +903,11 @@ class Routes(
     )
   )
 
-  // @LINE:66
-  private[this] lazy val controllers_Assets_at36_route = Route("GET",
+  // @LINE:80
+  private[this] lazy val controllers_Assets_at47_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("technology.html")))
   )
-  private[this] lazy val controllers_Assets_at36_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at47_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -722,11 +920,11 @@ class Routes(
     )
   )
 
-  // @LINE:67
-  private[this] lazy val controllers_Assets_at37_route = Route("GET",
+  // @LINE:81
+  private[this] lazy val controllers_Assets_at48_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("furniture.html")))
   )
-  private[this] lazy val controllers_Assets_at37_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at48_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -739,11 +937,11 @@ class Routes(
     )
   )
 
-  // @LINE:68
-  private[this] lazy val controllers_Assets_at38_route = Route("GET",
+  // @LINE:82
+  private[this] lazy val controllers_Assets_at49_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("profile.html")))
   )
-  private[this] lazy val controllers_Assets_at38_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at49_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -756,11 +954,11 @@ class Routes(
     )
   )
 
-  // @LINE:69
-  private[this] lazy val controllers_Assets_at39_route = Route("GET",
+  // @LINE:83
+  private[this] lazy val controllers_Assets_at50_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("item.html")))
   )
-  private[this] lazy val controllers_Assets_at39_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at50_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -773,11 +971,11 @@ class Routes(
     )
   )
 
-  // @LINE:70
-  private[this] lazy val controllers_Assets_at40_route = Route("GET",
+  // @LINE:84
+  private[this] lazy val controllers_Assets_at51_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addPost.html")))
   )
-  private[this] lazy val controllers_Assets_at40_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at51_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -790,11 +988,11 @@ class Routes(
     )
   )
 
-  // @LINE:71
-  private[this] lazy val controllers_Assets_at41_route = Route("GET",
+  // @LINE:85
+  private[this] lazy val controllers_Assets_at52_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cart.html")))
   )
-  private[this] lazy val controllers_Assets_at41_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at52_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -807,11 +1005,11 @@ class Routes(
     )
   )
 
-  // @LINE:72
-  private[this] lazy val controllers_Assets_at42_route = Route("GET",
+  // @LINE:86
+  private[this] lazy val controllers_Assets_at53_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("checkout.html")))
   )
-  private[this] lazy val controllers_Assets_at42_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at53_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -824,11 +1022,11 @@ class Routes(
     )
   )
 
-  // @LINE:73
-  private[this] lazy val controllers_Assets_at43_route = Route("GET",
+  // @LINE:87
+  private[this] lazy val controllers_Assets_at54_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("order_success.html")))
   )
-  private[this] lazy val controllers_Assets_at43_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at54_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -874,238 +1072,304 @@ class Routes(
         controllers_Application_createUser4_invoker.call(Application_1.createUser)
       }
   
+    // @LINE:19
+    case controllers_Application_createAccount5_route(params) =>
+      call { 
+        controllers_Application_createAccount5_invoker.call(Application_1.createAccount)
+      }
+  
+    // @LINE:20
+    case controllers_Application_createCred6_route(params) =>
+      call { 
+        controllers_Application_createCred6_invoker.call(Application_1.createCred)
+      }
+  
     // @LINE:21
-    case controllers_Application_getUserInfo5_route(params) =>
-      call(params.fromPath[Integer]("aid", None)) { (aid) =>
-        controllers_Application_getUserInfo5_invoker.call(Application_1.getUserInfo(aid))
+    case controllers_Application_createPhone7_route(params) =>
+      call { 
+        controllers_Application_createPhone7_invoker.call(Application_1.createPhone)
       }
   
     // @LINE:22
-    case controllers_Application_getPhoneNumbers6_route(params) =>
+    case controllers_Application_createCreditCard8_route(params) =>
+      call { 
+        controllers_Application_createCreditCard8_invoker.call(Application_1.createCreditCard)
+      }
+  
+    // @LINE:25
+    case controllers_Application_getUserInfo9_route(params) =>
+      call(params.fromPath[Integer]("aid", None)) { (aid) =>
+        controllers_Application_getUserInfo9_invoker.call(Application_1.getUserInfo(aid))
+      }
+  
+    // @LINE:26
+    case controllers_Application_getPhoneNumbers10_route(params) =>
       call(params.fromPath[Integer]("uid", None)) { (uid) =>
-        controllers_Application_getPhoneNumbers6_invoker.call(Application_1.getPhoneNumbers(uid))
-      }
-  
-    // @LINE:23
-    case controllers_Application_getCreditCard7_route(params) =>
-      call(params.fromPath[Integer]("aid", None)) { (aid) =>
-        controllers_Application_getCreditCard7_invoker.call(Application_1.getCreditCard(aid))
-      }
-  
-    // @LINE:24
-    case controllers_Application_getProductsFromUser8_route(params) =>
-      call(params.fromPath[Integer]("aid", None)) { (aid) =>
-        controllers_Application_getProductsFromUser8_invoker.call(Application_1.getProductsFromUser(aid))
+        controllers_Application_getPhoneNumbers10_invoker.call(Application_1.getPhoneNumbers(uid))
       }
   
     // @LINE:27
-    case controllers_Application_getOrdersFromAccount9_route(params) =>
+    case controllers_Application_getCreditCard11_route(params) =>
       call(params.fromPath[Integer]("aid", None)) { (aid) =>
-        controllers_Application_getOrdersFromAccount9_invoker.call(Application_1.getOrdersFromAccount(aid))
+        controllers_Application_getCreditCard11_invoker.call(Application_1.getCreditCard(aid))
       }
   
     // @LINE:28
-    case controllers_Application_getOrderContent10_route(params) =>
+    case controllers_Application_getProductsFromUser12_route(params) =>
+      call(params.fromPath[Integer]("aid", None)) { (aid) =>
+        controllers_Application_getProductsFromUser12_invoker.call(Application_1.getProductsFromUser(aid))
+      }
+  
+    // @LINE:29
+    case controllers_Application_updateCreditCard13_route(params) =>
       call { 
-        controllers_Application_getOrderContent10_invoker.call(Application_1.getOrderContent)
+        controllers_Application_updateCreditCard13_invoker.call(Application_1.updateCreditCard)
       }
   
-    // @LINE:32
-    case controllers_Application_getItemByID11_route(params) =>
-      call(params.fromPath[Integer]("id", None)) { (id) =>
-        controllers_Application_getItemByID11_invoker.call(Application_1.getItemByID(id))
+    // @LINE:30
+    case controllers_Application_updatePhoneNumber14_route(params) =>
+      call { 
+        controllers_Application_updatePhoneNumber14_invoker.call(Application_1.updatePhoneNumber)
       }
   
-    // @LINE:33
-    case controllers_Application_getItemsPerCategory12_route(params) =>
-      call(params.fromPath[String]("category", None)) { (category) =>
-        controllers_Application_getItemsPerCategory12_invoker.call(Application_1.getItemsPerCategory(category))
-      }
-  
-    // @LINE:34
-    case controllers_Application_getProductOwnerInfo13_route(params) =>
-      call(params.fromPath[Integer]("pid", None)) { (pid) =>
-        controllers_Application_getProductOwnerInfo13_invoker.call(Application_1.getProductOwnerInfo(pid))
+    // @LINE:31
+    case controllers_Application_updateUserInfo15_route(params) =>
+      call { 
+        controllers_Application_updateUserInfo15_invoker.call(Application_1.updateUserInfo)
       }
   
     // @LINE:35
-    case controllers_Application_getFeedbackFromProduct14_route(params) =>
-      call(params.fromPath[Integer]("pid", None)) { (pid) =>
-        controllers_Application_getFeedbackFromProduct14_invoker.call(Application_1.getFeedbackFromProduct(pid))
+    case controllers_Application_getOrdersFromAccount16_route(params) =>
+      call(params.fromPath[Integer]("aid", None)) { (aid) =>
+        controllers_Application_getOrdersFromAccount16_invoker.call(Application_1.getOrdersFromAccount(aid))
       }
   
     // @LINE:36
-    case controllers_Application_getProductInfo15_route(params) =>
-      call(params.fromPath[Integer]("pid", None)) { (pid) =>
-        controllers_Application_getProductInfo15_invoker.call(Application_1.getProductInfo(pid))
+    case controllers_Application_getOrderContent17_route(params) =>
+      call { 
+        controllers_Application_getOrderContent17_invoker.call(Application_1.getOrderContent)
       }
   
     // @LINE:37
-    case controllers_Application_filterResults16_route(params) =>
-      call(params.fromPath[String]("filter", None), params.fromPath[String]("category", None)) { (filter, category) =>
-        controllers_Application_filterResults16_invoker.call(Application_1.filterResults(filter, category))
+    case controllers_Application_insertOrder18_route(params) =>
+      call { 
+        controllers_Application_insertOrder18_invoker.call(Application_1.insertOrder)
+      }
+  
+    // @LINE:38
+    case controllers_Application_insertOrderLine19_route(params) =>
+      call { 
+        controllers_Application_insertOrderLine19_invoker.call(Application_1.insertOrderLine)
       }
   
     // @LINE:41
-    case controllers_Assets_at17_route(params) =>
-      call(Param[String]("path", Right("/public/html/")), Param[String]("file", Right("index.html"))) { (path, file) =>
-        controllers_Assets_at17_invoker.call(Assets_0.at(path, file))
+    case controllers_Application_getItemByID20_route(params) =>
+      call(params.fromPath[Integer]("id", None)) { (id) =>
+        controllers_Application_getItemByID20_invoker.call(Application_1.getItemByID(id))
+      }
+  
+    // @LINE:42
+    case controllers_Application_getItemsPerCategory21_route(params) =>
+      call(params.fromPath[String]("category", None)) { (category) =>
+        controllers_Application_getItemsPerCategory21_invoker.call(Application_1.getItemsPerCategory(category))
+      }
+  
+    // @LINE:43
+    case controllers_Application_getProductOwnerInfo22_route(params) =>
+      call(params.fromPath[Integer]("pid", None)) { (pid) =>
+        controllers_Application_getProductOwnerInfo22_invoker.call(Application_1.getProductOwnerInfo(pid))
       }
   
     // @LINE:44
-    case controllers_Assets_at18_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular")), Param[String]("file", Right("angular.js"))) { (path, file) =>
-        controllers_Assets_at18_invoker.call(Assets_0.at(path, file))
+    case controllers_Application_getFeedbackFromProduct23_route(params) =>
+      call(params.fromPath[Integer]("pid", None)) { (pid) =>
+        controllers_Application_getFeedbackFromProduct23_invoker.call(Application_1.getFeedbackFromProduct(pid))
       }
   
     // @LINE:45
-    case controllers_Assets_at19_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-route")), Param[String]("file", Right("angular-route.js"))) { (path, file) =>
-        controllers_Assets_at19_invoker.call(Assets_0.at(path, file))
+    case controllers_Application_getProductInfo24_route(params) =>
+      call(params.fromPath[Integer]("pid", None)) { (pid) =>
+        controllers_Application_getProductInfo24_invoker.call(Application_1.getProductInfo(pid))
       }
   
     // @LINE:46
-    case controllers_Assets_at20_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/")), Param[String]("file", Right("main.js"))) { (path, file) =>
-        controllers_Assets_at20_invoker.call(Assets_0.at(path, file))
-      }
-  
-    // @LINE:47
-    case controllers_Assets_at21_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-aria")), Param[String]("file", Right("angular-aria.js"))) { (path, file) =>
-        controllers_Assets_at21_invoker.call(Assets_0.at(path, file))
-      }
-  
-    // @LINE:48
-    case controllers_Assets_at22_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-material")), Param[String]("file", Right("angular-material.js"))) { (path, file) =>
-        controllers_Assets_at22_invoker.call(Assets_0.at(path, file))
+    case controllers_Application_filterResults25_route(params) =>
+      call(params.fromPath[String]("filter", None), params.fromPath[String]("category", None)) { (filter, category) =>
+        controllers_Application_filterResults25_invoker.call(Application_1.filterResults(filter, category))
       }
   
     // @LINE:49
-    case controllers_Assets_at23_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-animate")), Param[String]("file", Right("angular-animate.js"))) { (path, file) =>
-        controllers_Assets_at23_invoker.call(Assets_0.at(path, file))
-      }
-  
-    // @LINE:50
-    case controllers_Assets_at24_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-messages")), Param[String]("file", Right("angular-messages.js"))) { (path, file) =>
-        controllers_Assets_at24_invoker.call(Assets_0.at(path, file))
-      }
-  
-    // @LINE:51
-    case controllers_Assets_at25_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-material-icons")), Param[String]("file", Right("angular-material-icons.js"))) { (path, file) =>
-        controllers_Assets_at25_invoker.call(Assets_0.at(path, file))
+    case controllers_Application_insertNewPost26_route(params) =>
+      call { 
+        controllers_Application_insertNewPost26_invoker.call(Application_1.insertNewPost)
       }
   
     // @LINE:52
-    case controllers_Assets_at26_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-ui-grid")), Param[String]("file", Right("ui-grid.js"))) { (path, file) =>
-        controllers_Assets_at26_invoker.call(Assets_0.at(path, file))
+    case controllers_Application_getCategoryName27_route(params) =>
+      call { 
+        controllers_Application_getCategoryName27_invoker.call(Application_1.getCategoryName)
       }
   
-    // @LINE:53
-    case controllers_Assets_at27_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-local-storage/src")), Param[String]("file", Right("angular-local-storage.js"))) { (path, file) =>
-        controllers_Assets_at27_invoker.call(Assets_0.at(path, file))
-      }
-  
-    // @LINE:56
+    // @LINE:55
     case controllers_Assets_at28_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-material")), Param[String]("file", Right("angular-material.css"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/html/")), Param[String]("file", Right("index.html"))) { (path, file) =>
         controllers_Assets_at28_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:57
+    // @LINE:58
     case controllers_Assets_at29_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-ui-grid")), Param[String]("file", Right("ui-grid.css"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular")), Param[String]("file", Right("angular.js"))) { (path, file) =>
         controllers_Assets_at29_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:58
+    // @LINE:59
     case controllers_Assets_at30_route(params) =>
-      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-ui-grid")), Param[String]("file", Right("ui-grid.woff"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-route")), Param[String]("file", Right("angular-route.js"))) { (path, file) =>
         controllers_Assets_at30_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:61
+    // @LINE:60
     case controllers_Assets_at31_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("home.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/")), Param[String]("file", Right("main.js"))) { (path, file) =>
         controllers_Assets_at31_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:62
+    // @LINE:61
     case controllers_Assets_at32_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("about.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-aria")), Param[String]("file", Right("angular-aria.js"))) { (path, file) =>
         controllers_Assets_at32_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:63
+    // @LINE:62
     case controllers_Assets_at33_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("login.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-material")), Param[String]("file", Right("angular-material.js"))) { (path, file) =>
         controllers_Assets_at33_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:64
+    // @LINE:63
     case controllers_Assets_at34_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("cars.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-animate")), Param[String]("file", Right("angular-animate.js"))) { (path, file) =>
         controllers_Assets_at34_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:65
+    // @LINE:64
     case controllers_Assets_at35_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("house.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-messages")), Param[String]("file", Right("angular-messages.js"))) { (path, file) =>
         controllers_Assets_at35_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:66
+    // @LINE:65
     case controllers_Assets_at36_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("technology.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-material-icons")), Param[String]("file", Right("angular-material-icons.js"))) { (path, file) =>
         controllers_Assets_at36_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:67
+    // @LINE:66
     case controllers_Assets_at37_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("furniture.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-ui-grid")), Param[String]("file", Right("ui-grid.js"))) { (path, file) =>
         controllers_Assets_at37_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:68
+    // @LINE:67
     case controllers_Assets_at38_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("profile.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-local-storage/src")), Param[String]("file", Right("angular-local-storage.js"))) { (path, file) =>
         controllers_Assets_at38_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:69
+    // @LINE:70
     case controllers_Assets_at39_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("item.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-material")), Param[String]("file", Right("angular-material.css"))) { (path, file) =>
         controllers_Assets_at39_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:70
+    // @LINE:71
     case controllers_Assets_at40_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("addPost.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-ui-grid")), Param[String]("file", Right("ui-grid.css"))) { (path, file) =>
         controllers_Assets_at40_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:71
+    // @LINE:72
     case controllers_Assets_at41_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("cart.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/javascripts/node_modules/angular-ui-grid")), Param[String]("file", Right("ui-grid.woff"))) { (path, file) =>
         controllers_Assets_at41_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:72
+    // @LINE:75
     case controllers_Assets_at42_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("checkout.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("home.html"))) { (path, file) =>
         controllers_Assets_at42_invoker.call(Assets_0.at(path, file))
       }
   
-    // @LINE:73
+    // @LINE:76
     case controllers_Assets_at43_route(params) =>
-      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("order_success.html"))) { (path, file) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("about.html"))) { (path, file) =>
         controllers_Assets_at43_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:77
+    case controllers_Assets_at44_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("login.html"))) { (path, file) =>
+        controllers_Assets_at44_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:78
+    case controllers_Assets_at45_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("cars.html"))) { (path, file) =>
+        controllers_Assets_at45_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:79
+    case controllers_Assets_at46_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("house.html"))) { (path, file) =>
+        controllers_Assets_at46_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:80
+    case controllers_Assets_at47_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("technology.html"))) { (path, file) =>
+        controllers_Assets_at47_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:81
+    case controllers_Assets_at48_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("furniture.html"))) { (path, file) =>
+        controllers_Assets_at48_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:82
+    case controllers_Assets_at49_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("profile.html"))) { (path, file) =>
+        controllers_Assets_at49_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:83
+    case controllers_Assets_at50_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("item.html"))) { (path, file) =>
+        controllers_Assets_at50_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:84
+    case controllers_Assets_at51_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("addPost.html"))) { (path, file) =>
+        controllers_Assets_at51_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:85
+    case controllers_Assets_at52_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("cart.html"))) { (path, file) =>
+        controllers_Assets_at52_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:86
+    case controllers_Assets_at53_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("checkout.html"))) { (path, file) =>
+        controllers_Assets_at53_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:87
+    case controllers_Assets_at54_route(params) =>
+      call(Param[String]("path", Right("/public/html/templates")), Param[String]("file", Right("order_success.html"))) { (path, file) =>
+        controllers_Assets_at54_invoker.call(Assets_0.at(path, file))
       }
   }
 }
