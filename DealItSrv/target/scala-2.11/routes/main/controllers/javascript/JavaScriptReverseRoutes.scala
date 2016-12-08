@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Thu Dec 08 04:32:42 PST 2016
+// @DATE:Thu Dec 08 05:49:33 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -214,6 +214,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:49
+    def insertNewPost: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.insertNewPost",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/newPost"})
+        }
+      """
+    )
+  
     // @LINE:29
     def updateCreditCard: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.updateCreditCard",
@@ -330,6 +340,16 @@ package controllers.javascript {
       """
         function(password0,username1) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login/submit/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("password", encodeURIComponent(password0)) + "/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("username", encodeURIComponent(username1))})
+        }
+      """
+    )
+  
+    // @LINE:52
+    def getCategoryName: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getCategoryName",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/categories"})
         }
       """
     )

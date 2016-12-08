@@ -362,6 +362,33 @@ public class Application extends Controller {
       }
 
 
+    /**
+     *
+     * @return The name of every category
+     */
+    public Result getCategoryName() {
+        return ok(Json.toJson(DBManager.getCategoriesNames()));
+    }
 
+    /**
+     * Create new post and submit it to the DB
+     * @return
+     */
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result insertNewPost() {
+        JsonNode newPost = request().body().asJson();
+        String category = newPost.findPath("category").textValue();
+        int aid = newPost.findPath("aid").intValue();
+        String productName = newPost.findPath("product").textValue();
+        String brand = newPost.findPath("brand").textValue();
+        String conditions = newPost.findPath("condition").textValue();
+        int price = newPost.findPath("price").intValue();
+        String img_url = newPost.findPath("img_url").textValue();
+        String description = newPost.findPath("description").textValue();
+        boolean status = DBManager.insertNewPost(category, aid, productName, brand, conditions, price, img_url, description);
 
+        if(status)
+            return ok("Successful!\n");
+        return ok("Failed!\n");
+    }
 }

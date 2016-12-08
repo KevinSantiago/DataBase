@@ -1014,13 +1014,22 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 // Create New Post
     app.controller('addPostController', ['$scope', '$http', '$location','localStorageService', function($scope, $http, $location, localStorageService){
 
-        var currentPath=$location.path();
+        //var currentPath=$location.path();
+        var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
+        var AID = localStorageService.get('aid');
+        $http.get(generalPath+"/DealItSrv/categories")
+        .then(function(response){
+            $scope.categories = response.data;
+        });
 
         $scope.name="";
-        $scope.description="";
+        $scope.conditions="";
         $scope.category="";
-        $scope.price="";
-        $scope.seller="";
+        $scope.price=0;
+        $scope.brand="";
+        $scope.img_url=""
+        $scope.description=""
+//        $scope.seller="";
 
         $scope.errorFlag = {
             emptyEP: false,
@@ -1030,54 +1039,65 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         };
 
 
-        $scope.post = function(){
-            if(validatePost()){
-                //$http.post(currentPath+"/submit", {name: $scope.name, category: $scope.category})
-                //.then(function(response){
+        $scope.post = function(isValid){
+            if(isValid && validatePost()){
+
                     resetFlags();
                     resetFields();
-                    alert("Post successfully created");
-                    $location.path("/");
-                //});
+                  
+                    $http.post(generalPath+"/DealItSrv/newPost", {category: $scope.categorySelected, aid: AID,
+                     product: $scope.product, brand: $scope.brand, condition: $scope.conditions, price: $scope.cost,
+                     description: $scope.description, img_url: $scope.img_url})
+                     .then(function(response){
+                         $location.path("/");
+                     });
+
+
             }
             else{
-                alert("Post failure");
+               alert("Not Valid");
             }
         };
 
-
         var validatePost = function(){
-            if ($scope.name === "" || $scope.category === "" || $scope.seller === ""){
+            if ($scope.product === "" || $scope.categorySelected === ""){
                 $scope.errorFlag.emptyEP= true;
                 return false;
             }
             return true;
         };
 
-
         var nameIsEmpty = function(){
-            if ($scope.name === ""){
+            if ($scope.product === ""){
                 $scope.errorFlag.name = true;
                 return true;
             }
             return false;
-        }
+        };
 
         var categoryIsEmpty = function(){
-            if ($scope.name === ""){
+            if ($scope.category === ""){
                 $scope.errorFlag.category = true;
                 return true;
             }
             return false;
-        }
+        };
 
-        var sellerIsEmpty = function(){
-            if ($scope.name === ""){
-                $scope.errorFlag.seller = true;
+        var priceIsInvalid = function(){
+            if (typeof($scope.price) != 'number') {
+                $scope.errorFlag.price = true;
                 return true;
             }
             return false;
-        }
+        };
+
+//        var sellerIsEmpty = function(){
+//            if ($scope.seller === ""){
+//                $scope.errorFlag.seller = true;
+//                return true;
+//            }
+//            return false;
+//        }
 
         /*
          *  Reset Flags
@@ -1086,8 +1106,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             $scope.errorFlag.emptyEP= false;
             $scope.errorFlag.name= false;
             $scope.errorFlag.category= false;
-            $scope.errorFlag.seller= false;
-        }
+//            $scope.errorFlag.seller= false;
+            $scope.errorFlag.price = false;
+        };
 
         /*
          * Reset Fields
@@ -1098,5 +1119,5 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             $scope.category="";
             $scope.description="";
             $scope.price="";
-        }
+        };
     }]);

@@ -45,6 +45,11 @@ GET     /DealItSrv/product/feedback/:pid      controllers.Application.getFeedbac
 GET     /DealItSrv/product/info/:pid          controllers.Application.getProductInfo(pid: Integer)
 GET     /DealItSrv/filter/:filter/:category   controllers.Application.filterResults(filter: String, category: String)
 
+# Insert new data
+POST    /DealItSrv/newPost                      controllers.Application.insertNewPost
+
+# Get Info
+GET     /DealItSrv/categories                   controllers.Application.getCategoryName
 
 # Home page
 GET     /                           controllers.Assets.at(path="/public/html/", file="index.html")

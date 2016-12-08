@@ -631,5 +631,60 @@ public class DBManager extends Controller{
         return log;
     }
 
+    public static ArrayList<String> getCategoriesNames() {
+        Connection cdb = DB.getConnection();
+        ArrayList<String> categories = new ArrayList<String>();
+        categories.add("");
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql ="select cname\n"+
+                    "from category";
 
+
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ResultSet rs = ps.executeQuery();
+                while(rs.next()){
+                    String category = rs.getString("cname");
+                    categories.add(category);
+                }
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+        return categories;
+    }
+
+    public static boolean insertNewPost(String category, int aid, String productName, String brand, String conditions, int price, String img_url, String description) {
+        Connection cdb = DB.getConnection();
+        boolean successful = false;
+        if(cdb != null) {
+            PreparedStatement ps = null;
+            String sql = "insert into product(cid, aid, pname, brand, conditions, price,img_url,description)\n"+
+                    "values((select cid\n"+
+                    "from category\n"+
+                    "where cname=?),\n"+
+                    "?, ?, ?, ?, ?,?,?)";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setString(1, category);
+                ps.setInt(2, aid);
+                ps.setString(3, productName);
+                ps.setString(4, brand);
+                ps.setString(5, conditions);
+                ps.setInt(6, price);
+                ps.setString(7, img_url);
+                ps.setString(8, description);
+                ResultSet rs = ps.executeQuery();
+                cdb.close();
+                successful = true;
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+        return successful;
+    }
 }
