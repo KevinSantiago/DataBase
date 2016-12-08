@@ -276,6 +276,52 @@ public class Application extends Controller {
          return ok("Query executed successfully");
      }
 
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result updateCreditCard(){
+         JsonNode info = request().body().asJson();
+         CreditCard credit = new CreditCard(1,info.findPath("cnumber").textValue(),info.findPath("expDate").textValue(),
+                 info.findPath("scode").textValue(),info.findPath("type").textValue(),info.findPath("bzip").textValue(),
+                 info.findPath("bcity").textValue(),info.findPath("country").textValue(),info.findPath("bstate").textValue(),
+                 info.findPath("baddress").textValue());
+         DBManager.updateCreditCard(credit, info.findPath("aid").intValue());
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result updatePhoneNumber(){
+         JsonNode info = request().body().asJson();
+         String phone = info.findPath("phone").textValue();
+         int uid = info.findPath("uid").intValue();
+         DBManager.updatePhoneNumber(phone,uid);
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result updateUserInfo(){
+         JsonNode info = request().body().asJson();
+         UserInfo user = new UserInfo(info.findPath("email").textValue(),1,info.findPath("ufirst").textValue(),
+                 info.findPath("ulast").textValue(), info.findPath("ubirth").textValue(), info.findPath("ucity").textValue(),
+                 info.findPath("ustate").textValue(), info.findPath("uid").intValue());
+         DBManager.updateUserInfo(user);
+         return ok("Query executed successfully");
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result insertOrder(){
+         JsonNode info = request().body().asJson();
+
+         return ok(DBManager.insertOrder(info.findPath("aid").intValue()).toString());
+     }
+
+     @BodyParser.Of(BodyParser.Json.class)
+     public Result insertOrderLine(){
+         JsonNode info = request().body().asJson();
+         OrderLine line = new OrderLine(Integer.parseInt(info.findPath("oid").textValue()), info.findPath("pid").intValue(),
+                 info.findPath("pname").textValue(),1);
+         DBManager.insertOrderLine(line);
+         return ok("Query executed successfully");
+     }
+
     /**
      * Returns the Item on the server associated with the ID given.
      * @param id the id of the Item

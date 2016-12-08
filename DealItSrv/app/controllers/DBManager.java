@@ -6,7 +6,9 @@ import java.sql.*;
 import play.mvc.*;
 import play.db.*;
 import java.util.*;
-
+import java.text.DateFormat;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 public class DBManager extends Controller{
 
 
@@ -506,6 +508,118 @@ public class DBManager extends Controller{
                 ResultSet rs = ps.executeQuery();
                 cdb.close();
 
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+
+    public static void updateCreditCard(CreditCard credit, int aid){
+        Connection cdb = DB.getConnection();
+
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql="update credit_card set cnumber=?, ctype=?, scode=?, expdate=?, bzip=?, bcity=?, country=?, bstate=?," +
+                    " baddress=? where aid=?;";
+
+            try{
+                ps= cdb.prepareStatement(sql);
+                ps.setString(1,credit.cardNumber);
+                ps.setString(2,credit.type);
+                ps.setString(3,credit.securityCode);
+                ps.setString(4,credit.expDate);
+                ps.setString(5,credit.bzip);
+                ps.setString(6,credit.bcity);
+                ps.setString(7,credit.country);
+                ps.setString(8,credit.bstate);
+                ps.setString(9,credit.baddress);
+                ps.setInt(10,aid);
+                ps.executeQuery();
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+
+    public static void updatePhoneNumber(String phone, int uid){
+        Connection cdb = DB.getConnection();
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql="update phone_numbers set phone=? where uid=?;";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setString(1,phone);
+                ps.setInt(2,uid);
+                ps.executeQuery();
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+
+    public static void updateUserInfo(UserInfo info){
+        Connection cdb = DB.getConnection();
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql = "update users set uemail=?, ucity=?, ustate=? where uid=?;";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setString(1,info.getEmail());
+                ps.setString(2,info.getCity());
+                ps.setString(3,info.getState());
+                ps.setInt(4,info.getUserID());
+                ps.executeQuery();
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+
+    public static Integer insertOrder(int aid){
+        DateFormat dateFormat = new SimpleDateFormat("MMddyy");
+        Date date = new Date();
+        String sdate= dateFormat.format(date);
+        Integer itr = null;
+        Connection cdb = DB.getConnection();
+        if(cdb != null){
+            PreparedStatement ps=null;
+            String sql ="insert into orders(aid,_date) values(?,?) returning oid;";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setInt(1,aid);
+                ps.setString(2,sdate);
+                ResultSet rs = ps.executeQuery();
+                while(rs.next()){
+                    itr = rs.getInt("oid");
+                }
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+
+        return itr;
+    }
+
+    public static void insertOrderLine(OrderLine line){
+        Connection cdb = DB.getConnection();
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql= "insert into order_line(pid,oid,quantity) values(?,?,?);";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setInt(1,line.getPid());
+                ps.setInt(2,line.getOid());
+                ps.setInt(3,line.getQuantity());
+                ps.executeQuery();
+                cdb.close();
             }catch(Exception e){
                 System.out.println(e);
             }

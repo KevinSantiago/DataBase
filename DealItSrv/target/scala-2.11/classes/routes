@@ -26,11 +26,16 @@ GET     /DealItSrv/user/:aid             controllers.Application.getUserInfo(aid
 GET     /DealItSrv/user/phone/:uid       controllers.Application.getPhoneNumbers(uid: Integer)
 GET     /DealItSrv/user/creditcard/:aid  controllers.Application.getCreditCard(aid: Integer)
 GET     /DealItSrv/user/products/:aid    controllers.Application.getProductsFromUser(aid: Integer)
+POST    /updateCreditCard                controllers.Application.updateCreditCard
+POST    /updatePhoneNumber               controllers.Application.updatePhoneNumber
+POST    /updateUserInfo                  controllers.Application.updateUserInfo
+
 
 #Orders
 GET     /DealItSrv/order/:aid            controllers.Application.getOrdersFromAccount(aid: Integer)
 POST    /DealItSrv/order/content         controllers.Application.getOrderContent
-
+POST    /insertOrder                     controllers.Application.insertOrder
+POST    /insertOrderLine                 controllers.Application.insertOrderLine
 # Items
 
 GET     /DealItSrv/items/:id                  controllers.Application.getItemByID(id: Integer)

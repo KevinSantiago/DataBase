@@ -9,10 +9,10 @@
                  </md-toolbar>
 
                  <md-content>
-                     <md-button style="color:orange;">edit info</md-button>
+                     <md-button style="color:orange;" ng-click="editar()">edit info</md-button>
                  </md-content>
         </span>
-        <div layout="column" flex="60"  style="height:400px">
+        <div layout="column" flex="60"  style="height:400px" ng-show="!edit">
 
             <md-content>
                 <md-list>
@@ -38,7 +38,7 @@
                     <md-list-item class="md-3-line">
                         <div class="md-list-item-text">
                             <h3>Address:</h3>
-                            <p><b>City:</b> {{city}}   <b>State:</b> {{state}}  </p>
+                            <p><b>City:</b> {{ucity}}   <b>State:</b> {{ustate}}  </p>
                         </div>
                         <md-button class="md-secondary"><ng-md-icon icon="create" style="fill:DarkSlateGray;"></ng-md-icon>Edit</md-button>
                         <md-divider></md-divider>
@@ -47,7 +47,7 @@
                     <md-list-item class="md-3-line">
                         <div class="md-list-item-text">
                             <h3>Credit Card:</h3>
-                            <p><b>Card type:</b> {{type}}  <b>Card Number:</b> {{creditcard}}</p>
+                            <p><b>Card type:</b> {{ctype}}  <b>Card Number:</b> {{cnumber}}</p>
                         </div>
                         <md-button class="md-secondary"><ng-md-icon icon="create" style="fill:DarkSlateGray;"></ng-md-icon>Edit</md-button>
                         <md-divider></md-divider>
@@ -67,6 +67,127 @@
                     </md-list-item>
 
                 </md-list>
+            </md-content>
+
+        </div>
+        <div layout="column" flex="60"  style="height:400px" ng-show="edit">
+
+            <md-content>
+                <form name="signupForm">
+                    <h2 style="color: darkslategrey;">Personal Info:</h2>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>email</label>
+                            <input name="email" ng-model="email" required placeholder="juan.pueblo@gmail.com" type="email">
+                            <div ng-messages="signupForm.email.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Email Required!</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>City</label>
+                            <input name="c" ng-model="ucity" required placeholder="Mayaguez" ng-pattern="/^[\w -]*$/">
+                            <div ng-messages="signupForm.c.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not Valid!</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>State</label>
+                            <input name="s" ng-model="ustate" required placeholder="PR" ng-pattern="/^[a-zA-Z]*$/">
+                            <div ng-messages="signupForm.s.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not Valid!</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>Phone Number</label>
+                            <input name="p" ng-model="phone" required md-maxlength="10" placeholder="1234567890" ng-pattern="/^[0-9]{10}$/">
+                            <div ng-messages="signupForm.p.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not Valid!</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+
+                    <md-divider></md-divider>
+                    <h2 style="color: darkslategrey;">Credit Card Info:</h2>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>Credit Card Number</label>
+                            <input name="cnum" ng-model="cnumber" required md-maxlength="16" ng-pattern="/^[0-9]{16}$/">
+                            <div ng-messages="signupForm.cnum.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid Country</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>Type</label>
+                            <input name="type" ng-model="ctype" required placeholder="VISA" ng-pattern="/^[a-zA-Z0-9]*$/">
+                            <div ng-messages="signupForm.type.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid type</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>CVV</label>
+                            <input name="cvv" ng-model="scode" required md-maxlength="3" placeholder="123" ng-pattern="/^[0-9]{3}$/">
+                            <div ng-messages="signupForm.cvv.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid Code</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>Expiration Date</label>
+                            <input name="exp" ng-model="expdate" required md-maxlength="4" placeholder="0221" ng-pattern="/^[0-9]{4}$/">
+                            <div ng-messages="signupForm.exp.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid expiration date</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>Billing address</label>
+                            <input name="ba" ng-model="baddress" required placeholder="Calle Luis Llorens Torres" ng-pattern="/^[\w -]*$/">
+                            <div ng-messages="signupForm.ba.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid Billing Address</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>City</label>
+                            <input name="City" ng-model="bcity" required placeholder="Mayaguez" ng-pattern="/^[\w -]*$/">
+                            <div ng-messages="signupForm.City.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid Country</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>State</label>
+                            <input name="State" ng-model="bstate" required placeholder="PR" md-maxlength="2" ng-pattern="/^[A-Z]{2}$">
+                            <div ng-messages="signupForm.State.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid State</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>Country</label>
+                            <input name="Country" ng-model="country" required md-maxlength="3" placeholder="USA" ng-pattern="/^[A-Z]{3}$/">
+                            <div ng-messages="signupForm.Country.$error" role="alert" multiple>
+                                <div ng-message="required" class="my-message">Not valid Country</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>Zipcode</label>
+                            <input name="ZipCode" ng-model="bzip" required ng-pattern="/^[0-9]{5}$/" md-maxlength="5" placeholder="00692">
+                            <div ng-messages="signupForm.ZipCode.$error" role="alert" multiple>
+                                <div ng-message="pattern" class="my-message">That doensn't seem like a zip code</div>
+                            </div>
+                        </md-input-container>
+
+                    </div>
+                    <div layout="row">
+                        <md-button class="md-raised" style="max-width:50px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="cancel()" >Cancel</md-button>
+                         <md-button class="md-raised" style="max-width:50px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); background-color: rgb(255, 143, 0);" ng-click="save(signupForm.$valid)" >Save</md-button>
+                     </div>
+
+                </form>
             </md-content>
 
         </div>

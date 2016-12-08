@@ -494,7 +494,8 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Shopping Cart controller
-    app.controller('cartController', ['$scope','$http','$location' ,'SharedVariables','localStorageService',function($scope,$http,$location, SharedVariables, localStorageService){
+    app.controller('cartController', ['$scope','$http','$location' ,'SharedVariables','localStorageService','$timeout',
+    function($scope,$http,$location, SharedVariables, localStorageService,$timeout){
        var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
 
 
@@ -556,8 +557,27 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
          var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
          var AID = localStorageService.get('aid');
          $scope.placeOrder = function(){
-            SharedVariables.cleanShoppingCart();
-            $location.path('/order_success');
+            $http.post(generalPath+"/insertOrder",{aid: AID})
+                   .then(function(response){
+                       $scope.oid = response.data;
+                       for(var i=0;i< iData.length; i++){
+                            var name = iData[i].item;
+                            var ID = iData[i].id;
+
+                           $timeout(function(){
+                               $http.post(generalPath+"/insertOrderLine",{oid: $scope.oid, pid: ID,
+                                pname: name})
+                                         .then(function(response){
+                                              if(i === iData.length){
+                                                 SharedVariables.cleanShoppingCart();
+                                                 $location.path('/order_success');
+                                              }
+
+                                         });
+                           });
+                       }
+
+                   });
          };
 
          $scope.total = 0;
@@ -588,7 +608,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 .then(function(response){
                     iData.push(response.data);
                     $scope.total += response.data.price;
-                    console.log(iData[i]);
+
                 });
         }
 
@@ -622,8 +642,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     }]);
 
     //Profile Controller
-    app.controller('profileController',['$scope','$http','$location','SharedVariables', '$timeout','localStorageService', function($scope,$http,$location, SharedVariables, $timeout, localStorageService){
+    app.controller('profileController',['$scope','$http','$location','SharedVariables', '$timeout','localStorageService','$window',
+     function($scope,$http,$location, SharedVariables, $timeout, localStorageService, $window){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
+        $scope.edit=false;
         //var AID = SharedVariables.getUserAID();
         var AID = localStorageService.get('aid');
         $http.get(generalPath+"/DealItSrv/user/"+AID)
@@ -632,14 +654,17 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                     $timeout(function(){
                         $scope.email = response.data.email;
                         $scope.name = response.data.firstName + " " + response.data.lastName;
-                        $scope.city = response.data.city;
-                        $scope.state = response.data.state;
-                        $scope.birth = response.data.birthDate;
+                        $scope.ufirst = response.data.firstName;
+                        $scope.ulast =response.data.lastName;
+                        $scope.ucity = response.data.city;
+                        $scope.ustate = response.data.state;
+                        $scope.ubirth = response.data.birthDate;
                         var userid = response.data.userID;
-
+                        $scope.uid = response.data.userID;
                         $http.get(generalPath+"/DealItSrv/user/phone/"+userid)
                         .then(function(response){
                             $scope.phones = response.data;
+                            $scope.phone=$scope.phones[0];
                         });
 
                     });
@@ -649,8 +674,15 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 .then(function(response){
 
                      $timeout(function(){
-                        $scope.creditcard = response.data.cardNumber;
-                        $scope.type = response.data.type;
+                        $scope.cnumber = response.data.cardNumber;
+                        $scope.ctype = response.data.type;
+                        $scope.scode = response.data.securityCode;
+                        $scope.baddress = response.data.baddress;
+                        $scope.bzip = response.data.bzip;
+                        $scope.country = response.data.country;
+                        $scope.bstate = response.data.bstate;
+                        $scope.bcity = response.data.bcity;
+                        $scope.expdate= response.data.expDate;
                      });
 
                 });
@@ -676,11 +708,47 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                      });
                 });
 
+        $scope.editar = function(){
+          $scope.edit = true;
+        };
+
+        $scope.save = function(isValid){
+          if(isValid){
+
+             $http.post(generalPath+"/updateCreditCard",
+                {aid: AID, cnumber: $scope.cnumber, expDate: $scope.expdate, scode: $scope.scode,
+                type: $scope.ctype, bzip: $scope.bzip, bcity: $scope.bcity, country: $scope.country,
+                bstate: $scope.bstate, baddress: $scope.baddress})
+                        .then(function(response){
+                             $timeout(function(){
+                                $http.post(generalPath+"/updatePhoneNumber",{phone: $scope.phone, uid: $scope.uid})
+                                                        .then(function(response){
+
+                                                            $timeout(function(){
+                                                                $http.post(generalPath+"/updateUserInfo",{email: $scope.email, ufirst: $scope.ufirst, ulast: $scope.ulast,
+                                                                              ucity: $scope.ucity, ustate: $scope.ustate, ubirth: $scope.ubirth, uid: $scope.uid})
+                                                                                        .then(function(response){
+                                                                                           $window.location.reload();
+                                                                                        });
+                                                            });
+                                                        });
+                             });
+                        });
+
+
+          }
+        };
+
+        $scope.cancel= function(){
+           $scope.edit=false;
+        }
+
     }]);
 
 
     // Login , Sign up controller
-    app.controller('loginController',['$scope','$http','$location', 'SharedVariables','localStorageService','$route','$timeout', function($scope,$http,$location, SharedVariables, localStorageService, $route,$timeout){
+    app.controller('loginController',['$scope','$http','$location', 'SharedVariables','localStorageService','$route','$timeout','$window',
+    function($scope,$http,$location, SharedVariables, localStorageService, $route,$timeout,$window){
 
 
 
@@ -689,12 +757,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
      var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port()+$location.path(); //the current location is stored on this variable
 
-     $scope.username="";                //store the email
-     $scope.password="";                //store the password
-     $scope.name="";                    //store the name of the new user
-     $scope.submitedDate="";            //store the Birth date of the new user
-     $scope.reEmail="";                 //Use to verify if the email entered is the same
-     $scope.rePassword="";              //Use to verify if the password entered is the same
+     $scope.username="";
+     $scope.password="";
+
+     $scope.rePassword="";
      $scope.email="";
      $scope.ufirst="";
      $scope.ulast="";
@@ -708,6 +774,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
      $scope.baddress="";
      $scope.country="";
      $scope.bstate="";
+     $scope.bcity="";
      $scope.bzip="";
      $scope.phone="";
 
@@ -727,11 +794,10 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     */
     $scope.login = function(){
         if(validateLogin()){
-            $http.get(generalPath+"/submit/"+$scope.password+"/"+$scope.email)
+            $http.get(generalPath+"/submit/"+$scope.password+"/"+$scope.username)
                 .then(function(response){
                     resetFlags();
 				    resetFields();
-
 				    if(response.data.valid){
                         SharedVariables.setUserAID(response.data.aid);
                         localStorageService.set('aid', response.data.aid);
@@ -750,8 +816,8 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
    
-	$scope.signup2 = function(){
-         if(validateSignUp()){
+	$scope.signup2 = function(isValid){
+         if(isValid && passwordIsSame()){
             $http.post(generalPath+"/signup2",{email: $scope.email, ufirst: $scope.ufirst, ulast: $scope.ulast, ucity: $scope.ucity, ustate: $scope.ustate, ubirth: $scope.ubirth})
                   .then(function(response){
                         $scope.uid=response.data;
@@ -766,22 +832,26 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
                                         $http.post(generalPath+"/createCred", {aid: $scope.aid, username: $scope.username, password: $scope.password})
                                                 .then(function(response){
+                                                   $timeout(function(){
+                                                        $http.post(generalPath+"/createPhone",
+                                                        {uid: $scope.uid, phone: $scope.phone})
+                                                                    .then(function(response){
+                                                                         $timeout(function(){
+                                                                            $http.post(generalPath+"/createCreditCard",
+                                                                                {aid: $scope.aid, cnumber: $scope.cnumber, expDate: $scope.expdate, scode: $scope.scode,
+                                                                                type: $scope.ctype, bzip: $scope.bzip, bcity: $scope.bcity, country: $scope.country,
+                                                                                bstate: $scope.bstate, baddress: $scope.baddress})
+                                                                                        .then(function(response){
+                                                                                           alert("Signup Successful!");
+                                                                                           $window.location.reload();
+                                                                                        });
 
-                                                });
+                                                                         });
+                                                                    });
 
-                                        $http.post(generalPath+"/createPhone", {uid: $scope.uid, phone: $scope.phone})
-                                                 .then(function(response){
+                                                   });
+                                                })
 
-                                                 });
-
-                                        $http.post(generalPath+"/createCreditCard",
-                                        {aid: $scope.aid, cnumber: $scope.cnumber, expDate: $scope.expdate, scode: $scope.scode,
-                                        type: $scope.ctype, bzip: $scope.bzip, bcity: $scope.bcity, country: $scope.country,
-                                        bstate: $scope.bstate, baddress: $scope.baddress})
-                                                .then(function(response){
-
-                                                });
-                                                
 
                                     })
 
@@ -818,6 +888,63 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         return true;
     };
 
+    var emptyInputs = function(){
+             if($scope.username.trim().length === 0){
+                return true;
+             }
+             if($scope.password.trim().length === 0){
+                return true;
+             }
+             if($scope.rePassword.trim().length === 0){
+                return true;
+             }
+             if($scope.email.trim().length === 0){
+                return true;
+             }
+             if($scope.ufirst.trim().length === 0){
+                return true;
+             }
+             if($scope.ulast.trim().length === 0){
+                return true;
+             }
+             if($scope.ubirth.trim().length === 0){
+                return true;
+             }
+             if($scope.ucity.trim().length === 0){
+                return true;
+             }
+             if($scope.ustate.trim().length === 0){
+                return true;
+             }
+             if($scope.cnumber.trim().length === 0){
+                return true;
+             }
+             if($scope.ctype.trim().length === 0){
+                return true;
+             }
+             if($scope.scode.trim().length === 0){
+                return true;
+             }
+             if($scope.expdate.trim().length === 0){
+                return true;
+             }
+             if($scope.baddress.trim().length === 0){
+                return true;
+             }
+             if($scope.country.trim().length ===0){
+                return true;
+             }
+             if($scope.bstate.trim().length === 0){
+                return true;
+             }
+             if($scope.bzip.trim().length === 0){
+                return true;
+             }
+             if($scope.phone.trim().length ===0){
+                return true;
+             }
+             return false;
+    };
 
     /*
      * Validates that the password entered is the same
