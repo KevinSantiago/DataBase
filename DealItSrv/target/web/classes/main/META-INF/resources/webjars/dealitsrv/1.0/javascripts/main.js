@@ -153,6 +153,11 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         //Navegation configuration (All this functions just change the url in which you are current located)
 
         $scope.logout = function(){
+            firebase.auth().signOut().then(function() {
+              // Sign-out successful.
+            }, function(error) {
+              // An error happened.
+            });
            localStorageService.set('aid', null);
            islogged();
            $location.path('/');
@@ -802,7 +807,13 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                         SharedVariables.setUserAID(response.data.aid);
                         localStorageService.set('aid', response.data.aid);
                         localStorageService.set('status', 'cambio');
-                        $location.path('/')
+                        firebase.auth().signInWithEmailAndPassword("kevin.santiago1@upr.edu", "prueba").catch(function(error) {
+                            // Handle Errors here.
+                            var errorCode = error.code;
+                            var errorMessage = error.message;
+                            // ...
+                        });
+                        $location.path('/');
                     } else
                         alert(response.data.exeLog);
                });
@@ -833,6 +844,15 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                                         $http.post(generalPath+"/createCred", {aid: $scope.aid, username: $scope.username, password: $scope.password})
                                                 .then(function(response){
                                                    $timeout(function(){
+                                                        firebase.auth().createUserWithEmailAndPassword($scope.email, $scope.password).catch(function(error) {
+                                                          // Handle Errors here.
+                                                          var errorCode = error.code;
+                                                          var errorMessage = error.message;
+                                                          // ...
+                                                          console.log(errorCode + " " + errorMessage);
+                                                        });
+
+
                                                         $http.post(generalPath+"/createPhone",
                                                         {uid: $scope.uid, phone: $scope.phone})
                                                                     .then(function(response){
@@ -858,6 +878,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                                 });
                        });
 
+                        var auth = firebase.auth();
+
+                        auth.sendPasswordResetEmail($scope.email).then(function() {
+                          // Email sent.
+                        }, function(error) {
+                          // An error happened.
+                          console.log("error en enviar email");
+                        });
 
                   });
          }
@@ -1042,9 +1070,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.post = function(isValid){
             if(isValid && validatePost()){
 
-                    resetFlags();
-                    resetFields();
-                  
+
                     $http.post(generalPath+"/DealItSrv/newPost", {category: $scope.categorySelected, aid: AID,
                      product: $scope.product, brand: $scope.brand, condition: $scope.conditions, price: $scope.cost,
                      description: $scope.description, img_url: $scope.img_url})

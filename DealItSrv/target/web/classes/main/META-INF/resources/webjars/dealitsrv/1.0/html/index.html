@@ -6,6 +6,19 @@
     <!--Css Dependencies-->
     <link rel="stylesheet" href="/angular-material.css">
     <link rel="stylesheet" href="/ui-grid.css">
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB5D1e4-pPWK7Ol8AGsjjzSks58py8bZsI",
+            authDomain: "dealit-7428d.firebaseapp.com",
+            databaseURL: "https://dealit-7428d.firebaseio.com",
+            storageBucket: "dealit-7428d.appspot.com",
+            messagingSenderId: "1068151307193"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 <body ng-app='myapp' ng-controller='mainController'>
 <header>
@@ -22,7 +35,7 @@
                     <ng-md-icon icon="menu" style="fill:black;"></ng-md-icon>
                 </md-button>
 
-                <span flex="20""><md-button style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()">DealIt</md-button></span>
+                <span flex="20"><md-button style="font-family: Garamond; color:white; font-size: 2vw;" ng-click="navHome()">DealIt</md-button></span>
                 <span flex></span>
                 <span style="font-family: Garamond; color:white; font-size: 1vw;" flex="20">Find What You Are Looking For!</span>
                 <md-button ng-click="navPost()" ng-if="log">
