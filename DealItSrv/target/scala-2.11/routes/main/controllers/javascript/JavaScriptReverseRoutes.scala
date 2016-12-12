@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
-// @DATE:Sun Dec 11 15:12:39 PST 2016
+// @DATE:Mon Dec 12 15:05:04 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -204,6 +204,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:48
+    def setItemToInactive: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.setItemToInactive",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/setItemToInactive"})
+        }
+      """
+    )
+  
     // @LINE:21
     def createPhone: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.createPhone",
@@ -214,7 +224,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:49
+    // @LINE:51
     def insertNewPost: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.insertNewPost",
       """
@@ -314,6 +324,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:47
+    def postFeedBack: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.postFeedBack",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/postFeedBack"})
+        }
+      """
+    )
+  
     // @LINE:45
     def getProductInfo: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getProductInfo",
@@ -354,7 +374,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:52
+    // @LINE:54
     def getCategoryName: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getCategoryName",
       """
@@ -370,6 +390,16 @@ package controllers.javascript {
       """
         function(pid0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/product/ownerinfo/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("pid", pid0)})
+        }
+      """
+    )
+  
+    // @LINE:32
+    def getAccountType: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getAccountType",
+      """
+        function(aid0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "DealItSrv/getAccountType/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("aid", aid0)})
         }
       """
     )

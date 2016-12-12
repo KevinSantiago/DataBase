@@ -34,6 +34,9 @@
                                         <h4>Condition: {{item.condition}}</h4>
                                         <p><b>Price:</b> {{item.price | currency}}</p>
                                     </div>
+                                    <md-button class="md-secondary" ng-click="setInactive($index)" ng-if="admin">
+                                        <ng-md-icon icon="delete" style="fill:orange;" size="44" ></ng-md-icon>
+                                    </md-button>
                                     <md-button class="md-secondary" ng-click="viewDetails($index)">View Details</md-button>
                                     <md-divider ng-if="!$last"></md-divider>
                                 </md-list-item>

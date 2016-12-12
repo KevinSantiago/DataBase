@@ -219,6 +219,9 @@
                     <h4 style="margin-left:2%">Price: {{item.price | currency:"$"}}</h4>
                     <p style="margin-left:2%">Category: {{item.category}}</p>
                 </div>
+                <md-button class="md-secondary" ng-click="setInactive($index)">
+                    <ng-md-icon icon="delete" style="fill:orange;" size="44" ></ng-md-icon>
+                </md-button>
                 <md-divider md-inset ng-if="!$last"></md-divider>
             </md-list-item>
         </md-list>

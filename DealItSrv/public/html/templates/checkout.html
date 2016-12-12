@@ -49,6 +49,12 @@
             <td><b>Card Type: </b> {{creditCard.type}}</td>
             <td><b>Card Number:</b> {{creditCard.cardNumber}}</td>
             <td><b>Expiration Date:</b> {{creditCard.expDate}}</td>
+            <td>
+
+                    <label>CVV</label>
+                    <input ng-model="scode" required ng-pattern="/^[0-9]{3}$/"  placeholder="123"/>
+
+            </td>
         </tr>
         <tr></tr>
     </table>
