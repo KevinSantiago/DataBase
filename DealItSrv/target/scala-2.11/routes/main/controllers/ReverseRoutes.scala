@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Sun Dec 11 13:56:43 AST 2016
+// @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
+// @DATE:Sun Dec 11 15:12:39 PST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -241,6 +241,12 @@ package controllers {
     def insertOrder(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "insertOrder")
+    }
+  
+    // @LINE:23
+    def checkUsernameInUse(username:String): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "login/checkUsernameInUse/" + implicitly[PathBindable[String]].unbind("username", dynamicString(username)))
     }
   
     // @LINE:35

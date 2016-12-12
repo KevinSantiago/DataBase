@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/kevin/Documents/DataBase/DealItSrv/conf/routes
-// @DATE:Sun Dec 11 13:56:43 AST 2016
+// @SOURCE:/home/jariel/Documents/Oficial/DataBase/DealItSrv/conf/routes
+// @DATE:Sun Dec 11 15:12:39 PST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -260,6 +260,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "insertOrder"})
+        }
+      """
+    )
+  
+    // @LINE:23
+    def checkUsernameInUse: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.checkUsernameInUse",
+      """
+        function(username0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login/checkUsernameInUse/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("username", encodeURIComponent(username0))})
         }
       """
     )

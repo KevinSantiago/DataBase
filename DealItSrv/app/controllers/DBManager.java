@@ -687,4 +687,45 @@ public class DBManager extends Controller{
         }
         return successful;
     }
+
+    public static boolean checkUsernameInUse(String username){
+        Connection cdb = DB.getConnection();
+        boolean available =true;
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql= "select username from login_cred where username like ?;";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setString(1,username);
+                ResultSet rs = ps.executeQuery();
+
+                if(rs.next()){
+                    available = false;
+                }
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+        return available;
+    }
+
+    public static void postFeedBack(int pid, String comment){
+        Connection cdb = DB.getConnection();
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql = "insert into feedback(pid,comnt) values(?,?);";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setInt(1,pid);
+                ps.setString(2,comment);
+                ps.executeQuery();
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
 }

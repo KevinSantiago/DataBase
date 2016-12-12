@@ -322,6 +322,18 @@ public class Application extends Controller {
          return ok("Query executed successfully");
      }
 
+
+     public Result checkUsernameInUse( String username){
+
+         return ok(""+DBManager.checkUsernameInUse(username));
+     }
+
+   /*  @BodyParser.Of(BodyParser.Json.class)
+     public Result postFeedBack(){
+         JsonNode info = request().body().asJson();
+       //  DBManager.postFeedBack()
+     }*/
+
     /**
      * Returns the Item on the server associated with the ID given.
      * @param id the id of the Item

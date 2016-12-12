@@ -6,6 +6,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         var itemName, itemPrice;
         var shoppingCartID = [];
         var logged = false;
+        var orderID ="";
         return {
             getUserAID: function getUserAID() {
                 return userAID;
@@ -35,6 +36,12 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             isInShoppingCart: function(id){
                 var itr = shoppingCartID.indexOf(id);
                 return itr != -1;
+            },
+            getOrderNum: function(){
+                return orderID;
+            },
+            setOrderNum: function(id){
+                orderID=id;
             }
         };
     });
@@ -525,7 +532,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                 gridApi.selection.on.rowSelectionChanged($scope, function (row) {
                     var id = row.entity.id;
                     SharedVariables.setItemID(id);
-                    $location.path('/item');
+                    $location.path('/item/'+id);
                 });
                 $scope.gridOptions1.columnDefs[2].visible = false;
             }
@@ -575,6 +582,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                                          .then(function(response){
                                               if(i === iData.length){
                                                  SharedVariables.cleanShoppingCart();
+                                                 SharedVariables.setOrderNum($scope.oid);
                                                  $location.path('/order_success');
                                               }
 
@@ -639,8 +647,9 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     //Order Success controller
     app.controller('orderSuccessController', ['$scope','$http','$location' ,'SharedVariables','localStorageService',function($scope,$http,$location, SharedVariables,localStorageService){
      var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
-
+        $scope.ordernum= SharedVariables.getOrderNum();
         $scope.returnToHomePage = function(){
+            SharedVariables.setOrderNum("");
             $location.path('/');
         };
 
@@ -829,67 +838,76 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
    
 	$scope.signup2 = function(isValid){
          if(isValid && passwordIsSame()){
-            $http.post(generalPath+"/signup2",{email: $scope.email, ufirst: $scope.ufirst, ulast: $scope.ulast, ucity: $scope.ucity, ustate: $scope.ustate, ubirth: $scope.ubirth})
-                  .then(function(response){
-                        $scope.uid=response.data;
-                       $timeout(function(){
+
+              $http.get(generalPath+"/checkUsernameInUse/"+$scope.username)
+                        .then(function(response){
+                         if(response.data === "true"){
+                            $timeout(function(){
+                               $http.post(generalPath+"/signup2",{email: $scope.email, ufirst: $scope.ufirst, ulast: $scope.ulast, ucity: $scope.ucity, ustate: $scope.ustate, ubirth: $scope.ubirth})
+                                                 .then(function(response){
+                                                       $scope.uid=response.data;
+                                                      $timeout(function(){
 
 
-                          $http.post(generalPath+"/createAccount",{uid: $scope.uid})
-                                .then(function(response){
-                                    $scope.aid= response.data;
+                                                         $http.post(generalPath+"/createAccount",{uid: $scope.uid})
+                                                               .then(function(response){
+                                                                   $scope.aid= response.data;
 
-                                    $timeout(function(){
+                                                                   $timeout(function(){
 
-                                        $http.post(generalPath+"/createCred", {aid: $scope.aid, username: $scope.username, password: $scope.password})
-                                                .then(function(response){
-                                                   $timeout(function(){
-                                                        firebase.auth().createUserWithEmailAndPassword($scope.email, $scope.password).catch(function(error) {
-                                                          // Handle Errors here.
-                                                          var errorCode = error.code;
-                                                          var errorMessage = error.message;
-                                                          // ...
-                                                          console.log(errorCode + " " + errorMessage);
-                                                        });
-
-
-                                                        $http.post(generalPath+"/createPhone",
-                                                        {uid: $scope.uid, phone: $scope.phone})
-                                                                    .then(function(response){
-                                                                         $timeout(function(){
-                                                                            $http.post(generalPath+"/createCreditCard",
-                                                                                {aid: $scope.aid, cnumber: $scope.cnumber, expDate: $scope.expdate, scode: $scope.scode,
-                                                                                type: $scope.ctype, bzip: $scope.bzip, bcity: $scope.bcity, country: $scope.country,
-                                                                                bstate: $scope.bstate, baddress: $scope.baddress})
-                                                                                        .then(function(response){
-                                                                                           alert("Signup Successful!");
-                                                                                           $window.location.reload();
-                                                                                        });
-
-                                                                         });
-                                                                    });
-
-                                                   });
-                                                })
+                                                                       $http.post(generalPath+"/createCred", {aid: $scope.aid, username: $scope.username, password: $scope.password})
+                                                                               .then(function(response){
+                                                                                  $timeout(function(){
+                                                                                       firebase.auth().createUserWithEmailAndPassword($scope.email, $scope.password).catch(function(error) {
+                                                                                         // Handle Errors here.
+                                                                                         var errorCode = error.code;
+                                                                                         var errorMessage = error.message;
+                                                                                         // ...
+                                                                                         console.log(errorCode + " " + errorMessage);
+                                                                                       });
 
 
-                                    })
+                                                                                       $http.post(generalPath+"/createPhone",
+                                                                                       {uid: $scope.uid, phone: $scope.phone})
+                                                                                                   .then(function(response){
+                                                                                                        $timeout(function(){
+                                                                                                           $http.post(generalPath+"/createCreditCard",
+                                                                                                               {aid: $scope.aid, cnumber: $scope.cnumber, expDate: $scope.expdate, scode: $scope.scode,
+                                                                                                               type: $scope.ctype, bzip: $scope.bzip, bcity: $scope.bcity, country: $scope.country,
+                                                                                                               bstate: $scope.bstate, baddress: $scope.baddress})
+                                                                                                                       .then(function(response){
+                                                                                                                          alert("Signup Successful!");
+                                                                                                                          $window.location.reload();
+                                                                                                                       });
 
-                                });
-                       });
+                                                                                                        });
+                                                                                                   });
 
-                        var auth = firebase.auth();
+                                                                                  });
+                                                                               })
 
-                        auth.sendPasswordResetEmail($scope.email).then(function() {
-                          // Email sent.
-                        }, function(error) {
-                          // An error happened.
-                          console.log("error en enviar email");
-                        });
 
-                  });
-         }
-         else{
+                                                                   })
+
+                                                               });
+                                                      });
+
+                                                       var auth = firebase.auth();
+
+                                                       auth.sendPasswordResetEmail($scope.email).then(function() {
+                                                         // Email sent.
+                                                       }, function(error) {
+                                                         // An error happened.
+                                                         console.log("error en enviar email");
+                                                       });
+
+                                                 });
+                           });
+                   }else{
+                       alert("username is already taken!");
+                   }
+                });
+         }else{
               alert("There is a problem with the form!");
          }
     };

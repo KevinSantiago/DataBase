@@ -15,12 +15,12 @@ POST    /DealItSrv/logout                   controllers.Application.logout
 GET     /login/submit/:password/:username   controllers.Application.loginUser(password: String,username: String)
 
 #Sign Up
-POST    /login/signup2              controllers.Application.createUser
-POST    /login/createAccount        controllers.Application.createAccount
-POST    /login/createCred           controllers.Application.createCred
-POST    /login/createPhone          controllers.Application.createPhone
-POST    /login/createCreditCard     controllers.Application.createCreditCard
-
+POST    /login/signup2                         controllers.Application.createUser
+POST    /login/createAccount                   controllers.Application.createAccount
+POST    /login/createCred                      controllers.Application.createCred
+POST    /login/createPhone                     controllers.Application.createPhone
+POST    /login/createCreditCard                controllers.Application.createCreditCard
+GET     /login/checkUsernameInUse/:username    controllers.Application.checkUsernameInUse(username: String)
 # Users
 GET     /DealItSrv/user/:aid             controllers.Application.getUserInfo(aid: Integer)
 GET     /DealItSrv/user/phone/:uid       controllers.Application.getPhoneNumbers(uid: Integer)
