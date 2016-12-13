@@ -662,11 +662,11 @@ public class DBManager extends Controller{
         boolean successful = false;
         if(cdb != null) {
             PreparedStatement ps = null;
-            String sql = "insert into product(cid, aid, pname, brand, conditions, price,img_url,description)\n"+
+            String sql = "insert into product(cid, aid, pname, brand, conditions, price,img_url,description,active)\n"+
                     "values((select cid\n"+
                     "from category\n"+
                     "where cname=?),\n"+
-                    "?, ?, ?, ?, ?,?,?)";
+                    "?, ?, ?, ?, ?,?,?,1)";
 
             try{
                 ps = cdb.prepareStatement(sql);

@@ -489,6 +489,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.log= false;
         $scope.comment = "";
+        $scope.validCat=false;
         var pid = $routeParams.pid;
 
         if(localStorageService.get('aid') != null){
@@ -514,7 +515,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                           $scope.pid= response.data.id;
                           $scope.itemCond = response.data.condition;
                           $scope.itemBrand = response.data.brand;
-
+                          $scope.category = response.data.category;
                           $http.get(generalPath+"/DealItSrv/product/ownerinfo/"+$scope.pid)
                                  .then(function(response){
 
@@ -537,9 +538,12 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                                                         $http.get(generalPath+"/DealItSrv/product/feedback/"+$scope.pid)
                                                                .then(function(response){
                                                                    $timeout(function(){
-                                                                         ;
-                                                                         $scope.feedback= response.data;
 
+                                                                         $scope.feedback= response.data;
+                                                                         if($scope.category != "car" && $scope.category !="house"){
+                                                                             $scope.validCat=true;
+
+                                                                         }
                                                                    });
                                                                });
                                                     });
@@ -954,6 +958,23 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                                                                                          var errorMessage = error.message;
                                                                                          // ...
                                                                                          console.log(errorCode + " " + errorMessage);
+                                                                                       });
+
+                                                                                        var user = firebase.auth().currentUser;
+                                                                                       $timeout(function(){
+                                                                                           if (user) {
+
+                                                                                                  user.updateProfile({
+                                                                                                    displayName: $scope.username
+                                                                                                  }).then(function() {
+                                                                                                    // Profile updated successfully!
+                                                                                                  }, function(error) {
+                                                                                                    // An error happened.
+                                                                                                  });
+                                                                                              } else {
+                                                                                                // No user is signed in.
+                                                                                              }
+
                                                                                        });
 
 

@@ -77,7 +77,7 @@
                                     <span flex="5"></span>
                                     <md-input-container class="md-block" flex="25">
                                         <br><label>Description</label></br>
-                                        <input name="d" ng-model="description" md-maxlength="200"   ng-pattern="/^[\w -]*$/" required >
+                                        <input name="d" ng-model="description" md-maxlength="200"  minlength="6" required >
                                         <div ng-messages="postForm.d.$error" role="alert" multiple>
                                             <div ng-message="required" class="my-message">Not valid Description</div>
                                         </div>
