@@ -89,6 +89,12 @@ public class Application extends Controller {
             return ok("Some Unexpected Error has Ocurred");
         }
     }
+
+    public Result getAccountType(int aid){
+        return ok(DBManager.getTypeAccount(aid));
+    }
+
+
     /**
      * Get user info by account id
      */
@@ -197,6 +203,13 @@ public class Application extends Controller {
         }
     }
 
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result setItemToInactive(){
+        JsonNode info = request().body().asJson();
+        int pid = info.findPath("pid").intValue();
+        DBManager.setItemToInactive(pid);
+        return ok("Query Executed Successfully!");
+    }
     /**
      * Get Orders Bind to an Account
      */
@@ -328,11 +341,13 @@ public class Application extends Controller {
          return ok(""+DBManager.checkUsernameInUse(username));
      }
 
-   /*  @BodyParser.Of(BodyParser.Json.class)
+    @BodyParser.Of(BodyParser.Json.class)
      public Result postFeedBack(){
          JsonNode info = request().body().asJson();
-       //  DBManager.postFeedBack()
-     }*/
+
+         DBManager.postFeedBack(info.findPath("pid").intValue(), info.findPath("comment").textValue());
+        return ok("Query executed successfully");
+     }
 
     /**
      * Returns the Item on the server associated with the ID given.

@@ -44,94 +44,94 @@
                 <md-tab label="Sign Up">
                     <md-content class="md-padding">
                         <h1 class="md-display-2" style="color: orange;">Join Our Community</h1>
+                             <div layout="row">
+                                <div>
+                                    <form name="signupForm">
+                                        <h2 style="color: darkslategrey;">Account Info:</h2>
+                                        <div layout="row">
+                                            <md-input-container class="md-block">
+                                                <label>Username</label>
+                                                <input name="user" ng-model="username" minlength="6" required ng-pattern="/^[a-zA-Z0-9]*$/" placeholder="juandelpueblo123" ng-minlength="5">
+                                                <div ng-messages="signupForm.user.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Not valid username</div>
+                                                </div>
+                                            </md-input-container>
+                                        </div>
+                                        <div layout="row">
+                                            <md-input-container class="md-block">
+                                                <label>Password</label>
+                                                <input name="pass" ng-model="password" required type="password" minlength="6" ng-pattern="/^[a-zA-Z0-9]*$/">
+                                                <div ng-messages="signupForm.pass.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Not valid password</div>
+                                                </div>
+                                            </md-input-container>
+                                            <md-input-container class="md-block">
+                                                <label>Retype Password</label>
+                                                <input name="repass" ng-model="rePassword" required type="password" minlength="6" ng-pattern="/^[a-zA-Z0-9]*$/">
+                                                <div ng-messages="signupForm.repass.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Not valid!</div>
+                                                </div>
+                                            </md-input-container>
+                                        </div>
 
-                        <div>
-                            <form name="signupForm">
-                                <h2 style="color: darkslategrey;">Account Info:</h2>
-                                <div layout="row">
-                                    <md-input-container class="md-block">
-                                        <label>Username</label>
-                                        <input name="user" ng-model="username" required ng-pattern="/^[a-zA-Z0-9]*$/" placeholder="juandelpueblo123" ng-minlength="5">
-                                        <div ng-messages="signupForm.user.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Not valid username</div>
-                                        </div>
-                                    </md-input-container>
-                                </div>
-                                <div layout="row">
-                                    <md-input-container class="md-block">
-                                        <label>Password</label>
-                                        <input name="pass" ng-model="password" required type="password" ng-pattern="/^[a-zA-Z0-9]*$/">
-                                        <div ng-messages="signupForm.pass.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Not valid password</div>
-                                        </div>
-                                    </md-input-container>
-                                    <md-input-container class="md-block">
-                                        <label>Retype Password</label>
-                                        <input name="repass" ng-model="rePassword" required type="password" ng-pattern="/^[a-zA-Z0-9]*$/">
-                                        <div ng-messages="signupForm.repass.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Not valid!</div>
-                                        </div>
-                                    </md-input-container>
-                                </div>
+                                        <md-divider></md-divider>
 
-                                <md-divider></md-divider>
-
-                                <h2 style="color: darkslategrey;">Personal Info:</h2>
-                                <div layout="row">
-                                    <md-input-container class="md-block">
-                                        <label>First Name</label>
-                                        <input name="first" ng-model="ufirst" required placeholder="Juan" ng-pattern="/^[\w -]*$/">
-                                        <div ng-messages="signupForm.first.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Name Required!</div>
+                                        <h2 style="color: darkslategrey;">Personal Info:</h2>
+                                        <div layout="row">
+                                            <md-input-container class="md-block">
+                                                <label>First Name</label>
+                                                <input name="first" ng-model="ufirst" required placeholder="Juan" ng-pattern="/^[\w -]*$/">
+                                                <div ng-messages="signupForm.first.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Name Required!</div>
+                                                </div>
+                                            </md-input-container>
+                                            <md-input-container class="md-block">
+                                                <label>Lastname</label>
+                                                <input name="last" ng-model="ulast" required placeholder="Pueblo">
+                                                <div ng-messages="signupForm.last.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Lastname Required!</div>
+                                                </div>
+                                            </md-input-container>
                                         </div>
-                                    </md-input-container>
-                                    <md-input-container class="md-block">
-                                        <label>Lastname</label>
-                                        <input name="last" ng-model="ulast" required placeholder="Pueblo">
-                                        <div ng-messages="signupForm.last.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Lastname Required!</div>
+                                        <div layout="row">
+                                            <md-input-container class="md-block">
+                                                <label>email</label>
+                                                <input name="email" ng-model="email" required placeholder="juan.pueblo@gmail.com" type="email">
+                                                <div ng-messages="signupForm.email.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Email Required!</div>
+                                                </div>
+                                            </md-input-container>
+                                            <md-input-container class="md-block">
+                                                <label>Bithdate</label>
+                                                <input name="birth" ng-model="ubirth" required placeholder="MMDDYY" md-maxlength="6" ng-pattern="/^[0-9]{6}$/">
+                                                <div ng-messages="signupForm.birth.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Not Valid!</div>
+                                                </div>
+                                            </md-input-container>
                                         </div>
-                                    </md-input-container>
-                                </div>
-                                <div layout="row">
-                                    <md-input-container class="md-block">
-                                        <label>email</label>
-                                        <input name="email" ng-model="email" required placeholder="juan.pueblo@gmail.com" type="email">
-                                        <div ng-messages="signupForm.email.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Email Required!</div>
+                                        <div layout="row">
+                                            <md-input-container class="md-block">
+                                                <label>City</label>
+                                                <input name="c" ng-model="ucity" required placeholder="Mayaguez" ng-pattern="/^[\w -]*$/">
+                                                <div ng-messages="signupForm.c.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Not Valid!</div>
+                                                </div>
+                                            </md-input-container>
+                                            <md-input-container class="md-block">
+                                                <label>State</label>
+                                                <input name="s" ng-model="ustate" required placeholder="PR" ng-pattern="/^[a-zA-Z]*$/">
+                                                <div ng-messages="signupForm.s.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Not Valid!</div>
+                                                </div>
+                                            </md-input-container>
+                                            <md-input-container class="md-block">
+                                                <label>Phone Number</label>
+                                                <input name="p" ng-model="phone" required md-maxlength="10" placeholder="1234567890" ng-pattern="/^[0-9]{10}$/">
+                                                <div ng-messages="signupForm.p.$error" role="alert" multiple>
+                                                    <div ng-message="required" class="my-message">Not Valid!</div>
+                                                </div>
+                                            </md-input-container>
                                         </div>
-                                    </md-input-container>
-                                    <md-input-container class="md-block">
-                                        <label>Bithdate</label>
-                                        <input name="birth" ng-model="ubirth" required placeholder="MMDDYY" md-maxlength="6" ng-pattern="/^[0-9]{6}$/">
-                                        <div ng-messages="signupForm.birth.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Not Valid!</div>
-                                        </div>
-                                    </md-input-container>
-                                </div>
-                                <div layout="row">
-                                    <md-input-container class="md-block">
-                                        <label>City</label>
-                                        <input name="c" ng-model="ucity" required placeholder="Mayaguez" ng-pattern="/^[\w -]*$/">
-                                        <div ng-messages="signupForm.c.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Not Valid!</div>
-                                        </div>
-                                    </md-input-container>
-                                    <md-input-container class="md-block">
-                                        <label>State</label>
-                                        <input name="s" ng-model="ustate" required placeholder="PR" ng-pattern="/^[a-zA-Z]*$/">
-                                        <div ng-messages="signupForm.s.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Not Valid!</div>
-                                        </div>
-                                    </md-input-container>
-                                    <md-input-container class="md-block">
-                                        <label>Phone Number</label>
-                                        <input name="p" ng-model="phone" required md-maxlength="10" placeholder="1234567890" ng-pattern="/^[0-9]{10}$/">
-                                        <div ng-messages="signupForm.p.$error" role="alert" multiple>
-                                            <div ng-message="required" class="my-message">Not Valid!</div>
-                                        </div>
-                                    </md-input-container>
-                                </div>
 
                                 <md-divider></md-divider>
                                 <h2 style="color: darkslategrey;">Credit Card Info:</h2>
@@ -212,7 +212,14 @@
 
                             </form>
                         </div>
-
+                        <div >
+                            <h2 style="color:orange">Note:</h2>
+                            <p style="color:orange">
+                                <span style="color:black">Username</span> must be minimun 6 characters long and can contain letters and numbers.</br>
+                                <span style="color:black">Password</span> must be minimun 6 characters long and can contain letters and numbers.
+                            </p>
+                        </div>
+                       </div>
                     </md-content>
                 </md-tab>
 

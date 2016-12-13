@@ -281,12 +281,20 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.carCategory="This is the car category page";
         $scope.category="car";
         $scope.filterName="";
-
+        $scope.admin=false;
+        var AID = localStorageService.get('aid');
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 
 			$scope.items=response.data;
-
+             if(AID != null){
+                           $http.get(generalPath+"/DealItSrv/getAccountType/"+AID)
+                                   .then(function(response){
+                                        if(response.data === "admin"){
+                                           $scope.admin=true;
+                                        }
+                                   });
+                        }
 
         });
 
@@ -309,7 +317,13 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                      }
                  };
 
+         $scope.setInactive= function(index){
 
+                       $http.post(generalPath+"/DealItSrv/setItemToInactive",{pid: $scope.items[index].id})
+                               .then(function(){
+                                  $scope.items.splice(index,1);
+                               });
+                 }
     }]);
 
     //House Category Controller
@@ -318,12 +332,20 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.houseCategory="This is the house category page";
         $scope.category="house";
 		$scope.filterName="";
-
+        $scope.admin=false;
+        var AID = localStorageService.get('aid');
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 
 			$scope.items=response.data;
-
+             if(AID != null){
+                           $http.get(generalPath+"/DealItSrv/getAccountType/"+AID)
+                                   .then(function(response){
+                                        if(response.data === "admin"){
+                                           $scope.admin=true;
+                                        }
+                                   });
+                        }
 
         });
 
@@ -345,6 +367,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                                      })
                       }
                   };
+
+          $scope.setInactive= function(index){
+
+                        $http.post(generalPath+"/DealItSrv/setItemToInactive",{pid: $scope.items[index].id})
+                                .then(function(){
+                                    $scope.items.splice(index,1);
+                                });
+                  }
     }]);
 
     //Technology Category Controller
@@ -353,12 +383,20 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.technologyCategory="This is technology category page";
 		$scope.category="technology";
         $scope.filterName="";
-
+        $scope.admin=false;
+        var AID = localStorageService.get('aid');
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 
 			$scope.items=response.data;
-
+             if(AID != null){
+                           $http.get(generalPath+"/DealItSrv/getAccountType/"+AID)
+                                   .then(function(response){
+                                        if(response.data === "admin"){
+                                           $scope.admin = true;
+                                        }
+                                   });
+                        }
 
         });
 
@@ -382,6 +420,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                       }
                   };
 
+
+          $scope.setInactive= function(index){
+
+                        $http.post(generalPath+"/DealItSrv/setItemToInactive",{pid: $scope.items[index].id})
+                                .then(function(){
+                                    $scope.items.splice(index,1);
+                                });
+                  }
 		
     }]);
 
@@ -391,12 +437,20 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
         $scope.furnitureCategory="This is furniture category page";
         $scope.category="furniture";
 		$scope.filterName="";
-
+		$scope.admin=false;
+        var AID = localStorageService.get('aid');
         $http.get(generalPath+"/DealItSrv/itemsByCat/"+$scope.category)
         .then(function(response){
 
 			$scope.items=response.data;
-
+            if(AID != null){
+               $http.get(generalPath+"/DealItSrv/getAccountType/"+AID)
+                       .then(function(response){
+                            if(response.data === "admin"){
+                               $scope.admin=true;
+                            }
+                       });
+            }
 
         });
 
@@ -418,6 +472,15 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                             })
              }
          };
+
+         $scope.setInactive= function(index){
+
+               $http.post(generalPath+"/DealItSrv/setItemToInactive",{pid: $scope.items[index].id})
+                       .then(function(){
+                           $scope.items.splice(index,1);
+                       });
+         }
+
     }]);
 
     //Item Details controller
@@ -425,6 +488,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
     '$routeParams','localStorageService' ,function($scope,$http,$location, SharedVariables,$q,$timeout,$routeParams,localStorageService ){
         var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
         $scope.log= false;
+        $scope.comment = "";
         var pid = $routeParams.pid;
 
         if(localStorageService.get('aid') != null){
@@ -500,6 +564,14 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
               $scope.inShoppingCart = false;
           };
 
+          $scope.postFeedBack = function(isValid){
+              if(isValid){
+                  $http.post(generalPath+"/DealItSrv/postFeedBack",{pid: $scope.pid, comment: $scope.comment})
+                          .then(function(response){
+                               $scope.feedback.unshift($scope.comment);
+                          });
+              }
+          };
 
 
 
@@ -512,7 +584,7 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
 
 
         $scope.total = 0;
-
+        $scope.scode = "";
 
         $scope.gridOptions1= {
             enableSorting: true,
@@ -569,28 +641,34 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
          var generalPath = $location.protocol()+"://"+$location.host()+":"+$location.port();
          var AID = localStorageService.get('aid');
          $scope.placeOrder = function(){
-            $http.post(generalPath+"/insertOrder",{aid: AID})
-                   .then(function(response){
-                       $scope.oid = response.data;
-                       for(var i=0;i< iData.length; i++){
-                            var name = iData[i].item;
-                            var ID = iData[i].id;
+               if(checkCode()){
+                    $http.post(generalPath+"/insertOrder",{aid: AID})
+                           .then(function(response){
+                               $scope.oid = response.data;
+                               for(var i=0;i< iData.length; i++){
+                                    var name = iData[i].item;
+                                    var ID = iData[i].id;
 
-                           $timeout(function(){
-                               $http.post(generalPath+"/insertOrderLine",{oid: $scope.oid, pid: ID,
-                                pname: name})
-                                         .then(function(response){
-                                              if(i === iData.length){
-                                                 SharedVariables.cleanShoppingCart();
-                                                 SharedVariables.setOrderNum($scope.oid);
-                                                 $location.path('/order_success');
-                                              }
+                                   $timeout(function(){
+                                       $http.post(generalPath+"/insertOrderLine",{oid: $scope.oid, pid: ID,
+                                        pname: name})
+                                                 .then(function(response){
+                                                      if(i === iData.length){
+                                                         SharedVariables.cleanShoppingCart();
+                                                         SharedVariables.setOrderNum($scope.oid);
+                                                         $location.path('/order_success');
+                                                      }
 
-                                         });
+                                                 });
+                                   });
+                               }
+
                            });
-                       }
+               }else{
+                 alert("Not correct CVV");
 
-                   });
+
+               }
          };
 
          $scope.total = 0;
@@ -602,8 +680,6 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
             enableVerticalScrollbar: 0,
             columnDefs: [
                 {field: 'item'},
-                // {field: 'brand'},
-                // {field: 'condition'},
                 {field: 'price', cellFilter: 'currency'},
                 {field: 'id'}
             ],
@@ -641,6 +717,13 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
                             });
 
                        });
+
+        var checkCode = function(){
+            if($scope.scode === $scope.creditCard.securityCode){
+                return true;
+            }
+            return false;
+        };
 
     }]);
 
@@ -757,6 +840,13 @@ var app= angular.module('myapp',["ngRoute","ngMaterial","ngMdIcons","ui.grid","u
            $scope.edit=false;
         }
 
+        $scope.setInactive= function(index){
+
+                               $http.post(generalPath+"/DealItSrv/setItemToInactive",{pid: $scope.activeItems[index].id})
+                                       .then(function(){
+                                            $scope.activeItems.splice(index,1);
+                                       });
+                         }
     }]);
 
 

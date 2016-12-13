@@ -29,7 +29,7 @@ GET     /DealItSrv/user/products/:aid    controllers.Application.getProductsFrom
 POST    /updateCreditCard                controllers.Application.updateCreditCard
 POST    /updatePhoneNumber               controllers.Application.updatePhoneNumber
 POST    /updateUserInfo                  controllers.Application.updateUserInfo
-
+GET     /DealItSrv/getAccountType/:aid   controllers.Application.getAccountType(aid: Integer)
 
 #Orders
 GET     /DealItSrv/order/:aid            controllers.Application.getOrdersFromAccount(aid: Integer)
@@ -44,6 +44,8 @@ GET     /DealItSrv/product/ownerinfo/:pid     controllers.Application.getProduct
 GET     /DealItSrv/product/feedback/:pid      controllers.Application.getFeedbackFromProduct(pid: Integer)
 GET     /DealItSrv/product/info/:pid          controllers.Application.getProductInfo(pid: Integer)
 GET     /DealItSrv/filter/:filter/:category   controllers.Application.filterResults(filter: String, category: String)
+POST    /DealItSrv/postFeedBack               controllers.Application.postFeedBack
+POST    /DealItSrv/setItemToInactive          controllers.Application.setItemToInactive
 
 # Insert new data
 POST    /DealItSrv/newPost                      controllers.Application.insertNewPost

@@ -57,7 +57,7 @@ public class DBManager extends Controller{
             PreparedStatement ps = null;
             String sql="select pname as item, brand, conditions, price,pid,img_url,description\n" +
                     "from product natural join category\n" +
-                    "where cname= ?";
+                    "where cname= ? and active=1;";
 
             try {
                 ps=cdb.prepareStatement(sql);
@@ -93,7 +93,7 @@ public class DBManager extends Controller{
             String sql="select pname as item, brand, conditions, price,pid,img_url,description\n" +
                     " from product natural join category\n" +
                     "  where cname=? and\n" +
-                    "  pname like ?";
+                    "  pname like ? and active=1;";
 
             try {
                 ps=cdb.prepareStatement(sql);
@@ -128,7 +128,7 @@ public class DBManager extends Controller{
             PreparedStatement ps = null;
             String sql="select pid,pname as item,price,conditions,brand,cname as _category,img_url,description\n" +
                     "from account natural join product natural join category\n" +
-                    "where aid=?";
+                    "where aid=? and active=1";
 
             try{
                 ps = cdb.prepareStatement(sql);
@@ -727,5 +727,44 @@ public class DBManager extends Controller{
                 System.out.println(e);
             }
         }
+    }
+
+    public static void setItemToInactive(int pid){
+        Connection cdb = DB.getConnection();
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql = "update product set active=0 where pid=?";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setInt(1,pid);
+                ps.executeQuery();
+                cdb.close();
+
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+    public static String getTypeAccount(int aid){
+        Connection cdb = DB.getConnection();
+        String str= null;
+        if(cdb != null){
+            PreparedStatement ps = null;
+            String sql ="select _type from account where aid =?;";
+
+            try{
+                ps = cdb.prepareStatement(sql);
+                ps.setInt(1,aid);
+                ResultSet rs = ps.executeQuery();
+                while(rs.next()){
+                    str= rs.getString("_type");
+                }
+                cdb.close();
+            }catch(Exception e){
+                System.out.println(e);
+            }
+        }
+        return str;
     }
 }
